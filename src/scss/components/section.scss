@@ -1,0 +1,45 @@
+.page-section {
+  width: 100vw;
+  height: 100%;
+}
+
+.page-section--img {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 100vw;
+  // max-height: 100vh;
+  // height: auto;
+  aspect-ratio: 16/9;
+  flex-shrink: 0;
+  position: relative;
+}
+
+.page-section--color {
+  background-color: var(--color);
+}
+
+.bg-color {
+  background-color: #f6f6f6;
+}
+.container-xxl {
+  // display: block;
+  max-width: 1592px;
+  margin: auto;
+}
+
+@media (max-width: 1592px) {
+  .container-xxl {
+    max-width: 1200px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .container-xxl {
+    max-width: 768px;
+  }
+}
+// .container-xs {
+//   max-width: 572px;
+//   margin: auto;
+// }

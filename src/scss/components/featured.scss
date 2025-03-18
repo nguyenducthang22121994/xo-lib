@@ -1,0 +1,227 @@
+// .featured {
+//   background-image: url("../../public/assets/featured/image\ 283.png");
+//   background-position: top;
+//   aspect-ratio: 1920px/943px;
+//   background-size: cover;
+// }
+
+.section {
+  position: relative;
+  // z-index: 9;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  // padding: 30vh 0;
+  width: 100%;
+  height: 100vh;
+  // margin: auto;
+}
+.bg-parallax {
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  overflow: hidden;
+}
+.bg-parallax__item {
+  position: absolute;
+  inset: 0;
+}
+.bg-parallax__url {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: 50% 188.538px;
+  background-repeat: no-repeat;
+}
+// .bg-parallax__url {
+//   backface-visibility: hidden;
+//   background-size: cover;
+//   background-position: 50% 188.538px;
+//   background-attachment: fixed;
+// }
+// .featured-container {
+//   height: 100%;
+// }
+
+.futured {
+  position: relative;
+  padding: 82px 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 100%;
+  width: 1592px;
+}
+
+.featured__title {
+  max-width: 523px;
+  // max-height: 165px;
+  color: #fff;
+  font-family: "be vietnam pro";
+  font-size: 60px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 92%;
+  letter-spacing: -3px;
+}
+
+.f-card {
+  max-width: 511px;
+  height: auto;
+}
+
+.f-card__inner {
+  display: flex;
+  padding: 18px;
+  height: fit-content;
+  background-color: #fff;
+  border-radius: 20px;
+}
+
+.f-card__image-wrapper {
+  overflow: hidden;
+  padding: 0 16px;
+}
+
+.f-card__image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.f-card__image:hover {
+  cursor: pointer;
+}
+.f-card__content {
+  width: fit-content;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 0 3px;
+}
+
+.f-card__content {
+  max-width: 285px;
+  // height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.f-card__details {
+  // width: fit-content;
+  height: fit-content;
+}
+.f-card__title {
+  font-family: "be vietnam pro";
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 105%; /* 21px */
+  letter-spacing: -0.2px;
+}
+
+.f-card__description {
+  font-family: "be vietnam pro";
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 142%; /* 21.3px */
+  opacity: 0.6;
+}
+
+.f-card__prices {
+  display: flex;
+  gap: 4px;
+  font-family: "be vietnam pro";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 140%; /* 22.4px */
+  letter-spacing: -0.16px;
+}
+
+.f-card__price--old {
+  opacity: 0.6;
+}
+
+.f-card__button {
+  display: flex;
+  align-items: center;
+  justify-items: center;
+  width: 40px;
+  height: 40px;
+  background-color: rgba(15, 97, 255, 1);
+  border-radius: 6px;
+  align-self: flex-end;
+  transition: all 0.3s ease-in-out;
+}
+
+.f-card__button a {
+  display: block;
+  width: 100%;
+  height: 100%;
+  padding: 10px;
+}
+
+.f-card__button:hover {
+  transform: scale(1.1);
+  background-color: rgba(10, 80, 220, 1);
+}
+
+.f-card__button svg {
+  transition: transform 0.3s ease-in-out;
+}
+
+.f-card__button:hover svg {
+  transform: rotate(90deg);
+}
+
+@media (max-width: 992px) {
+  .featured-container {
+    display: block;
+    max-width: 331px;
+    padding: 42px 0;
+    overflow: hidden;
+  }
+
+  .featured__title {
+    width: 100%;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 98%; /* 39.2px */
+    letter-spacing: -2px;
+    white-space: wrap;
+    padding-bottom: 67px;
+  }
+
+  .futured {
+    padding: 32px 22px 64px 22px;
+  }
+
+  .f-card {
+    align-self: self-end;
+    max-width: 100%;
+  }
+  .f-card__inner {
+    display: block;
+    max-width: 245px;
+    padding: 18px;
+    height: 100%;
+    float: right;
+  }
+  .f-card__image {
+    max-width: 164px;
+    overflow: hidden;
+    padding: 13 40px;
+  }
+  .f-card__button {
+    float: right;
+  }
+  .f-card__button a > svg {
+    overflow: hidden;
+    float: right;
+  }
+}

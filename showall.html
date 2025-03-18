@@ -1,0 +1,1668 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SCSS Example</title>
+    <link rel="stylesheet" href="./src/scss/xo-webcomponents.css" />
+    <link rel="stylesheet" href="public/styles/main.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div id="app">
+      <header class="page-header">
+        <xo-sticky xo-direction="down" style="--top: 0px">
+          <div class="header-container">
+            <div class="header-logo">
+              <img src="./public/assets/logo/Logo.svg" alt="Logo Image" />
+            </div>
+            <div class="nav">
+              <ul class="nav-list nav-list--text">
+                <li><a href="button.html">New & Featured</a></li>
+                <li><a href="#">Collection</a></li>
+                <li><a href="#">Customize</a></li>
+                <li><a href="#">About us</a></li>
+                <li><a href="#">Blog</a></li>
+              </ul>
+              <ul class="nav-list nav-list--icon">
+                <li>
+                  <a href="#">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="16"
+                      height="16"
+                      viewBox="0 0 16 16"
+                      fill="none"
+                    >
+                      <g clip-path="url(#clip0_14_202)">
+                        <path
+                          d="M15.8045 14.8625L11.8252 10.8831C12.9096 9.55687 13.4428 7.86453 13.3144 6.15618C13.1861 4.44783 12.406 2.85416 11.1356 1.70482C9.86516 0.55548 8.20158 -0.0615992 6.48895 -0.018778C4.77632 0.0240432 3.14566 0.723488 1.93426 1.93488C0.72287 3.14627 0.0234252 4.77693 -0.019396 6.48957C-0.0622172 8.2022 0.554862 9.86578 1.7042 11.1362C2.85354 12.4066 4.44721 13.1867 6.15556 13.315C7.86392 13.4434 9.55625 12.9102 10.8825 11.8258L14.8619 15.8051C14.9876 15.9266 15.156 15.9938 15.3308 15.9923C15.5056 15.9907 15.6728 15.9206 15.7964 15.797C15.92 15.6734 15.9901 15.5062 15.9916 15.3314C15.9932 15.1566 15.926 14.9882 15.8045 14.8625ZM6.66652 12.0005C5.61169 12.0005 4.58054 11.6877 3.70348 11.1016C2.82642 10.5156 2.14283 9.68266 1.73916 8.70812C1.3355 7.73358 1.22988 6.66122 1.43567 5.62666C1.64145 4.59209 2.14941 3.64178 2.89529 2.8959C3.64117 2.15002 4.59147 1.64207 5.62604 1.43628C6.6606 1.2305 7.73296 1.33611 8.7075 1.73978C9.68204 2.14345 10.515 2.82704 11.101 3.7041C11.6871 4.58116 11.9999 5.61231 11.9999 6.66714C11.9983 8.08114 11.4359 9.43677 10.436 10.4366C9.43615 11.4365 8.08052 11.9989 6.66652 12.0005Z"
+                          fill="black"
+                        />
+                      </g>
+                      <defs>
+                        <clipPath id="clip0_14_202">
+                          <rect width="16" height="16" fill="white" />
+                        </clipPath>
+                      </defs>
+                    </svg>
+                  </a>
+                </li>
+                <li>
+                  <a href="#"
+                    ><svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="16"
+                      height="16"
+                      viewBox="0 0 16 16"
+                      fill="none"
+                    >
+                      <path
+                        d="M8 8C8.79113 8 9.56449 7.76541 10.2223 7.32588C10.8801 6.88635 11.3928 6.26164 11.6955 5.53074C11.9983 4.79983 12.0775 3.99556 11.9231 3.21964C11.7688 2.44372 11.3878 1.73098 10.8284 1.17157C10.269 0.612165 9.55629 0.231202 8.78036 0.0768607C8.00444 -0.0774802 7.20017 0.00173314 6.46927 0.304484C5.73836 0.607234 5.11365 1.11992 4.67412 1.77772C4.2346 2.43552 4 3.20888 4 4C4.00106 5.06054 4.42283 6.07734 5.17274 6.82726C5.92266 7.57718 6.93946 7.99894 8 8ZM8 1.33334C8.52742 1.33334 9.04299 1.48973 9.48152 1.78275C9.92005 2.07577 10.2618 2.49224 10.4637 2.97951C10.6655 3.46678 10.7183 4.00296 10.6154 4.52024C10.5125 5.03753 10.2586 5.51268 9.88562 5.88562C9.51268 6.25856 9.03752 6.51254 8.52024 6.61543C8.00296 6.71832 7.46678 6.66551 6.97951 6.46368C6.49224 6.26185 6.07576 5.92005 5.78275 5.48152C5.48973 5.04299 5.33333 4.52742 5.33333 4C5.33333 3.29276 5.61428 2.61448 6.11438 2.11438C6.61448 1.61429 7.29276 1.33334 8 1.33334Z"
+                        fill="black"
+                      />
+                      <path
+                        d="M8 9.33333C6.40924 9.3351 4.88414 9.9678 3.75931 11.0926C2.63447 12.2175 2.00176 13.7426 2 15.3333C2 15.5101 2.07024 15.6797 2.19526 15.8047C2.32029 15.9298 2.48986 16 2.66667 16C2.84348 16 3.01305 15.9298 3.13807 15.8047C3.2631 15.6797 3.33333 15.5101 3.33333 15.3333C3.33333 14.0957 3.825 12.9087 4.70017 12.0335C5.57534 11.1583 6.76232 10.6667 8 10.6667C9.23768 10.6667 10.4247 11.1583 11.2998 12.0335C12.175 12.9087 12.6667 14.0957 12.6667 15.3333C12.6667 15.5101 12.7369 15.6797 12.8619 15.8047C12.987 15.9298 13.1565 16 13.3333 16C13.5101 16 13.6797 15.9298 13.8047 15.8047C13.9298 15.6797 14 15.5101 14 15.3333C13.9982 13.7426 13.3655 12.2175 12.2407 11.0926C11.1159 9.9678 9.59076 9.3351 8 9.33333Z"
+                        fill="black"
+                      />
+                    </svg>
+                  </a>
+                </li>
+                <li>
+                  <a href="#"
+                    ><svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="16"
+                      height="16"
+                      viewBox="0 0 16 16"
+                      fill="none"
+                    >
+                      <g clip-path="url(#clip0_14_208)">
+                        <path
+                          d="M14 4H12C12 2.93913 11.5786 1.92172 10.8284 1.17157C10.0783 0.421427 9.06087 0 8 0C6.93913 0 5.92172 0.421427 5.17157 1.17157C4.42143 1.92172 4 2.93913 4 4H2C1.46957 4 0.960859 4.21071 0.585786 4.58579C0.210714 4.96086 0 5.46957 0 6L0 12.6667C0.00105857 13.5504 0.352588 14.3976 0.97748 15.0225C1.60237 15.6474 2.4496 15.9989 3.33333 16H12.6667C13.5504 15.9989 14.3976 15.6474 15.0225 15.0225C15.6474 14.3976 15.9989 13.5504 16 12.6667V6C16 5.46957 15.7893 4.96086 15.4142 4.58579C15.0391 4.21071 14.5304 4 14 4ZM8 1.33333C8.70724 1.33333 9.38552 1.61428 9.88562 2.11438C10.3857 2.61448 10.6667 3.29276 10.6667 4H5.33333C5.33333 3.29276 5.61428 2.61448 6.11438 2.11438C6.61448 1.61428 7.29276 1.33333 8 1.33333ZM14.6667 12.6667C14.6667 13.1971 14.456 13.7058 14.0809 14.0809C13.7058 14.456 13.1971 14.6667 12.6667 14.6667H3.33333C2.8029 14.6667 2.29419 14.456 1.91912 14.0809C1.54405 13.7058 1.33333 13.1971 1.33333 12.6667V6C1.33333 5.82319 1.40357 5.65362 1.5286 5.5286C1.65362 5.40357 1.82319 5.33333 2 5.33333H4V6.66667C4 6.84348 4.07024 7.01305 4.19526 7.13807C4.32029 7.2631 4.48986 7.33333 4.66667 7.33333C4.84348 7.33333 5.01305 7.2631 5.13807 7.13807C5.2631 7.01305 5.33333 6.84348 5.33333 6.66667V5.33333H10.6667V6.66667C10.6667 6.84348 10.7369 7.01305 10.8619 7.13807C10.987 7.2631 11.1565 7.33333 11.3333 7.33333C11.5101 7.33333 11.6797 7.2631 11.8047 7.13807C11.9298 7.01305 12 6.84348 12 6.66667V5.33333H14C14.1768 5.33333 14.3464 5.40357 14.4714 5.5286C14.5964 5.65362 14.6667 5.82319 14.6667 6V12.6667Z"
+                          fill="black"
+                        />
+                      </g>
+                      <defs>
+                        <clipPath id="clip0_14_208">
+                          <rect width="16" height="16" fill="white" />
+                        </clipPath>
+                      </defs>
+                    </svg>
+                  </a>
+                </li>
+              </ul>
+              <ul class="nav-list nav-list--mobile">
+                <li>
+                  <a href="#">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="15"
+                      height="15"
+                      viewBox="0 0 15 15"
+                      fill="none"
+                    >
+                      <g clip-path="url(#clip0_4_9841)">
+                        <path
+                          d="M14.25 8.25H0.75C0.551088 8.25 0.360322 8.17098 0.21967 8.03033C0.0790176 7.88968 0 7.69891 0 7.5C0 7.30109 0.0790176 7.11032 0.21967 6.96967C0.360322 6.82902 0.551088 6.75 0.75 6.75H14.25C14.4489 6.75 14.6397 6.82902 14.7803 6.96967C14.921 7.11032 15 7.30109 15 7.5C15 7.69891 14.921 7.88968 14.7803 8.03033C14.6397 8.17098 14.4489 8.25 14.25 8.25ZM14.25 3H0.75C0.551088 3 0.360322 2.92098 0.21967 2.78033C0.0790176 2.63968 0 2.44891 0 2.25C0 2.05109 0.0790176 1.86032 0.21967 1.71967C0.360322 1.57902 0.551088 1.5 0.75 1.5H14.25C14.4489 1.5 14.6397 1.57902 14.7803 1.71967C14.921 1.86032 15 2.05109 15 2.25C15 2.44891 14.921 2.63968 14.7803 2.78033C14.6397 2.92098 14.4489 3 14.25 3ZM14.25 13.5H0.75C0.551088 13.5 0.360322 13.421 0.21967 13.2803C0.0790176 13.1397 0 12.9489 0 12.75C0 12.5511 0.0790176 12.3603 0.21967 12.2197C0.360322 12.079 0.551088 12 0.75 12H14.25C14.4489 12 14.6397 12.079 14.7803 12.2197C14.921 12.3603 15 12.5511 15 12.75C15 12.9489 14.921 13.1397 14.7803 13.2803C14.6397 13.421 14.4489 13.5 14.25 13.5Z"
+                          fill="black"
+                        />
+                      </g>
+                      <defs>
+                        <clipPath id="clip0_4_9841">
+                          <rect width="15" height="15" fill="white" />
+                        </clipPath>
+                      </defs>
+                    </svg>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </xo-sticky>
+      </header>
+
+      <section class="page-sectionpage-section--img product-hero">
+        <div class="product-hero__title">
+          <xo-animate type="fade-down" duration="1s" delay="0.5s">
+            <h1>Shop All</h1>
+          </xo-animate>
+        </div>
+      </section>
+
+      <section class="page-section category">
+        <xo-container>
+          <div class="container-xxl cate-container">
+            <xo-animate type="fade-down" duration="1s" delay="0.5s">
+              <div class="cate-title">
+                <h2>Shop by Category</h2>
+                <h3>
+                  Protect your phone in style. From minimalist to drop-proof
+                  cases, we have your back
+                </h3>
+              </div>
+            </xo-animate>
+            <xo-animate type="fade-down" duration="1s" delay="0.5s">
+              <div class="cate-body">
+                <div class="cate__items">
+                  <xo-carousel
+                    xo-rewind
+                    xo-per-view="6"
+                    xo-per-move="1"
+                    xo-gap="14"
+                    xo-render-bullet="<span class='carousel-bullet'></span>"
+                  >
+                    <xo-carousel-inner>
+                      <xo-carousel-list>
+                        <xo-carousel-slide
+                          ><div class="carousel-item">
+                            <div class="cate__item cate__item--active">
+                              <img
+                                src="./public/assets/product-page/category/ipCase.png"
+                                alt="Case Iphone"
+                                class="cate__image"
+                              />
+                              <h4 class="cate__title">Case Iphone</h4>
+                            </div>
+                          </div></xo-carousel-slide
+                        >
+                        <xo-carousel-slide
+                          ><div class="carousel-item">
+                            <div class="cate__item">
+                              <img
+                                src="./public/assets/product-page/category/ssCase.png"
+                                alt="Case Samsung"
+                                class="cate__image"
+                              />
+                              <h4 class="cate__title">Case Samsung</h4>
+                            </div>
+                          </div></xo-carousel-slide
+                        >
+                        <xo-carousel-slide
+                          ><div class="carousel-item">
+                            <div class="cate__item">
+                              <img
+                                src="./public/assets/product-page/category/xiaomiCase.png"
+                                alt="Case Xiaomi"
+                                class="cate__image"
+                              />
+                              <h4 class="cate__title">Case Xiaomi</h4>
+                            </div>
+                          </div></xo-carousel-slide
+                        >
+                        <xo-carousel-slide
+                          ><div class="carousel-item">
+                            <div class="cate__item">
+                              <img
+                                src="./public/assets/product-page/category/ipadCase.png"
+                                alt="Case Ipad"
+                                class="cate__image"
+                              />
+                              <h4 class="cate__title">Case Ipad</h4>
+                            </div>
+                          </div></xo-carousel-slide
+                        >
+                        <xo-carousel-slide
+                          ><div class="carousel-item">
+                            <div class="cate__item">
+                              <img
+                                src="./public/assets/product-page/category/appleWatch.png"
+                                alt="Case Apple Watch"
+                                class="cate__image"
+                              />
+                              <h4 class="cate__title">Case Apple Watch</h4>
+                            </div>
+                          </div></xo-carousel-slide
+                        >
+                        <xo-carousel-slide
+                          ><div class="carousel-item">
+                            <div class="cate__item">
+                              <img
+                                src="./public/assets/product-page/category/AirpodCase.png"
+                                alt="Case AirPods"
+                                class="cate__image"
+                              />
+                              <h4 class="cate__title">Case AirPods</h4>
+                            </div>
+                          </div></xo-carousel-slide
+                        >
+                        <xo-carousel-slide
+                          ><div class="carousel-item">
+                            <div class="cate__item">
+                              <img
+                                src="./public/assets/product-page/category/AirpodCase.png"
+                                alt="Case AirPods"
+                                class="cate__image"
+                              />
+                              <h4 class="cate__title">Case AirPods</h4>
+                            </div>
+                          </div></xo-carousel-slide
+                        >
+                        <xo-carousel-slide
+                          ><div class="carousel-item">
+                            <div class="cate__item">
+                              <img
+                                src="./public/assets/product-page/category/AirpodCase.png"
+                                alt="Case AirPods"
+                                class="cate__image"
+                              />
+                              <h4 class="cate__title">Case AirPods</h4>
+                            </div>
+                          </div></xo-carousel-slide
+                        >
+                        <xo-carousel-slide
+                          ><div class="carousel-item">
+                            <div class="cate__item">
+                              <img
+                                src="./public/assets/product-page/category/AirpodCase.png"
+                                alt="Case AirPods"
+                                class="cate__image"
+                              />
+                              <h4 class="cate__title">Case AirPods</h4>
+                            </div>
+                          </div></xo-carousel-slide
+                        >
+                        <xo-carousel-slide
+                          ><div class="carousel-item">
+                            <div class="cate__item">
+                              <img
+                                src="./public/assets/product-page/category/AirpodCase.png"
+                                alt="Case AirPods"
+                                class="cate__image"
+                              />
+                              <h4 class="cate__title">Case AirPods</h4>
+                            </div>
+                          </div></xo-carousel-slide
+                        >
+                      </xo-carousel-list>
+                    </xo-carousel-inner>
+                    <div class="cate__controls">
+                      <xo-carousel-prev
+                        ><button class="cate__button cate__button--prev">
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="35"
+                            height="35"
+                            viewBox="0 0 35 35"
+                            fill="none"
+                          >
+                            <rect
+                              width="35"
+                              height="35"
+                              rx="17.5"
+                              fill="#F6F6F6"
+                            />
+                            <path
+                              d="M20.7726 11.1698C21.0649 11.4044 21.0758 11.7969 20.801 12.0445L14.7294 17.5003L20.8009 22.9555C21.0765 23.2031 21.0649 23.595 20.7726 23.8302C20.481 24.0655 20.0206 24.055 19.7443 23.8067L13.1993 17.9256C13.0669 17.8067 13 17.6532 13 17.5003C13 17.3474 13.0669 17.1933 13.1993 17.0744L19.7443 11.1933C20.0206 10.945 20.481 10.9345 20.7726 11.1698Z"
+                              fill="#1E1E1E"
+                            />
+                          </svg></button
+                      ></xo-carousel-prev>
+                      <xo-carousel-next
+                        ><button class="cate__button cate__button--next">
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="35"
+                            height="35"
+                            viewBox="0 0 35 35"
+                            fill="none"
+                          >
+                            <rect
+                              width="35"
+                              height="35"
+                              rx="17.5"
+                              transform="matrix(-1 0 0 1 35 0)"
+                              fill="#F6F6F6"
+                            />
+                            <path
+                              d="M14.2274 11.1698C13.9351 11.4044 13.9242 11.7969 14.199 12.0445L20.2706 17.5003L14.1991 22.9555C13.9235 23.2031 13.9351 23.595 14.2274 23.8302C14.519 24.0655 14.9794 24.055 15.2557 23.8067L21.8007 17.9256C21.9331 17.8067 22 17.6532 22 17.5003C22 17.3474 21.9331 17.1933 21.8007 17.0744L15.2557 11.1933C14.9794 10.945 14.519 10.9345 14.2274 11.1698Z"
+                              fill="#1E1E1E"
+                            />
+                          </svg></button
+                      ></xo-carousel-next>
+                    </div>
+                  </xo-carousel>
+                </div>
+              </div>
+            </xo-animate>
+          </div>
+        </xo-container>
+      </section>
+
+      <section class="page-section filter">
+        <div class="container-xxl filter-container">
+          <div class="filter-left">
+            <xo-animate xo-type="fade-down" xo-duration="1s" xo-delay="0.5s">
+              <div class="filter-left__icon">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="20"
+                  height="20"
+                  viewBox="0 0 20 20"
+                  fill="none"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M11.9319 5C12.0691 5 12.2007 5.0545 12.2977 5.15151C12.3947 5.24852 12.4492 5.3801 12.4492 5.51729V7.64438C12.4492 7.78157 12.3947 7.91315 12.2977 8.01016C12.2007 8.10717 12.0691 8.16167 11.9319 8.16167C11.7947 8.16167 11.6631 8.10717 11.5661 8.01016C11.4691 7.91315 11.4146 7.78157 11.4146 7.64438V7.07191H3.01729C2.8801 7.07191 2.74852 7.01741 2.65151 6.9204C2.5545 6.82339 2.5 6.69182 2.5 6.55462C2.5 6.41743 2.5545 6.28586 2.65151 6.18885C2.74852 6.09184 2.8801 6.03734 3.01729 6.03734H11.4146V5.51729C11.4146 5.3801 11.4691 5.24852 11.5661 5.15151C11.6631 5.0545 11.7947 5 11.9319 5ZM17.2517 6.54911C17.2523 6.61704 17.2396 6.68443 17.2142 6.74744C17.1888 6.81044 17.1512 6.86782 17.1036 6.91631C17.056 6.96479 16.9993 7.00342 16.9368 7.03001C16.8743 7.05659 16.8072 7.07059 16.7392 7.07122L13.9569 7.09881C13.8197 7.10018 13.6876 7.047 13.5896 6.95096C13.4916 6.85492 13.4358 6.72389 13.4344 6.5867C13.4331 6.4495 13.4863 6.31738 13.5823 6.2194C13.6783 6.12142 13.8094 6.06561 13.9466 6.06424L16.7296 6.03665C16.7975 6.03601 16.8649 6.04876 16.9279 6.07417C16.9909 6.09958 17.0483 6.13715 17.0968 6.18474C17.1453 6.23232 17.1839 6.28899 17.2105 6.35151C17.2371 6.41403 17.2511 6.48117 17.2517 6.54911ZM7.79703 8.41548C7.93423 8.41548 8.0658 8.46998 8.16281 8.56699C8.25982 8.664 8.31432 8.79558 8.31432 8.93277V11.0599C8.31432 11.1971 8.25982 11.3286 8.16281 11.4256C8.0658 11.5227 7.93423 11.5772 7.79703 11.5772C7.65984 11.5772 7.52827 11.5227 7.43126 11.4256C7.33425 11.3286 7.27975 11.1971 7.27975 11.0599V10.4867H3.01729C2.8801 10.4867 2.74852 10.4322 2.65151 10.3352C2.5545 10.2382 2.5 10.1066 2.5 9.96942C2.5 9.83223 2.5545 9.70065 2.65151 9.60364C2.74852 9.50663 2.8801 9.45213 3.01729 9.45213H7.27975V8.93277C7.27975 8.79558 7.33425 8.664 7.43126 8.56699C7.52827 8.46998 7.65984 8.41548 7.79703 8.41548ZM9.31993 9.96873C9.31993 9.83154 9.37443 9.69996 9.47144 9.60295C9.56845 9.50594 9.70003 9.45144 9.83722 9.45144H16.7344C16.8716 9.45144 17.0032 9.50594 17.1002 9.60295C17.1972 9.69996 17.2517 9.83154 17.2517 9.96873C17.2517 10.1059 17.1972 10.2375 17.1002 10.3345C17.0032 10.4315 16.8716 10.486 16.7344 10.486H9.83722C9.70003 10.486 9.56845 10.4315 9.47144 10.3345C9.37443 10.2375 9.31993 10.1059 9.31993 9.96873ZM10.538 12.5276C10.6752 12.5276 10.8067 12.5821 10.9038 12.6791C11.0008 12.7761 11.0553 12.9077 11.0553 13.0449V15.1727C11.0553 15.3098 11.0008 15.4414 10.9038 15.5384C10.8067 15.6354 10.6752 15.6899 10.538 15.6899C10.4008 15.6899 10.2692 15.6354 10.1722 15.5384C10.0752 15.4414 10.0207 15.3098 10.0207 15.1727V14.5995H3.26628C3.12908 14.5995 2.99751 14.545 2.9005 14.448C2.80349 14.351 2.74899 14.2194 2.74899 14.0822C2.74899 13.945 2.80349 13.8134 2.9005 13.7164C2.99751 13.6194 3.12908 13.5649 3.26628 13.5649H10.0207V13.0456C10.0207 12.9084 10.0752 12.7768 10.1722 12.6798C10.2692 12.5828 10.4008 12.5283 10.538 12.5283V12.5276ZM17.5 14.0794C17.5004 14.1474 17.4875 14.2149 17.4619 14.2778C17.4362 14.3408 17.3985 14.3981 17.3507 14.4465C17.3029 14.4948 17.246 14.5333 17.1834 14.5597C17.1207 14.5861 17.0534 14.5998 16.9855 14.6002L12.5885 14.6271C12.4513 14.6279 12.3194 14.5742 12.2218 14.4778C12.1242 14.3813 12.0689 14.2501 12.0681 14.1129C12.0673 13.9757 12.121 13.8438 12.2174 13.7462C12.3139 13.6486 12.4451 13.5933 12.5823 13.5925L16.9792 13.5649C17.0472 13.5645 17.1147 13.5774 17.1776 13.603C17.2406 13.6287 17.2979 13.6664 17.3463 13.7142C17.3946 13.762 17.4331 13.8189 17.4595 13.8815C17.4859 13.9442 17.4996 14.0115 17.5 14.0794Z"
+                    fill="#0F61FF"
+                  />
+                </svg>
+              </div>
+            </xo-animate>
+            <xo-animate xo-type="fade-down" xo-duration="1s" xo-delay="0.5s">
+              <h2 class="filter-left__text">Show filter</h2>
+            </xo-animate>
+          </div>
+          <div class="filter-right">
+            <xo-animate xo-type="fade-down" xo-duration="1s" xo-delay="0.5s">
+              <h2 class="filter__sort">SORT BY :</h2>
+            </xo-animate>
+            <xo-animate xo-type="fade-down" xo-duration="1s" xo-delay="0.5s">
+              <div class="filter__options">
+                <select class="filter__select">
+                  <option value="recent">Recently Added</option>
+                  <option value="price-up">Price Up</option>
+                  <option value="price-down">Price Down</option>
+                </select>
+              </div>
+            </xo-animate>
+          </div>
+        </div>
+      </section>
+
+      <section class="page-section all-product">
+        <div class="container-xxl pl-container">
+          <div class="pl-products">
+            <xo-grid class="seller__grid" style="--xs: 2; --sm: 2; --xl: 4"
+              ><xo-animate xo-type="fade-up" xo-delay="200">
+                <div class="product-card">
+                  <div class="product-card__img">
+                    <a href="productdetail.html"
+                      ><img
+                        src="public/assets/products/product1.png"
+                        alt="" /><img
+                        src="public/assets/products/product2.png"
+                        alt=""
+                    /></a>
+                  </div>
+                  <div class="product-info">
+                    <div class="product-info__name">
+                      <h3>Hills</h3>
+                    </div>
+                    <div class="product-info__price">$76</div>
+                    <div class="product-option">
+                      <div
+                        class="product-option__item"
+                        style="--color: #c9bfae"
+                      ></div>
+                      <div
+                        class="product-option__item"
+                        style="--color: #a393b5"
+                      ></div>
+                      <div
+                        class="product-option__item"
+                        style="--color: #ec978c"
+                      ></div>
+                      <div
+                        class="product-option__item"
+                        style="--color: #ec978c"
+                      ></div>
+                    </div>
+                  </div>
+                </div>
+              </xo-animate>
+              <xo-animate xo-type="fade-up" xo-delay="200">
+                <div class="product-card">
+                  <div class="product-card__img">
+                    <a href="productdetail.html"
+                      ><img
+                        src="public/assets/products/product1.png"
+                        alt="" /><img
+                        src="public/assets/products/product2.png"
+                        alt=""
+                    /></a>
+                  </div>
+                  <div class="product-info">
+                    <div class="product-info__name">
+                      <h3>Hills</h3>
+                    </div>
+                    <div class="product-info__price">$76</div>
+                    <div class="product-option">
+                      <div
+                        class="product-option__item"
+                        style="--color: #c9bfae"
+                      ></div>
+                      <div
+                        class="product-option__item"
+                        style="--color: #a393b5"
+                      ></div>
+                      <div
+                        class="product-option__item"
+                        style="--color: #ec978c"
+                      ></div>
+                      <div
+                        class="product-option__item"
+                        style="--color: #ec978c"
+                      ></div>
+                    </div>
+                  </div>
+                </div>
+              </xo-animate>
+
+              <xo-animate xo-type="fade-up" xo-delay="200">
+                <div class="product-card">
+                  <div class="product-card__img">
+                    <a href="productdetail.html"
+                      ><img
+                        src="public/assets/products/product1.png"
+                        alt="" /><img
+                        src="public/assets/products/product2.png"
+                        alt=""
+                    /></a>
+                  </div>
+                  <div class="product-info">
+                    <div class="product-info__name">
+                      <h3>Hills</h3>
+                    </div>
+                    <div class="product-info__price">$76</div>
+                    <div class="product-option">
+                      <div
+                        class="product-option__item"
+                        style="--color: #c9bfae"
+                      ></div>
+                      <div
+                        class="product-option__item"
+                        style="--color: #a393b5"
+                      ></div>
+                      <div
+                        class="product-option__item"
+                        style="--color: #ec978c"
+                      ></div>
+                      <div
+                        class="product-option__item"
+                        style="--color: #ec978c"
+                      ></div>
+                    </div>
+                  </div>
+                </div>
+              </xo-animate>
+              <xo-animate xo-type="fade-up" xo-delay="200">
+                <div class="product-card">
+                  <div class="product-card__img">
+                    <a href="productdetail.html"
+                      ><img
+                        src="public/assets/products/product1.png"
+                        alt="" /><img
+                        src="public/assets/products/product2.png"
+                        alt=""
+                    /></a>
+                  </div>
+                  <div class="product-info">
+                    <div class="product-info__name">
+                      <h3>Hills</h3>
+                    </div>
+                    <div class="product-info__price">$76</div>
+                    <div class="product-option">
+                      <div
+                        class="product-option__item"
+                        style="--color: #c9bfae"
+                      ></div>
+                      <div
+                        class="product-option__item"
+                        style="--color: #a393b5"
+                      ></div>
+                      <div
+                        class="product-option__item"
+                        style="--color: #ec978c"
+                      ></div>
+                      <div
+                        class="product-option__item"
+                        style="--color: #ec978c"
+                      ></div>
+                    </div>
+                  </div>
+                </div>
+              </xo-animate>
+              <xo-animate xo-type="fade-up" xo-delay="200">
+                <div class="product-card">
+                  <div class="product-card__img">
+                    <a href="productdetail.html"
+                      ><img
+                        src="public/assets/products/product1.png"
+                        alt="" /><img
+                        src="public/assets/products/product2.png"
+                        alt=""
+                    /></a>
+                  </div>
+                  <div class="product-info">
+                    <div class="product-info__name">
+                      <h3>Hills</h3>
+                    </div>
+                    <div class="product-info__price">$76</div>
+                    <div class="product-option">
+                      <div
+                        class="product-option__item"
+                        style="--color: #c9bfae"
+                      ></div>
+                      <div
+                        class="product-option__item"
+                        style="--color: #a393b5"
+                      ></div>
+                      <div
+                        class="product-option__item"
+                        style="--color: #ec978c"
+                      ></div>
+                      <div
+                        class="product-option__item"
+                        style="--color: #ec978c"
+                      ></div>
+                    </div>
+                  </div>
+                </div>
+              </xo-animate>
+              <xo-animate xo-type="fade-up" xo-delay="200">
+                <div class="product-card">
+                  <div class="product-card__img">
+                    <a href="productdetail.html"
+                      ><img
+                        src="public/assets/products/product1.png"
+                        alt="" /><img
+                        src="public/assets/products/product2.png"
+                        alt=""
+                    /></a>
+                  </div>
+                  <div class="product-info">
+                    <div class="product-info__name">
+                      <h3>Hills</h3>
+                    </div>
+                    <div class="product-info__price">$76</div>
+                    <div class="product-option">
+                      <div
+                        class="product-option__item"
+                        style="--color: #c9bfae"
+                      ></div>
+                      <div
+                        class="product-option__item"
+                        style="--color: #a393b5"
+                      ></div>
+                      <div
+                        class="product-option__item"
+                        style="--color: #ec978c"
+                      ></div>
+                      <div
+                        class="product-option__item"
+                        style="--color: #ec978c"
+                      ></div>
+                    </div>
+                  </div>
+                </div>
+              </xo-animate>
+              <xo-animate xo-type="fade-up" xo-delay="200">
+                <div class="product-card">
+                  <div class="product-card__img">
+                    <a href="productdetail.html"
+                      ><img
+                        src="public/assets/products/product1.png"
+                        alt="" /><img
+                        src="public/assets/products/product2.png"
+                        alt=""
+                    /></a>
+                  </div>
+                  <div class="product-info">
+                    <div class="product-info__name">
+                      <h3>Hills</h3>
+                    </div>
+                    <div class="product-info__price">$76</div>
+                    <div class="product-option">
+                      <div
+                        class="product-option__item"
+                        style="--color: #c9bfae"
+                      ></div>
+                      <div
+                        class="product-option__item"
+                        style="--color: #a393b5"
+                      ></div>
+                      <div
+                        class="product-option__item"
+                        style="--color: #ec978c"
+                      ></div>
+                      <div
+                        class="product-option__item"
+                        style="--color: #ec978c"
+                      ></div>
+                    </div>
+                  </div>
+                </div>
+              </xo-animate>
+              <xo-animate xo-type="fade-up" xo-delay="200">
+                <div class="product-card">
+                  <div class="product-card__img">
+                    <a href="productdetail.html"
+                      ><img
+                        src="public/assets/products/product1.png"
+                        alt="" /><img
+                        src="public/assets/products/product2.png"
+                        alt=""
+                    /></a>
+                  </div>
+                  <div class="product-info">
+                    <div class="product-info__name">
+                      <h3>Hills</h3>
+                    </div>
+                    <div class="product-info__price">$76</div>
+                    <div class="product-option">
+                      <div
+                        class="product-option__item"
+                        style="--color: #c9bfae"
+                      ></div>
+                      <div
+                        class="product-option__item"
+                        style="--color: #a393b5"
+                      ></div>
+                      <div
+                        class="product-option__item"
+                        style="--color: #ec978c"
+                      ></div>
+                      <div
+                        class="product-option__item"
+                        style="--color: #ec978c"
+                      ></div>
+                    </div>
+                  </div>
+                </div>
+              </xo-animate>
+              <xo-animate xo-type="fade-up" xo-delay="200">
+                <div class="product-card">
+                  <div class="product-card__img">
+                    <a href="productdetail.html"
+                      ><img
+                        src="public/assets/products/product1.png"
+                        alt="" /><img
+                        src="public/assets/products/product2.png"
+                        alt=""
+                    /></a>
+                  </div>
+                  <div class="product-info">
+                    <div class="product-info__name">
+                      <h3>Hills</h3>
+                    </div>
+                    <div class="product-info__price">$76</div>
+                    <div class="product-option">
+                      <div
+                        class="product-option__item"
+                        style="--color: #c9bfae"
+                      ></div>
+                      <div
+                        class="product-option__item"
+                        style="--color: #a393b5"
+                      ></div>
+                      <div
+                        class="product-option__item"
+                        style="--color: #ec978c"
+                      ></div>
+                      <div
+                        class="product-option__item"
+                        style="--color: #ec978c"
+                      ></div>
+                    </div>
+                  </div>
+                </div>
+              </xo-animate>
+              <xo-animate xo-type="fade-up" xo-delay="200">
+                <div class="product-card">
+                  <div class="product-card__img">
+                    <a href="productdetail.html"
+                      ><img
+                        src="public/assets/products/product1.png"
+                        alt="" /><img
+                        src="public/assets/products/product2.png"
+                        alt=""
+                    /></a>
+                  </div>
+                  <div class="product-info">
+                    <div class="product-info__name">
+                      <h3>Hills</h3>
+                    </div>
+                    <div class="product-info__price">$76</div>
+                    <div class="product-option">
+                      <div
+                        class="product-option__item"
+                        style="--color: #c9bfae"
+                      ></div>
+                      <div
+                        class="product-option__item"
+                        style="--color: #a393b5"
+                      ></div>
+                      <div
+                        class="product-option__item"
+                        style="--color: #ec978c"
+                      ></div>
+                      <div
+                        class="product-option__item"
+                        style="--color: #ec978c"
+                      ></div>
+                    </div>
+                  </div>
+                </div>
+              </xo-animate>
+              <xo-animate xo-type="fade-up" xo-delay="200">
+                <div class="product-card">
+                  <div class="product-card__img">
+                    <a href="productdetail.html"
+                      ><img
+                        src="public/assets/products/product1.png"
+                        alt="" /><img
+                        src="public/assets/products/product2.png"
+                        alt=""
+                    /></a>
+                  </div>
+                  <div class="product-info">
+                    <div class="product-info__name">
+                      <h3>Hills</h3>
+                    </div>
+                    <div class="product-info__price">$76</div>
+                    <div class="product-option">
+                      <div
+                        class="product-option__item"
+                        style="--color: #c9bfae"
+                      ></div>
+                      <div
+                        class="product-option__item"
+                        style="--color: #a393b5"
+                      ></div>
+                      <div
+                        class="product-option__item"
+                        style="--color: #ec978c"
+                      ></div>
+                      <div
+                        class="product-option__item"
+                        style="--color: #ec978c"
+                      ></div>
+                    </div>
+                  </div>
+                </div>
+              </xo-animate>
+              <xo-animate xo-type="fade-up" xo-delay="200">
+                <div class="product-card">
+                  <div class="product-card__img">
+                    <a href="productdetail.html"
+                      ><img
+                        src="public/assets/products/product1.png"
+                        alt="" /><img
+                        src="public/assets/products/product2.png"
+                        alt=""
+                    /></a>
+                  </div>
+                  <div class="product-info">
+                    <div class="product-info__name">
+                      <h3>Hills</h3>
+                    </div>
+                    <div class="product-info__price">$76</div>
+                    <div class="product-option">
+                      <div
+                        class="product-option__item"
+                        style="--color: #c9bfae"
+                      ></div>
+                      <div
+                        class="product-option__item"
+                        style="--color: #a393b5"
+                      ></div>
+                      <div
+                        class="product-option__item"
+                        style="--color: #ec978c"
+                      ></div>
+                      <div
+                        class="product-option__item"
+                        style="--color: #ec978c"
+                      ></div>
+                    </div>
+                  </div>
+                </div>
+              </xo-animate>
+            </xo-grid>
+            <!-- <div class="row">
+              <div class="col" style="--col-lg: 3; --col-md: 6">
+                <div class="product-card">
+                  <div class="product-card__img">
+                    <a href="productdetail.html"
+                      ><img
+                        src="public/assets/products/product1.png"
+                        alt="" /><img
+                        src="public/assets/products/product2.png"
+                        alt=""
+                    /></a>
+                  </div>
+                  <div class="product-info">
+                    <div class="product-card__name">
+                      <h3>Hills</h3>
+                    </div>
+                    <div class="product-card__price"><h3>$76</h3></div>
+                    <div class="product-option">
+                      <div
+                        class="product-option__item"
+                        style="--color: #c9bfae"
+                      ></div>
+                      <div
+                        class="product-option__item"
+                        style="--color: #a393b5"
+                      ></div>
+                      <div
+                        class="product-option__item"
+                        style="--color: #ec978c"
+                      ></div>
+                      <div
+                        class="product-option__item"
+                        style="--color: #ec978c"
+                      ></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col" style="--col-lg: 3; --col-md: 6">
+                <div class="product-card">
+                  <div class="product-card__img">
+                    <a href="productdetail.html"
+                      ><img
+                        src="public/assets/products/product1.png"
+                        alt="" /><img
+                        src="public/assets/products/product2.png"
+                        alt=""
+                    /></a>
+                  </div>
+                  <div class="product-info">
+                    <div class="product-card__name">
+                      <h3>Hills</h3>
+                    </div>
+                    <div class="product-card__price"><h3>$76</h3></div>
+                    <div class="product-option">
+                      <div
+                        class="product-option__item"
+                        style="--color: #c9bfae"
+                      ></div>
+                      <div
+                        class="product-option__item"
+                        style="--color: #a393b5"
+                      ></div>
+                      <div
+                        class="product-option__item"
+                        style="--color: #ec978c"
+                      ></div>
+                      <div
+                        class="product-option__item"
+                        style="--color: #ec978c"
+                      ></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col" style="--col-lg: 3; --col-md: 6">
+                <div class="product-card">
+                  <div class="product-card__img">
+                    <a href="productdetail.html"
+                      ><img
+                        src="public/assets/products/product1.png"
+                        alt="" /><img
+                        src="public/assets/products/product2.png"
+                        alt=""
+                    /></a>
+                  </div>
+                  <div class="product-info">
+                    <div class="product-card__name">
+                      <h3>Hills</h3>
+                    </div>
+                    <div class="product-card__price"><h3>$76</h3></div>
+                    <div class="product-option">
+                      <div
+                        class="product-option__item"
+                        style="--color: #c9bfae"
+                      ></div>
+                      <div
+                        class="product-option__item"
+                        style="--color: #a393b5"
+                      ></div>
+                      <div
+                        class="product-option__item"
+                        style="--color: #ec978c"
+                      ></div>
+                      <div
+                        class="product-option__item"
+                        style="--color: #ec978c"
+                      ></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col" style="--col-lg: 3; --col-md: 6">
+                <div class="product-card">
+                  <div class="product-card__img">
+                    <a href="productdetail.html"
+                      ><img
+                        src="public/assets/products/product1.png"
+                        alt="" /><img
+                        src="public/assets/products/product2.png"
+                        alt=""
+                    /></a>
+                  </div>
+                  <div class="product-info">
+                    <div class="product-card__name">
+                      <h3>Hills</h3>
+                    </div>
+                    <div class="product-card__price"><h3>$76</h3></div>
+                    <div class="product-option">
+                      <div
+                        class="product-option__item"
+                        style="--color: #c9bfae"
+                      ></div>
+                      <div
+                        class="product-option__item"
+                        style="--color: #a393b5"
+                      ></div>
+                      <div
+                        class="product-option__item"
+                        style="--color: #ec978c"
+                      ></div>
+                      <div
+                        class="product-option__item"
+                        style="--color: #ec978c"
+                      ></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col" style="--col-lg: 3; --col-md: 6">
+                <div class="product-card">
+                  <div class="product-card__img">
+                    <a href="productdetail.html"
+                      ><img
+                        src="public/assets/products/product1.png"
+                        alt="" /><img
+                        src="public/assets/products/product2.png"
+                        alt=""
+                    /></a>
+                  </div>
+                  <div class="product-info">
+                    <div class="product-card__name">
+                      <h3>Hills</h3>
+                    </div>
+                    <div class="product-card__price"><h3>$76</h3></div>
+                    <div class="product-option">
+                      <div
+                        class="product-option__item"
+                        style="--color: #c9bfae"
+                      ></div>
+                      <div
+                        class="product-option__item"
+                        style="--color: #a393b5"
+                      ></div>
+                      <div
+                        class="product-option__item"
+                        style="--color: #ec978c"
+                      ></div>
+                      <div
+                        class="product-option__item"
+                        style="--color: #ec978c"
+                      ></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col" style="--col-lg: 3; --col-md: 6">
+                <div class="product-card">
+                  <div class="product-card__img">
+                    <a href="productdetail.html"
+                      ><img
+                        src="public/assets/products/product1.png"
+                        alt="" /><img
+                        src="public/assets/products/product2.png"
+                        alt=""
+                    /></a>
+                  </div>
+                  <div class="product-info">
+                    <div class="product-card__name">
+                      <h3>Hills</h3>
+                    </div>
+                    <div class="product-card__price"><h3>$76</h3></div>
+                    <div class="product-option">
+                      <div
+                        class="product-option__item"
+                        style="--color: #c9bfae"
+                      ></div>
+                      <div
+                        class="product-option__item"
+                        style="--color: #a393b5"
+                      ></div>
+                      <div
+                        class="product-option__item"
+                        style="--color: #ec978c"
+                      ></div>
+                      <div
+                        class="product-option__item"
+                        style="--color: #ec978c"
+                      ></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col" style="--col-lg: 3; --col-md: 6">
+                <div class="product-card">
+                  <div class="product-card__img">
+                    <a href="productdetail.html"
+                      ><img
+                        src="public/assets/products/product1.png"
+                        alt="" /><img
+                        src="public/assets/products/product2.png"
+                        alt=""
+                    /></a>
+                  </div>
+                  <div class="product-info">
+                    <div class="product-card__name">
+                      <h3>Hills</h3>
+                    </div>
+                    <div class="product-card__price"><h3>$76</h3></div>
+                    <div class="product-option">
+                      <div
+                        class="product-option__item"
+                        style="--color: #c9bfae"
+                      ></div>
+                      <div
+                        class="product-option__item"
+                        style="--color: #a393b5"
+                      ></div>
+                      <div
+                        class="product-option__item"
+                        style="--color: #ec978c"
+                      ></div>
+                      <div
+                        class="product-option__item"
+                        style="--color: #ec978c"
+                      ></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col" style="--col-lg: 3; --col-md: 6">
+                <div class="product-card">
+                  <div class="product-card__img">
+                    <a href="productdetail.html"
+                      ><img
+                        src="public/assets/products/product1.png"
+                        alt="" /><img
+                        src="public/assets/products/product2.png"
+                        alt=""
+                    /></a>
+                  </div>
+                  <div class="product-info">
+                    <div class="product-card__name">
+                      <h3>Hills</h3>
+                    </div>
+                    <div class="product-card__price"><h3>$76</h3></div>
+                    <div class="product-option">
+                      <div
+                        class="product-option__item"
+                        style="--color: #c9bfae"
+                      ></div>
+                      <div
+                        class="product-option__item"
+                        style="--color: #a393b5"
+                      ></div>
+                      <div
+                        class="product-option__item"
+                        style="--color: #ec978c"
+                      ></div>
+                      <div
+                        class="product-option__item"
+                        style="--color: #ec978c"
+                      ></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col" style="--col-lg: 3; --col-md: 6">
+                <div class="product-card">
+                  <div class="product-card__img">
+                    <a href="productdetail.html"
+                      ><img
+                        src="public/assets/products/product1.png"
+                        alt="" /><img
+                        src="public/assets/products/product2.png"
+                        alt=""
+                    /></a>
+                  </div>
+                  <div class="product-info">
+                    <div class="product-card__name">
+                      <h3>Hills</h3>
+                    </div>
+                    <div class="product-card__price"><h3>$76</h3></div>
+                    <div class="product-option">
+                      <div
+                        class="product-option__item"
+                        style="--color: #c9bfae"
+                      ></div>
+                      <div
+                        class="product-option__item"
+                        style="--color: #a393b5"
+                      ></div>
+                      <div
+                        class="product-option__item"
+                        style="--color: #ec978c"
+                      ></div>
+                      <div
+                        class="product-option__item"
+                        style="--color: #ec978c"
+                      ></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col" style="--col-lg: 3; --col-md: 6">
+                <div class="product-card">
+                  <div class="product-card__img">
+                    <a href="productdetail.html"
+                      ><img
+                        src="public/assets/products/product1.png"
+                        alt="" /><img
+                        src="public/assets/products/product2.png"
+                        alt=""
+                    /></a>
+                  </div>
+                  <div class="product-info">
+                    <div class="product-card__name">
+                      <h3>Hills</h3>
+                    </div>
+                    <div class="product-card__price"><h3>$76</h3></div>
+                    <div class="product-option">
+                      <div
+                        class="product-option__item"
+                        style="--color: #c9bfae"
+                      ></div>
+                      <div
+                        class="product-option__item"
+                        style="--color: #a393b5"
+                      ></div>
+                      <div
+                        class="product-option__item"
+                        style="--color: #ec978c"
+                      ></div>
+                      <div
+                        class="product-option__item"
+                        style="--color: #ec978c"
+                      ></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col" style="--col-lg: 3; --col-md: 6">
+                <div class="product-card">
+                  <div class="product-card__img">
+                    <a href="productdetail.html"
+                      ><img
+                        src="public/assets/products/product1.png"
+                        alt="" /><img
+                        src="public/assets/products/product2.png"
+                        alt=""
+                    /></a>
+                  </div>
+                  <div class="product-info">
+                    <div class="product-card__name">
+                      <h3>Hills</h3>
+                    </div>
+                    <div class="product-card__price"><h3>$76</h3></div>
+                    <div class="product-option">
+                      <div
+                        class="product-option__item"
+                        style="--color: #c9bfae"
+                      ></div>
+                      <div
+                        class="product-option__item"
+                        style="--color: #a393b5"
+                      ></div>
+                      <div
+                        class="product-option__item"
+                        style="--color: #ec978c"
+                      ></div>
+                      <div
+                        class="product-option__item"
+                        style="--color: #ec978c"
+                      ></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col" style="--col-lg: 3; --col-md: 6">
+                <div class="product-card">
+                  <div class="product-card__img">
+                    <a href="productdetail.html"
+                      ><img
+                        src="public/assets/products/product1.png"
+                        alt="" /><img
+                        src="public/assets/products/product2.png"
+                        alt=""
+                    /></a>
+                  </div>
+                  <div class="product-info">
+                    <div class="product-card__name">
+                      <h3>Hills</h3>
+                    </div>
+                    <div class="product-card__price"><h3>$76</h3></div>
+                    <div class="product-option">
+                      <div
+                        class="product-option__item"
+                        style="--color: #c9bfae"
+                      ></div>
+                      <div
+                        class="product-option__item"
+                        style="--color: #a393b5"
+                      ></div>
+                      <div
+                        class="product-option__item"
+                        style="--color: #ec978c"
+                      ></div>
+                      <div
+                        class="product-option__item"
+                        style="--color: #ec978c"
+                      ></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div> -->
+          </div>
+          <div class="pl-pagination">
+            <div class="pagination">
+              <div class="divider" data-design-token-mode="light-scheme"></div>
+              <div class="div">
+                <div class="previous-button">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                  >
+                    <path
+                      d="M14.7726 6.16977C15.0649 6.4044 15.0758 6.79688 14.801 7.04451L8.72938 12.5003L14.8009 17.9555C15.0765 18.2031 15.0649 18.595 14.7726 18.8302C14.481 19.0655 14.0206 19.055 13.7443 18.8067L7.19927 12.9256C7.0669 12.8067 7 12.6532 7 12.5003C7 12.3474 7.0669 12.1933 7.19927 12.0744L13.7443 6.19331C14.0206 5.94504 14.481 5.93453 14.7726 6.16977Z"
+                      fill="#1E1E1E"
+                    />
+                  </svg>
+                </div>
+                <div class="div">
+                  <div class="item">
+                    <div class="master">
+                      <div class="background-2"></div>
+                      <div class="div-2"></div>
+                      <div class="label">01</div>
+                    </div>
+                  </div>
+                  <div class="item">
+                    <div class="master">
+                      <div class="div-2"></div>
+                      <div class="div-2"></div>
+                      <div class="text-wrapper">02</div>
+                    </div>
+                  </div>
+                  <div class="item">
+                    <div class="master">
+                      <div class="div-2"></div>
+                      <div class="div-2"></div>
+                      <div class="text-wrapper">03</div>
+                    </div>
+                  </div>
+                  <div class="item">
+                    <div class="master">
+                      <div class="div-2"></div>
+                      <div class="div-2"></div>
+                      <div class="text-wrapper">04</div>
+                    </div>
+                  </div>
+                  <div class="item">
+                    <div class="master">
+                      <div class="div-2"></div>
+                      <div class="div-2"></div>
+                      <div class="text-wrapper">05</div>
+                    </div>
+                  </div>
+                  <div class="item">
+                    <div class="master">
+                      <div class="div-2"></div>
+                      <div class="div-2"></div>
+                      <div class="text-wrapper">...</div>
+                    </div>
+                  </div>
+                  <div class="item">
+                    <div class="master">
+                      <div class="div-2"></div>
+                      <div class="div-2"></div>
+                      <div class="text-wrapper">30</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="previous-button-2">
+                  <!-- <div class="background"></div>
+                  <img class="img" src="img/arrow-right.svg" /> -->
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                  >
+                    <path
+                      d="M8.19904 17.9555C7.92417 18.2031 7.93505 18.5956 8.22741 18.8302C8.51905 19.0655 8.97935 19.055 9.25572 18.8067L15.8007 12.9256C15.9331 12.8067 16 12.6526 16 12.4997C16 12.3468 15.9331 12.1933 15.8007 12.0744L9.25572 6.19331C8.97938 5.94504 8.51905 5.93453 8.22744 6.16977C7.93508 6.40501 7.92345 6.79688 8.19907 7.04451L14.2706 12.4997L8.19904 17.9555Z"
+                      fill="#1E1E1E"
+                    />
+                  </svg>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="page-section frame-sect">
+        <xo-container>
+          <xo-grid class="seller__grid">
+            <xo-animate
+              xo-type="fade-up"
+              xo-delay="200"
+              style="--lg: 4; --lx: 4"
+              xo-cascade
+            >
+              <div class="frame">
+                <div class="frame-wrapper">
+                  <div class="frame__icon">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="49"
+                      height="49"
+                      viewBox="0 0 49 49"
+                      fill="none"
+                    >
+                      <path
+                        d="M15.7593 6.98438C15.5478 6.98438 15.345 7.06838 15.1955 7.21792C15.0459 7.36745 14.9619 7.57026 14.9619 7.78174V8.60063C14.0657 8.70428 13.3784 9.42589 13.3672 10.2615V10.9712C13.3672 11.8507 14.2004 12.5659 15.225 12.5659C15.4029 12.5858 16.4299 12.5069 16.5566 12.6353V13.2939C16.4291 13.4239 15.4052 13.3417 15.225 13.3633C15.1335 13.3668 15.0439 13.3368 14.9731 13.2787C14.9506 13.0686 14.8456 12.8759 14.6811 12.7432C14.5166 12.6104 14.3062 12.5484 14.096 12.5707C12.573 12.9558 13.7691 14.9197 14.9619 14.9357V15.7553C14.9619 15.9668 15.0459 16.1696 15.1955 16.3192C15.345 16.4687 15.5478 16.5527 15.7593 16.5527C15.9707 16.5527 16.1736 16.4687 16.3231 16.3192C16.4726 16.1696 16.5566 15.9668 16.5566 15.7553V14.9349C17.4561 14.824 18.1514 14.1654 18.1514 13.3633V12.5659C18.1514 11.6864 17.3181 10.9712 16.2935 10.9712C16.1133 10.9552 15.0911 11.027 14.9619 10.9018C14.9611 10.8739 14.9579 10.2831 14.9699 10.2743C15.0416 10.0909 16.1284 10.2025 16.2935 10.1738C16.4434 10.1738 16.5383 10.2456 16.5558 10.2791C16.614 10.7136 17.0159 11.0214 17.4457 10.9648C18.9551 10.5566 17.7351 8.62136 16.5566 8.60142V7.78174C16.5566 7.57026 16.4726 7.36745 16.3231 7.21792C16.1736 7.06838 15.9707 6.98438 15.7593 6.98438ZM34.8959 7.78174H23.7329C22.6939 7.78572 22.6875 9.37167 23.7329 9.37646H34.8959C35.9349 9.37247 35.9413 7.78652 34.8959 7.78174ZM34.8959 10.9712H23.7329C22.6939 10.9752 22.6875 12.5611 23.7329 12.5659H34.8959C35.9349 12.5619 35.9413 10.976 34.8959 10.9712ZM34.8959 14.1606H23.7329C22.6939 14.1646 22.6875 15.7506 23.7329 15.7553H34.8959C35.9349 15.7514 35.9413 14.1654 34.8959 14.1606ZM35.6933 19.7422C35.6933 19.5307 35.6093 19.3279 35.4598 19.1783C35.3102 19.0288 35.1074 18.9448 34.8959 18.9448H14.1645C13.9531 18.9448 13.7503 19.0288 13.6007 19.1783C13.4512 19.3279 13.3672 19.5307 13.3672 19.7422C13.3672 19.9536 13.4512 20.1564 13.6007 20.306C13.7503 20.4555 13.9531 20.5395 14.1645 20.5395H34.8959C35.1074 20.5395 35.3102 20.4555 35.4598 20.306C35.6093 20.1564 35.6933 19.9536 35.6933 19.7422ZM29.5297 23.729C29.5297 23.5175 29.4457 23.3147 29.2962 23.1651C29.1466 23.0156 28.9438 22.9316 28.7323 22.9316H14.1645C13.9531 22.9316 13.7503 23.0156 13.6007 23.1651C13.4512 23.3147 13.3672 23.5175 13.3672 23.729C13.3672 23.9404 13.4512 24.1432 13.6007 24.2928C13.7503 24.4423 13.9531 24.5263 14.1645 24.5263H28.7323C28.9438 24.5263 29.1466 24.4423 29.2962 24.2928C29.4457 24.1432 29.5297 23.9404 29.5297 23.729ZM14.1645 26.9184C13.1248 26.9224 13.12 28.5083 14.1645 28.5131H24.3548C24.5663 28.5131 24.7691 28.4291 24.9186 28.2796C25.0682 28.1301 25.1522 27.9272 25.1522 27.7158C25.1522 27.5043 25.0682 27.3015 24.9186 27.1519C24.7691 27.0024 24.5663 26.9184 24.3548 26.9184H14.1645Z"
+                        fill="black"
+                      />
+                      <path
+                        d="M22.7746 38.0839H6.98681C5.66797 38.0839 4.59472 37.0107 4.59472 35.6918V34.0971H22.2403C22.4518 34.0971 22.6546 34.0131 22.8041 33.8636C22.9537 33.714 23.0377 33.5112 23.0377 33.2997C23.0377 33.0883 22.9537 32.8854 22.8041 32.7359C22.6546 32.5864 22.4518 32.5024 22.2403 32.5024H10.9736V4.59472H38.0839V22.7746C38.0839 22.986 38.1679 23.1888 38.3174 23.3384C38.467 23.4879 38.6698 23.5719 38.8813 23.5719C39.0927 23.5719 39.2955 23.4879 39.4451 23.3384C39.5946 23.1888 39.6786 22.986 39.6786 22.7746V3.79736C39.6786 3.58589 39.5946 3.38308 39.4451 3.23354C39.2955 3.08401 39.0927 3 38.8813 3H10.1763C9.96478 3 9.76197 3.08401 9.61243 3.23354C9.4629 3.38308 9.37889 3.58589 9.37889 3.79736V32.5024H3.79736C3.58589 32.5024 3.38308 32.5864 3.23354 32.7359C3.08401 32.8854 3 33.0883 3 33.2997V35.6918C3 37.8901 4.78848 39.6786 6.98681 39.6786H22.7746C23.8095 39.6738 23.8231 38.0895 22.7746 38.0839Z"
+                        fill="black"
+                      />
+                      <path
+                        d="M34.8935 23.7344C28.7379 23.7344 23.7305 28.7418 23.7305 34.8974C24.3436 49.7068 45.4458 49.7028 46.0566 34.8974C46.0566 28.7418 41.0492 23.7344 34.8935 23.7344ZM34.8935 44.4658C29.6174 44.4658 25.3252 40.1736 25.3252 34.8974C25.8514 22.2034 43.938 22.2074 44.4619 34.8974C44.4619 40.1736 40.1697 44.4658 34.8935 44.4658Z"
+                        fill="black"
+                      />
+                      <path
+                        d="M39.9054 30.379L33.2442 37.792L29.7916 35.0316C28.9759 34.3825 27.9816 35.6216 28.7949 36.2762L32.836 39.508C32.9949 39.635 33.1965 39.6964 33.3993 39.6796C33.602 39.6629 33.7908 39.5692 33.9267 39.4179L41.091 31.4442C41.7816 30.6692 40.6086 29.6039 39.9054 30.379Z"
+                        fill="black"
+                      />
+                    </svg>
+                  </div>
+                  <div class="frame__content">
+                    <h3 class="frame__title">Buy Now Pay Later</h3>
+                    <p class="frame__description">
+                      Pay in installments with 0% interest and no extra charges
+                      through Shop Pay
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </xo-animate>
+            <xo-animate
+              xo-type="fade-up"
+              xo-delay="200"
+              style="--lg: 4; --lx: 4"
+              xo-cascade
+            >
+              <div class="frame">
+                <div class="frame-wrapper">
+                  <div class="frame__icon">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="49"
+                      height="49"
+                      viewBox="0 0 49 49"
+                      fill="none"
+                    >
+                      <path
+                        d="M46.2797 13.0964L24.8422 2.37762C24.736 2.32452 24.6188 2.29688 24.5 2.29688C24.3812 2.29687 24.264 2.32452 24.1578 2.37762L2.72028 13.0964C2.59301 13.16 2.48597 13.2578 2.41119 13.3788C2.3364 13.4998 2.29682 13.6393 2.29689 13.7816V35.2191C2.29611 35.362 2.33535 35.5023 2.41018 35.6241C2.485 35.7459 2.59242 35.8443 2.72028 35.9082L24.1578 46.6269C24.264 46.68 24.3812 46.7077 24.5 46.7077C24.6188 46.7077 24.736 46.68 24.8422 46.6269L46.2797 35.9082C46.4076 35.8443 46.515 35.7459 46.5899 35.6241C46.6647 35.5023 46.7039 35.362 46.7031 35.2191V13.7816C46.7032 13.6393 46.6636 13.4998 46.5888 13.3788C46.5141 13.2578 46.407 13.16 46.2797 13.0964ZM24.5 23.6444L18.5151 20.6516L37.645 10.4894L44.2294 13.7816L24.5 23.6444ZM12.3901 17.5891L31.52 7.42692L35.9607 9.64723L16.833 19.8109L12.3901 17.5891ZM11.4844 18.8485L16.0781 21.1454V27.2459L14.3226 25.4903C14.179 25.3467 13.9843 25.266 13.7813 25.266H11.4844V18.8485ZM24.5 3.91883L29.838 6.58473L10.708 16.7484L4.77445 13.7816L24.5 3.91883ZM3.82814 15.0204L9.95314 18.0829V26.0316C9.95314 26.2347 10.0338 26.4294 10.1774 26.573C10.321 26.7166 10.5157 26.7972 10.7188 26.7972H13.4643L16.3025 29.6354C16.4095 29.7424 16.5459 29.8153 16.6944 29.8449C16.8429 29.8744 16.9969 29.8592 17.1367 29.8013C17.2766 29.7434 17.3962 29.6453 17.4803 29.5194C17.5644 29.3935 17.6094 29.2455 17.6094 29.0941V21.911L23.7344 24.9735V44.6991L3.82814 34.7459V15.0204ZM25.2656 44.6991V24.9735L45.1719 15.0204V34.7459L25.2656 44.6991Z"
+                        fill="black"
+                      />
+                    </svg>
+                  </div>
+                  <div class="frame__content">
+                    <h3 class="frame__title">Easy Returns</h3>
+                    <p class="frame__description">
+                      Your exchange ships out as soon as you email us.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </xo-animate>
+            <xo-animate
+              xo-type="fade-up"
+              xo-delay="200"
+              style="--lg: 4; --lx: 4"
+              xo-cascade
+            >
+              <div class="frame">
+                <div class="frame-wrapper">
+                  <div class="frame__icon">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="50"
+                      height="49"
+                      viewBox="0 0 50 49"
+                      fill="none"
+                    >
+                      <path
+                        d="M24.855 2C30.7521 2 36.0953 4.39461 39.9642 8.25458C42.7922 11.0701 44.7724 14.6235 45.6791 18.5096C46.5859 22.3958 46.3828 26.4586 45.093 30.2349C44.7438 29.8287 44.3645 29.4494 43.9582 29.1002C44.517 27.2394 44.8 25.3067 44.7981 23.3638C44.7981 17.8598 42.5643 12.883 38.9546 9.27318C37.1055 7.41797 34.9079 5.94663 32.4881 4.94377C30.0684 3.94091 27.4743 3.42633 24.855 3.42962C19.3509 3.42962 14.3651 5.6634 10.7643 9.27318C8.91014 11.1212 7.43941 13.3173 6.43659 15.7355C5.43377 18.1536 4.91861 20.746 4.92072 23.3638C4.92072 28.8768 7.1545 33.8537 10.7643 37.4635C13.0149 39.7228 15.7763 41.4073 18.8151 42.3746C21.8539 43.3419 25.0809 43.5636 28.2235 43.0211C28.5183 43.4678 28.8489 43.8878 29.2064 44.2899C27.7751 44.5881 26.3169 44.7378 24.855 44.7366C18.9578 44.7366 13.6146 42.342 9.75462 38.4821C7.76713 36.4987 6.19137 34.1419 5.11797 31.5474C4.04458 28.9528 3.49472 26.1717 3.50004 23.3638C3.50004 17.4667 5.88571 12.1235 9.75462 8.26351C13.6146 4.39461 18.9578 2 24.855 2Z"
+                        fill="black"
+                      />
+                      <path
+                        d="M9.74616 10.3726C11.9085 11.4359 14.2137 12.2758 16.6441 12.8566C24.4353 14.707 32.6295 13.7515 39.786 10.1582C39.4598 9.78835 39.12 9.43071 38.7674 9.08594C34.4062 11.1976 29.6292 12.3109 24.7838 12.3449C19.9384 12.3789 15.1463 11.3327 10.7558 9.28251C10.3984 9.63098 10.0678 9.99732 9.74616 10.3726ZM5.08203 20.7999C7.79831 22.4082 10.7469 23.6948 13.8742 24.5884C20.9642 26.6205 28.4866 26.5895 35.5597 24.499C38.7853 23.5429 41.8232 22.1759 44.5842 20.4693C44.5116 19.9595 44.4192 19.4528 44.3072 18.9503C41.5284 20.7373 38.4457 22.158 35.1576 23.1319C28.3444 25.1482 21.0975 25.1792 14.2673 23.2213C11.1262 22.325 8.12285 21.0022 5.34115 19.2898C5.23818 19.7927 5.15472 20.2994 5.09097 20.8088L5.08203 20.7999ZM9.06709 35.5428C14.6316 37.6456 20.5657 38.5941 26.5084 38.3306C26.4558 37.8559 26.4349 37.3783 26.4459 36.9009C25.8179 36.9308 25.1893 36.9457 24.5606 36.9456C18.7327 36.9772 12.9645 35.7712 7.63747 33.4073C8.06636 34.1489 8.54885 34.8637 9.06709 35.5428Z"
+                        fill="black"
+                      />
+                      <path
+                        d="M24.8546 2C27.5977 2 30.028 4.48396 31.7346 8.48689C33.3608 12.3111 34.3705 17.5739 34.3705 23.3638C34.3685 24.5505 34.3238 25.7366 34.2365 26.92C33.7326 27.0589 33.2398 27.2351 32.7622 27.4472C32.8817 26.0894 32.9413 24.7269 32.9409 23.3638C32.9409 17.7615 31.9759 12.6953 30.4212 9.0498C28.9469 5.57404 26.9722 3.42962 24.8546 3.42962C22.7459 3.42962 20.7713 5.57404 19.297 9.0498C17.7423 12.6953 16.7773 17.7615 16.7773 23.3638C16.7773 28.9751 17.7423 34.0413 19.297 37.6868C20.7713 41.1626 22.7459 43.307 24.8546 43.307C25.3968 43.302 25.9299 43.1672 26.4093 42.9139C26.8575 42.6754 27.2697 42.3746 27.6334 42.0204C27.8568 42.4671 28.107 42.8692 28.3929 43.2713C27.9852 43.6289 27.5351 43.935 27.0526 44.1827C26.3747 44.5402 25.621 44.7302 24.8546 44.7366C22.1115 44.7366 19.6901 42.2527 17.9835 38.2497C16.3573 34.4255 15.3477 29.1627 15.3477 23.3638C15.3477 17.565 16.3573 12.3111 17.9835 8.48689C19.6812 4.48396 22.1115 2 24.8635 2H24.8546Z"
+                        fill="black"
+                      />
+                      <path
+                        d="M37.0525 26.547C38.4458 26.5434 39.8262 26.8154 41.114 27.3473C42.4019 27.8791 43.5719 28.6604 44.5568 29.646C45.5416 30.6317 46.3219 31.8024 46.8526 33.0907C47.3834 34.379 47.6542 35.7596 47.6495 37.1529C47.653 38.5456 47.3814 39.9251 46.8501 41.2124C46.3188 42.4997 45.5383 43.6693 44.5536 44.6541C43.5689 45.6388 42.3993 46.4192 41.112 46.9505C39.8247 47.4818 38.4451 47.7535 37.0525 47.75C35.6584 47.7559 34.2768 47.4859 32.9875 46.9557C31.6981 46.4255 30.5264 45.6454 29.5398 44.6604C28.5531 43.6755 27.7711 42.505 27.2387 41.2166C26.7063 39.9281 26.434 38.5471 26.4376 37.1529C26.4328 35.7581 26.7042 34.3761 27.2361 33.0866C27.768 31.7971 28.5499 30.6256 29.5366 29.6397C30.5233 28.6538 31.6955 27.8729 32.9854 27.3421C34.2754 26.8113 35.6576 26.5411 37.0525 26.547ZM43.5394 30.6571C42.6897 29.8013 41.6791 29.122 40.5658 28.6585C39.4525 28.195 38.2584 27.9563 37.0525 27.9563C35.8465 27.9563 34.6525 28.195 33.5391 28.6585C32.4258 29.122 31.4152 29.8013 30.5656 30.6571C29.7084 31.5069 29.028 32.5181 28.5637 33.6322C28.0993 34.7464 27.8603 35.9414 27.8603 37.1485C27.8603 38.3555 28.0993 39.5506 28.5637 40.6647C29.028 41.7789 29.7084 42.79 30.5656 43.6398C31.4152 44.4957 32.4258 45.1749 33.5391 45.6385C34.6525 46.102 35.8465 46.3406 37.0525 46.3406C38.2584 46.3406 39.4525 46.102 40.5658 45.6385C41.6791 45.1749 42.6897 44.4957 43.5394 43.6398C44.3952 42.7902 45.0745 41.7796 45.538 40.6663C46.0015 39.553 46.2402 38.3589 46.2402 37.1529C46.2402 35.947 46.0015 34.7529 45.538 33.6396C45.0745 32.5263 44.3952 31.5068 43.5394 30.6571Z"
+                        fill="black"
+                      />
+                      <path
+                        d="M32.2716 37.6087C32.184 37.4405 32.033 37.3139 31.8521 37.257C31.6711 37.2 31.4749 37.2172 31.3066 37.3049C31.1384 37.3926 31.0119 37.5435 30.9549 37.7245C30.8979 37.9055 30.9152 38.1017 31.0028 38.2699L32.915 41.9333C32.9664 42.0365 33.0421 42.1258 33.1355 42.1934C33.2289 42.2611 33.3373 42.3051 33.4514 42.3218C33.5655 42.3385 33.6819 42.3273 33.7908 42.2892C33.8997 42.2511 33.9977 42.1873 34.0765 42.1031L42.967 33.1948C43.0902 33.0588 43.1564 32.8806 43.1518 32.6972C43.1473 32.5138 43.0724 32.3391 42.9427 32.2094C42.813 32.0796 42.6383 32.0047 42.4548 32.0002C42.2714 31.9957 42.0933 32.0619 41.9573 32.1851L33.737 40.4054L32.2716 37.6087Z"
+                        fill="black"
+                      />
+                    </svg>
+                  </div>
+                  <div class="frame__content">
+                    <h3 class="frame__title">Worldwide Shipping</h3>
+                    <p class="frame__description">
+                      Receive your order an estimated 3-5 days after shipment
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </xo-animate>
+          </xo-grid>
+        </xo-container>
+        <div class="container-xxl frame-container"></div>
+      </section>
+
+      <section class="page-section search-sect">
+        <div class="container-xxl search-container">
+          <h2 class="search__title">
+            Not finding what you’re looking for? Try searching for it.
+          </h2>
+          <div class="search-input">
+            <input
+              class="search__text"
+              type="text"
+              placeholder="Search for your thing."
+            />
+            <div class="search__icon">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="23"
+                height="24"
+                viewBox="0 0 23 24"
+                fill="none"
+              >
+                <path
+                  opacity="0.4"
+                  d="M10.7249 21.3364C13.226 21.3364 15.5232 20.4416 17.3168 18.9601L21.4783 23.1217C21.6406 23.284 21.8528 23.3672 22.0651 23.3672C22.2773 23.3672 22.4896 23.284 22.6519 23.1217C22.9765 22.7971 22.9765 22.2685 22.6519 21.9439L18.507 17.7991C20.105 15.9763 21.0746 13.5918 21.0746 10.9867C21.0746 5.27707 16.4304 0.632812 10.7208 0.632812C5.01119 0.632812 0.371094 5.27291 0.371094 10.9825C0.371094 16.6921 5.01535 21.3364 10.7249 21.3364V21.3364ZM10.7249 2.29326C15.5149 2.29326 19.4142 6.18844 19.4142 10.9825C19.4142 15.7766 15.5149 19.6718 10.7249 19.6718C5.93504 19.6718 2.0357 15.7724 2.0357 10.9825C2.0357 6.1926 5.93504 2.29326 10.7249 2.29326V2.29326Z"
+                  fill="#1E1E1E"
+                />
+              </svg>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <footer>
+        <div class="">
+          <div class="footer-main">
+            <div class="container-f">
+              <div class="footer-main__info">
+                <div class="footer-main-logo">
+                  <img src="./public/assets/footer/Logo.png" alt="" />
+                  <p>
+                    This means that once you use different template designs for
+                    actual testimonial website widgets, you can make images from
+                    them and post
+                  </p>
+                  <ul class="footer-main-logo__social">
+                    <li>
+                      <a href=""
+                        ><img src="./public/assets/footer/Facebook.png" alt=""
+                      /></a>
+                    </li>
+                    <li>
+                      <a href=""
+                        ><img src="./public/assets/footer/Pinterest.png" alt=""
+                      /></a>
+                    </li>
+                    <li>
+                      <a href=""
+                        ><img src="./public/assets/footer/Group.png" alt=""
+                      /></a>
+                    </li>
+                    <li>
+                      <a href=""
+                        ><img src="./public/assets/footer/Instagram.png" alt=""
+                      /></a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="footer-main-link">
+                  <div class="footer-main-link__item">
+                    <p>HOME</p>
+                    <ul class="footer-main-link-list">
+                      <li class="footer-main-link-list__item">
+                        <a href="">Shop</a>
+                      </li>
+                      <li class="footer-main-link-list__item">
+                        <a href="">Collection</a>
+                      </li>
+                      <li class="footer-main-link-list__item">
+                        <a href="">About us</a>
+                      </li>
+                      <li class="footer-main-link-list__item">
+                        <a href="">Blogs</a>
+                      </li>
+                      <li class="footer-main-link-list__item">
+                        <a href="">Contact</a>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="footer-main-link__item">
+                    <p>COLLECTION</p>
+                    <ul class="footer-main-link-list">
+                      <li class="footer-main-link-list__item">
+                        <a href="">Sprring Summer</a>
+                      </li>
+                      <li class="footer-main-link-list__item">
+                        <a href="">Summer Nautica</a>
+                      </li>
+                      <li class="footer-main-link-list__item">
+                        <a href="">Ocean Ocean 2023</a>
+                      </li>
+                      <li class="footer-main-link-list__item">
+                        <a href="">Blogs</a>
+                      </li>
+                      <li class="footer-main-link-list__item">
+                        <a href="">Contact</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="footer-newsletter">
+            <form action="" class="footer-newsletter__form">
+              <input type="text" placeholder="Enter your email..." />
+              <button type="submit">
+                <img src="./public/assets/footer/Arrow-down.png" alt="" />
+              </button>
+            </form>
+          </div>
+
+          <div class="footer-bottom">
+            <div class="footer-bottom__content">
+              <div class="footer-bottom-link">
+                <ul class="footer-bottom-link__item">
+                  <li><a href="">Term</a></li>
+                  <li><a href="">Policy Privicy</a></li>
+                </ul>
+              </div>
+              <div class="footer-bottom-payment">
+                <div class="footer-bottom-payment__img">
+                  <img src="./public/assets/footer/shop pay.png" alt="" />
+                  <img src="./public/assets/footer/visa.png" alt="" />
+                  <img src="./public/assets/footer/mastercard.png" alt="" />
+                  <img src="./public/assets/footer/Vector.png" alt="" />
+                  <img src="./public/assets/footer/google pay.png" alt="" />
+                  <img src="./public/assets/footer/amex.png" alt="" />
+                </div>
+                <div class="footer-bottom-payment__convert">
+                  <p>
+                    United States (USD$)
+                    <img src="./public/assets/footer/Frame.png" alt="" />
+                  </p>
+                  <div
+                    class="footer-bottom-payment-main footer-bottom-payment-main--list"
+                  >
+                    <span>VietNamese (VND)</span>
+                    <span>VietNamese (VND)</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script src="./src/scss/xo-webcomponents.js"></script>
+    <script>
+      function updateText() {
+        const titleElement = document.querySelector(".product-hero__title h1");
+        if (window.innerWidth <= 576) {
+          titleElement.textContent = "Collection";
+        } else {
+          titleElement.textContent = "Shop All";
+        }
+      }
+
+      window.addEventListener("resize", updateText);
+      window.addEventListener("DOMContentLoaded", updateText);
+    </script>
+  </body>
+</html>

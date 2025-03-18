@@ -1,0 +1,194 @@
+.review-container {
+  position: relative;
+  height: auto;
+  padding: 55px 0;
+}
+
+.review__title {
+  max-width: 236px;
+  height: auto;
+}
+
+.review__title h2 {
+  font-family: "be vietnam pro";
+  font-size: 42px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 98%;
+  letter-spacing: -2.5px;
+}
+
+.review__buttons {
+  display: flex;
+  gap: 8px;
+  padding: 28px 0;
+}
+
+.review__button {
+  width: 36px;
+  height: 36px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background-color: rgba(30, 30, 30, 0.1);
+}
+
+.review__button svg {
+  width: 24px;
+  height: 24px;
+  fill: #1e1e1e;
+}
+
+.review__button--prev svg,
+.review__button--next svg {
+  display: block;
+}
+
+.review__content {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  padding-bottom: 307px;
+  overflow: hidden;
+  top: 0;
+  left: 0;
+}
+
+.review-content__img {
+  position: absolute;
+  overflow: hidden;
+}
+
+.review-content__img img {
+  width: auto;
+  height: auto;
+  object-fit: cover;
+  border-radius: 50%;
+  aspect-ratio: 1;
+}
+
+.review-content__img--1 {
+  top: 18px;
+  left: 382px;
+}
+.review-content__img--4 {
+  top: 160px;
+  left: 583px;
+}
+.review-content__img--3 {
+  top: 175px;
+  left: 96px;
+}
+.review-content__img--5 {
+  top: 196px;
+  left: 884px;
+}
+.review-content__img--2 {
+  top: 76.77px;
+  left: 1387px;
+}
+.review-content__img--7 {
+  top: 222.17px;
+  left: 1249.29px;
+}
+.review-content__img--6 {
+  top: 282.66px;
+  left: 356px;
+}
+
+.review-content__img--active {
+  border-radius: 100px;
+  background: rgba(19, 90, 178, 0.5);
+  box-shadow: 0 0 20px 10px rgba(19, 90, 178, 0.5);
+}
+
+.review-content__text {
+  position: absolute;
+  width: 512px;
+  background: #f6f6f6;
+  border-radius: 20px;
+  padding: 33px 36px 34px 36px;
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 13px;
+  top: 20%;
+  left: 60%;
+  transform: translate(-50%, -50%);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+.review-content__text.active {
+  display: flex;
+  opacity: 1;
+}
+
+@media (max-width: 768px) {
+  .review__content {
+    padding-bottom: 150px; /* Giảm khoảng cách dưới */
+  }
+
+  .review-content__img {
+    width: 50px;
+    height: 50px;
+  }
+
+  .review-content__img img {
+    width: 100%;
+    height: 100%;
+  }
+
+  .review-content__img--active {
+    width: 80px;
+    height: 80px;
+    box-shadow: 0 0 15px 7px rgba(19, 90, 178, 0.5);
+  }
+
+  .review-content__text {
+    width: 80%;
+    padding: 15px;
+    font-size: 14px;
+    border-radius: 15px;
+  }
+
+  .review-content__text p {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 390px) {
+  .review-container {
+    padding: 0 22px;
+  }
+  .review-content__img--1 {
+    top: 50px;
+    left: 120px;
+  }
+  .review-content__img--4 {
+    top: 150px;
+    left: 120px;
+  }
+  .review-content__img--3 {
+    top: 120px;
+    left: 20px;
+  }
+  .review-content__img--5 {
+    top: 140px;
+    left: 280px;
+  }
+  // .review-content__img--2 {
+  //   top: 50px;
+  //   left: 290px;
+  // }
+  // .review-content__img--7 {
+  //   top: 160px;
+  //   left: 280px;
+  // }
+  // .review-content__img--6 {
+  //   top: 200px;
+  //   left: 80px;
+  // }
+}

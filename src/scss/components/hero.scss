@@ -1,0 +1,44 @@
+.hero {
+  background-image: url("../../public/assets/hero/image49.png");
+}
+
+.hero-title {
+  text-align: center;
+  width: 100%;
+  height: auto;
+}
+
+.hero-title h1 {
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  font-family: "Be Vietnam Pro";
+  font-weight: 500;
+  font-style: normal;
+  font-weight: 500;
+  font-size: clamp(5px, 9.5vw, 213px);
+  line-height: clamp(10px, 5vw, 114px);
+  letter-spacing: clamp(-1px, -1vw, -17.04px);
+  white-space: nowrap;
+  color: #fff;
+  padding: 68px 0;
+}
+
+@media (max-width: 576px) {
+  .hero {
+    aspect-ratio: 576 / 812;
+  }
+  .hero-title {
+    text-align: left;
+  }
+  .hero-title h1 {
+    padding: 28px 20px;
+    font-family: "Be Vietnam Pro";
+    font-size: 73px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 66px;
+    letter-spacing: -5.84px;
+    white-space: wrap;
+  }
+}
