@@ -15,7 +15,7 @@
   </head>
   <body>
     <header class="page-header">
-      <xo-sticky xo-direction="down" style="--top: 0px">
+      <xo-sticky xo-direction="up" style="--top: 0px">
         <div class="header-container">
           <div class="header-logo">
             <img src="./public/assets/logo/Logo.svg" alt="Logo Image" />
@@ -336,27 +336,615 @@
     <section class="page-section filter">
       <div class="container-xxl filter-container">
         <div class="filter-left">
-          <xo-animate xo-type="fade-down" xo-duration="1s" xo-delay="0.5s">
-            <div class="filter-left__icon">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="20"
-                height="20"
-                viewBox="0 0 20 20"
-                fill="none"
-              >
-                <path
-                  fill-rule="evenodd"
-                  clip-rule="evenodd"
-                  d="M11.9319 5C12.0691 5 12.2007 5.0545 12.2977 5.15151C12.3947 5.24852 12.4492 5.3801 12.4492 5.51729V7.64438C12.4492 7.78157 12.3947 7.91315 12.2977 8.01016C12.2007 8.10717 12.0691 8.16167 11.9319 8.16167C11.7947 8.16167 11.6631 8.10717 11.5661 8.01016C11.4691 7.91315 11.4146 7.78157 11.4146 7.64438V7.07191H3.01729C2.8801 7.07191 2.74852 7.01741 2.65151 6.9204C2.5545 6.82339 2.5 6.69182 2.5 6.55462C2.5 6.41743 2.5545 6.28586 2.65151 6.18885C2.74852 6.09184 2.8801 6.03734 3.01729 6.03734H11.4146V5.51729C11.4146 5.3801 11.4691 5.24852 11.5661 5.15151C11.6631 5.0545 11.7947 5 11.9319 5ZM17.2517 6.54911C17.2523 6.61704 17.2396 6.68443 17.2142 6.74744C17.1888 6.81044 17.1512 6.86782 17.1036 6.91631C17.056 6.96479 16.9993 7.00342 16.9368 7.03001C16.8743 7.05659 16.8072 7.07059 16.7392 7.07122L13.9569 7.09881C13.8197 7.10018 13.6876 7.047 13.5896 6.95096C13.4916 6.85492 13.4358 6.72389 13.4344 6.5867C13.4331 6.4495 13.4863 6.31738 13.5823 6.2194C13.6783 6.12142 13.8094 6.06561 13.9466 6.06424L16.7296 6.03665C16.7975 6.03601 16.8649 6.04876 16.9279 6.07417C16.9909 6.09958 17.0483 6.13715 17.0968 6.18474C17.1453 6.23232 17.1839 6.28899 17.2105 6.35151C17.2371 6.41403 17.2511 6.48117 17.2517 6.54911ZM7.79703 8.41548C7.93423 8.41548 8.0658 8.46998 8.16281 8.56699C8.25982 8.664 8.31432 8.79558 8.31432 8.93277V11.0599C8.31432 11.1971 8.25982 11.3286 8.16281 11.4256C8.0658 11.5227 7.93423 11.5772 7.79703 11.5772C7.65984 11.5772 7.52827 11.5227 7.43126 11.4256C7.33425 11.3286 7.27975 11.1971 7.27975 11.0599V10.4867H3.01729C2.8801 10.4867 2.74852 10.4322 2.65151 10.3352C2.5545 10.2382 2.5 10.1066 2.5 9.96942C2.5 9.83223 2.5545 9.70065 2.65151 9.60364C2.74852 9.50663 2.8801 9.45213 3.01729 9.45213H7.27975V8.93277C7.27975 8.79558 7.33425 8.664 7.43126 8.56699C7.52827 8.46998 7.65984 8.41548 7.79703 8.41548ZM9.31993 9.96873C9.31993 9.83154 9.37443 9.69996 9.47144 9.60295C9.56845 9.50594 9.70003 9.45144 9.83722 9.45144H16.7344C16.8716 9.45144 17.0032 9.50594 17.1002 9.60295C17.1972 9.69996 17.2517 9.83154 17.2517 9.96873C17.2517 10.1059 17.1972 10.2375 17.1002 10.3345C17.0032 10.4315 16.8716 10.486 16.7344 10.486H9.83722C9.70003 10.486 9.56845 10.4315 9.47144 10.3345C9.37443 10.2375 9.31993 10.1059 9.31993 9.96873ZM10.538 12.5276C10.6752 12.5276 10.8067 12.5821 10.9038 12.6791C11.0008 12.7761 11.0553 12.9077 11.0553 13.0449V15.1727C11.0553 15.3098 11.0008 15.4414 10.9038 15.5384C10.8067 15.6354 10.6752 15.6899 10.538 15.6899C10.4008 15.6899 10.2692 15.6354 10.1722 15.5384C10.0752 15.4414 10.0207 15.3098 10.0207 15.1727V14.5995H3.26628C3.12908 14.5995 2.99751 14.545 2.9005 14.448C2.80349 14.351 2.74899 14.2194 2.74899 14.0822C2.74899 13.945 2.80349 13.8134 2.9005 13.7164C2.99751 13.6194 3.12908 13.5649 3.26628 13.5649H10.0207V13.0456C10.0207 12.9084 10.0752 12.7768 10.1722 12.6798C10.2692 12.5828 10.4008 12.5283 10.538 12.5283V12.5276ZM17.5 14.0794C17.5004 14.1474 17.4875 14.2149 17.4619 14.2778C17.4362 14.3408 17.3985 14.3981 17.3507 14.4465C17.3029 14.4948 17.246 14.5333 17.1834 14.5597C17.1207 14.5861 17.0534 14.5998 16.9855 14.6002L12.5885 14.6271C12.4513 14.6279 12.3194 14.5742 12.2218 14.4778C12.1242 14.3813 12.0689 14.2501 12.0681 14.1129C12.0673 13.9757 12.121 13.8438 12.2174 13.7462C12.3139 13.6486 12.4451 13.5933 12.5823 13.5925L16.9792 13.5649C17.0472 13.5645 17.1147 13.5774 17.1776 13.603C17.2406 13.6287 17.2979 13.6664 17.3463 13.7142C17.3946 13.762 17.4331 13.8189 17.4595 13.8815C17.4859 13.9442 17.4996 14.0115 17.5 14.0794Z"
-                  fill="#0F61FF"
-                />
-              </svg>
+          <xo-modal-trigger xo-name="fade-filter">
+            <div class="filter-left__inner">
+              <xo-animate xo-type="fade-down" xo-duration="1s" xo-delay="0.5s">
+                <div class="filter-left__icon">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="20"
+                    height="20"
+                    viewBox="0 0 20 20"
+                    fill="none"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M11.9319 5C12.0691 5 12.2007 5.0545 12.2977 5.15151C12.3947 5.24852 12.4492 5.3801 12.4492 5.51729V7.64438C12.4492 7.78157 12.3947 7.91315 12.2977 8.01016C12.2007 8.10717 12.0691 8.16167 11.9319 8.16167C11.7947 8.16167 11.6631 8.10717 11.5661 8.01016C11.4691 7.91315 11.4146 7.78157 11.4146 7.64438V7.07191H3.01729C2.8801 7.07191 2.74852 7.01741 2.65151 6.9204C2.5545 6.82339 2.5 6.69182 2.5 6.55462C2.5 6.41743 2.5545 6.28586 2.65151 6.18885C2.74852 6.09184 2.8801 6.03734 3.01729 6.03734H11.4146V5.51729C11.4146 5.3801 11.4691 5.24852 11.5661 5.15151C11.6631 5.0545 11.7947 5 11.9319 5ZM17.2517 6.54911C17.2523 6.61704 17.2396 6.68443 17.2142 6.74744C17.1888 6.81044 17.1512 6.86782 17.1036 6.91631C17.056 6.96479 16.9993 7.00342 16.9368 7.03001C16.8743 7.05659 16.8072 7.07059 16.7392 7.07122L13.9569 7.09881C13.8197 7.10018 13.6876 7.047 13.5896 6.95096C13.4916 6.85492 13.4358 6.72389 13.4344 6.5867C13.4331 6.4495 13.4863 6.31738 13.5823 6.2194C13.6783 6.12142 13.8094 6.06561 13.9466 6.06424L16.7296 6.03665C16.7975 6.03601 16.8649 6.04876 16.9279 6.07417C16.9909 6.09958 17.0483 6.13715 17.0968 6.18474C17.1453 6.23232 17.1839 6.28899 17.2105 6.35151C17.2371 6.41403 17.2511 6.48117 17.2517 6.54911ZM7.79703 8.41548C7.93423 8.41548 8.0658 8.46998 8.16281 8.56699C8.25982 8.664 8.31432 8.79558 8.31432 8.93277V11.0599C8.31432 11.1971 8.25982 11.3286 8.16281 11.4256C8.0658 11.5227 7.93423 11.5772 7.79703 11.5772C7.65984 11.5772 7.52827 11.5227 7.43126 11.4256C7.33425 11.3286 7.27975 11.1971 7.27975 11.0599V10.4867H3.01729C2.8801 10.4867 2.74852 10.4322 2.65151 10.3352C2.5545 10.2382 2.5 10.1066 2.5 9.96942C2.5 9.83223 2.5545 9.70065 2.65151 9.60364C2.74852 9.50663 2.8801 9.45213 3.01729 9.45213H7.27975V8.93277C7.27975 8.79558 7.33425 8.664 7.43126 8.56699C7.52827 8.46998 7.65984 8.41548 7.79703 8.41548ZM9.31993 9.96873C9.31993 9.83154 9.37443 9.69996 9.47144 9.60295C9.56845 9.50594 9.70003 9.45144 9.83722 9.45144H16.7344C16.8716 9.45144 17.0032 9.50594 17.1002 9.60295C17.1972 9.69996 17.2517 9.83154 17.2517 9.96873C17.2517 10.1059 17.1972 10.2375 17.1002 10.3345C17.0032 10.4315 16.8716 10.486 16.7344 10.486H9.83722C9.70003 10.486 9.56845 10.4315 9.47144 10.3345C9.37443 10.2375 9.31993 10.1059 9.31993 9.96873ZM10.538 12.5276C10.6752 12.5276 10.8067 12.5821 10.9038 12.6791C11.0008 12.7761 11.0553 12.9077 11.0553 13.0449V15.1727C11.0553 15.3098 11.0008 15.4414 10.9038 15.5384C10.8067 15.6354 10.6752 15.6899 10.538 15.6899C10.4008 15.6899 10.2692 15.6354 10.1722 15.5384C10.0752 15.4414 10.0207 15.3098 10.0207 15.1727V14.5995H3.26628C3.12908 14.5995 2.99751 14.545 2.9005 14.448C2.80349 14.351 2.74899 14.2194 2.74899 14.0822C2.74899 13.945 2.80349 13.8134 2.9005 13.7164C2.99751 13.6194 3.12908 13.5649 3.26628 13.5649H10.0207V13.0456C10.0207 12.9084 10.0752 12.7768 10.1722 12.6798C10.2692 12.5828 10.4008 12.5283 10.538 12.5283V12.5276ZM17.5 14.0794C17.5004 14.1474 17.4875 14.2149 17.4619 14.2778C17.4362 14.3408 17.3985 14.3981 17.3507 14.4465C17.3029 14.4948 17.246 14.5333 17.1834 14.5597C17.1207 14.5861 17.0534 14.5998 16.9855 14.6002L12.5885 14.6271C12.4513 14.6279 12.3194 14.5742 12.2218 14.4778C12.1242 14.3813 12.0689 14.2501 12.0681 14.1129C12.0673 13.9757 12.121 13.8438 12.2174 13.7462C12.3139 13.6486 12.4451 13.5933 12.5823 13.5925L16.9792 13.5649C17.0472 13.5645 17.1147 13.5774 17.1776 13.603C17.2406 13.6287 17.2979 13.6664 17.3463 13.7142C17.3946 13.762 17.4331 13.8189 17.4595 13.8815C17.4859 13.9442 17.4996 14.0115 17.5 14.0794Z"
+                      fill="#0F61FF"
+                    />
+                  </svg>
+                </div>
+              </xo-animate>
+              <xo-animate xo-type="fade-down" xo-duration="1s" xo-delay="0.5s">
+                <h2 class="filter-left__text">Show filter</h2>
+              </xo-animate>
             </div>
-          </xo-animate>
-          <xo-animate xo-type="fade-down" xo-duration="1s" xo-delay="0.5s">
-            <h2 class="filter-left__text">Show filter</h2>
-          </xo-animate>
+          </xo-modal-trigger>
+          <xo-modal
+            xo-portal
+            xo-name="fade-filter"
+            xo-animate="slide-left"
+            xo-duration="300"
+            xo-placement="top-right"
+          >
+            <div class="nav-pan">
+              <div class="nav-pan__header">
+                <h2 class="nav-pan__title">Filter & sort</h2>
+                <xo-modal-trigger>
+                  <span class="nav-panel__back"
+                    ><svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                    >
+                      <path
+                        d="M6.34299 17.6573C6.19648 17.5108 6.11417 17.312 6.11417 17.1049C6.11417 16.8976 6.19648 16.6989 6.34299 16.5524L10.8945 12.0009L6.3421 7.44844C6.19559 7.30193 6.11328 7.10322 6.11328 6.89602C6.11328 6.68882 6.19559 6.4901 6.3421 6.34359C6.48862 6.19708 6.68733 6.11477 6.89453 6.11477C7.10173 6.11477 7.30045 6.19708 7.44696 6.34359L11.9994 10.896L16.5518 6.34357C16.6984 6.19706 16.8971 6.11475 17.1043 6.11475C17.3115 6.11475 17.5102 6.19706 17.6567 6.34357C17.8032 6.49008 17.8855 6.6888 17.8855 6.896C17.8855 7.1032 17.8032 7.30191 17.6567 7.44842L13.1042 12.0009L17.6558 16.5524C17.8023 16.699 17.8846 16.8977 17.8846 17.1049C17.8846 17.3121 17.8023 17.5108 17.6558 17.6573C17.5093 17.8038 17.3106 17.8861 17.1034 17.8861C16.8962 17.8861 16.6975 17.8038 16.551 17.6573L11.9994 13.1057L7.44784 17.6573C7.30133 17.8038 7.10262 17.8861 6.89542 17.8861C6.68822 17.8861 6.4895 17.8038 6.34299 17.6573Z"
+                        fill="#1E1E1E"
+                      /></svg
+                  ></span>
+                </xo-modal-trigger>
+              </div>
+              <div class="nav-pan__body">
+                <!-- block check box -->
+                <div class="nav-pan__checkbox">
+                  <xo-collapse-provider xo-duration="300">
+                    <xo-collapse-trigger xo-active>
+                      <div class="collapse-header">
+                        <button class="collapse-header__inner">
+                          <h3 class="collapse-header__title">Availability</h3>
+                          <span
+                            class="collapse-header__icon collapse-header__icon--arrow"
+                          >
+                            <svg
+                              xmlns="http://www.w3.org/2000/svg"
+                              width="24"
+                              height="24"
+                              viewBox="0 0 24 24"
+                              fill="none"
+                            >
+                              <path
+                                d="M5.67665 8.19406C5.4214 7.92606 5.01684 7.93668 4.77499 8.22171C4.53252 8.50605 4.54335 8.95483 4.79925 9.22428L10.8613 15.6054C10.9838 15.7344 11.1427 15.7997 11.3003 15.7997C11.4579 15.7997 11.6162 15.7344 11.7387 15.6054L17.8007 9.22428C18.0566 8.95486 18.0675 8.50605 17.825 8.22174C17.5825 7.93671 17.1786 7.92537 16.9234 8.19409L11.3003 14.1136L5.67665 8.19406Z"
+                                fill="#1E1E1E"
+                              />
+                            </svg>
+                            <svg
+                              class="icon-minus"
+                              xmlns="http://www.w3.org/2000/svg"
+                              width="24"
+                              height="24"
+                              viewBox="0 0 24 24"
+                              fill="none"
+                              style="display: none"
+                            >
+                              <path
+                                d="M4.78125 12.7819H19.2188C19.426 12.7819 19.6247 12.6996 19.7712 12.553C19.9177 12.4065 20 12.2078 20 12.0006C20 11.7934 19.9177 11.5947 19.7712 11.4482C19.6247 11.3017 19.426 11.2194 19.2188 11.2194H4.78125C4.57405 11.2194 4.37534 11.3017 4.22882 11.4482C4.08231 11.5947 4 11.7934 4 12.0006C4 12.2078 4.08231 12.4065 4.22882 12.553C4.37534 12.6996 4.57405 12.7819 4.78125 12.7819Z"
+                                fill="#1E1E1E"
+                              />
+                            </svg>
+                          </span>
+                        </button>
+                      </div>
+                    </xo-collapse-trigger>
+                    <xo-collapse xo-active>
+                      <div class="collapse-checkbox">
+                        <!-- option check box -->
+                        <form action="">
+                          <label class="custom-checkbox">
+                            <input type="checkbox" />
+                            <span class="checkmark"></span>
+                            <span class="name">In stock</span>
+                            <span class="quantity">(25)</span>
+                          </label>
+                        </form>
+                        <!-- end option check box -->
+                        <!-- option check box -->
+                        <form action="">
+                          <label class="custom-checkbox">
+                            <input type="checkbox" />
+                            <span class="checkmark"></span>
+                            <span class="name">Out of stock</span>
+                            <span class="quantity">(02)</span>
+                          </label>
+                        </form>
+                        <!-- end option check box -->
+                      </div>
+                    </xo-collapse>
+                  </xo-collapse-provider>
+                </div>
+                <!--end block check box -->
+
+                <!-- block check box -->
+                <div class="nav-pan__checkbox">
+                  <xo-collapse-provider xo-duration="300">
+                    <xo-collapse-trigger>
+                      <div class="collapse-header">
+                        <button class="collapse-header__inner">
+                          <h3 class="collapse-header__title">Category</h3>
+                          <span
+                            class="collapse-header__icon collapse-header__icon--arrow"
+                          >
+                            <svg
+                              xmlns="http://www.w3.org/2000/svg"
+                              width="24"
+                              height="24"
+                              viewBox="0 0 24 24"
+                              fill="none"
+                            >
+                              <path
+                                d="M5.67665 8.19406C5.4214 7.92606 5.01684 7.93668 4.77499 8.22171C4.53252 8.50605 4.54335 8.95483 4.79925 9.22428L10.8613 15.6054C10.9838 15.7344 11.1427 15.7997 11.3003 15.7997C11.4579 15.7997 11.6162 15.7344 11.7387 15.6054L17.8007 9.22428C18.0566 8.95486 18.0675 8.50605 17.825 8.22174C17.5825 7.93671 17.1786 7.92537 16.9234 8.19409L11.3003 14.1136L5.67665 8.19406Z"
+                                fill="#1E1E1E"
+                              />
+                            </svg>
+                            <svg
+                              class="icon-minus"
+                              xmlns="http://www.w3.org/2000/svg"
+                              width="24"
+                              height="24"
+                              viewBox="0 0 24 24"
+                              fill="none"
+                              style="display: none"
+                            >
+                              <path
+                                d="M4.78125 12.7819H19.2188C19.426 12.7819 19.6247 12.6996 19.7712 12.553C19.9177 12.4065 20 12.2078 20 12.0006C20 11.7934 19.9177 11.5947 19.7712 11.4482C19.6247 11.3017 19.426 11.2194 19.2188 11.2194H4.78125C4.57405 11.2194 4.37534 11.3017 4.22882 11.4482C4.08231 11.5947 4 11.7934 4 12.0006C4 12.2078 4.08231 12.4065 4.22882 12.553C4.37534 12.6996 4.57405 12.7819 4.78125 12.7819Z"
+                                fill="#1E1E1E"
+                              />
+                            </svg>
+                          </span>
+                        </button>
+                      </div>
+                    </xo-collapse-trigger>
+                    <xo-collapse>
+                      <div class="collapse-checkbox">
+                        <!-- option check box -->
+                        <form action="">
+                          <label class="custom-checkbox">
+                            <input type="checkbox" />
+                            <span class="checkmark"></span>
+                            <span class="name">Black</span>
+                            <span class="quantity">(25)</span>
+                          </label>
+                        </form>
+                        <!-- end option check box -->
+                        <!-- option check box -->
+                        <form action="">
+                          <label class="custom-checkbox">
+                            <input type="checkbox" />
+                            <span class="checkmark"></span>
+                            <span class="name">Cream Blue</span>
+                            <span class="quantity">(01)</span>
+                          </label>
+                        </form>
+                        <!-- end option check box -->
+                        <!-- option check box -->
+                        <form action="">
+                          <label class="custom-checkbox">
+                            <input type="checkbox" />
+                            <span class="checkmark"></span>
+                            <span class="name">Grape</span>
+                            <span class="quantity">(10)</span>
+                          </label>
+                        </form>
+                        <!-- end option check box -->
+                        <!-- option check box -->
+                        <form action="">
+                          <label class="custom-checkbox">
+                            <input type="checkbox" />
+                            <span class="checkmark"></span>
+                            <span class="name">Mustard</span>
+                            <span class="quantity">(12)</span>
+                          </label>
+                        </form>
+                        <!-- end option check box -->
+                        <!-- option check box -->
+                        <form action="">
+                          <label class="custom-checkbox">
+                            <input type="checkbox" />
+                            <span class="checkmark"></span>
+                            <span class="name">Mustard Chestnut</span>
+                            <span class="quantity">(15)</span>
+                          </label>
+                        </form>
+                        <!-- end option check box -->
+                        <!-- option check box -->
+                        <form action="">
+                          <label class="custom-checkbox">
+                            <input type="checkbox" />
+                            <span class="checkmark"></span>
+                            <span class="name">Wild One</span>
+                            <span class="quantity">(14)</span>
+                          </label>
+                        </form>
+                        <!-- end option check box -->
+                        <!-- option check box -->
+                        <form action="">
+                          <label class="custom-checkbox">
+                            <input type="checkbox" />
+                            <span class="checkmark"></span>
+                            <span class="name">Pink Cloud</span>
+                            <span class="quantity">(11)</span>
+                          </label>
+                        </form>
+                        <!-- end option check box -->
+                      </div>
+                    </xo-collapse>
+                  </xo-collapse-provider>
+                </div>
+                <!--end block check box -->
+
+                <!-- block check box -->
+                <div class="nav-pan__checkbox">
+                  <xo-collapse-provider xo-duration="300">
+                    <xo-collapse-trigger>
+                      <div class="collapse-header">
+                        <button class="collapse-header__inner">
+                          <h3 class="collapse-header__title">Collection</h3>
+                          <span
+                            class="collapse-header__icon collapse-header__icon--arrow"
+                          >
+                            <svg
+                              xmlns="http://www.w3.org/2000/svg"
+                              width="24"
+                              height="24"
+                              viewBox="0 0 24 24"
+                              fill="none"
+                            >
+                              <path
+                                d="M5.67665 8.19406C5.4214 7.92606 5.01684 7.93668 4.77499 8.22171C4.53252 8.50605 4.54335 8.95483 4.79925 9.22428L10.8613 15.6054C10.9838 15.7344 11.1427 15.7997 11.3003 15.7997C11.4579 15.7997 11.6162 15.7344 11.7387 15.6054L17.8007 9.22428C18.0566 8.95486 18.0675 8.50605 17.825 8.22174C17.5825 7.93671 17.1786 7.92537 16.9234 8.19409L11.3003 14.1136L5.67665 8.19406Z"
+                                fill="#1E1E1E"
+                              />
+                            </svg>
+                            <svg
+                              class="icon-minus"
+                              xmlns="http://www.w3.org/2000/svg"
+                              width="24"
+                              height="24"
+                              viewBox="0 0 24 24"
+                              fill="none"
+                              style="display: none"
+                            >
+                              <path
+                                d="M4.78125 12.7819H19.2188C19.426 12.7819 19.6247 12.6996 19.7712 12.553C19.9177 12.4065 20 12.2078 20 12.0006C20 11.7934 19.9177 11.5947 19.7712 11.4482C19.6247 11.3017 19.426 11.2194 19.2188 11.2194H4.78125C4.57405 11.2194 4.37534 11.3017 4.22882 11.4482C4.08231 11.5947 4 11.7934 4 12.0006C4 12.2078 4.08231 12.4065 4.22882 12.553C4.37534 12.6996 4.57405 12.7819 4.78125 12.7819Z"
+                                fill="#1E1E1E"
+                              />
+                            </svg>
+                          </span>
+                        </button>
+                      </div>
+                    </xo-collapse-trigger>
+                    <xo-collapse>
+                      <div class="collapse-checkbox">
+                        <!-- option check box -->
+                        <form action="">
+                          <label class="custom-checkbox">
+                            <input type="checkbox" />
+                            <span class="checkmark"></span>
+                            <span class="name">Marvel</span>
+                            <span class="quantity">(25)</span>
+                          </label>
+                        </form>
+                        <!-- end option check box -->
+                        <!-- option check box -->
+                        <form action="">
+                          <label class="custom-checkbox">
+                            <input type="checkbox" />
+                            <span class="checkmark"></span>
+                            <span class="name">DC</span>
+                            <span class="quantity">(01)</span>
+                          </label>
+                        </form>
+                        <!-- end option check box -->
+                        <!-- option check box -->
+                        <form action="">
+                          <label class="custom-checkbox">
+                            <input type="checkbox" />
+                            <span class="checkmark"></span>
+                            <span class="name">BigBang</span>
+                            <span class="quantity">(10)</span>
+                          </label>
+                        </form>
+                        <!-- end option check box -->
+                        <!-- option check box -->
+                        <form action="">
+                          <label class="custom-checkbox">
+                            <input type="checkbox" />
+                            <span class="checkmark"></span>
+                            <span class="name">GD</span>
+                            <span class="quantity">(12)</span>
+                          </label>
+                        </form>
+                        <!-- end option check box -->
+                        <!-- option check box -->
+                        <form action="">
+                          <label class="custom-checkbox">
+                            <input type="checkbox" />
+                            <span class="checkmark"></span>
+                            <span class="name">Lady Gaga</span>
+                            <span class="quantity">(15)</span>
+                          </label>
+                        </form>
+                        <!-- end option check box -->
+                        <!-- option check box -->
+                        <form action="">
+                          <label class="custom-checkbox">
+                            <input type="checkbox" />
+                            <span class="checkmark"></span>
+                            <span class="name">One Piece</span>
+                            <span class="quantity">(14)</span>
+                          </label>
+                        </form>
+                        <!-- end option check box -->
+                        <!-- option check box -->
+                        <form action="">
+                          <label class="custom-checkbox">
+                            <input type="checkbox" />
+                            <span class="checkmark"></span>
+                            <span class="name">Dragon Balls</span>
+                            <span class="quantity">(11)</span>
+                          </label>
+                        </form>
+                        <!-- end option check box -->
+                      </div>
+                    </xo-collapse>
+                  </xo-collapse-provider>
+                </div>
+                <!--end block check box -->
+
+                <!-- block check box -->
+                <div class="nav-pan__checkbox">
+                  <xo-collapse-provider xo-duration="300">
+                    <xo-collapse-trigger>
+                      <div class="collapse-header">
+                        <button class="collapse-header__inner">
+                          <h3 class="collapse-header__title">Price</h3>
+                          <span
+                            class="collapse-header__icon collapse-header__icon--arrow"
+                          >
+                            <svg
+                              xmlns="http://www.w3.org/2000/svg"
+                              width="24"
+                              height="24"
+                              viewBox="0 0 24 24"
+                              fill="none"
+                            >
+                              <path
+                                d="M5.67665 8.19406C5.4214 7.92606 5.01684 7.93668 4.77499 8.22171C4.53252 8.50605 4.54335 8.95483 4.79925 9.22428L10.8613 15.6054C10.9838 15.7344 11.1427 15.7997 11.3003 15.7997C11.4579 15.7997 11.6162 15.7344 11.7387 15.6054L17.8007 9.22428C18.0566 8.95486 18.0675 8.50605 17.825 8.22174C17.5825 7.93671 17.1786 7.92537 16.9234 8.19409L11.3003 14.1136L5.67665 8.19406Z"
+                                fill="#1E1E1E"
+                              />
+                            </svg>
+                            <svg
+                              class="icon-minus"
+                              xmlns="http://www.w3.org/2000/svg"
+                              width="24"
+                              height="24"
+                              viewBox="0 0 24 24"
+                              fill="none"
+                              style="display: none"
+                            >
+                              <path
+                                d="M4.78125 12.7819H19.2188C19.426 12.7819 19.6247 12.6996 19.7712 12.553C19.9177 12.4065 20 12.2078 20 12.0006C20 11.7934 19.9177 11.5947 19.7712 11.4482C19.6247 11.3017 19.426 11.2194 19.2188 11.2194H4.78125C4.57405 11.2194 4.37534 11.3017 4.22882 11.4482C4.08231 11.5947 4 11.7934 4 12.0006C4 12.2078 4.08231 12.4065 4.22882 12.553C4.37534 12.6996 4.57405 12.7819 4.78125 12.7819Z"
+                                fill="#1E1E1E"
+                              />
+                            </svg>
+                          </span>
+                        </button>
+                      </div>
+                    </xo-collapse-trigger>
+                    <xo-collapse>
+                      <div class="collapse-checkbox">
+                        <!-- option check box -->
+                        <form action="">
+                          <label class="custom-checkbox">
+                            <input type="checkbox" />
+                            <span class="checkmark"></span>
+                            <span class="name">Price ascending</span>
+                          </label>
+                        </form>
+                        <!-- end option check box -->
+
+                        <!-- option check box -->
+                        <form action="">
+                          <label class="custom-checkbox">
+                            <input type="checkbox" />
+                            <span class="checkmark"></span>
+                            <span class="name">Price decreasing</span>
+                          </label>
+                        </form>
+                        <!-- end option check box -->
+                      </div>
+                    </xo-collapse>
+                  </xo-collapse-provider>
+                </div>
+                <!--end block check box -->
+
+                <!-- block check box -->
+                <div class="nav-pan__checkbox">
+                  <xo-collapse-provider xo-duration="500">
+                    <xo-collapse-trigger>
+                      <div class="collapse-header">
+                        <button class="collapse-header__inner">
+                          <h3 class="collapse-header__title">Color</h3>
+                          <span
+                            class="collapse-header__icon collapse-header__icon--arrow"
+                          >
+                            <svg
+                              xmlns="http://www.w3.org/2000/svg"
+                              width="24"
+                              height="24"
+                              viewBox="0 0 24 24"
+                              fill="none"
+                            >
+                              <path
+                                d="M5.67665 8.19406C5.4214 7.92606 5.01684 7.93668 4.77499 8.22171C4.53252 8.50605 4.54335 8.95483 4.79925 9.22428L10.8613 15.6054C10.9838 15.7344 11.1427 15.7997 11.3003 15.7997C11.4579 15.7997 11.6162 15.7344 11.7387 15.6054L17.8007 9.22428C18.0566 8.95486 18.0675 8.50605 17.825 8.22174C17.5825 7.93671 17.1786 7.92537 16.9234 8.19409L11.3003 14.1136L5.67665 8.19406Z"
+                                fill="#1E1E1E"
+                              />
+                            </svg>
+                            <svg
+                              class="icon-minus"
+                              xmlns="http://www.w3.org/2000/svg"
+                              width="24"
+                              height="24"
+                              viewBox="0 0 24 24"
+                              fill="none"
+                              style="display: none"
+                            >
+                              <path
+                                d="M4.78125 12.7819H19.2188C19.426 12.7819 19.6247 12.6996 19.7712 12.553C19.9177 12.4065 20 12.2078 20 12.0006C20 11.7934 19.9177 11.5947 19.7712 11.4482C19.6247 11.3017 19.426 11.2194 19.2188 11.2194H4.78125C4.57405 11.2194 4.37534 11.3017 4.22882 11.4482C4.08231 11.5947 4 11.7934 4 12.0006C4 12.2078 4.08231 12.4065 4.22882 12.553C4.37534 12.6996 4.57405 12.7819 4.78125 12.7819Z"
+                                fill="#1E1E1E"
+                              />
+                            </svg>
+                          </span>
+                        </button>
+                      </div>
+                    </xo-collapse-trigger>
+                    <xo-collapse>
+                      <div class="collapse-checkbox">
+                        <!-- option check box -->
+                        <form action="">
+                          <label class="custom-checkbox">
+                            <input type="checkbox" />
+                            <span class="checkmark"></span>
+                            <span class="name">Red</span>
+                            <span class="quantity">(25)</span>
+                          </label>
+                        </form>
+                        <!-- end option check box -->
+                        <!-- option check box -->
+                        <form action="">
+                          <label class="custom-checkbox">
+                            <input type="checkbox" />
+                            <span class="checkmark"></span>
+                            <span class="name">Green</span>
+                            <span class="quantity">(01)</span>
+                          </label>
+                        </form>
+                        <!-- end option check box -->
+                        <!-- option check box -->
+                        <form action="">
+                          <label class="custom-checkbox">
+                            <input type="checkbox" />
+                            <span class="checkmark"></span>
+                            <span class="name">Pink</span>
+                            <span class="quantity">(10)</span>
+                          </label>
+                        </form>
+                        <!-- end option check box -->
+                        <!-- option check box -->
+                        <form action="">
+                          <label class="custom-checkbox">
+                            <input type="checkbox" />
+                            <span class="checkmark"></span>
+                            <span class="name">Black</span>
+                            <span class="quantity">(12)</span>
+                          </label>
+                        </form>
+                        <!-- end option check box -->
+                        <!-- option check box -->
+                        <form action="">
+                          <label class="custom-checkbox">
+                            <input type="checkbox" />
+                            <span class="checkmark"></span>
+                            <span class="name">Yellow</span>
+                            <span class="quantity">(15)</span>
+                          </label>
+                        </form>
+                        <!-- end option check box -->
+                        <!-- option check box -->
+                        <form action="">
+                          <label class="custom-checkbox">
+                            <input type="checkbox" />
+                            <span class="checkmark"></span>
+                            <span class="name">Gray</span>
+                            <span class="quantity">(14)</span>
+                          </label>
+                        </form>
+                        <!-- end option check box -->
+                        <!-- option check box -->
+                        <form action="">
+                          <label class="custom-checkbox">
+                            <input type="checkbox" />
+                            <span class="checkmark"></span>
+                            <span class="name">Light Ocean</span>
+                            <span class="quantity">(11)</span>
+                          </label>
+                        </form>
+                        <!-- end option check box -->
+                      </div>
+                    </xo-collapse>
+                  </xo-collapse-provider>
+                </div>
+                <!--end block check box -->
+
+                <!-- block check box -->
+                <div class="nav-pan__checkbox">
+                  <xo-collapse-provider xo-duration="500">
+                    <xo-collapse-trigger>
+                      <div class="collapse-header">
+                        <button class="collapse-header__inner">
+                          <h3 class="collapse-header__title">Sort by</h3>
+                          <span
+                            class="collapse-header__icon collapse-header__icon--arrow"
+                          >
+                            <svg
+                              xmlns="http://www.w3.org/2000/svg"
+                              width="24"
+                              height="24"
+                              viewBox="0 0 24 24"
+                              fill="none"
+                            >
+                              <path
+                                d="M5.67665 8.19406C5.4214 7.92606 5.01684 7.93668 4.77499 8.22171C4.53252 8.50605 4.54335 8.95483 4.79925 9.22428L10.8613 15.6054C10.9838 15.7344 11.1427 15.7997 11.3003 15.7997C11.4579 15.7997 11.6162 15.7344 11.7387 15.6054L17.8007 9.22428C18.0566 8.95486 18.0675 8.50605 17.825 8.22174C17.5825 7.93671 17.1786 7.92537 16.9234 8.19409L11.3003 14.1136L5.67665 8.19406Z"
+                                fill="#1E1E1E"
+                              />
+                            </svg>
+                            <svg
+                              class="icon-minus"
+                              xmlns="http://www.w3.org/2000/svg"
+                              width="24"
+                              height="24"
+                              viewBox="0 0 24 24"
+                              fill="none"
+                              style="display: none"
+                            >
+                              <path
+                                d="M4.78125 12.7819H19.2188C19.426 12.7819 19.6247 12.6996 19.7712 12.553C19.9177 12.4065 20 12.2078 20 12.0006C20 11.7934 19.9177 11.5947 19.7712 11.4482C19.6247 11.3017 19.426 11.2194 19.2188 11.2194H4.78125C4.57405 11.2194 4.37534 11.3017 4.22882 11.4482C4.08231 11.5947 4 11.7934 4 12.0006C4 12.2078 4.08231 12.4065 4.22882 12.553C4.37534 12.6996 4.57405 12.7819 4.78125 12.7819Z"
+                                fill="#1E1E1E"
+                              />
+                            </svg>
+                          </span>
+                        </button>
+                      </div>
+                    </xo-collapse-trigger>
+                    <xo-collapse>
+                      <div class="collapse-checkbox">
+                        <!-- option check ratio -->
+                        <form action="">
+                          <label class="custom-checkbox">
+                            <input type="checkbox" />
+                            <span class="checkmark"></span>
+                            <span class="name">Featured</span>
+                          </label>
+                        </form>
+                        <!-- end option check box -->
+                        <!-- option check ratio -->
+                        <form action="">
+                          <label class="custom-checkbox">
+                            <input type="checkbox" />
+                            <span class="checkmark"></span>
+                            <span class="name">Best Selling</span>
+                          </label>
+                        </form>
+                        <!-- end option check box -->
+                      </div>
+                    </xo-collapse>
+                  </xo-collapse-provider>
+                </div>
+                <!--end block check box -->
+              </div>
+            </div>
+          </xo-modal>
         </div>
         <div class="filter-right">
           <xo-animate xo-type="fade-down" xo-duration="1s" xo-delay="0.5s">

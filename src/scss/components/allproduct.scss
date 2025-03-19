@@ -201,13 +201,15 @@
   padding: 24px 0;
 }
 
-.filter-left,
+.filter-left__inner {
+  display: flex;
+  justify-content: space-between;
+}
 .filter-right {
   display: flex;
   align-items: center;
 }
-
-.filter-left:hover {
+.filter-left__inner:hover {
   cursor: pointer;
 }
 
@@ -540,4 +542,134 @@
     background-color: #fff;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
   }
+}
+
+//========================Modal filter left========================
+
+.nav-pan {
+  width: 553px;
+  height: 97vh;
+  overflow-y: auto;
+  background-color: #f5f5f5;
+  padding: 0 40px;
+}
+
+.nav-pan__header {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 32px;
+}
+
+.nav-pan__title {
+  color: var(--Text, #1e1e1e);
+  font-family: var(--Heading-font-family, "be vietnam pro");
+  font-size: var(--Heading-font-size-H6, 31px);
+  font-style: normal;
+  font-weight: 600;
+  line-height: 120%; /* 37.2px */
+  letter-spacing: -0.93px;
+}
+
+.collapse-header__inner {
+  width: 100%;
+  background: none;
+  border: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px 0;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 600;
+  color: #1e232b;
+}
+
+.collapse-header__title {
+}
+
+.collapse-header__icon {
+  font-size: 18px;
+  font-weight: bold;
+  transition: transform 0.3s ease;
+}
+
+.collapse-header__icon--arrow {
+  transition: transform 0.5s ease-in-out;
+}
+
+.collapse-checkbox {
+  padding-bottom: 16px;
+}
+xo-collapse-trigger[xo-active] .collapse-header__icon--arrow {
+  transform: rotate(180deg);
+}
+
+.nav-pan__checkbox {
+  border-top: 1px solid #e5e5e5;
+}
+.collapse-checkbox form:not(:last-child) {
+  padding-bottom: 4px;
+}
+label {
+  display: flex;
+  align-items: center;
+}
+
+.custom-checkbox {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.custom-checkbox input {
+  display: none;
+}
+
+.custom-checkbox .checkmark {
+  width: 20px;
+  height: 20px;
+  background: #ccc;
+  border-radius: 4px;
+  display: inline-block;
+  transition: background 0.3s;
+  position: relative;
+}
+
+.custom-checkbox input:checked + .checkmark {
+  background: #0f61ff;
+}
+
+/* Thêm dấu tick */
+.custom-checkbox input:checked + .checkmark::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 20px;
+  height: 20px;
+  transform: translate(-50%, -50%);
+  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M15.4482 7.0613C15.4158 7.13955 15.3681 7.2106 15.3081 7.27033L9.12647 13.452C8.91093 13.6668 8.619 13.7875 8.31465 13.7875C8.01031 13.7875 7.71825 13.6667 7.5027 13.4519L4.69195 10.6411L4.69111 10.6403C4.63069 10.5803 4.5827 10.5089 4.54991 10.4303C4.51711 10.3517 4.50015 10.2675 4.5 10.1823C4.49985 10.0972 4.51651 10.0128 4.54903 9.93411C4.58155 9.85541 4.62928 9.78391 4.6895 9.72369C4.74971 9.66348 4.82122 9.61575 4.89992 9.58323C4.97862 9.55072 5.06296 9.53406 5.14811 9.53421C5.23327 9.53436 5.31755 9.55132 5.39614 9.58412C5.47472 9.61691 5.54606 9.6649 5.60606 9.72533L8.31465 12.4339L14.3926 6.356C14.4831 6.26552 14.5984 6.2039 14.7238 6.17894C14.8493 6.15397 14.9794 6.16678 15.0976 6.21575C15.2158 6.26472 15.3169 6.34765 15.3879 6.45405C15.459 6.56044 15.4969 6.68553 15.4969 6.81348L15.4969 6.81444C15.4972 6.89914 15.4806 6.98304 15.4482 7.0613Z" fill="white"/></svg>');
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.name {
+  color: var(--Text, #1e1e1e);
+  font-family: var(--Body-font-family, "be vietnam pro");
+  font-size: var(--Body-font-size-body-xS, 14px);
+  font-style: normal;
+  font-weight: 400;
+  line-height: 140%;
+  padding: 2px 6px;
+}
+
+.quantity {
+  color: var(--Text, #1e1e1e);
+  font-family: "Neue Haas Unica";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  opacity: 0.4;
+  padding: 2px 0;
 }

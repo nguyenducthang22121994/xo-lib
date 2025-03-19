@@ -35,21 +35,44 @@
 
 .multi-card {
   position: relative;
-  overflow: hidden;
-  height: fit-content;
+  height: 100%;
 }
 
-.multi-card .multi-card__img {
+.multi-card__inner {
   position: relative;
-  object-fit: cover;
-  height: 100%; /* Thay min-height bằng height */
+  // perspective: 1000px;
   width: 100%;
-  transition: transform 0.5s ease-in-out;
+  height: 100%;
 }
 
-.multi-card .multi-card__img:hover {
-  transform: scale(1.2);
+.multi-card__img {
+  width: 100%;
+  // height: 100%;
+  transition: 0.5s;
+  border-radius: 10px;
+  object-fit: cover;
+  object-position: center;
+  // img {
+  //   width: 100%;
+  //   height: 100%;
+  // }
 }
+
+.multi-card__img--back {
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+}
+
+.multi-card:hover .multi-card__img--front {
+  opacity: 0;
+}
+
+.multi-card:hover .multi-card__img--back {
+  opacity: 1;
+}
+
 .multi-card .multi-card__text {
   position: absolute;
   inset: 0;
@@ -91,13 +114,13 @@
   opacity: 0.99;
 }
 
-.multi-card__img {
-  width: 100%;
-  object-fit: cover;
-  object-position: center;
-  position: absolute;
-  top: 0;
-  left: 0;
+.carousel-item {
+  height: 100%;
+}
+
+.dots {
+  display: none;
+  justify-content: center;
 }
 
 @media (max-width: 572px) {
@@ -116,8 +139,29 @@
   }
   .multi-card {
     max-width: 331px;
+    background-color: #fff;
+    border-radius: 20px;
   }
-  .multi-card__text {
-    gap: 260px;
+
+  .dots {
+    display: block;
+    padding-top: 25px;
+  }
+
+  .dots xo-carousel-pagination {
+    justify-content: center;
+    gap: 2px;
+  }
+
+  .dots .carousel-bullet {
+    width: 18px;
+    height: 5px;
+    border-radius: 10px;
+    background-color: #e5e5e5;
+    display: inline-block;
+  }
+  .dots xo-carousel-bullet[xo-active] .carousel-bullet {
+    background-color: #0f61ff;
+    width: 55px;
   }
 }

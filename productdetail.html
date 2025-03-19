@@ -130,7 +130,21 @@
       <xo-container>
         <div class="pi">
           <div class="pi__gallery">
-            <xo-carousel xo-active-index="0">
+            <xo-carousel
+              xo-active-index="0"
+              xo-per-view="1"
+              xo-breakpoints="{
+              600: {
+                perView: 1,
+                perMove: 1,            
+              },
+              1000: {
+                perView: 1,
+                perMove: 2,
+              },
+            }"
+              xo-render-bullet="<span></span>"
+            >
               <xo-carousel-inner>
                 <xo-carousel-list>
                   <xo-carousel-slide
@@ -190,6 +204,21 @@
                 xo-per-move="1"
                 style="margin-top: 29px"
                 xo-per-view="6"
+                xo-breakpoints="{
+                  600: {
+                    perView: 2,
+                    perMove: 1,
+                    overflow: 'visible'
+                  },
+                  1000: {
+                    perView: 3,
+                    perMove: 1,
+                  },
+                  1400: {
+                    perView: 4,
+                    perMove: 1,
+                  },
+                }"
               >
                 <xo-carousel-inner>
                   <xo-carousel-list>
@@ -388,13 +417,12 @@
                 </div>
               </xo-animate>
             </div>
-
             <xo-animate xo-type="fade-up" xo-delay="0.2s">
-              <div class="pi__details-accordion">
-                <div class="accordion">
-                  <div class="accordion__item">
+              <xo-collapse-provider xo-duration="300">
+                <xo-collapse-trigger xo-active>
+                  <div class="collapse-header">
                     <button class="accordion__header">
-                      <h3 class="accordion__title">Main Features</h3>
+                      <h3 class="accordion__title">Main Featured</h3>
                       <span class="accordion__icon">
                         <svg
                           class="icon-plus"
@@ -425,36 +453,41 @@
                         </svg>
                       </span>
                     </button>
-                    <div class="accordion__content">
-                      <p class="accordion__text">
-                        * The Bundle includes 1 box, 1 phone case, and 4 screen
-                        wipers or 2 screen protectors for iPhone 15 sizes.
-                      </p>
-
-                      <p class="accordion__text">
-                        * Ultra-slim hybrid raised AirLite™ corners for
-                        all-round protection
-                      </p>
-                      <p class="accordion__text">
-                        * Raised lens bezel to shield back camera
-                      </p>
-                      <p class="accordion__text">
-                        * Flexible anti-yellowing Bayer TPU bumper for
-                        long-lasting clarity
-                      </p>
-                      <p class="accordion__text">
-                        * Tough 3H scratch-resistant polycarbonate back
-                      </p>
-                      <p class="accordion__text">
-                        * Reinforced raised corners to shield against direct
-                        face-down impact
-                      </p>
-                      <p class="accordion__text">
-                        * Drop-tested to withstand up to 8 feet/2.5 meters
-                      </p>
-                    </div>
                   </div>
-                  <div class="accordion__item">
+                </xo-collapse-trigger>
+                <xo-collapse xo-active>
+                  <div class="collapse-content">
+                    <p class="accordion__text">
+                      * The Bundle includes 1 box, 1 phone case, and 4 screen
+                      wipers or 2 screen protectors for iPhone 15 sizes.
+                    </p>
+
+                    <p class="accordion__text">
+                      * Ultra-slim hybrid raised AirLite™ corners for all-round
+                      protection
+                    </p>
+                    <p class="accordion__text">
+                      * Raised lens bezel to shield back camera
+                    </p>
+                    <p class="accordion__text">
+                      * Flexible anti-yellowing Bayer TPU bumper for
+                      long-lasting clarity
+                    </p>
+                    <p class="accordion__text">
+                      * Tough 3H scratch-resistant polycarbonate back
+                    </p>
+                    <p class="accordion__text">
+                      * Reinforced raised corners to shield against direct
+                      face-down impact
+                    </p>
+                    <p class="accordion__text">
+                      * Drop-tested to withstand up to 8 feet/2.5 meters
+                    </p>
+                  </div>
+                </xo-collapse>
+
+                <xo-collapse-trigger>
+                  <div class="collapse-header">
                     <button class="accordion__header">
                       <h3 class="accordion__title">Materials</h3>
                       <span class="accordion__icon">
@@ -487,36 +520,41 @@
                         </svg>
                       </span>
                     </button>
-                    <div class="accordion__content">
-                      <p class="accordion__text">
-                        * The Bundle includes 1 box, 1 phone case, and 4 screen
-                        wipers or 2 screen protectors for iPhone 15 sizes.
-                      </p>
-
-                      <p class="accordion__text">
-                        * Ultra-slim hybrid raised AirLite™ corners for
-                        all-round protection
-                      </p>
-                      <p class="accordion__text">
-                        * Raised lens bezel to shield back camera
-                      </p>
-                      <p class="accordion__text">
-                        * Flexible anti-yellowing Bayer TPU bumper for
-                        long-lasting clarity
-                      </p>
-                      <p class="accordion__text">
-                        * Tough 3H scratch-resistant polycarbonate back
-                      </p>
-                      <p class="accordion__text">
-                        * Reinforced raised corners to shield against direct
-                        face-down impact
-                      </p>
-                      <p class="accordion__text">
-                        * Drop-tested to withstand up to 8 feet/2.5 meters
-                      </p>
-                    </div>
                   </div>
-                  <div class="accordion__item">
+                </xo-collapse-trigger>
+                <xo-collapse>
+                  <div class="collapse-content">
+                    <p class="accordion__text">
+                      * The Bundle includes 1 box, 1 phone case, and 4 screen
+                      wipers or 2 screen protectors for iPhone 15 sizes.
+                    </p>
+
+                    <p class="accordion__text">
+                      * Ultra-slim hybrid raised AirLite™ corners for all-round
+                      protection
+                    </p>
+                    <p class="accordion__text">
+                      * Raised lens bezel to shield back camera
+                    </p>
+                    <p class="accordion__text">
+                      * Flexible anti-yellowing Bayer TPU bumper for
+                      long-lasting clarity
+                    </p>
+                    <p class="accordion__text">
+                      * Tough 3H scratch-resistant polycarbonate back
+                    </p>
+                    <p class="accordion__text">
+                      * Reinforced raised corners to shield against direct
+                      face-down impact
+                    </p>
+                    <p class="accordion__text">
+                      * Drop-tested to withstand up to 8 feet/2.5 meters
+                    </p>
+                  </div>
+                </xo-collapse>
+
+                <xo-collapse-trigger>
+                  <div class="collapse-header">
                     <button class="accordion__header">
                       <h3 class="accordion__title">Shipping & returns</h3>
                       <span class="accordion__icon">
@@ -549,36 +587,41 @@
                         </svg>
                       </span>
                     </button>
-                    <div class="accordion__content">
-                      <p class="accordion__text">
-                        * The Bundle includes 1 box, 1 phone case, and 4 screen
-                        wipers or 2 screen protectors for iPhone 15 sizes.
-                      </p>
-
-                      <p class="accordion__text">
-                        * Ultra-slim hybrid raised AirLite™ corners for
-                        all-round protection
-                      </p>
-                      <p class="accordion__text">
-                        * Raised lens bezel to shield back camera
-                      </p>
-                      <p class="accordion__text">
-                        * Flexible anti-yellowing Bayer TPU bumper for
-                        long-lasting clarity
-                      </p>
-                      <p class="accordion__text">
-                        * Tough 3H scratch-resistant polycarbonate back
-                      </p>
-                      <p class="accordion__text">
-                        * Reinforced raised corners to shield against direct
-                        face-down impact
-                      </p>
-                      <p class="accordion__text">
-                        * Drop-tested to withstand up to 8 feet/2.5 meters
-                      </p>
-                    </div>
                   </div>
-                  <div class="accordion__item">
+                </xo-collapse-trigger>
+                <xo-collapse>
+                  <div class="collapse-content">
+                    <p class="accordion__text">
+                      * The Bundle includes 1 box, 1 phone case, and 4 screen
+                      wipers or 2 screen protectors for iPhone 15 sizes.
+                    </p>
+
+                    <p class="accordion__text">
+                      * Ultra-slim hybrid raised AirLite™ corners for all-round
+                      protection
+                    </p>
+                    <p class="accordion__text">
+                      * Raised lens bezel to shield back camera
+                    </p>
+                    <p class="accordion__text">
+                      * Flexible anti-yellowing Bayer TPU bumper for
+                      long-lasting clarity
+                    </p>
+                    <p class="accordion__text">
+                      * Tough 3H scratch-resistant polycarbonate back
+                    </p>
+                    <p class="accordion__text">
+                      * Reinforced raised corners to shield against direct
+                      face-down impact
+                    </p>
+                    <p class="accordion__text">
+                      * Drop-tested to withstand up to 8 feet/2.5 meters
+                    </p>
+                  </div>
+                </xo-collapse>
+
+                <xo-collapse-trigger>
+                  <div class="collapse-header">
                     <button class="accordion__header">
                       <h3 class="accordion__title">Care guide</h3>
                       <span class="accordion__icon">
@@ -611,37 +654,39 @@
                         </svg>
                       </span>
                     </button>
-                    <div class="accordion__content">
-                      <p class="accordion__text">
-                        * The Bundle includes 1 box, 1 phone case, and 4 screen
-                        wipers or 2 screen protectors for iPhone 15 sizes.
-                      </p>
-
-                      <p class="accordion__text">
-                        * Ultra-slim hybrid raised AirLite™ corners for
-                        all-round protection
-                      </p>
-                      <p class="accordion__text">
-                        * Raised lens bezel to shield back camera
-                      </p>
-                      <p class="accordion__text">
-                        * Flexible anti-yellowing Bayer TPU bumper for
-                        long-lasting clarity
-                      </p>
-                      <p class="accordion__text">
-                        * Tough 3H scratch-resistant polycarbonate back
-                      </p>
-                      <p class="accordion__text">
-                        * Reinforced raised corners to shield against direct
-                        face-down impact
-                      </p>
-                      <p class="accordion__text">
-                        * Drop-tested to withstand up to 8 feet/2.5 meters
-                      </p>
-                    </div>
                   </div>
-                </div>
-              </div>
+                </xo-collapse-trigger>
+                <xo-collapse>
+                  <div class="collapse-content">
+                    <p class="accordion__text">
+                      * The Bundle includes 1 box, 1 phone case, and 4 screen
+                      wipers or 2 screen protectors for iPhone 15 sizes.
+                    </p>
+
+                    <p class="accordion__text">
+                      * Ultra-slim hybrid raised AirLite™ corners for all-round
+                      protection
+                    </p>
+                    <p class="accordion__text">
+                      * Raised lens bezel to shield back camera
+                    </p>
+                    <p class="accordion__text">
+                      * Flexible anti-yellowing Bayer TPU bumper for
+                      long-lasting clarity
+                    </p>
+                    <p class="accordion__text">
+                      * Tough 3H scratch-resistant polycarbonate back
+                    </p>
+                    <p class="accordion__text">
+                      * Reinforced raised corners to shield against direct
+                      face-down impact
+                    </p>
+                    <p class="accordion__text">
+                      * Drop-tested to withstand up to 8 feet/2.5 meters
+                    </p>
+                  </div>
+                </xo-collapse>
+              </xo-collapse-provider>
             </xo-animate>
           </div>
         </div>
@@ -770,7 +815,7 @@
       </xo-container>
     </section>
 
-    <!-- <section class="section">
+    <section class="section">
       <div class="bg-parallax">
         <xo-parallax xo-lerp-ease="0.1" class="bg-parallax__item">
           <xo-parallax-scroll
@@ -837,9 +882,9 @@
           </div>
         </div>
       </xo-container>
-    </section> -->
+    </section>
 
-    <section
+    <!-- <section
       class="page-section test page-section--color"
       style="--color: #f6f6f6"
     >
@@ -978,7 +1023,7 @@
           </div>
         </div>
       </div>
-    </section>
+    </section> -->
 
     <section class="page-section page-section--color" style="--color: #fff">
       <div class="faq-container">
@@ -1292,7 +1337,7 @@
               </div>
             </div>
           </div>
-          <div class="recommend__product">
+          <!-- <div class="recommend__product">
             <div class="row">
               <div class="col" style="--col-lg: 3; --col-md: 6">
                 <div class="product-card">
@@ -1459,7 +1504,158 @@
                 ></div>
               </div>
             </div>
-          </div>
+          </div> -->
+          <xo-grid class="seller__grid" style="--xs: 2; --sm: 2; --xl: 4"
+            ><xo-animate xo-type="fade-up" xo-delay="200">
+              <div class="product-card">
+                <div class="product-card__img">
+                  <a href="productdetail.html"
+                    ><img
+                      src="public/assets/products/product1.png"
+                      alt="" /><img
+                      src="public/assets/products/product2.png"
+                      alt=""
+                  /></a>
+                </div>
+                <div class="product-info">
+                  <div class="product-info__name">
+                    <h3>Hills</h3>
+                  </div>
+                  <div class="product-info__price">$76</div>
+                  <div class="product-option">
+                    <div
+                      class="product-option__item"
+                      style="--color: #c9bfae"
+                    ></div>
+                    <div
+                      class="product-option__item"
+                      style="--color: #a393b5"
+                    ></div>
+                    <div
+                      class="product-option__item"
+                      style="--color: #ec978c"
+                    ></div>
+                    <div
+                      class="product-option__item"
+                      style="--color: #ec978c"
+                    ></div>
+                  </div>
+                </div>
+              </div>
+            </xo-animate>
+            <xo-animate xo-type="fade-up" xo-delay="200">
+              <div class="product-card">
+                <div class="product-card__img">
+                  <a href="productdetail.html"
+                    ><img
+                      src="public/assets/products/product1.png"
+                      alt="" /><img
+                      src="public/assets/products/product2.png"
+                      alt=""
+                  /></a>
+                </div>
+                <div class="product-info">
+                  <div class="product-info__name">
+                    <h3>Hills</h3>
+                  </div>
+                  <div class="product-info__price">$76</div>
+                  <div class="product-option">
+                    <div
+                      class="product-option__item"
+                      style="--color: #c9bfae"
+                    ></div>
+                    <div
+                      class="product-option__item"
+                      style="--color: #a393b5"
+                    ></div>
+                    <div
+                      class="product-option__item"
+                      style="--color: #ec978c"
+                    ></div>
+                    <div
+                      class="product-option__item"
+                      style="--color: #ec978c"
+                    ></div>
+                  </div>
+                </div>
+              </div>
+            </xo-animate>
+
+            <xo-animate xo-type="fade-up" xo-delay="200">
+              <div class="product-card">
+                <div class="product-card__img">
+                  <a href="productdetail.html"
+                    ><img
+                      src="public/assets/products/product1.png"
+                      alt="" /><img
+                      src="public/assets/products/product2.png"
+                      alt=""
+                  /></a>
+                </div>
+                <div class="product-info">
+                  <div class="product-info__name">
+                    <h3>Hills</h3>
+                  </div>
+                  <div class="product-info__price">$76</div>
+                  <div class="product-option">
+                    <div
+                      class="product-option__item"
+                      style="--color: #c9bfae"
+                    ></div>
+                    <div
+                      class="product-option__item"
+                      style="--color: #a393b5"
+                    ></div>
+                    <div
+                      class="product-option__item"
+                      style="--color: #ec978c"
+                    ></div>
+                    <div
+                      class="product-option__item"
+                      style="--color: #ec978c"
+                    ></div>
+                  </div>
+                </div>
+              </div>
+            </xo-animate>
+            <xo-animate xo-type="fade-up" xo-delay="200">
+              <div class="product-card">
+                <div class="product-card__img">
+                  <a href="productdetail.html"
+                    ><img
+                      src="public/assets/products/product1.png"
+                      alt="" /><img
+                      src="public/assets/products/product2.png"
+                      alt=""
+                  /></a>
+                </div>
+                <div class="product-info">
+                  <div class="product-info__name">
+                    <h3>Hills</h3>
+                  </div>
+                  <div class="product-info__price">$76</div>
+                  <div class="product-option">
+                    <div
+                      class="product-option__item"
+                      style="--color: #c9bfae"
+                    ></div>
+                    <div
+                      class="product-option__item"
+                      style="--color: #a393b5"
+                    ></div>
+                    <div
+                      class="product-option__item"
+                      style="--color: #ec978c"
+                    ></div>
+                    <div
+                      class="product-option__item"
+                      style="--color: #ec978c"
+                    ></div>
+                  </div>
+                </div>
+              </div>
+            </xo-animate>
+          </xo-grid>
         </div>
       </div>
     </section>

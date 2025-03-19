@@ -141,6 +141,7 @@
   align-items: center;
   justify-content: center;
   text-align: center;
+  padding-top: 28px;
   padding-bottom: 95px;
 }
 .seller__banner img {
@@ -156,6 +157,7 @@
 }
 
 .btn-style--01 {
+  $white-color: #fff;
   background: rgba(15, 97, 255, 1);
   border-radius: 56px;
   display: block;
@@ -166,6 +168,12 @@
   font-style: normal;
   font-weight: 500;
   line-height: normal;
+  transition: all 0.5s;
+  &:hover {
+    box-shadow: inset 5em 0 0 0 $white-color, inset -5em 0 0 0 $white-color;
+    border-color: rgba(15, 97, 255, 1);
+    color: rgba(15, 97, 255, 1);
+  }
 }
 .product-option__item {
   transition: transform 0.5s ease-in-out;

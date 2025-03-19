@@ -29,6 +29,8 @@ h6 {
   font-family: "Be Vietnam Pro", sans-serif;
   color: #111;
   font-weight: 400;
+  margin: 0;
+  padding: 0;
 }
 
 a {
@@ -38,4 +40,11 @@ a {
 
 a:hover {
   cursor: pointer;
+}
+
+ul,
+li {
+  list-style: none;
+  padding: 0;
+  margin: 0;
 }

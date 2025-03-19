@@ -214,12 +214,18 @@ select option {
   align-items: stretch;
   gap: 4px;
   border: none;
+  // justify-content: center;
+  // align-items: center;
 }
 
 .pi__color {
-  width: auto;
-  height: 100%;
+  width: 28px;
+  height: 28px;
   // overflow: hidden;
+  justify-content: center;
+  align-items: center;
+  background: transparent;
+  padding: 1px;
 }
 
 .pi__color svg {
@@ -228,6 +234,7 @@ select option {
   background-color: white;
   transition: all 0.5s ease;
   // aspect-ratio: 1;
+  border-radius: 50%;
 }
 
 .pi__color svg:hover {
@@ -513,11 +520,11 @@ select option {
   height: 100%;
 }
 .ps {
-  // height: 100%;
+  min-height: 100%;
   // position: relative;
   overflow: hidden;
   // padding: 75px 0 80px 0;
-  inset: 0;
+  position: relative;
 }
 .ps__content {
   width: 509px;
@@ -932,7 +939,7 @@ select option {
 
 //Modifire accordion
 .accordion--border-none {
-  border-top: none;
+  // border-top: none;
   display: flex;
   flex-direction: column;
   gap: 9px;
@@ -941,6 +948,14 @@ select option {
   border: none;
   border-radius: 10px;
   background: var(--Layer, #f6f6f6);
+}
+
+// .accordion__header:last-child {
+//   border-bottom: 1px solid #e5e5e5;
+// }
+
+.accordion__header {
+  border-top: 1px solid #e5e5e5;
 }
 
 .accordion__header--p-26-31 {

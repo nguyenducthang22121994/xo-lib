@@ -15,7 +15,7 @@
   </head>
   <body>
     <header class="page-header">
-      <xo-sticky xo-direction="down" style="--top: 0px">
+      <xo-sticky xo-direction="up" style="--top: 0px">
         <div class="header-container">
           <div class="header-logo">
             <img src="./public/assets/logo/Logo.svg" alt="Logo Image" />
@@ -297,7 +297,9 @@
               <img src="./public/assets/products/Change Img.png" alt="" />
             </xo-animate>
             <div class="btn-sa btn-sa--large">
-              <a class="btn btn-style--01" href="showall.html">Shop all</a>
+              <a class="btn btn-style--01 btn--style4" href="showall.html"
+                >Shop all</a
+              >
             </div>
           </div>
         </div>
@@ -330,11 +332,18 @@
                   <xo-carousel-slide>
                     <div class="carousel-item">
                       <div class="multi-card">
-                        <img
-                          class="multi-card__img"
-                          src="public/assets/multi/image67.png"
-                          alt=""
-                        />
+                        <div class="multi-card__inner">
+                          <img
+                            class="multi-card__img multi-card__img--front"
+                            src="public/assets/multi/image67.png"
+                            alt=""
+                          />
+                          <img
+                            class="multi-card__img multi-card__img--back"
+                            src="public/assets/multi/img2.png"
+                            alt=""
+                          />
+                        </div>
                         <div class="multi-card__text">
                           <div class="multi-card__num">01</div>
                           <h3 class="multi-card__desc">
@@ -347,11 +356,18 @@
                   <xo-carousel-slide>
                     <div class="carousel-item">
                       <div class="multi-card">
-                        <img
-                          class="multi-card__img"
-                          src="public/assets/multi/img2.png"
-                          alt=""
-                        />
+                        <div class="multi-card__inner">
+                          <img
+                            class="multi-card__img multi-card__img--front"
+                            src="public/assets/multi/img2.png"
+                            alt=""
+                          />
+                          <img
+                            class="multi-card__img multi-card__img--back"
+                            src="public/assets/multi/image67.png"
+                            alt=""
+                          />
+                        </div>
                         <div class="multi-card__text">
                           <h3 class="multi-card__num multi-card__num--02">
                             02
@@ -366,11 +382,19 @@
                   <xo-carousel-slide>
                     <div class="carousel-item">
                       <div class="multi-card">
-                        <img
-                          class="multi-card__img"
-                          src="public/assets/multi/image68.png"
-                          alt=""
-                        />
+                        <div class="multi-card__inner">
+                          <img
+                            class="multi-card__img multi-card__img--front"
+                            src="public/assets/multi/image68.png"
+                            alt=""
+                          />
+                          <img
+                            class="multi-card__img multi-card__img--back"
+                            src="public/assets/multi/img2.png"
+                            alt=""
+                          />
+                        </div>
+
                         <div class="multi-card__text">
                           <div class="multi-card__num">03</div>
                           <h3 class="multi-card__desc">
@@ -382,44 +406,9 @@
                   </xo-carousel-slide>
                 </xo-carousel-list>
               </xo-carousel-inner>
-              <!-- <xo-carousel-prev><button>Prev</button></xo-carousel-prev>
-                <xo-carousel-next><button>Next</button></xo-carousel-next> -->
-              <xo-carousel-pagination>
-                <xo-carousel-bullet
-                  xo-index="0"
-                  xo-page="1"
-                  role="button"
-                  tabindex="0"
-                >
-                  <span class="carousel-bullet"></span> </xo-carousel-bullet
-                ><xo-carousel-bullet
-                  xo-index="1"
-                  xo-page="2"
-                  role="button"
-                  tabindex="0"
-                  xo-active=""
-                >
-                  <span class="carousel-bullet"></span>
-                </xo-carousel-bullet>
-
-                <xo-carousel-bullet
-                  xo-index="2"
-                  xo-page="3"
-                  role="button"
-                  tabindex="0"
-                >
-                  <span class="carousel-bullet"></span>
-                </xo-carousel-bullet>
-
-                <xo-carousel-bullet
-                  xo-index="3"
-                  xo-page="4"
-                  role="button"
-                  tabindex="0"
-                >
-                  <span class="carousel-bullet"></span>
-                </xo-carousel-bullet>
-              </xo-carousel-pagination>
+              <div class="dots">
+                <xo-carousel-pagination> </xo-carousel-pagination>
+              </div>
             </xo-carousel>
           </div>
         </div>
@@ -495,8 +484,12 @@
         <div class="collection">
           <xo-grid>
             <div style="--md: 12; --lg: 6" class="collection__img">
-              <xo-animate xo-type="fade-up" xo-delay="200">
-                <img src="./public/assets/products/collect img.png" alt="" />
+              <xo-animate xo-type="fade-up" xo-delay="200" style="height: 100%">
+                <img
+                  src="./public/assets/products/collect img.png"
+                  alt=""
+                  style="height: 100%"
+                />
                 <h2 class="collection__title">Extreme Case Compatible</h2>
               </xo-animate>
             </div>
@@ -743,7 +736,9 @@
               <div class="cl-card__title">
                 <h2>Super Protect</h2>
                 <div class="btn-sa btn-sa--large">
-                  <a class="btn btn-style--01" href="showall.html">Shop all</a>
+                  <a class="btn btn-style--01 btn--style4" href="showall.html"
+                    >Shop all</a
+                  >
                 </div>
               </div>
               <div class="cl-card__img">

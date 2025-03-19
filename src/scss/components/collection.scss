@@ -28,7 +28,7 @@
   position: absolute;
   inset: 0;
   padding: 33px 42px;
-  width: 400px;
+  max-width: 400px;
   color: var(--Text, #fff);
   font-feature-settings: "ss01" on;
   font-family: var(--Heading-font-family, "Be Vietnam Pro");
