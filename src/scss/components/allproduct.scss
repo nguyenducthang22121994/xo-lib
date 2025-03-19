@@ -11,7 +11,7 @@
 
 .product-hero__title {
   text-align: start;
-  width: 100%;
+  // width: 100%;
   height: 100%;
   position: relative;
 }
@@ -277,7 +277,6 @@
 
 .pagination .divider {
   position: relative;
-  width: 1776px;
   height: 1px;
   margin-left: -92px;
   margin-right: -92px;
@@ -406,7 +405,9 @@
 // ================================
 // ============= Frame ============
 // ================================
-
+.frame-container {
+  padding: 24px 0 39px 0;
+}
 .frame,
 .frame__content {
   display: flex;

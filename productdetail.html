@@ -12,285 +12,234 @@
       href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
       rel="stylesheet"
     />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-      rel="stylesheet"
-    />
   </head>
   <body>
-    <div id="app">
-      <header class="page-header">
-        <xo-sticky xo-direction="down" style="--top: 0px">
-          <div class="header-container">
-            <div class="header-logo">
-              <img src="./public/assets/logo/Logo.svg" alt="Logo Image" />
-            </div>
-            <div class="nav">
-              <ul class="nav-list nav-list--text">
-                <li><a href="button.html">New & Featured</a></li>
-                <li><a href="#">Collection</a></li>
-                <li><a href="#">Customize</a></li>
-                <li><a href="#">About us</a></li>
-                <li><a href="#">Blog</a></li>
-              </ul>
-              <ul class="nav-list nav-list--icon">
-                <li>
-                  <a href="#">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="16"
-                      height="16"
-                      viewBox="0 0 16 16"
-                      fill="none"
-                    >
-                      <g clip-path="url(#clip0_14_202)">
-                        <path
-                          d="M15.8045 14.8625L11.8252 10.8831C12.9096 9.55687 13.4428 7.86453 13.3144 6.15618C13.1861 4.44783 12.406 2.85416 11.1356 1.70482C9.86516 0.55548 8.20158 -0.0615992 6.48895 -0.018778C4.77632 0.0240432 3.14566 0.723488 1.93426 1.93488C0.72287 3.14627 0.0234252 4.77693 -0.019396 6.48957C-0.0622172 8.2022 0.554862 9.86578 1.7042 11.1362C2.85354 12.4066 4.44721 13.1867 6.15556 13.315C7.86392 13.4434 9.55625 12.9102 10.8825 11.8258L14.8619 15.8051C14.9876 15.9266 15.156 15.9938 15.3308 15.9923C15.5056 15.9907 15.6728 15.9206 15.7964 15.797C15.92 15.6734 15.9901 15.5062 15.9916 15.3314C15.9932 15.1566 15.926 14.9882 15.8045 14.8625ZM6.66652 12.0005C5.61169 12.0005 4.58054 11.6877 3.70348 11.1016C2.82642 10.5156 2.14283 9.68266 1.73916 8.70812C1.3355 7.73358 1.22988 6.66122 1.43567 5.62666C1.64145 4.59209 2.14941 3.64178 2.89529 2.8959C3.64117 2.15002 4.59147 1.64207 5.62604 1.43628C6.6606 1.2305 7.73296 1.33611 8.7075 1.73978C9.68204 2.14345 10.515 2.82704 11.101 3.7041C11.6871 4.58116 11.9999 5.61231 11.9999 6.66714C11.9983 8.08114 11.4359 9.43677 10.436 10.4366C9.43615 11.4365 8.08052 11.9989 6.66652 12.0005Z"
-                          fill="black"
-                        />
-                      </g>
-                      <defs>
-                        <clipPath id="clip0_14_202">
-                          <rect width="16" height="16" fill="white" />
-                        </clipPath>
-                      </defs>
-                    </svg>
-                  </a>
-                </li>
-                <li>
-                  <a href="#"
-                    ><svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="16"
-                      height="16"
-                      viewBox="0 0 16 16"
-                      fill="none"
-                    >
-                      <path
-                        d="M8 8C8.79113 8 9.56449 7.76541 10.2223 7.32588C10.8801 6.88635 11.3928 6.26164 11.6955 5.53074C11.9983 4.79983 12.0775 3.99556 11.9231 3.21964C11.7688 2.44372 11.3878 1.73098 10.8284 1.17157C10.269 0.612165 9.55629 0.231202 8.78036 0.0768607C8.00444 -0.0774802 7.20017 0.00173314 6.46927 0.304484C5.73836 0.607234 5.11365 1.11992 4.67412 1.77772C4.2346 2.43552 4 3.20888 4 4C4.00106 5.06054 4.42283 6.07734 5.17274 6.82726C5.92266 7.57718 6.93946 7.99894 8 8ZM8 1.33334C8.52742 1.33334 9.04299 1.48973 9.48152 1.78275C9.92005 2.07577 10.2618 2.49224 10.4637 2.97951C10.6655 3.46678 10.7183 4.00296 10.6154 4.52024C10.5125 5.03753 10.2586 5.51268 9.88562 5.88562C9.51268 6.25856 9.03752 6.51254 8.52024 6.61543C8.00296 6.71832 7.46678 6.66551 6.97951 6.46368C6.49224 6.26185 6.07576 5.92005 5.78275 5.48152C5.48973 5.04299 5.33333 4.52742 5.33333 4C5.33333 3.29276 5.61428 2.61448 6.11438 2.11438C6.61448 1.61429 7.29276 1.33334 8 1.33334Z"
-                        fill="black"
-                      />
-                      <path
-                        d="M8 9.33333C6.40924 9.3351 4.88414 9.9678 3.75931 11.0926C2.63447 12.2175 2.00176 13.7426 2 15.3333C2 15.5101 2.07024 15.6797 2.19526 15.8047C2.32029 15.9298 2.48986 16 2.66667 16C2.84348 16 3.01305 15.9298 3.13807 15.8047C3.2631 15.6797 3.33333 15.5101 3.33333 15.3333C3.33333 14.0957 3.825 12.9087 4.70017 12.0335C5.57534 11.1583 6.76232 10.6667 8 10.6667C9.23768 10.6667 10.4247 11.1583 11.2998 12.0335C12.175 12.9087 12.6667 14.0957 12.6667 15.3333C12.6667 15.5101 12.7369 15.6797 12.8619 15.8047C12.987 15.9298 13.1565 16 13.3333 16C13.5101 16 13.6797 15.9298 13.8047 15.8047C13.9298 15.6797 14 15.5101 14 15.3333C13.9982 13.7426 13.3655 12.2175 12.2407 11.0926C11.1159 9.9678 9.59076 9.3351 8 9.33333Z"
-                        fill="black"
-                      />
-                    </svg>
-                  </a>
-                </li>
-                <li>
-                  <a href="#"
-                    ><svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="16"
-                      height="16"
-                      viewBox="0 0 16 16"
-                      fill="none"
-                    >
-                      <g clip-path="url(#clip0_14_208)">
-                        <path
-                          d="M14 4H12C12 2.93913 11.5786 1.92172 10.8284 1.17157C10.0783 0.421427 9.06087 0 8 0C6.93913 0 5.92172 0.421427 5.17157 1.17157C4.42143 1.92172 4 2.93913 4 4H2C1.46957 4 0.960859 4.21071 0.585786 4.58579C0.210714 4.96086 0 5.46957 0 6L0 12.6667C0.00105857 13.5504 0.352588 14.3976 0.97748 15.0225C1.60237 15.6474 2.4496 15.9989 3.33333 16H12.6667C13.5504 15.9989 14.3976 15.6474 15.0225 15.0225C15.6474 14.3976 15.9989 13.5504 16 12.6667V6C16 5.46957 15.7893 4.96086 15.4142 4.58579C15.0391 4.21071 14.5304 4 14 4ZM8 1.33333C8.70724 1.33333 9.38552 1.61428 9.88562 2.11438C10.3857 2.61448 10.6667 3.29276 10.6667 4H5.33333C5.33333 3.29276 5.61428 2.61448 6.11438 2.11438C6.61448 1.61428 7.29276 1.33333 8 1.33333ZM14.6667 12.6667C14.6667 13.1971 14.456 13.7058 14.0809 14.0809C13.7058 14.456 13.1971 14.6667 12.6667 14.6667H3.33333C2.8029 14.6667 2.29419 14.456 1.91912 14.0809C1.54405 13.7058 1.33333 13.1971 1.33333 12.6667V6C1.33333 5.82319 1.40357 5.65362 1.5286 5.5286C1.65362 5.40357 1.82319 5.33333 2 5.33333H4V6.66667C4 6.84348 4.07024 7.01305 4.19526 7.13807C4.32029 7.2631 4.48986 7.33333 4.66667 7.33333C4.84348 7.33333 5.01305 7.2631 5.13807 7.13807C5.2631 7.01305 5.33333 6.84348 5.33333 6.66667V5.33333H10.6667V6.66667C10.6667 6.84348 10.7369 7.01305 10.8619 7.13807C10.987 7.2631 11.1565 7.33333 11.3333 7.33333C11.5101 7.33333 11.6797 7.2631 11.8047 7.13807C11.9298 7.01305 12 6.84348 12 6.66667V5.33333H14C14.1768 5.33333 14.3464 5.40357 14.4714 5.5286C14.5964 5.65362 14.6667 5.82319 14.6667 6V12.6667Z"
-                          fill="black"
-                        />
-                      </g>
-                      <defs>
-                        <clipPath id="clip0_14_208">
-                          <rect width="16" height="16" fill="white" />
-                        </clipPath>
-                      </defs>
-                    </svg>
-                  </a>
-                </li>
-              </ul>
-              <ul class="nav-list nav-list--mobile">
-                <li>
-                  <a href="#">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="15"
-                      height="15"
-                      viewBox="0 0 15 15"
-                      fill="none"
-                    >
-                      <g clip-path="url(#clip0_4_9841)">
-                        <path
-                          d="M14.25 8.25H0.75C0.551088 8.25 0.360322 8.17098 0.21967 8.03033C0.0790176 7.88968 0 7.69891 0 7.5C0 7.30109 0.0790176 7.11032 0.21967 6.96967C0.360322 6.82902 0.551088 6.75 0.75 6.75H14.25C14.4489 6.75 14.6397 6.82902 14.7803 6.96967C14.921 7.11032 15 7.30109 15 7.5C15 7.69891 14.921 7.88968 14.7803 8.03033C14.6397 8.17098 14.4489 8.25 14.25 8.25ZM14.25 3H0.75C0.551088 3 0.360322 2.92098 0.21967 2.78033C0.0790176 2.63968 0 2.44891 0 2.25C0 2.05109 0.0790176 1.86032 0.21967 1.71967C0.360322 1.57902 0.551088 1.5 0.75 1.5H14.25C14.4489 1.5 14.6397 1.57902 14.7803 1.71967C14.921 1.86032 15 2.05109 15 2.25C15 2.44891 14.921 2.63968 14.7803 2.78033C14.6397 2.92098 14.4489 3 14.25 3ZM14.25 13.5H0.75C0.551088 13.5 0.360322 13.421 0.21967 13.2803C0.0790176 13.1397 0 12.9489 0 12.75C0 12.5511 0.0790176 12.3603 0.21967 12.2197C0.360322 12.079 0.551088 12 0.75 12H14.25C14.4489 12 14.6397 12.079 14.7803 12.2197C14.921 12.3603 15 12.5511 15 12.75C15 12.9489 14.921 13.1397 14.7803 13.2803C14.6397 13.421 14.4489 13.5 14.25 13.5Z"
-                          fill="black"
-                        />
-                      </g>
-                      <defs>
-                        <clipPath id="clip0_4_9841">
-                          <rect width="15" height="15" fill="white" />
-                        </clipPath>
-                      </defs>
-                    </svg>
-                  </a>
-                </li>
-              </ul>
-            </div>
+    <header class="page-header">
+      <xo-sticky xo-direction="down" style="--top: 0px">
+        <div class="header-container">
+          <div class="header-logo">
+            <img src="./public/assets/logo/Logo.svg" alt="Logo Image" />
           </div>
-        </xo-sticky>
-      </header>
+          <div class="nav">
+            <ul class="nav-list nav-list--text">
+              <li><a href="button.html">New & Featured</a></li>
+              <li><a href="#">Collection</a></li>
+              <li><a href="#">Customize</a></li>
+              <li><a href="#">About us</a></li>
+              <li><a href="#">Blog</a></li>
+            </ul>
+            <ul class="nav-list nav-list--icon">
+              <li>
+                <a href="#">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16"
+                    height="16"
+                    viewBox="0 0 16 16"
+                    fill="none"
+                  >
+                    <g clip-path="url(#clip0_14_202)">
+                      <path
+                        d="M15.8045 14.8625L11.8252 10.8831C12.9096 9.55687 13.4428 7.86453 13.3144 6.15618C13.1861 4.44783 12.406 2.85416 11.1356 1.70482C9.86516 0.55548 8.20158 -0.0615992 6.48895 -0.018778C4.77632 0.0240432 3.14566 0.723488 1.93426 1.93488C0.72287 3.14627 0.0234252 4.77693 -0.019396 6.48957C-0.0622172 8.2022 0.554862 9.86578 1.7042 11.1362C2.85354 12.4066 4.44721 13.1867 6.15556 13.315C7.86392 13.4434 9.55625 12.9102 10.8825 11.8258L14.8619 15.8051C14.9876 15.9266 15.156 15.9938 15.3308 15.9923C15.5056 15.9907 15.6728 15.9206 15.7964 15.797C15.92 15.6734 15.9901 15.5062 15.9916 15.3314C15.9932 15.1566 15.926 14.9882 15.8045 14.8625ZM6.66652 12.0005C5.61169 12.0005 4.58054 11.6877 3.70348 11.1016C2.82642 10.5156 2.14283 9.68266 1.73916 8.70812C1.3355 7.73358 1.22988 6.66122 1.43567 5.62666C1.64145 4.59209 2.14941 3.64178 2.89529 2.8959C3.64117 2.15002 4.59147 1.64207 5.62604 1.43628C6.6606 1.2305 7.73296 1.33611 8.7075 1.73978C9.68204 2.14345 10.515 2.82704 11.101 3.7041C11.6871 4.58116 11.9999 5.61231 11.9999 6.66714C11.9983 8.08114 11.4359 9.43677 10.436 10.4366C9.43615 11.4365 8.08052 11.9989 6.66652 12.0005Z"
+                        fill="black"
+                      />
+                    </g>
+                    <defs>
+                      <clipPath id="clip0_14_202">
+                        <rect width="16" height="16" fill="white" />
+                      </clipPath>
+                    </defs>
+                  </svg>
+                </a>
+              </li>
+              <li>
+                <a href="#"
+                  ><svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16"
+                    height="16"
+                    viewBox="0 0 16 16"
+                    fill="none"
+                  >
+                    <path
+                      d="M8 8C8.79113 8 9.56449 7.76541 10.2223 7.32588C10.8801 6.88635 11.3928 6.26164 11.6955 5.53074C11.9983 4.79983 12.0775 3.99556 11.9231 3.21964C11.7688 2.44372 11.3878 1.73098 10.8284 1.17157C10.269 0.612165 9.55629 0.231202 8.78036 0.0768607C8.00444 -0.0774802 7.20017 0.00173314 6.46927 0.304484C5.73836 0.607234 5.11365 1.11992 4.67412 1.77772C4.2346 2.43552 4 3.20888 4 4C4.00106 5.06054 4.42283 6.07734 5.17274 6.82726C5.92266 7.57718 6.93946 7.99894 8 8ZM8 1.33334C8.52742 1.33334 9.04299 1.48973 9.48152 1.78275C9.92005 2.07577 10.2618 2.49224 10.4637 2.97951C10.6655 3.46678 10.7183 4.00296 10.6154 4.52024C10.5125 5.03753 10.2586 5.51268 9.88562 5.88562C9.51268 6.25856 9.03752 6.51254 8.52024 6.61543C8.00296 6.71832 7.46678 6.66551 6.97951 6.46368C6.49224 6.26185 6.07576 5.92005 5.78275 5.48152C5.48973 5.04299 5.33333 4.52742 5.33333 4C5.33333 3.29276 5.61428 2.61448 6.11438 2.11438C6.61448 1.61429 7.29276 1.33334 8 1.33334Z"
+                      fill="black"
+                    />
+                    <path
+                      d="M8 9.33333C6.40924 9.3351 4.88414 9.9678 3.75931 11.0926C2.63447 12.2175 2.00176 13.7426 2 15.3333C2 15.5101 2.07024 15.6797 2.19526 15.8047C2.32029 15.9298 2.48986 16 2.66667 16C2.84348 16 3.01305 15.9298 3.13807 15.8047C3.2631 15.6797 3.33333 15.5101 3.33333 15.3333C3.33333 14.0957 3.825 12.9087 4.70017 12.0335C5.57534 11.1583 6.76232 10.6667 8 10.6667C9.23768 10.6667 10.4247 11.1583 11.2998 12.0335C12.175 12.9087 12.6667 14.0957 12.6667 15.3333C12.6667 15.5101 12.7369 15.6797 12.8619 15.8047C12.987 15.9298 13.1565 16 13.3333 16C13.5101 16 13.6797 15.9298 13.8047 15.8047C13.9298 15.6797 14 15.5101 14 15.3333C13.9982 13.7426 13.3655 12.2175 12.2407 11.0926C11.1159 9.9678 9.59076 9.3351 8 9.33333Z"
+                      fill="black"
+                    />
+                  </svg>
+                </a>
+              </li>
+              <li>
+                <a href="#"
+                  ><svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16"
+                    height="16"
+                    viewBox="0 0 16 16"
+                    fill="none"
+                  >
+                    <g clip-path="url(#clip0_14_208)">
+                      <path
+                        d="M14 4H12C12 2.93913 11.5786 1.92172 10.8284 1.17157C10.0783 0.421427 9.06087 0 8 0C6.93913 0 5.92172 0.421427 5.17157 1.17157C4.42143 1.92172 4 2.93913 4 4H2C1.46957 4 0.960859 4.21071 0.585786 4.58579C0.210714 4.96086 0 5.46957 0 6L0 12.6667C0.00105857 13.5504 0.352588 14.3976 0.97748 15.0225C1.60237 15.6474 2.4496 15.9989 3.33333 16H12.6667C13.5504 15.9989 14.3976 15.6474 15.0225 15.0225C15.6474 14.3976 15.9989 13.5504 16 12.6667V6C16 5.46957 15.7893 4.96086 15.4142 4.58579C15.0391 4.21071 14.5304 4 14 4ZM8 1.33333C8.70724 1.33333 9.38552 1.61428 9.88562 2.11438C10.3857 2.61448 10.6667 3.29276 10.6667 4H5.33333C5.33333 3.29276 5.61428 2.61448 6.11438 2.11438C6.61448 1.61428 7.29276 1.33333 8 1.33333ZM14.6667 12.6667C14.6667 13.1971 14.456 13.7058 14.0809 14.0809C13.7058 14.456 13.1971 14.6667 12.6667 14.6667H3.33333C2.8029 14.6667 2.29419 14.456 1.91912 14.0809C1.54405 13.7058 1.33333 13.1971 1.33333 12.6667V6C1.33333 5.82319 1.40357 5.65362 1.5286 5.5286C1.65362 5.40357 1.82319 5.33333 2 5.33333H4V6.66667C4 6.84348 4.07024 7.01305 4.19526 7.13807C4.32029 7.2631 4.48986 7.33333 4.66667 7.33333C4.84348 7.33333 5.01305 7.2631 5.13807 7.13807C5.2631 7.01305 5.33333 6.84348 5.33333 6.66667V5.33333H10.6667V6.66667C10.6667 6.84348 10.7369 7.01305 10.8619 7.13807C10.987 7.2631 11.1565 7.33333 11.3333 7.33333C11.5101 7.33333 11.6797 7.2631 11.8047 7.13807C11.9298 7.01305 12 6.84348 12 6.66667V5.33333H14C14.1768 5.33333 14.3464 5.40357 14.4714 5.5286C14.5964 5.65362 14.6667 5.82319 14.6667 6V12.6667Z"
+                        fill="black"
+                      />
+                    </g>
+                    <defs>
+                      <clipPath id="clip0_14_208">
+                        <rect width="16" height="16" fill="white" />
+                      </clipPath>
+                    </defs>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+            <ul class="nav-list nav-list--mobile">
+              <li>
+                <a href="#">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="15"
+                    height="15"
+                    viewBox="0 0 15 15"
+                    fill="none"
+                  >
+                    <g clip-path="url(#clip0_4_9841)">
+                      <path
+                        d="M14.25 8.25H0.75C0.551088 8.25 0.360322 8.17098 0.21967 8.03033C0.0790176 7.88968 0 7.69891 0 7.5C0 7.30109 0.0790176 7.11032 0.21967 6.96967C0.360322 6.82902 0.551088 6.75 0.75 6.75H14.25C14.4489 6.75 14.6397 6.82902 14.7803 6.96967C14.921 7.11032 15 7.30109 15 7.5C15 7.69891 14.921 7.88968 14.7803 8.03033C14.6397 8.17098 14.4489 8.25 14.25 8.25ZM14.25 3H0.75C0.551088 3 0.360322 2.92098 0.21967 2.78033C0.0790176 2.63968 0 2.44891 0 2.25C0 2.05109 0.0790176 1.86032 0.21967 1.71967C0.360322 1.57902 0.551088 1.5 0.75 1.5H14.25C14.4489 1.5 14.6397 1.57902 14.7803 1.71967C14.921 1.86032 15 2.05109 15 2.25C15 2.44891 14.921 2.63968 14.7803 2.78033C14.6397 2.92098 14.4489 3 14.25 3ZM14.25 13.5H0.75C0.551088 13.5 0.360322 13.421 0.21967 13.2803C0.0790176 13.1397 0 12.9489 0 12.75C0 12.5511 0.0790176 12.3603 0.21967 12.2197C0.360322 12.079 0.551088 12 0.75 12H14.25C14.4489 12 14.6397 12.079 14.7803 12.2197C14.921 12.3603 15 12.5511 15 12.75C15 12.9489 14.921 13.1397 14.7803 13.2803C14.6397 13.421 14.4489 13.5 14.25 13.5Z"
+                        fill="black"
+                      />
+                    </g>
+                    <defs>
+                      <clipPath id="clip0_4_9841">
+                        <rect width="15" height="15" fill="white" />
+                      </clipPath>
+                    </defs>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </xo-sticky>
+    </header>
 
-      <section class="page-section">
-        <xo-container>
-          <div class="pi">
-            <div class="pi__gallery">
-              <xo-carousel xo-rewind xo-per-view="1">
+    <section class="page-section">
+      <xo-container>
+        <div class="pi">
+          <div class="pi__gallery">
+            <xo-carousel xo-active-index="0">
+              <xo-carousel-inner>
+                <xo-carousel-list>
+                  <xo-carousel-slide
+                    ><div class="carousel-item">
+                      <div class="pi__gallery-main">
+                        <img
+                          src="./public/assets/product-detail/product_img1.png"
+                          alt="main image"
+                          class="pi__gallery-main-img"
+                        />
+                      </div></div
+                  ></xo-carousel-slide>
+                  <xo-carousel-slide
+                    ><div class="carousel-item">
+                      <div class="pi__gallery-main">
+                        <img
+                          src="./public/assets/product-detail/product_img1.png"
+                          alt="main image"
+                          class="pi__gallery-main-img"
+                        />
+                      </div></div
+                  ></xo-carousel-slide>
+                  <xo-carousel-slide
+                    ><div class="carousel-item">
+                      <div class="pi__gallery-main">
+                        <img
+                          src="./public/assets/product-detail/product_img1.png"
+                          alt="main image"
+                          class="pi__gallery-main-img"
+                        />
+                      </div></div
+                  ></xo-carousel-slide>
+                  <xo-carousel-slide
+                    ><div class="carousel-item">
+                      <div class="pi__gallery-main">
+                        <img
+                          src="./public/assets/product-detail/product_img1.png"
+                          alt="main image"
+                          class="pi__gallery-main-img"
+                        />
+                      </div></div
+                  ></xo-carousel-slide>
+                  <xo-carousel-slide
+                    ><div class="carousel-item">
+                      <div class="pi__gallery-main">
+                        <img
+                          src="./public/assets/product-detail/product_img1.png"
+                          alt="main image"
+                          class="pi__gallery-main-img"
+                        />
+                      </div></div
+                  ></xo-carousel-slide>
+                </xo-carousel-list>
+              </xo-carousel-inner>
+              <xo-carousel-thumbnail
+                xo-gap="12"
+                xo-per-move="1"
+                style="margin-top: 29px"
+                xo-per-view="6"
+              >
                 <xo-carousel-inner>
                   <xo-carousel-list>
                     <xo-carousel-slide
-                      ><div class="carousel-item">
-                        <div class="pi__gallery-main">
-                          <div
-                            class="pi__zoom"
-                            style="
-                              background-image: url('./public/assets/product-detail/product_img1.png');
-                            "
-                          ></div>
+                      ><div class="carousel-item-thumb">
+                        <div class="pi__gallery-thumbnail">
                           <img
                             src="./public/assets/product-detail/product_img1.png"
                             alt="main image"
                             class="pi__gallery-main-img"
                           />
-                        </div></div
-                    ></xo-carousel-slide>
+                        </div>
+                      </div>
+                    </xo-carousel-slide>
                     <xo-carousel-slide
-                      ><div class="carousel-item">
-                        <div class="pi__gallery-main">
-                          <div
-                            class="pi__zoom"
-                            style="
-                              background-image: url('./public/assets/product-detail/product_img1.png');
-                            "
-                          ></div>
+                      ><div class="carousel-item-thumb">
+                        <div class="pi__gallery-thumbnail">
                           <img
                             src="./public/assets/product-detail/product_img1.png"
                             alt="main image"
                             class="pi__gallery-main-img"
                           />
-                        </div></div
-                    ></xo-carousel-slide>
+                        </div>
+                      </div>
+                    </xo-carousel-slide>
                     <xo-carousel-slide
-                      ><div class="carousel-item">
-                        <div class="pi__gallery-main">
-                          <div
-                            class="pi__zoom"
-                            style="
-                              background-image: url('./public/assets/product-detail/product_img1.png');
-                            "
-                          ></div>
+                      ><div class="carousel-item-thumb">
+                        <div class="pi__gallery-thumbnail">
                           <img
                             src="./public/assets/product-detail/product_img1.png"
                             alt="main image"
                             class="pi__gallery-main-img"
                           />
-                        </div></div
-                    ></xo-carousel-slide>
+                        </div>
+                      </div>
+                    </xo-carousel-slide>
                     <xo-carousel-slide
-                      ><div class="carousel-item">
-                        <div class="pi__gallery-main">
-                          <div
-                            class="pi__zoom"
-                            style="
-                              background-image: url('./public/assets/product-detail/product_img1.png');
-                            "
-                          ></div>
+                      ><div class="carousel-item-thumb">
+                        <div class="pi__gallery-thumbnail">
                           <img
                             src="./public/assets/product-detail/product_img1.png"
                             alt="main image"
                             class="pi__gallery-main-img"
                           />
-                        </div></div
-                    ></xo-carousel-slide>
+                        </div>
+                      </div>
+                    </xo-carousel-slide>
                     <xo-carousel-slide
-                      ><div class="carousel-item">
-                        <div class="pi__gallery-main">
-                          <div
-                            class="pi__zoom"
-                            style="
-                              background-image: url('./public/assets/product-detail/product_img1.png');
-                            "
-                          ></div>
-                          <img
-                            src="./public/assets/product-detail/product_img1.png"
-                            alt="main image"
-                            class="pi__gallery-main-img"
-                          />
-                        </div></div
-                    ></xo-carousel-slide>
-                    <xo-carousel-slide
-                      ><div class="carousel-item">
-                        <div class="pi__gallery-main">
-                          <div
-                            class="pi__zoom"
-                            style="
-                              background-image: url('./public/assets/product-detail/product_img1.png');
-                            "
-                          ></div>
-                          <img
-                            src="./public/assets/product-detail/product_img1.png"
-                            alt="main image"
-                            class="pi__gallery-main-img"
-                          />
-                        </div></div
-                    ></xo-carousel-slide>
-                    <xo-carousel-slide
-                      ><div class="carousel-item">
-                        <div class="pi__gallery-main">
-                          <div
-                            class="pi__zoom"
-                            style="
-                              background-image: url('./public/assets/product-detail/product_img1.png');
-                            "
-                          ></div>
-                          <img
-                            src="./public/assets/product-detail/product_img1.png"
-                            alt="main image"
-                            class="pi__gallery-main-img"
-                          />
-                        </div></div
-                    ></xo-carousel-slide>
-                    <xo-carousel-slide
-                      ><div class="carousel-item">
-                        <div class="pi__gallery-main">
-                          <div
-                            class="pi__zoom"
-                            style="
-                              background-image: url('./public/assets/product-detail/product_img1.png');
-                            "
-                          ></div>
-                          <img
-                            src="./public/assets/product-detail/product_img1.png"
-                            alt="main image"
-                            class="pi__gallery-main-img"
-                          />
-                        </div></div
-                    ></xo-carousel-slide>
-                    <xo-carousel-slide
-                      ><div class="carousel-item">
-                        <div class="pi__gallery-main">
-                          <div
-                            class="pi__zoom"
-                            style="
-                              background-image: url('./public/assets/product-detail/product_img1.png');
-                            "
-                          ></div>
-                          <img
-                            src="./public/assets/product-detail/product_img1.png"
-                            alt="main image"
-                            class="pi__gallery-main-img"
-                          />
-                        </div></div
-                    ></xo-carousel-slide>
-                    <xo-carousel-slide
-                      ><div class="carousel-item">
-                        <div class="pi__gallery-main">
-                          <div
-                            class="pi__zoom"
-                            style="
-                              background-image: url('./public/assets/product-detail/product_img1.png');
-                            "
-                          ></div>
+                      ><div class="carousel-item-thumb">
+                        <div class="pi__gallery-thumbnail">
                           <img
                             src="./public/assets/product-detail/product_img1.png"
                             alt="main image"
@@ -300,214 +249,62 @@
                     ></xo-carousel-slide>
                   </xo-carousel-list>
                 </xo-carousel-inner>
-                <xo-carousel-thumbnail
-                  xo-gap="12"
-                  xo-per-move="1"
-                  style="margin-top: 29px"
-                  xo-per-view="6"
-                >
-                  <xo-carousel-inner>
-                    <xo-carousel-list>
-                      <xo-carousel-slide
-                        ><div class="carousel-item-thumb">
-                          <div class="pi__gallery-thumbnail">
-                            <img
-                              src="./public/assets/product-detail/product_img1.png"
-                              alt="main image"
-                              class="pi__gallery-main-img"
-                            />
-                          </div>
-                        </div>
-                      </xo-carousel-slide>
-                      <xo-carousel-slide
-                        ><div class="carousel-item-thumb">
-                          <div class="pi__gallery-thumbnail">
-                            <img
-                              src="./public/assets/product-detail/product_img1.png"
-                              alt="main image"
-                              class="pi__gallery-main-img"
-                            />
-                          </div></div
-                      ></xo-carousel-slide>
-                      <xo-carousel-slide
-                        ><div class="carousel-item-thumb">
-                          <div class="pi__gallery-thumbnail">
-                            <img
-                              src="./public/assets/product-detail/product_img1.png"
-                              alt="main image"
-                              class="pi__gallery-main-img"
-                            />
-                          </div></div
-                      ></xo-carousel-slide>
-                      <xo-carousel-slide
-                        ><div class="carousel-item-thumb">
-                          <div class="pi__gallery-thumbnail">
-                            <img
-                              src="./public/assets/product-detail/product_img1.png"
-                              alt="main image"
-                              class="pi__gallery-main-img"
-                            />
-                          </div></div
-                      ></xo-carousel-slide>
-                      <xo-carousel-slide
-                        ><div class="carousel-item-thumb">
-                          <div class="pi__gallery-thumbnail">
-                            <img
-                              src="./public/assets/product-detail/product_img1.png"
-                              alt="main image"
-                              class="pi__gallery-main-img"
-                            />
-                          </div></div
-                      ></xo-carousel-slide>
-                      <xo-carousel-slide
-                        ><div class="carousel-item-thumb">
-                          <div class="pi__gallery-thumbnail">
-                            <img
-                              src="./public/assets/product-detail/product_img1.png"
-                              alt="main image"
-                              class="pi__gallery-main-img"
-                            />
-                          </div></div
-                      ></xo-carousel-slide>
-                      <xo-carousel-slide
-                        ><div class="carousel-item-thumb">
-                          <div class="pi__gallery-thumbnail">
-                            <img
-                              src="./public/assets/product-detail/product_img1.png"
-                              alt="main image"
-                              class="pi__gallery-main-img"
-                            />
-                          </div></div
-                      ></xo-carousel-slide>
-                      <xo-carousel-slide
-                        ><div class="carousel-item-thumb">
-                          <div class="pi__gallery-thumbnail">
-                            <img
-                              src="./public/assets/product-detail/product_img1.png"
-                              alt="main image"
-                              class="pi__gallery-main-img"
-                            />
-                          </div></div
-                      ></xo-carousel-slide>
-                      <xo-carousel-slide
-                        ><div class="carousel-item-thumb">
-                          <div class="pi__gallery-thumbnail">
-                            <img
-                              src="./public/assets/product-detail/product_img1.png"
-                              alt="main image"
-                              class="pi__gallery-main-img"
-                            />
-                          </div></div
-                      ></xo-carousel-slide>
-                    </xo-carousel-list>
-                  </xo-carousel-inner>
-                </xo-carousel-thumbnail>
-                <xo-carousel-pagination></xo-carousel-pagination>
-              </xo-carousel>
-            </div>
+              </xo-carousel-thumbnail>
+              <xo-carousel-pagination></xo-carousel-pagination>
+            </xo-carousel>
+          </div>
 
-            <div class="pi__info">
-              <div class="pi__content">
-                <xo-animate xo-type="fade-up" xo-delay="0.2s">
-                  <div class="pi__details">
-                    <div class="pi__category">SOUNDBAR</div>
-                    <h2 class="pi__title">
-                      Wavy Check Forest on Sky Matte Case
-                    </h2>
-                    <h3 class="pi__description">
-                      The Tough Clear case has a slim profile with 12-foot drop
-                      protection. The one-piece platform design is constructed
-                      with cushioned...
-                    </h3>
-                    <div class="pi__price">
-                      <span class="pi__price-new">$78</span>
-                      <span class="pi__price-old">$90</span>
-                    </div>
+          <div class="pi__info">
+            <div class="pi__content">
+              <xo-animate xo-type="fade-up" xo-delay="0.2s">
+                <div class="pi__details">
+                  <div class="pi__category">SOUNDBAR</div>
+                  <h2 class="pi__title">Wavy Check Forest on Sky Matte Case</h2>
+                  <h3 class="pi__description">
+                    The Tough Clear case has a slim profile with 12-foot drop
+                    protection. The one-piece platform design is constructed
+                    with cushioned...
+                  </h3>
+                  <div class="pi__price">
+                    <span class="pi__price-new">$78</span>
+                    <span class="pi__price-old">$90</span>
                   </div>
-                </xo-animate>
+                </div>
+              </xo-animate>
 
-                <xo-animate xo-type="fade-up" xo-delay="0.2s">
-                  <div class="pi__options">
-                    <div class="pi__option pi__option--device">
-                      <label class="pi__option-label">SELECT DEVICE</label>
-                      <div class="pi__option-wrapper">
-                        <div class="pi__option-container">
-                          <select class="pi__option-dropdown">
-                            <option>Apple</option>
-                            <option>Samsung</option>
-                            <option>Google</option>
-                            <option>iPhone 14</option>
-                            <option>iPhone 15</option>
-                            <option>Galaxy S23</option>
-                          </select>
-                        </div>
-
-                        <div class="pi__option-container">
-                          <select class="pi__option-dropdown">
-                            <option>iPhone 14</option>
-                            <option>iPhone 15</option>
-                            <option>Galaxy S23</option>
-                            <option>Apple</option>
-                            <option>Samsung</option>
-                            <option>Google</option>
-                          </select>
-                        </div>
+              <xo-animate xo-type="fade-up" xo-delay="0.2s">
+                <div class="pi__options">
+                  <div class="pi__option pi__option--device">
+                    <label class="pi__option-label">SELECT DEVICE</label>
+                    <div class="pi__option-wrapper">
+                      <div class="pi__option-container">
+                        <select class="pi__option-dropdown">
+                          <option>Apple</option>
+                          <option>Samsung</option>
+                          <option>Google</option>
+                          <option>iPhone 14</option>
+                          <option>iPhone 15</option>
+                          <option>Galaxy S23</option>
+                        </select>
                       </div>
-                    </div>
 
-                    <div class="pi__option pi__option--color">
-                      <label class="pi__option-label">SELECT COLOR</label>
-                      <div class="pi__colors">
-                        <button class="pi__color pi__color--active">
-                          <svg
-                            xmlns="http://www.w3.org/2000/svg"
-                            width="24"
-                            height="24"
-                            viewBox="0 0 24 24"
-                            fill="none"
-                          >
-                            <circle
-                              cx="12"
-                              cy="12"
-                              r="12"
-                              fill="#0F61FF"
-                              stroke="#EDEDED"
-                            />
-                          </svg>
-                        </button>
-                        <button class="pi__color pi__color--disabled">
-                          <svg
-                            xmlns="http://www.w3.org/2000/svg"
-                            width="24"
-                            height="24"
-                            viewBox="0 0 24 24"
-                            fill="none"
-                          >
-                            <circle cx="12" cy="12" r="12" fill="#C1C1C1" />
-                          </svg>
-                        </button>
-                        <button class="pi__color pi__color--disabled">
-                          <svg
-                            xmlns="http://www.w3.org/2000/svg"
-                            width="24"
-                            height="24"
-                            viewBox="0 0 24 24"
-                            fill="none"
-                          >
-                            <circle cx="12" cy="12" r="12" fill="#D9B99B" />
-                          </svg>
-                        </button>
+                      <div class="pi__option-container">
+                        <select class="pi__option-dropdown">
+                          <option>iPhone 14</option>
+                          <option>iPhone 15</option>
+                          <option>Galaxy S23</option>
+                          <option>Apple</option>
+                          <option>Samsung</option>
+                          <option>Google</option>
+                        </select>
                       </div>
                     </div>
                   </div>
-                </xo-animate>
 
-                <xo-animate xo-type="fade-up" xo-delay="0.2s">
-                  <div class="pi__actions">
-                    <div class="pi__quantity">
-                      <button
-                        class="pi__quantity-btn pi__quantity-btn--decrease"
-                      >
+                  <div class="pi__option pi__option--color">
+                    <label class="pi__option-label">SELECT COLOR</label>
+                    <div class="pi__colors">
+                      <button class="pi__color pi__color--active">
                         <svg
                           xmlns="http://www.w3.org/2000/svg"
                           width="24"
@@ -515,17 +312,92 @@
                           viewBox="0 0 24 24"
                           fill="none"
                         >
-                          <path
-                            d="M4.78125 12.7819H19.2188C19.426 12.7819 19.6247 12.6996 19.7712 12.553C19.9177 12.4065 20 12.2078 20 12.0006C20 11.7934 19.9177 11.5947 19.7712 11.4482C19.6247 11.3017 19.426 11.2194 19.2188 11.2194H4.78125C4.57405 11.2194 4.37534 11.3017 4.22882 11.4482C4.08231 11.5947 4 11.7934 4 12.0006C4 12.2078 4.08231 12.4065 4.22882 12.553C4.37534 12.6996 4.57405 12.7819 4.78125 12.7819Z"
+                          <circle
+                            cx="12"
+                            cy="12"
+                            r="12"
                             fill="#0F61FF"
+                            stroke="#EDEDED"
                           />
                         </svg>
                       </button>
-                      <span class="pi__quantity-value">01</span>
-                      <button
-                        class="pi__quantity-btn pi__quantity-btn--increase"
-                      >
+                      <button class="pi__color pi__color--disabled">
                         <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="24"
+                          height="24"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                        >
+                          <circle cx="12" cy="12" r="12" fill="#C1C1C1" />
+                        </svg>
+                      </button>
+                      <button class="pi__color pi__color--disabled">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="24"
+                          height="24"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                        >
+                          <circle cx="12" cy="12" r="12" fill="#D9B99B" />
+                        </svg>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </xo-animate>
+
+              <xo-animate xo-type="fade-up" xo-delay="0.2s">
+                <div class="pi__actions">
+                  <div class="pi__quantity">
+                    <button class="pi__quantity-btn pi__quantity-btn--decrease">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                      >
+                        <path
+                          d="M4.78125 12.7819H19.2188C19.426 12.7819 19.6247 12.6996 19.7712 12.553C19.9177 12.4065 20 12.2078 20 12.0006C20 11.7934 19.9177 11.5947 19.7712 11.4482C19.6247 11.3017 19.426 11.2194 19.2188 11.2194H4.78125C4.57405 11.2194 4.37534 11.3017 4.22882 11.4482C4.08231 11.5947 4 11.7934 4 12.0006C4 12.2078 4.08231 12.4065 4.22882 12.553C4.37534 12.6996 4.57405 12.7819 4.78125 12.7819Z"
+                          fill="#0F61FF"
+                        />
+                      </svg>
+                    </button>
+                    <span class="pi__quantity-value">01</span>
+                    <button class="pi__quantity-btn pi__quantity-btn--increase">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                      >
+                        <path
+                          d="M11.4482 19.7712C11.5947 19.9177 11.7934 20 12.0006 20C12.2078 20 12.4065 19.9177 12.553 19.7712C12.6996 19.6247 12.7819 19.426 12.7819 19.2188V12.7819H19.2188C19.426 12.7819 19.6247 12.6996 19.7712 12.5531C19.9177 12.4066 20 12.2078 20 12.0006C20 11.7934 19.9177 11.5947 19.7712 11.4482C19.6247 11.3017 19.426 11.2194 19.2188 11.2194H12.7819V4.78125C12.7819 4.57405 12.6996 4.37534 12.553 4.22882C12.4065 4.08231 12.2078 4 12.0006 4C11.7934 4 11.5947 4.08231 11.4482 4.22882C11.3017 4.37534 11.2194 4.57405 11.2194 4.78125V11.2194H4.78125C4.57405 11.2194 4.37534 11.3017 4.22882 11.4482C4.08231 11.5947 4 11.7934 4 12.0006C4 12.2078 4.08231 12.4066 4.22882 12.5531C4.37534 12.6996 4.57405 12.7819 4.78125 12.7819H11.2194V19.2188C11.2194 19.426 11.3017 19.6247 11.4482 19.7712Z"
+                          fill="#0F61FF"
+                        />
+                      </svg>
+                    </button>
+                  </div>
+                  <div class="pi__buttons">
+                    <button class="btn btn--buy-now">Buy now</button>
+                    <button class="btn btn--add-to-cart">Add to cart</button>
+                  </div>
+                </div>
+              </xo-animate>
+            </div>
+
+            <xo-animate xo-type="fade-up" xo-delay="0.2s">
+              <div class="pi__details-accordion">
+                <div class="accordion">
+                  <div class="accordion__item">
+                    <button class="accordion__header">
+                      <h3 class="accordion__title">Main Features</h3>
+                      <span class="accordion__icon">
+                        <svg
+                          class="icon-plus"
                           xmlns="http://www.w3.org/2000/svg"
                           width="24"
                           height="24"
@@ -534,1152 +406,1188 @@
                         >
                           <path
                             d="M11.4482 19.7712C11.5947 19.9177 11.7934 20 12.0006 20C12.2078 20 12.4065 19.9177 12.553 19.7712C12.6996 19.6247 12.7819 19.426 12.7819 19.2188V12.7819H19.2188C19.426 12.7819 19.6247 12.6996 19.7712 12.5531C19.9177 12.4066 20 12.2078 20 12.0006C20 11.7934 19.9177 11.5947 19.7712 11.4482C19.6247 11.3017 19.426 11.2194 19.2188 11.2194H12.7819V4.78125C12.7819 4.57405 12.6996 4.37534 12.553 4.22882C12.4065 4.08231 12.2078 4 12.0006 4C11.7934 4 11.5947 4.08231 11.4482 4.22882C11.3017 4.37534 11.2194 4.57405 11.2194 4.78125V11.2194H4.78125C4.57405 11.2194 4.37534 11.3017 4.22882 11.4482C4.08231 11.5947 4 11.7934 4 12.0006C4 12.2078 4.08231 12.4066 4.22882 12.5531C4.37534 12.6996 4.57405 12.7819 4.78125 12.7819H11.2194V19.2188C11.2194 19.426 11.3017 19.6247 11.4482 19.7712Z"
-                            fill="#0F61FF"
+                            fill="#1E1E1E"
                           />
                         </svg>
-                      </button>
-                    </div>
-                    <div class="pi__buttons">
-                      <button class="btn btn--buy-now">Buy now</button>
-                      <button class="btn btn--add-to-cart">Add to cart</button>
+                        <svg
+                          class="icon-minus"
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="24"
+                          height="24"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          style="display: none"
+                        >
+                          <path
+                            d="M4.78125 12.7819H19.2188C19.426 12.7819 19.6247 12.6996 19.7712 12.553C19.9177 12.4065 20 12.2078 20 12.0006C20 11.7934 19.9177 11.5947 19.7712 11.4482C19.6247 11.3017 19.426 11.2194 19.2188 11.2194H4.78125C4.57405 11.2194 4.37534 11.3017 4.22882 11.4482C4.08231 11.5947 4 11.7934 4 12.0006C4 12.2078 4.08231 12.4065 4.22882 12.553C4.37534 12.6996 4.57405 12.7819 4.78125 12.7819Z"
+                            fill="#1E1E1E"
+                          />
+                        </svg>
+                      </span>
+                    </button>
+                    <div class="accordion__content">
+                      <p class="accordion__text">
+                        * The Bundle includes 1 box, 1 phone case, and 4 screen
+                        wipers or 2 screen protectors for iPhone 15 sizes.
+                      </p>
+
+                      <p class="accordion__text">
+                        * Ultra-slim hybrid raised AirLite™ corners for
+                        all-round protection
+                      </p>
+                      <p class="accordion__text">
+                        * Raised lens bezel to shield back camera
+                      </p>
+                      <p class="accordion__text">
+                        * Flexible anti-yellowing Bayer TPU bumper for
+                        long-lasting clarity
+                      </p>
+                      <p class="accordion__text">
+                        * Tough 3H scratch-resistant polycarbonate back
+                      </p>
+                      <p class="accordion__text">
+                        * Reinforced raised corners to shield against direct
+                        face-down impact
+                      </p>
+                      <p class="accordion__text">
+                        * Drop-tested to withstand up to 8 feet/2.5 meters
+                      </p>
                     </div>
                   </div>
-                </xo-animate>
-              </div>
+                  <div class="accordion__item">
+                    <button class="accordion__header">
+                      <h3 class="accordion__title">Materials</h3>
+                      <span class="accordion__icon">
+                        <svg
+                          class="icon-plus"
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="24"
+                          height="24"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                        >
+                          <path
+                            d="M11.4482 19.7712C11.5947 19.9177 11.7934 20 12.0006 20C12.2078 20 12.4065 19.9177 12.553 19.7712C12.6996 19.6247 12.7819 19.426 12.7819 19.2188V12.7819H19.2188C19.426 12.7819 19.6247 12.6996 19.7712 12.5531C19.9177 12.4066 20 12.2078 20 12.0006C20 11.7934 19.9177 11.5947 19.7712 11.4482C19.6247 11.3017 19.426 11.2194 19.2188 11.2194H12.7819V4.78125C12.7819 4.57405 12.6996 4.37534 12.553 4.22882C12.4065 4.08231 12.2078 4 12.0006 4C11.7934 4 11.5947 4.08231 11.4482 4.22882C11.3017 4.37534 11.2194 4.57405 11.2194 4.78125V11.2194H4.78125C4.57405 11.2194 4.37534 11.3017 4.22882 11.4482C4.08231 11.5947 4 11.7934 4 12.0006C4 12.2078 4.08231 12.4066 4.22882 12.5531C4.37534 12.6996 4.57405 12.7819 4.78125 12.7819H11.2194V19.2188C11.2194 19.426 11.3017 19.6247 11.4482 19.7712Z"
+                            fill="#1E1E1E"
+                          />
+                        </svg>
+                        <svg
+                          class="icon-minus"
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="24"
+                          height="24"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          style="display: none"
+                        >
+                          <path
+                            d="M4.78125 12.7819H19.2188C19.426 12.7819 19.6247 12.6996 19.7712 12.553C19.9177 12.4065 20 12.2078 20 12.0006C20 11.7934 19.9177 11.5947 19.7712 11.4482C19.6247 11.3017 19.426 11.2194 19.2188 11.2194H4.78125C4.57405 11.2194 4.37534 11.3017 4.22882 11.4482C4.08231 11.5947 4 11.7934 4 12.0006C4 12.2078 4.08231 12.4065 4.22882 12.553C4.37534 12.6996 4.57405 12.7819 4.78125 12.7819Z"
+                            fill="#1E1E1E"
+                          />
+                        </svg>
+                      </span>
+                    </button>
+                    <div class="accordion__content">
+                      <p class="accordion__text">
+                        * The Bundle includes 1 box, 1 phone case, and 4 screen
+                        wipers or 2 screen protectors for iPhone 15 sizes.
+                      </p>
 
-              <xo-animate xo-type="fade-up" xo-delay="0.2s">
-                <div class="pi__details-accordion">
-                  <div class="accordion">
-                    <div class="accordion__item">
-                      <button class="accordion__header">
-                        <h3 class="accordion__title">Main Features</h3>
-                        <span class="accordion__icon">
-                          <svg
-                            class="icon-plus"
-                            xmlns="http://www.w3.org/2000/svg"
-                            width="24"
-                            height="24"
-                            viewBox="0 0 24 24"
-                            fill="none"
-                          >
-                            <path
-                              d="M11.4482 19.7712C11.5947 19.9177 11.7934 20 12.0006 20C12.2078 20 12.4065 19.9177 12.553 19.7712C12.6996 19.6247 12.7819 19.426 12.7819 19.2188V12.7819H19.2188C19.426 12.7819 19.6247 12.6996 19.7712 12.5531C19.9177 12.4066 20 12.2078 20 12.0006C20 11.7934 19.9177 11.5947 19.7712 11.4482C19.6247 11.3017 19.426 11.2194 19.2188 11.2194H12.7819V4.78125C12.7819 4.57405 12.6996 4.37534 12.553 4.22882C12.4065 4.08231 12.2078 4 12.0006 4C11.7934 4 11.5947 4.08231 11.4482 4.22882C11.3017 4.37534 11.2194 4.57405 11.2194 4.78125V11.2194H4.78125C4.57405 11.2194 4.37534 11.3017 4.22882 11.4482C4.08231 11.5947 4 11.7934 4 12.0006C4 12.2078 4.08231 12.4066 4.22882 12.5531C4.37534 12.6996 4.57405 12.7819 4.78125 12.7819H11.2194V19.2188C11.2194 19.426 11.3017 19.6247 11.4482 19.7712Z"
-                              fill="#1E1E1E"
-                            />
-                          </svg>
-                          <svg
-                            class="icon-minus"
-                            xmlns="http://www.w3.org/2000/svg"
-                            width="24"
-                            height="24"
-                            viewBox="0 0 24 24"
-                            fill="none"
-                            style="display: none"
-                          >
-                            <path
-                              d="M4.78125 12.7819H19.2188C19.426 12.7819 19.6247 12.6996 19.7712 12.553C19.9177 12.4065 20 12.2078 20 12.0006C20 11.7934 19.9177 11.5947 19.7712 11.4482C19.6247 11.3017 19.426 11.2194 19.2188 11.2194H4.78125C4.57405 11.2194 4.37534 11.3017 4.22882 11.4482C4.08231 11.5947 4 11.7934 4 12.0006C4 12.2078 4.08231 12.4065 4.22882 12.553C4.37534 12.6996 4.57405 12.7819 4.78125 12.7819Z"
-                              fill="#1E1E1E"
-                            />
-                          </svg>
-                        </span>
-                      </button>
-                      <div class="accordion__content">
-                        <p class="accordion__text">
-                          * The Bundle includes 1 box, 1 phone case, and 4
-                          screen wipers or 2 screen protectors for iPhone 15
-                          sizes.
-                        </p>
-
-                        <p class="accordion__text">
-                          * Ultra-slim hybrid raised AirLite™ corners for
-                          all-round protection
-                        </p>
-                        <p class="accordion__text">
-                          * Raised lens bezel to shield back camera
-                        </p>
-                        <p class="accordion__text">
-                          * Flexible anti-yellowing Bayer TPU bumper for
-                          long-lasting clarity
-                        </p>
-                        <p class="accordion__text">
-                          * Tough 3H scratch-resistant polycarbonate back
-                        </p>
-                        <p class="accordion__text">
-                          * Reinforced raised corners to shield against direct
-                          face-down impact
-                        </p>
-                        <p class="accordion__text">
-                          * Drop-tested to withstand up to 8 feet/2.5 meters
-                        </p>
-                      </div>
+                      <p class="accordion__text">
+                        * Ultra-slim hybrid raised AirLite™ corners for
+                        all-round protection
+                      </p>
+                      <p class="accordion__text">
+                        * Raised lens bezel to shield back camera
+                      </p>
+                      <p class="accordion__text">
+                        * Flexible anti-yellowing Bayer TPU bumper for
+                        long-lasting clarity
+                      </p>
+                      <p class="accordion__text">
+                        * Tough 3H scratch-resistant polycarbonate back
+                      </p>
+                      <p class="accordion__text">
+                        * Reinforced raised corners to shield against direct
+                        face-down impact
+                      </p>
+                      <p class="accordion__text">
+                        * Drop-tested to withstand up to 8 feet/2.5 meters
+                      </p>
                     </div>
-                    <div class="accordion__item">
-                      <button class="accordion__header">
-                        <h3 class="accordion__title">Materials</h3>
-                        <span class="accordion__icon">
-                          <svg
-                            class="icon-plus"
-                            xmlns="http://www.w3.org/2000/svg"
-                            width="24"
-                            height="24"
-                            viewBox="0 0 24 24"
-                            fill="none"
-                          >
-                            <path
-                              d="M11.4482 19.7712C11.5947 19.9177 11.7934 20 12.0006 20C12.2078 20 12.4065 19.9177 12.553 19.7712C12.6996 19.6247 12.7819 19.426 12.7819 19.2188V12.7819H19.2188C19.426 12.7819 19.6247 12.6996 19.7712 12.5531C19.9177 12.4066 20 12.2078 20 12.0006C20 11.7934 19.9177 11.5947 19.7712 11.4482C19.6247 11.3017 19.426 11.2194 19.2188 11.2194H12.7819V4.78125C12.7819 4.57405 12.6996 4.37534 12.553 4.22882C12.4065 4.08231 12.2078 4 12.0006 4C11.7934 4 11.5947 4.08231 11.4482 4.22882C11.3017 4.37534 11.2194 4.57405 11.2194 4.78125V11.2194H4.78125C4.57405 11.2194 4.37534 11.3017 4.22882 11.4482C4.08231 11.5947 4 11.7934 4 12.0006C4 12.2078 4.08231 12.4066 4.22882 12.5531C4.37534 12.6996 4.57405 12.7819 4.78125 12.7819H11.2194V19.2188C11.2194 19.426 11.3017 19.6247 11.4482 19.7712Z"
-                              fill="#1E1E1E"
-                            />
-                          </svg>
-                          <svg
-                            class="icon-minus"
-                            xmlns="http://www.w3.org/2000/svg"
-                            width="24"
-                            height="24"
-                            viewBox="0 0 24 24"
-                            fill="none"
-                            style="display: none"
-                          >
-                            <path
-                              d="M4.78125 12.7819H19.2188C19.426 12.7819 19.6247 12.6996 19.7712 12.553C19.9177 12.4065 20 12.2078 20 12.0006C20 11.7934 19.9177 11.5947 19.7712 11.4482C19.6247 11.3017 19.426 11.2194 19.2188 11.2194H4.78125C4.57405 11.2194 4.37534 11.3017 4.22882 11.4482C4.08231 11.5947 4 11.7934 4 12.0006C4 12.2078 4.08231 12.4065 4.22882 12.553C4.37534 12.6996 4.57405 12.7819 4.78125 12.7819Z"
-                              fill="#1E1E1E"
-                            />
-                          </svg>
-                        </span>
-                      </button>
-                      <div class="accordion__content">
-                        <p class="accordion__text">
-                          * The Bundle includes 1 box, 1 phone case, and 4
-                          screen wipers or 2 screen protectors for iPhone 15
-                          sizes.
-                        </p>
+                  </div>
+                  <div class="accordion__item">
+                    <button class="accordion__header">
+                      <h3 class="accordion__title">Shipping & returns</h3>
+                      <span class="accordion__icon">
+                        <svg
+                          class="icon-plus"
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="24"
+                          height="24"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                        >
+                          <path
+                            d="M11.4482 19.7712C11.5947 19.9177 11.7934 20 12.0006 20C12.2078 20 12.4065 19.9177 12.553 19.7712C12.6996 19.6247 12.7819 19.426 12.7819 19.2188V12.7819H19.2188C19.426 12.7819 19.6247 12.6996 19.7712 12.5531C19.9177 12.4066 20 12.2078 20 12.0006C20 11.7934 19.9177 11.5947 19.7712 11.4482C19.6247 11.3017 19.426 11.2194 19.2188 11.2194H12.7819V4.78125C12.7819 4.57405 12.6996 4.37534 12.553 4.22882C12.4065 4.08231 12.2078 4 12.0006 4C11.7934 4 11.5947 4.08231 11.4482 4.22882C11.3017 4.37534 11.2194 4.57405 11.2194 4.78125V11.2194H4.78125C4.57405 11.2194 4.37534 11.3017 4.22882 11.4482C4.08231 11.5947 4 11.7934 4 12.0006C4 12.2078 4.08231 12.4066 4.22882 12.5531C4.37534 12.6996 4.57405 12.7819 4.78125 12.7819H11.2194V19.2188C11.2194 19.426 11.3017 19.6247 11.4482 19.7712Z"
+                            fill="#1E1E1E"
+                          />
+                        </svg>
+                        <svg
+                          class="icon-minus"
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="24"
+                          height="24"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          style="display: none"
+                        >
+                          <path
+                            d="M4.78125 12.7819H19.2188C19.426 12.7819 19.6247 12.6996 19.7712 12.553C19.9177 12.4065 20 12.2078 20 12.0006C20 11.7934 19.9177 11.5947 19.7712 11.4482C19.6247 11.3017 19.426 11.2194 19.2188 11.2194H4.78125C4.57405 11.2194 4.37534 11.3017 4.22882 11.4482C4.08231 11.5947 4 11.7934 4 12.0006C4 12.2078 4.08231 12.4065 4.22882 12.553C4.37534 12.6996 4.57405 12.7819 4.78125 12.7819Z"
+                            fill="#1E1E1E"
+                          />
+                        </svg>
+                      </span>
+                    </button>
+                    <div class="accordion__content">
+                      <p class="accordion__text">
+                        * The Bundle includes 1 box, 1 phone case, and 4 screen
+                        wipers or 2 screen protectors for iPhone 15 sizes.
+                      </p>
 
-                        <p class="accordion__text">
-                          * Ultra-slim hybrid raised AirLite™ corners for
-                          all-round protection
-                        </p>
-                        <p class="accordion__text">
-                          * Raised lens bezel to shield back camera
-                        </p>
-                        <p class="accordion__text">
-                          * Flexible anti-yellowing Bayer TPU bumper for
-                          long-lasting clarity
-                        </p>
-                        <p class="accordion__text">
-                          * Tough 3H scratch-resistant polycarbonate back
-                        </p>
-                        <p class="accordion__text">
-                          * Reinforced raised corners to shield against direct
-                          face-down impact
-                        </p>
-                        <p class="accordion__text">
-                          * Drop-tested to withstand up to 8 feet/2.5 meters
-                        </p>
-                      </div>
+                      <p class="accordion__text">
+                        * Ultra-slim hybrid raised AirLite™ corners for
+                        all-round protection
+                      </p>
+                      <p class="accordion__text">
+                        * Raised lens bezel to shield back camera
+                      </p>
+                      <p class="accordion__text">
+                        * Flexible anti-yellowing Bayer TPU bumper for
+                        long-lasting clarity
+                      </p>
+                      <p class="accordion__text">
+                        * Tough 3H scratch-resistant polycarbonate back
+                      </p>
+                      <p class="accordion__text">
+                        * Reinforced raised corners to shield against direct
+                        face-down impact
+                      </p>
+                      <p class="accordion__text">
+                        * Drop-tested to withstand up to 8 feet/2.5 meters
+                      </p>
                     </div>
-                    <div class="accordion__item">
-                      <button class="accordion__header">
-                        <h3 class="accordion__title">Shipping & returns</h3>
-                        <span class="accordion__icon">
-                          <svg
-                            class="icon-plus"
-                            xmlns="http://www.w3.org/2000/svg"
-                            width="24"
-                            height="24"
-                            viewBox="0 0 24 24"
-                            fill="none"
-                          >
-                            <path
-                              d="M11.4482 19.7712C11.5947 19.9177 11.7934 20 12.0006 20C12.2078 20 12.4065 19.9177 12.553 19.7712C12.6996 19.6247 12.7819 19.426 12.7819 19.2188V12.7819H19.2188C19.426 12.7819 19.6247 12.6996 19.7712 12.5531C19.9177 12.4066 20 12.2078 20 12.0006C20 11.7934 19.9177 11.5947 19.7712 11.4482C19.6247 11.3017 19.426 11.2194 19.2188 11.2194H12.7819V4.78125C12.7819 4.57405 12.6996 4.37534 12.553 4.22882C12.4065 4.08231 12.2078 4 12.0006 4C11.7934 4 11.5947 4.08231 11.4482 4.22882C11.3017 4.37534 11.2194 4.57405 11.2194 4.78125V11.2194H4.78125C4.57405 11.2194 4.37534 11.3017 4.22882 11.4482C4.08231 11.5947 4 11.7934 4 12.0006C4 12.2078 4.08231 12.4066 4.22882 12.5531C4.37534 12.6996 4.57405 12.7819 4.78125 12.7819H11.2194V19.2188C11.2194 19.426 11.3017 19.6247 11.4482 19.7712Z"
-                              fill="#1E1E1E"
-                            />
-                          </svg>
-                          <svg
-                            class="icon-minus"
-                            xmlns="http://www.w3.org/2000/svg"
-                            width="24"
-                            height="24"
-                            viewBox="0 0 24 24"
-                            fill="none"
-                            style="display: none"
-                          >
-                            <path
-                              d="M4.78125 12.7819H19.2188C19.426 12.7819 19.6247 12.6996 19.7712 12.553C19.9177 12.4065 20 12.2078 20 12.0006C20 11.7934 19.9177 11.5947 19.7712 11.4482C19.6247 11.3017 19.426 11.2194 19.2188 11.2194H4.78125C4.57405 11.2194 4.37534 11.3017 4.22882 11.4482C4.08231 11.5947 4 11.7934 4 12.0006C4 12.2078 4.08231 12.4065 4.22882 12.553C4.37534 12.6996 4.57405 12.7819 4.78125 12.7819Z"
-                              fill="#1E1E1E"
-                            />
-                          </svg>
-                        </span>
-                      </button>
-                      <div class="accordion__content">
-                        <p class="accordion__text">
-                          * The Bundle includes 1 box, 1 phone case, and 4
-                          screen wipers or 2 screen protectors for iPhone 15
-                          sizes.
-                        </p>
+                  </div>
+                  <div class="accordion__item">
+                    <button class="accordion__header">
+                      <h3 class="accordion__title">Care guide</h3>
+                      <span class="accordion__icon">
+                        <svg
+                          class="icon-plus"
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="24"
+                          height="24"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                        >
+                          <path
+                            d="M11.4482 19.7712C11.5947 19.9177 11.7934 20 12.0006 20C12.2078 20 12.4065 19.9177 12.553 19.7712C12.6996 19.6247 12.7819 19.426 12.7819 19.2188V12.7819H19.2188C19.426 12.7819 19.6247 12.6996 19.7712 12.5531C19.9177 12.4066 20 12.2078 20 12.0006C20 11.7934 19.9177 11.5947 19.7712 11.4482C19.6247 11.3017 19.426 11.2194 19.2188 11.2194H12.7819V4.78125C12.7819 4.57405 12.6996 4.37534 12.553 4.22882C12.4065 4.08231 12.2078 4 12.0006 4C11.7934 4 11.5947 4.08231 11.4482 4.22882C11.3017 4.37534 11.2194 4.57405 11.2194 4.78125V11.2194H4.78125C4.57405 11.2194 4.37534 11.3017 4.22882 11.4482C4.08231 11.5947 4 11.7934 4 12.0006C4 12.2078 4.08231 12.4066 4.22882 12.5531C4.37534 12.6996 4.57405 12.7819 4.78125 12.7819H11.2194V19.2188C11.2194 19.426 11.3017 19.6247 11.4482 19.7712Z"
+                            fill="#1E1E1E"
+                          />
+                        </svg>
+                        <svg
+                          class="icon-minus"
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="24"
+                          height="24"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          style="display: none"
+                        >
+                          <path
+                            d="M4.78125 12.7819H19.2188C19.426 12.7819 19.6247 12.6996 19.7712 12.553C19.9177 12.4065 20 12.2078 20 12.0006C20 11.7934 19.9177 11.5947 19.7712 11.4482C19.6247 11.3017 19.426 11.2194 19.2188 11.2194H4.78125C4.57405 11.2194 4.37534 11.3017 4.22882 11.4482C4.08231 11.5947 4 11.7934 4 12.0006C4 12.2078 4.08231 12.4065 4.22882 12.553C4.37534 12.6996 4.57405 12.7819 4.78125 12.7819Z"
+                            fill="#1E1E1E"
+                          />
+                        </svg>
+                      </span>
+                    </button>
+                    <div class="accordion__content">
+                      <p class="accordion__text">
+                        * The Bundle includes 1 box, 1 phone case, and 4 screen
+                        wipers or 2 screen protectors for iPhone 15 sizes.
+                      </p>
 
-                        <p class="accordion__text">
-                          * Ultra-slim hybrid raised AirLite™ corners for
-                          all-round protection
-                        </p>
-                        <p class="accordion__text">
-                          * Raised lens bezel to shield back camera
-                        </p>
-                        <p class="accordion__text">
-                          * Flexible anti-yellowing Bayer TPU bumper for
-                          long-lasting clarity
-                        </p>
-                        <p class="accordion__text">
-                          * Tough 3H scratch-resistant polycarbonate back
-                        </p>
-                        <p class="accordion__text">
-                          * Reinforced raised corners to shield against direct
-                          face-down impact
-                        </p>
-                        <p class="accordion__text">
-                          * Drop-tested to withstand up to 8 feet/2.5 meters
-                        </p>
-                      </div>
-                    </div>
-                    <div class="accordion__item">
-                      <button class="accordion__header">
-                        <h3 class="accordion__title">Care guide</h3>
-                        <span class="accordion__icon">
-                          <svg
-                            class="icon-plus"
-                            xmlns="http://www.w3.org/2000/svg"
-                            width="24"
-                            height="24"
-                            viewBox="0 0 24 24"
-                            fill="none"
-                          >
-                            <path
-                              d="M11.4482 19.7712C11.5947 19.9177 11.7934 20 12.0006 20C12.2078 20 12.4065 19.9177 12.553 19.7712C12.6996 19.6247 12.7819 19.426 12.7819 19.2188V12.7819H19.2188C19.426 12.7819 19.6247 12.6996 19.7712 12.5531C19.9177 12.4066 20 12.2078 20 12.0006C20 11.7934 19.9177 11.5947 19.7712 11.4482C19.6247 11.3017 19.426 11.2194 19.2188 11.2194H12.7819V4.78125C12.7819 4.57405 12.6996 4.37534 12.553 4.22882C12.4065 4.08231 12.2078 4 12.0006 4C11.7934 4 11.5947 4.08231 11.4482 4.22882C11.3017 4.37534 11.2194 4.57405 11.2194 4.78125V11.2194H4.78125C4.57405 11.2194 4.37534 11.3017 4.22882 11.4482C4.08231 11.5947 4 11.7934 4 12.0006C4 12.2078 4.08231 12.4066 4.22882 12.5531C4.37534 12.6996 4.57405 12.7819 4.78125 12.7819H11.2194V19.2188C11.2194 19.426 11.3017 19.6247 11.4482 19.7712Z"
-                              fill="#1E1E1E"
-                            />
-                          </svg>
-                          <svg
-                            class="icon-minus"
-                            xmlns="http://www.w3.org/2000/svg"
-                            width="24"
-                            height="24"
-                            viewBox="0 0 24 24"
-                            fill="none"
-                            style="display: none"
-                          >
-                            <path
-                              d="M4.78125 12.7819H19.2188C19.426 12.7819 19.6247 12.6996 19.7712 12.553C19.9177 12.4065 20 12.2078 20 12.0006C20 11.7934 19.9177 11.5947 19.7712 11.4482C19.6247 11.3017 19.426 11.2194 19.2188 11.2194H4.78125C4.57405 11.2194 4.37534 11.3017 4.22882 11.4482C4.08231 11.5947 4 11.7934 4 12.0006C4 12.2078 4.08231 12.4065 4.22882 12.553C4.37534 12.6996 4.57405 12.7819 4.78125 12.7819Z"
-                              fill="#1E1E1E"
-                            />
-                          </svg>
-                        </span>
-                      </button>
-                      <div class="accordion__content">
-                        <p class="accordion__text">
-                          * The Bundle includes 1 box, 1 phone case, and 4
-                          screen wipers or 2 screen protectors for iPhone 15
-                          sizes.
-                        </p>
-
-                        <p class="accordion__text">
-                          * Ultra-slim hybrid raised AirLite™ corners for
-                          all-round protection
-                        </p>
-                        <p class="accordion__text">
-                          * Raised lens bezel to shield back camera
-                        </p>
-                        <p class="accordion__text">
-                          * Flexible anti-yellowing Bayer TPU bumper for
-                          long-lasting clarity
-                        </p>
-                        <p class="accordion__text">
-                          * Tough 3H scratch-resistant polycarbonate back
-                        </p>
-                        <p class="accordion__text">
-                          * Reinforced raised corners to shield against direct
-                          face-down impact
-                        </p>
-                        <p class="accordion__text">
-                          * Drop-tested to withstand up to 8 feet/2.5 meters
-                        </p>
-                      </div>
+                      <p class="accordion__text">
+                        * Ultra-slim hybrid raised AirLite™ corners for
+                        all-round protection
+                      </p>
+                      <p class="accordion__text">
+                        * Raised lens bezel to shield back camera
+                      </p>
+                      <p class="accordion__text">
+                        * Flexible anti-yellowing Bayer TPU bumper for
+                        long-lasting clarity
+                      </p>
+                      <p class="accordion__text">
+                        * Tough 3H scratch-resistant polycarbonate back
+                      </p>
+                      <p class="accordion__text">
+                        * Reinforced raised corners to shield against direct
+                        face-down impact
+                      </p>
+                      <p class="accordion__text">
+                        * Drop-tested to withstand up to 8 feet/2.5 meters
+                      </p>
                     </div>
                   </div>
                 </div>
-              </xo-animate>
-            </div>
+              </div>
+            </xo-animate>
           </div>
-        </xo-container>
-      </section>
+        </div>
+      </xo-container>
+    </section>
 
-      <section class="page-section bg-color">
+    <section class="page-section bg-color">
+      <xo-container>
         <div class="container-xxl multi-container">
           <h2 class="multi__tittle">Extreme Cases MagSafe Compatible</h2>
           <div class="multi__line"></div>
           <div class="multi__body">
-            <div class="row">
-              <div class="col" style="--col-lg: 4; --col-md: 12">
-                <div class="multi-card">
-                  <img
-                    class="multi-card__img"
-                    src="public/assets/multi/image67.png"
-                    alt=""
-                  />
-                  <div class="multi-card__text">
-                    <h3 class="multi-card__num">01</h3>
-                    <h3 class="multi-card__desc">
-                      Essentials by CASETiFY™ The Beauty of Simplicity
-                    </h3>
-                  </div>
-                </div>
-              </div>
-              <div class="col" style="--col-lg: 4; --col-md: 12">
-                <div class="multi-card">
-                  <div class="multi-card__text">
-                    <img
-                      class="multi-card__img"
-                      src="public/assets/multi/img2.png"
-                      alt=""
-                    />
-                    <h3 class="multi-card__num multi-card__num--02">02</h3>
-                    <h3 class="multi-card__desc multi-card__desc--02">
-                      Defy Gravity With The New Bounce Case
-                    </h3>
-                  </div>
-                </div>
-              </div>
-              <div class="col" style="--col-lg: 4; --col-md: 12">
-                <div class="multi-card">
-                  <img
-                    class="multi-card__img"
-                    src="public/assets/multi/image68.png"
-                    alt=""
-                  />
-                  <div class="multi-card__text">
-                    <h3 class="multi-card__num">03</h3>
-                    <h3 class="multi-card__desc">
-                      Spice up your mirror selfies with a little Y2K
-                    </h3>
-                  </div>
-                </div>
-              </div>
-            </div>
+            <xo-carousel
+              xo-per-view="3"
+              xo-per-move="1"
+              xo-breakpoints="{
+                992: {
+                  perView: 1,
+                  perMove: 1,
+                },
+                1000: {
+                  perView: 3,
+                  perMove: 3,
+                },
+              }"
+              xo-render-bullet="<span class='carousel-bullet'></span>"
+            >
+              <xo-carousel-inner>
+                <xo-carousel-list>
+                  <xo-carousel-slide>
+                    <div class="carousel-item">
+                      <div class="multi-card">
+                        <img
+                          class="multi-card__img"
+                          src="public/assets/multi/image67.png"
+                          alt=""
+                        />
+                        <div class="multi-card__text">
+                          <div class="multi-card__num">01</div>
+                          <h3 class="multi-card__desc">
+                            Essentials by CASETiFY™ The Beauty of Simplicity
+                          </h3>
+                        </div>
+                      </div>
+                    </div>
+                  </xo-carousel-slide>
+                  <xo-carousel-slide>
+                    <div class="carousel-item">
+                      <div class="multi-card">
+                        <img
+                          class="multi-card__img"
+                          src="public/assets/multi/img2.png"
+                          alt=""
+                        />
+                        <div class="multi-card__text">
+                          <h3 class="multi-card__num multi-card__num--02">
+                            02
+                          </h3>
+                          <h3 class="multi-card__desc multi-card__desc--02">
+                            Defy Gravity With The New Bounce Case
+                          </h3>
+                        </div>
+                      </div>
+                    </div>
+                  </xo-carousel-slide>
+                  <xo-carousel-slide>
+                    <div class="carousel-item">
+                      <div class="multi-card">
+                        <img
+                          class="multi-card__img"
+                          src="public/assets/multi/image68.png"
+                          alt=""
+                        />
+                        <div class="multi-card__text">
+                          <div class="multi-card__num">03</div>
+                          <h3 class="multi-card__desc">
+                            Spice up your mirror selfies with a little Y2K
+                          </h3>
+                        </div>
+                      </div>
+                    </div>
+                  </xo-carousel-slide>
+                </xo-carousel-list>
+              </xo-carousel-inner>
+              <!-- <xo-carousel-prev><button>Prev</button></xo-carousel-prev>
+                <xo-carousel-next><button>Next</button></xo-carousel-next> -->
+              <xo-carousel-pagination>
+                <xo-carousel-bullet
+                  xo-index="0"
+                  xo-page="1"
+                  role="button"
+                  tabindex="0"
+                >
+                  <span class="carousel-bullet"></span> </xo-carousel-bullet
+                ><xo-carousel-bullet
+                  xo-index="1"
+                  xo-page="2"
+                  role="button"
+                  tabindex="0"
+                  xo-active=""
+                >
+                  <span class="carousel-bullet"></span>
+                </xo-carousel-bullet>
+
+                <xo-carousel-bullet
+                  xo-index="2"
+                  xo-page="3"
+                  role="button"
+                  tabindex="0"
+                >
+                  <span class="carousel-bullet"></span>
+                </xo-carousel-bullet>
+
+                <xo-carousel-bullet
+                  xo-index="3"
+                  xo-page="4"
+                  role="button"
+                  tabindex="0"
+                >
+                  <span class="carousel-bullet"></span>
+                </xo-carousel-bullet>
+              </xo-carousel-pagination>
+            </xo-carousel>
           </div>
         </div>
-      </section>
+      </xo-container>
+    </section>
 
-      <section class="page-section page-section--img ps-bg">
-        <div class="container-xxl ps-container">
-          <div class="ps">
-            <div class="ps__content">
-              <h2 class="ps__title">
-                Introducing the Plasma XTE Case, blend of cutting-edge design
-                and unwavering protection
-              </h2>
-            </div>
-            <div class="ps-card">
-              <div class="ps-card__wrapper">
-                <div class="ps-card__header">
-                  <div class="ps-card__content">
-                    <h3 class="ps-card__subtitle">IP Protech Up To</h3>
-                    <h2 class="ps-card__title">IP68</h2>
-                  </div>
-                  <div class="ps-card__content">
-                    <h3 class="ps-card__subtitle">Drop Protechtion</h3>
-                    <h2 class="ps-card__title">Air Tech</h2>
-                  </div>
-                </div>
-                <div class="ps-card__body">
-                  <div class="ps-card__parameter-list">
-                    <div class="ps-card__parameter-item">
-                      <h4 class="ps-card__parameter-name">Height</h4>
-                      <div class="ps-card__parameter-datum">
-                        9.5 in (241 mm)
-                      </div>
-                    </div>
-                    <div class="ps-card__parameter-item">
-                      <h4 class="ps-card__parameter-name">Width</h4>
-                      <div class="ps-card__parameter-datum">
-                        6.5 in (160 mm)
-                      </div>
-                    </div>
-                    <div class="ps-card__parameter-item">
-                      <h4 class="ps-card__parameter-name">Dept</h4>
-                      <div class="ps-card__parameter-datum">
-                        0.5 in (241 mm)
-                      </div>
-                    </div>
-                    <div class="ps-card__parameter-item">
-                      <h4 class="ps-card__parameter-name">Weight</h4>
-                      <div class="ps-card__parameter-datum">0.008 kg</div>
-                    </div>
-                  </div>
-                </div>
-                <div class="ps-card__append">
-                  <img
-                    class="ps-card__img"
-                    src="./public/assets/product-detail/ps-prod1.png"
-                    alt=""
-                  />
-                </div>
-              </div>
-            </div>
+    <!-- <section class="section">
+      <div class="bg-parallax">
+        <xo-parallax xo-lerp-ease="0.1" class="bg-parallax__item">
+          <xo-parallax-scroll
+            xo-keyframes="{
+                '0%': { backgroundPositionY: '200px' },
+                '100%': { backgroundPositionY: '-200px' },
+              }"
+            class="bg-parallax__url"
+            style="
+              background-image: url('./public/assets/product-detail/bg-img.png');
+            "
+          >
+          </xo-parallax-scroll>
+        </xo-parallax>
+      </div>
+      <xo-container>
+        <div class="ps">
+          <div class="ps__content">
+            <h2 class="ps__title">
+              Introducing the Plasma XTE Case, blend of cutting-edge design and
+              unwavering protection
+            </h2>
           </div>
-        </div>
-      </section>
-
-      <section
-        class="page-section test page-section--color"
-        style="--color: #f6f6f6"
-      >
-        <div class="container-xxl custom-container">
-          <div class="custom">
-            <div class="custom__header">
-              <div class="custom__content">
-                <h3 class="custom__subtitle">CUSTOM PRODUCT</h3>
-                <h2 class="custom__title">Custom design your phone case</h2>
+          <div class="ps-card">
+            <div class="ps-card__wrapper">
+              <div class="ps-card__header">
+                <div class="ps-card__content">
+                  <h3 class="ps-card__subtitle">IP Protech Up To</h3>
+                  <h2 class="ps-card__title">IP68</h2>
+                </div>
+                <div class="ps-card__content">
+                  <h3 class="ps-card__subtitle">Drop Protechtion</h3>
+                  <h2 class="ps-card__title">Air Tech</h2>
+                </div>
               </div>
-            </div>
-            <div class="custom__body">
-              <a href="#">
+              <div class="ps-card__body">
+                <div class="ps-card__parameter-list">
+                  <div class="ps-card__parameter-item">
+                    <h4 class="ps-card__parameter-name">Height</h4>
+                    <div class="ps-card__parameter-datum">9.5 in (241 mm)</div>
+                  </div>
+                  <div class="ps-card__parameter-item">
+                    <h4 class="ps-card__parameter-name">Width</h4>
+                    <div class="ps-card__parameter-datum">6.5 in (160 mm)</div>
+                  </div>
+                  <div class="ps-card__parameter-item">
+                    <h4 class="ps-card__parameter-name">Dept</h4>
+                    <div class="ps-card__parameter-datum">0.5 in (241 mm)</div>
+                  </div>
+                  <div class="ps-card__parameter-item">
+                    <h4 class="ps-card__parameter-name">Weight</h4>
+                    <div class="ps-card__parameter-datum">0.008 kg</div>
+                  </div>
+                </div>
+              </div>
+              <div class="ps-card__append">
                 <img
-                  src="./public/assets/product-detail/cutomization.png"
+                  class="ps-card__img"
+                  src="./public/assets/product-detail/ps-prod1.png"
                   alt=""
                 />
-              </a>
+              </div>
             </div>
-            <div class="custom__footer">
-              <div class="c-action">
-                <div class="c-action__pagination-list">
-                  <div
-                    class="c-action__pagination-item c-action__pagination-item--active"
-                  ></div>
-                  <div
-                    class="c-action__pagination-item c-action__pagination-item--active"
-                  ></div>
-                  <div
-                    class="c-action__pagination-item c-action__pagination-item--active"
-                  ></div>
-                  <div
-                    class="c-action__pagination-item c-action__pagination-item--disable"
-                  ></div>
-                  <div
-                    class="c-action__pagination-item c-action__pagination-item--disable"
-                  ></div>
-                  <div
-                    class="c-action__pagination-item c-action__pagination-item--disable"
-                  ></div>
-                </div>
-                <div class="c-action__category">
-                  <div class="c-action__carousel">
-                    <div class="c-action__btn c-action__btn--prev">
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        width="20"
-                        height="20"
-                        viewBox="0 0 20 20"
-                        fill="none"
-                      >
-                        <path
-                          d="M13.1578 4.40832C13.2359 4.48579 13.2979 4.57796 13.3402 4.67951C13.3825 4.78106 13.4043 4.88998 13.4043 4.99999C13.4043 5.11 13.3825 5.21892 13.3402 5.32047C13.2979 5.42202 13.2359 5.51419 13.1578 5.59166L9.34114 9.40832C9.26303 9.48579 9.20104 9.57796 9.15873 9.67951C9.11642 9.78106 9.09464 9.88998 9.09464 9.99999C9.09464 10.11 9.11642 10.2189 9.15873 10.3205C9.20104 10.422 9.26303 10.5142 9.34114 10.5917L13.1578 14.4083C13.2359 14.4858 13.2979 14.578 13.3402 14.6795C13.3825 14.7811 13.4043 14.89 13.4043 15C13.4043 15.11 13.3825 15.2189 13.3402 15.3205C13.2979 15.422 13.2359 15.5142 13.1578 15.5917C13.0017 15.7469 12.7905 15.834 12.5703 15.834C12.3501 15.834 12.1389 15.7469 11.9828 15.5917L8.15781 11.7667C7.68964 11.2979 7.42668 10.6625 7.42668 9.99999C7.42668 9.33749 7.68964 8.70207 8.15781 8.23332L11.9828 4.40832C12.1389 4.25311 12.3501 4.166 12.5703 4.166C12.7905 4.166 13.0017 4.25311 13.1578 4.40832Z"
-                          fill="#1E232B"
-                        />
-                      </svg>
-                    </div>
-                    <p class="c-action__select">MATERIAL</p>
-                    <div class="c-action__btn c-action__btn--next">
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        width="20"
-                        height="20"
-                        viewBox="0 0 20 20"
-                        fill="none"
-                      >
-                        <path
-                          d="M6.8422 4.40832C6.76409 4.48579 6.7021 4.57796 6.65979 4.67951C6.61748 4.78106 6.5957 4.88998 6.5957 4.99999C6.5957 5.11 6.61748 5.21892 6.65979 5.32047C6.7021 5.42202 6.76409 5.51419 6.8422 5.59166L10.6589 9.40832C10.737 9.48579 10.799 9.57796 10.8413 9.67951C10.8836 9.78106 10.9054 9.88998 10.9054 9.99999C10.9054 10.11 10.8836 10.2189 10.8413 10.3205C10.799 10.422 10.737 10.5142 10.6589 10.5917L6.8422 14.4083C6.76409 14.4858 6.7021 14.578 6.65979 14.6795C6.61748 14.7811 6.5957 14.89 6.5957 15C6.5957 15.11 6.61748 15.2189 6.65979 15.3205C6.7021 15.422 6.76409 15.5142 6.8422 15.5917C6.99834 15.7469 7.20955 15.834 7.4297 15.834C7.64985 15.834 7.86106 15.7469 8.0172 15.5917L11.8422 11.7667C12.3104 11.2979 12.5733 10.6625 12.5733 9.99999C12.5733 9.33749 12.3104 8.70207 11.8422 8.23332L8.0172 4.40832C7.86106 4.25311 7.64985 4.166 7.4297 4.166C7.20955 4.166 6.99834 4.25311 6.8422 4.40832Z"
-                          fill="#1E232B"
-                        />
-                      </svg>
-                    </div>
+          </div>
+        </div>
+      </xo-container>
+    </section> -->
+
+    <section
+      class="page-section test page-section--color"
+      style="--color: #f6f6f6"
+    >
+      <div class="container-xxl custom-container">
+        <div class="custom">
+          <div class="custom__header">
+            <div class="custom__content">
+              <h3 class="custom__subtitle">CUSTOM PRODUCT</h3>
+              <h2 class="custom__title">Custom design your phone case</h2>
+            </div>
+          </div>
+          <div class="custom__body">
+            <a href="#">
+              <img
+                src="./public/assets/product-detail/cutomization.png"
+                alt=""
+              />
+            </a>
+          </div>
+          <div class="custom__footer">
+            <div class="c-action">
+              <div class="c-action__pagination-list">
+                <div
+                  class="c-action__pagination-item c-action__pagination-item--active"
+                ></div>
+                <div
+                  class="c-action__pagination-item c-action__pagination-item--active"
+                ></div>
+                <div
+                  class="c-action__pagination-item c-action__pagination-item--active"
+                ></div>
+                <div
+                  class="c-action__pagination-item c-action__pagination-item--disable"
+                ></div>
+                <div
+                  class="c-action__pagination-item c-action__pagination-item--disable"
+                ></div>
+                <div
+                  class="c-action__pagination-item c-action__pagination-item--disable"
+                ></div>
+              </div>
+              <div class="c-action__category">
+                <div class="c-action__carousel">
+                  <div class="c-action__btn c-action__btn--prev">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="20"
+                      height="20"
+                      viewBox="0 0 20 20"
+                      fill="none"
+                    >
+                      <path
+                        d="M13.1578 4.40832C13.2359 4.48579 13.2979 4.57796 13.3402 4.67951C13.3825 4.78106 13.4043 4.88998 13.4043 4.99999C13.4043 5.11 13.3825 5.21892 13.3402 5.32047C13.2979 5.42202 13.2359 5.51419 13.1578 5.59166L9.34114 9.40832C9.26303 9.48579 9.20104 9.57796 9.15873 9.67951C9.11642 9.78106 9.09464 9.88998 9.09464 9.99999C9.09464 10.11 9.11642 10.2189 9.15873 10.3205C9.20104 10.422 9.26303 10.5142 9.34114 10.5917L13.1578 14.4083C13.2359 14.4858 13.2979 14.578 13.3402 14.6795C13.3825 14.7811 13.4043 14.89 13.4043 15C13.4043 15.11 13.3825 15.2189 13.3402 15.3205C13.2979 15.422 13.2359 15.5142 13.1578 15.5917C13.0017 15.7469 12.7905 15.834 12.5703 15.834C12.3501 15.834 12.1389 15.7469 11.9828 15.5917L8.15781 11.7667C7.68964 11.2979 7.42668 10.6625 7.42668 9.99999C7.42668 9.33749 7.68964 8.70207 8.15781 8.23332L11.9828 4.40832C12.1389 4.25311 12.3501 4.166 12.5703 4.166C12.7905 4.166 13.0017 4.25311 13.1578 4.40832Z"
+                        fill="#1E232B"
+                      />
+                    </svg>
+                  </div>
+                  <p class="c-action__select">MATERIAL</p>
+                  <div class="c-action__btn c-action__btn--next">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="20"
+                      height="20"
+                      viewBox="0 0 20 20"
+                      fill="none"
+                    >
+                      <path
+                        d="M6.8422 4.40832C6.76409 4.48579 6.7021 4.57796 6.65979 4.67951C6.61748 4.78106 6.5957 4.88998 6.5957 4.99999C6.5957 5.11 6.61748 5.21892 6.65979 5.32047C6.7021 5.42202 6.76409 5.51419 6.8422 5.59166L10.6589 9.40832C10.737 9.48579 10.799 9.57796 10.8413 9.67951C10.8836 9.78106 10.9054 9.88998 10.9054 9.99999C10.9054 10.11 10.8836 10.2189 10.8413 10.3205C10.799 10.422 10.737 10.5142 10.6589 10.5917L6.8422 14.4083C6.76409 14.4858 6.7021 14.578 6.65979 14.6795C6.61748 14.7811 6.5957 14.89 6.5957 15C6.5957 15.11 6.61748 15.2189 6.65979 15.3205C6.7021 15.422 6.76409 15.5142 6.8422 15.5917C6.99834 15.7469 7.20955 15.834 7.4297 15.834C7.64985 15.834 7.86106 15.7469 8.0172 15.5917L11.8422 11.7667C12.3104 11.2979 12.5733 10.6625 12.5733 9.99999C12.5733 9.33749 12.3104 8.70207 11.8422 8.23332L8.0172 4.40832C7.86106 4.25311 7.64985 4.166 7.4297 4.166C7.20955 4.166 6.99834 4.25311 6.8422 4.40832Z"
+                        fill="#1E232B"
+                      />
+                    </svg>
                   </div>
                 </div>
-                <div class="c-action__options">
-                  <div class="c-action__options-list">
-                    <div
-                      class="c-action__option-item c-action__option-item--selected"
-                    >
-                      <div class="c-action__option-img">
-                        <img
-                          src="./public/assets/product-detail/silicon.png"
-                          alt=""
-                        />
-                      </div>
-                      <div class="c-action__option-name"><h3>Silicon</h3></div>
+              </div>
+              <div class="c-action__options">
+                <div class="c-action__options-list">
+                  <div
+                    class="c-action__option-item c-action__option-item--selected"
+                  >
+                    <div class="c-action__option-img">
+                      <img
+                        src="./public/assets/product-detail/silicon.png"
+                        alt=""
+                      />
                     </div>
-                    <div class="c-action__option-item">
-                      <div class="c-action__option-img">
-                        <img
-                          src="./public/assets/product-detail/silicon.png"
-                          alt=""
-                        />
-                      </div>
-                      <div class="c-action__option-name"><h3>Silicon</h3></div>
+                    <div class="c-action__option-name"><h3>Silicon</h3></div>
+                  </div>
+                  <div class="c-action__option-item">
+                    <div class="c-action__option-img">
+                      <img
+                        src="./public/assets/product-detail/silicon.png"
+                        alt=""
+                      />
                     </div>
-                    <div class="c-action__option-item">
-                      <div class="c-action__option-img">
-                        <img
-                          src="./public/assets/product-detail/silicon.png"
-                          alt=""
-                        />
-                      </div>
-                      <div class="c-action__option-name"><h3>Silicon</h3></div>
+                    <div class="c-action__option-name"><h3>Silicon</h3></div>
+                  </div>
+                  <div class="c-action__option-item">
+                    <div class="c-action__option-img">
+                      <img
+                        src="./public/assets/product-detail/silicon.png"
+                        alt=""
+                      />
                     </div>
-                    <div class="c-action__option-item">
-                      <div class="c-action__option-img">
-                        <img
-                          src="./public/assets/product-detail/silicon.png"
-                          alt=""
-                        />
-                      </div>
-                      <div class="c-action__option-name"><h3>Silicon</h3></div>
+                    <div class="c-action__option-name"><h3>Silicon</h3></div>
+                  </div>
+                  <div class="c-action__option-item">
+                    <div class="c-action__option-img">
+                      <img
+                        src="./public/assets/product-detail/silicon.png"
+                        alt=""
+                      />
                     </div>
-                    <div class="c-action__option-item">
-                      <div class="c-action__option-img">
-                        <img
-                          src="./public/assets/product-detail/silicon.png"
-                          alt=""
-                        />
-                      </div>
-                      <div class="c-action__option-name"><h3>Silicon</h3></div>
+                    <div class="c-action__option-name"><h3>Silicon</h3></div>
+                  </div>
+                  <div class="c-action__option-item">
+                    <div class="c-action__option-img">
+                      <img
+                        src="./public/assets/product-detail/silicon.png"
+                        alt=""
+                      />
                     </div>
-                    <div class="c-action__option-item">
-                      <div class="c-action__option-img">
-                        <img
-                          src="./public/assets/product-detail/silicon.png"
-                          alt=""
-                        />
-                      </div>
-                      <div class="c-action__option-name"><h3>Silicon</h3></div>
+                    <div class="c-action__option-name"><h3>Silicon</h3></div>
+                  </div>
+                  <div class="c-action__option-item">
+                    <div class="c-action__option-img">
+                      <img
+                        src="./public/assets/product-detail/silicon.png"
+                        alt=""
+                      />
                     </div>
+                    <div class="c-action__option-name"><h3>Silicon</h3></div>
                   </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
-      </section>
+      </div>
+    </section>
 
-      <section class="page-section page-section--color" style="--color: #fff">
-        <div class="faq-container">
-          <div class="faq">
-            <h2 class="faq__tittle">
-              Frequently Asked <br />
-              Questions
-            </h2>
-            <div class="faq__body">
-              <div class="accordion accordion--border-none">
-                <div class="accordion__item accordion__item--color-begie">
-                  <button class="accordion__header accordion__header--p-26-31">
-                    <h3 class="accordion__title">
-                      Is Wolfwood furniture environmentally friendly?
-                    </h3>
-                    <span class="accordion__icon">
-                      <svg
-                        class="icon-plus"
-                        xmlns="http://www.w3.org/2000/svg"
-                        width="24"
-                        height="24"
-                        viewBox="0 0 24 24"
-                        fill="none"
-                      >
-                        <path
-                          d="M11.4482 19.7712C11.5947 19.9177 11.7934 20 12.0006 20C12.2078 20 12.4065 19.9177 12.553 19.7712C12.6996 19.6247 12.7819 19.426 12.7819 19.2188V12.7819H19.2188C19.426 12.7819 19.6247 12.6996 19.7712 12.5531C19.9177 12.4066 20 12.2078 20 12.0006C20 11.7934 19.9177 11.5947 19.7712 11.4482C19.6247 11.3017 19.426 11.2194 19.2188 11.2194H12.7819V4.78125C12.7819 4.57405 12.6996 4.37534 12.553 4.22882C12.4065 4.08231 12.2078 4 12.0006 4C11.7934 4 11.5947 4.08231 11.4482 4.22882C11.3017 4.37534 11.2194 4.57405 11.2194 4.78125V11.2194H4.78125C4.57405 11.2194 4.37534 11.3017 4.22882 11.4482C4.08231 11.5947 4 11.7934 4 12.0006C4 12.2078 4.08231 12.4066 4.22882 12.5531C4.37534 12.6996 4.57405 12.7819 4.78125 12.7819H11.2194V19.2188C11.2194 19.426 11.3017 19.6247 11.4482 19.7712Z"
-                          fill="#1E1E1E"
-                        />
-                      </svg>
-                      <svg
-                        class="icon-minus"
-                        xmlns="http://www.w3.org/2000/svg"
-                        width="24"
-                        height="24"
-                        viewBox="0 0 24 24"
-                        fill="none"
-                        style="display: none"
-                      >
-                        <path
-                          d="M4.78125 12.7819H19.2188C19.426 12.7819 19.6247 12.6996 19.7712 12.553C19.9177 12.4065 20 12.2078 20 12.0006C20 11.7934 19.9177 11.5947 19.7712 11.4482C19.6247 11.3017 19.426 11.2194 19.2188 11.2194H4.78125C4.57405 11.2194 4.37534 11.3017 4.22882 11.4482C4.08231 11.5947 4 11.7934 4 12.0006C4 12.2078 4.08231 12.4065 4.22882 12.553C4.37534 12.6996 4.57405 12.7819 4.78125 12.7819Z"
-                          fill="#1E1E1E"
-                        />
-                      </svg>
-                    </span>
-                  </button>
-                  <div
-                    class="accordion__content accordion__content--max-width-484px"
-                  >
-                    <p class="accordion__text">
-                      We are committed to sustainability and use certified wood
-                      in our furniture. We strive to minimize our environmental
-                      impact and create pieces that reflect our respect for the
-                      natural world.
-                    </p>
-                  </div>
-                </div>
-                <div class="accordion__item accordion__item--color-begie">
-                  <button class="accordion__header accordion__header--p-26-31">
-                    <h3 class="accordion__title">
-                      Do you ship internationally?
-                    </h3>
-                    <span class="accordion__icon">
-                      <svg
-                        class="icon-plus"
-                        xmlns="http://www.w3.org/2000/svg"
-                        width="24"
-                        height="24"
-                        viewBox="0 0 24 24"
-                        fill="none"
-                      >
-                        <path
-                          d="M11.4482 19.7712C11.5947 19.9177 11.7934 20 12.0006 20C12.2078 20 12.4065 19.9177 12.553 19.7712C12.6996 19.6247 12.7819 19.426 12.7819 19.2188V12.7819H19.2188C19.426 12.7819 19.6247 12.6996 19.7712 12.5531C19.9177 12.4066 20 12.2078 20 12.0006C20 11.7934 19.9177 11.5947 19.7712 11.4482C19.6247 11.3017 19.426 11.2194 19.2188 11.2194H12.7819V4.78125C12.7819 4.57405 12.6996 4.37534 12.553 4.22882C12.4065 4.08231 12.2078 4 12.0006 4C11.7934 4 11.5947 4.08231 11.4482 4.22882C11.3017 4.37534 11.2194 4.57405 11.2194 4.78125V11.2194H4.78125C4.57405 11.2194 4.37534 11.3017 4.22882 11.4482C4.08231 11.5947 4 11.7934 4 12.0006C4 12.2078 4.08231 12.4066 4.22882 12.5531C4.37534 12.6996 4.57405 12.7819 4.78125 12.7819H11.2194V19.2188C11.2194 19.426 11.3017 19.6247 11.4482 19.7712Z"
-                          fill="#1E1E1E"
-                        />
-                      </svg>
-                      <svg
-                        class="icon-minus"
-                        xmlns="http://www.w3.org/2000/svg"
-                        width="24"
-                        height="24"
-                        viewBox="0 0 24 24"
-                        fill="none"
-                        style="display: none"
-                      >
-                        <path
-                          d="M4.78125 12.7819H19.2188C19.426 12.7819 19.6247 12.6996 19.7712 12.553C19.9177 12.4065 20 12.2078 20 12.0006C20 11.7934 19.9177 11.5947 19.7712 11.4482C19.6247 11.3017 19.426 11.2194 19.2188 11.2194H4.78125C4.57405 11.2194 4.37534 11.3017 4.22882 11.4482C4.08231 11.5947 4 11.7934 4 12.0006C4 12.2078 4.08231 12.4065 4.22882 12.553C4.37534 12.6996 4.57405 12.7819 4.78125 12.7819Z"
-                          fill="#1E1E1E"
-                        />
-                      </svg>
-                    </span>
-                  </button>
-                  <div
-                    class="accordion__content accordion__content--max-width-484px"
-                  >
-                    <p class="accordion__text">
-                      We are committed to sustainability and use certified wood
-                      in our furniture. We strive to minimize our environmental
-                      impact and create pieces that reflect our respect for the
-                      natural world.
-                    </p>
-                  </div>
-                </div>
-                <div class="accordion__item accordion__item--color-begie">
-                  <button class="accordion__header accordion__header--p-26-31">
-                    <h3 class="accordion__title">
-                      What is the Wolfwood philosophy?
-                    </h3>
-                    <span class="accordion__icon">
-                      <svg
-                        class="icon-plus"
-                        xmlns="http://www.w3.org/2000/svg"
-                        width="24"
-                        height="24"
-                        viewBox="0 0 24 24"
-                        fill="none"
-                      >
-                        <path
-                          d="M11.4482 19.7712C11.5947 19.9177 11.7934 20 12.0006 20C12.2078 20 12.4065 19.9177 12.553 19.7712C12.6996 19.6247 12.7819 19.426 12.7819 19.2188V12.7819H19.2188C19.426 12.7819 19.6247 12.6996 19.7712 12.5531C19.9177 12.4066 20 12.2078 20 12.0006C20 11.7934 19.9177 11.5947 19.7712 11.4482C19.6247 11.3017 19.426 11.2194 19.2188 11.2194H12.7819V4.78125C12.7819 4.57405 12.6996 4.37534 12.553 4.22882C12.4065 4.08231 12.2078 4 12.0006 4C11.7934 4 11.5947 4.08231 11.4482 4.22882C11.3017 4.37534 11.2194 4.57405 11.2194 4.78125V11.2194H4.78125C4.57405 11.2194 4.37534 11.3017 4.22882 11.4482C4.08231 11.5947 4 11.7934 4 12.0006C4 12.2078 4.08231 12.4066 4.22882 12.5531C4.37534 12.6996 4.57405 12.7819 4.78125 12.7819H11.2194V19.2188C11.2194 19.426 11.3017 19.6247 11.4482 19.7712Z"
-                          fill="#1E1E1E"
-                        />
-                      </svg>
-                      <svg
-                        class="icon-minus"
-                        xmlns="http://www.w3.org/2000/svg"
-                        width="24"
-                        height="24"
-                        viewBox="0 0 24 24"
-                        fill="none"
-                        style="display: none"
-                      >
-                        <path
-                          d="M4.78125 12.7819H19.2188C19.426 12.7819 19.6247 12.6996 19.7712 12.553C19.9177 12.4065 20 12.2078 20 12.0006C20 11.7934 19.9177 11.5947 19.7712 11.4482C19.6247 11.3017 19.426 11.2194 19.2188 11.2194H4.78125C4.57405 11.2194 4.37534 11.3017 4.22882 11.4482C4.08231 11.5947 4 11.7934 4 12.0006C4 12.2078 4.08231 12.4065 4.22882 12.553C4.37534 12.6996 4.57405 12.7819 4.78125 12.7819Z"
-                          fill="#1E1E1E"
-                        />
-                      </svg>
-                    </span>
-                  </button>
-                  <div
-                    class="accordion__content accordion__content--max-width-484px"
-                  >
-                    <p class="accordion__text">
-                      We are committed to sustainability and use certified wood
-                      in our furniture. We strive to minimize our environmental
-                      impact and create pieces that reflect our respect for the
-                      natural world.
-                    </p>
-                  </div>
-                </div>
-                <div class="accordion__item accordion__item--color-begie">
-                  <button class="accordion__header accordion__header--p-26-31">
-                    <h3 class="accordion__title">
-                      What is your return policy?
-                    </h3>
-                    <span class="accordion__icon">
-                      <svg
-                        class="icon-plus"
-                        xmlns="http://www.w3.org/2000/svg"
-                        width="24"
-                        height="24"
-                        viewBox="0 0 24 24"
-                        fill="none"
-                      >
-                        <path
-                          d="M11.4482 19.7712C11.5947 19.9177 11.7934 20 12.0006 20C12.2078 20 12.4065 19.9177 12.553 19.7712C12.6996 19.6247 12.7819 19.426 12.7819 19.2188V12.7819H19.2188C19.426 12.7819 19.6247 12.6996 19.7712 12.5531C19.9177 12.4066 20 12.2078 20 12.0006C20 11.7934 19.9177 11.5947 19.7712 11.4482C19.6247 11.3017 19.426 11.2194 19.2188 11.2194H12.7819V4.78125C12.7819 4.57405 12.6996 4.37534 12.553 4.22882C12.4065 4.08231 12.2078 4 12.0006 4C11.7934 4 11.5947 4.08231 11.4482 4.22882C11.3017 4.37534 11.2194 4.57405 11.2194 4.78125V11.2194H4.78125C4.57405 11.2194 4.37534 11.3017 4.22882 11.4482C4.08231 11.5947 4 11.7934 4 12.0006C4 12.2078 4.08231 12.4066 4.22882 12.5531C4.37534 12.6996 4.57405 12.7819 4.78125 12.7819H11.2194V19.2188C11.2194 19.426 11.3017 19.6247 11.4482 19.7712Z"
-                          fill="#1E1E1E"
-                        />
-                      </svg>
-                      <svg
-                        class="icon-minus"
-                        xmlns="http://www.w3.org/2000/svg"
-                        width="24"
-                        height="24"
-                        viewBox="0 0 24 24"
-                        fill="none"
-                        style="display: none"
-                      >
-                        <path
-                          d="M4.78125 12.7819H19.2188C19.426 12.7819 19.6247 12.6996 19.7712 12.553C19.9177 12.4065 20 12.2078 20 12.0006C20 11.7934 19.9177 11.5947 19.7712 11.4482C19.6247 11.3017 19.426 11.2194 19.2188 11.2194H4.78125C4.57405 11.2194 4.37534 11.3017 4.22882 11.4482C4.08231 11.5947 4 11.7934 4 12.0006C4 12.2078 4.08231 12.4065 4.22882 12.553C4.37534 12.6996 4.57405 12.7819 4.78125 12.7819Z"
-                          fill="#1E1E1E"
-                        />
-                      </svg>
-                    </span>
-                  </button>
-                  <div
-                    class="accordion__content accordion__content--max-width-484px"
-                  >
-                    <p class="accordion__text">
-                      We are committed to sustainability and use certified wood
-                      in our furniture. We strive to minimize our environmental
-                      impact and create pieces that reflect our respect for the
-                      natural world.
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="faq__footer">
-              <div class="faq__actions">
-                <div class="faq__action-item">
-                  <div class="faq__action-body">
-                    <h3 class="faq__action-title">Product sheet</h3>
-                    <span class="faq__action-data-flow">15 MB</span>
-                  </div>
-                  <div class="faq__action-append">
+    <section class="page-section page-section--color" style="--color: #fff">
+      <div class="faq-container">
+        <div class="faq">
+          <h2 class="faq__tittle">
+            Frequently Asked <br />
+            Questions
+          </h2>
+          <div class="faq__body">
+            <div class="accordion accordion--border-none">
+              <div class="accordion__item accordion__item--color-begie">
+                <button class="accordion__header accordion__header--p-26-31">
+                  <h3 class="accordion__title">
+                    Is Wolfwood furniture environmentally friendly?
+                  </h3>
+                  <span class="accordion__icon">
                     <svg
+                      class="icon-plus"
                       xmlns="http://www.w3.org/2000/svg"
-                      width="23"
-                      height="22"
-                      viewBox="0 0 23 22"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
                       fill="none"
                     >
                       <path
-                        fill-rule="evenodd"
-                        clip-rule="evenodd"
-                        d="M4.57922 14.52C4.81261 14.52 5.03644 14.6127 5.20147 14.7778C5.3665 14.9428 5.45922 15.1666 5.45922 15.4V17.16C5.45922 17.3934 5.55193 17.6172 5.71696 17.7823C5.882 17.9473 6.10583 18.04 6.33922 18.04H16.8992C17.1326 18.04 17.3564 17.9473 17.5215 17.7823C17.6865 17.6172 17.7792 17.3934 17.7792 17.16V15.4C17.7792 15.1666 17.8719 14.9428 18.037 14.7778C18.202 14.6127 18.4258 14.52 18.6592 14.52C18.8926 14.52 19.1164 14.6127 19.2815 14.7778C19.4465 14.9428 19.5392 15.1666 19.5392 15.4V17.16C19.5392 17.8602 19.2611 18.5317 18.766 19.0268C18.2709 19.5219 17.5994 19.8 16.8992 19.8H6.33922C5.63905 19.8 4.96755 19.5219 4.47246 19.0268C3.97736 18.5317 3.69922 17.8602 3.69922 17.16V15.4C3.69922 15.1666 3.79193 14.9428 3.95696 14.7778C4.122 14.6127 4.34583 14.52 4.57922 14.52Z"
-                        fill="#0F61FF"
-                      />
-                      <path
-                        fill-rule="evenodd"
-                        clip-rule="evenodd"
-                        d="M6.5975 9.49815C6.76252 9.33317 6.98631 9.24049 7.21966 9.24049C7.453 9.24049 7.67679 9.33317 7.84182 9.49815L11.6197 13.276L15.3975 9.49815C15.4787 9.4141 15.5758 9.34706 15.6831 9.30094C15.7905 9.25482 15.906 9.23054 16.0228 9.22953C16.1397 9.22851 16.2555 9.25078 16.3637 9.29502C16.4718 9.33927 16.5701 9.40461 16.6527 9.48724C16.7353 9.56986 16.8007 9.66812 16.8449 9.77627C16.8892 9.88442 16.9115 10.0003 16.9104 10.1171C16.9094 10.234 16.8851 10.3495 16.839 10.4568C16.7929 10.5642 16.7259 10.6613 16.6418 10.7425L12.2418 15.1425C12.0768 15.3074 11.853 15.4001 11.6197 15.4001C11.3863 15.4001 11.1625 15.3074 10.9975 15.1425L6.5975 10.7425C6.43252 10.5774 6.33984 10.3537 6.33984 10.1203C6.33984 9.88696 6.43252 9.66317 6.5975 9.49815Z"
-                        fill="#0F61FF"
-                      />
-                      <path
-                        fill-rule="evenodd"
-                        clip-rule="evenodd"
-                        d="M11.6183 3.08008C11.8517 3.08008 12.0755 3.17279 12.2405 3.33782C12.4056 3.50286 12.4983 3.72669 12.4983 3.96008V14.5201C12.4983 14.7535 12.4056 14.9773 12.2405 15.1423C12.0755 15.3074 11.8517 15.4001 11.6183 15.4001C11.3849 15.4001 11.1611 15.3074 10.996 15.1423C10.831 14.9773 10.7383 14.7535 10.7383 14.5201V3.96008C10.7383 3.72669 10.831 3.50286 10.996 3.33782C11.1611 3.17279 11.3849 3.08008 11.6183 3.08008Z"
-                        fill="#0F61FF"
+                        d="M11.4482 19.7712C11.5947 19.9177 11.7934 20 12.0006 20C12.2078 20 12.4065 19.9177 12.553 19.7712C12.6996 19.6247 12.7819 19.426 12.7819 19.2188V12.7819H19.2188C19.426 12.7819 19.6247 12.6996 19.7712 12.5531C19.9177 12.4066 20 12.2078 20 12.0006C20 11.7934 19.9177 11.5947 19.7712 11.4482C19.6247 11.3017 19.426 11.2194 19.2188 11.2194H12.7819V4.78125C12.7819 4.57405 12.6996 4.37534 12.553 4.22882C12.4065 4.08231 12.2078 4 12.0006 4C11.7934 4 11.5947 4.08231 11.4482 4.22882C11.3017 4.37534 11.2194 4.57405 11.2194 4.78125V11.2194H4.78125C4.57405 11.2194 4.37534 11.3017 4.22882 11.4482C4.08231 11.5947 4 11.7934 4 12.0006C4 12.2078 4.08231 12.4066 4.22882 12.5531C4.37534 12.6996 4.57405 12.7819 4.78125 12.7819H11.2194V19.2188C11.2194 19.426 11.3017 19.6247 11.4482 19.7712Z"
+                        fill="#1E1E1E"
                       />
                     </svg>
-                  </div>
-                </div>
-                <div class="faq__action-item">
-                  <div class="faq__action-body">
-                    <h3 class="faq__action-title">User Guide</h3>
-                    <span class="faq__action-data-flow">15 MB</span>
-                  </div>
-                  <div class="faq__action-append">
                     <svg
+                      class="icon-minus"
                       xmlns="http://www.w3.org/2000/svg"
-                      width="23"
-                      height="22"
-                      viewBox="0 0 23 22"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
                       fill="none"
+                      style="display: none"
                     >
                       <path
-                        fill-rule="evenodd"
-                        clip-rule="evenodd"
-                        d="M4.57922 14.52C4.81261 14.52 5.03644 14.6127 5.20147 14.7778C5.3665 14.9428 5.45922 15.1666 5.45922 15.4V17.16C5.45922 17.3934 5.55193 17.6172 5.71696 17.7823C5.882 17.9473 6.10583 18.04 6.33922 18.04H16.8992C17.1326 18.04 17.3564 17.9473 17.5215 17.7823C17.6865 17.6172 17.7792 17.3934 17.7792 17.16V15.4C17.7792 15.1666 17.8719 14.9428 18.037 14.7778C18.202 14.6127 18.4258 14.52 18.6592 14.52C18.8926 14.52 19.1164 14.6127 19.2815 14.7778C19.4465 14.9428 19.5392 15.1666 19.5392 15.4V17.16C19.5392 17.8602 19.2611 18.5317 18.766 19.0268C18.2709 19.5219 17.5994 19.8 16.8992 19.8H6.33922C5.63905 19.8 4.96755 19.5219 4.47246 19.0268C3.97736 18.5317 3.69922 17.8602 3.69922 17.16V15.4C3.69922 15.1666 3.79193 14.9428 3.95696 14.7778C4.122 14.6127 4.34583 14.52 4.57922 14.52Z"
-                        fill="#0F61FF"
-                      />
-                      <path
-                        fill-rule="evenodd"
-                        clip-rule="evenodd"
-                        d="M6.5975 9.49815C6.76252 9.33317 6.98631 9.24049 7.21966 9.24049C7.453 9.24049 7.67679 9.33317 7.84182 9.49815L11.6197 13.276L15.3975 9.49815C15.4787 9.4141 15.5758 9.34706 15.6831 9.30094C15.7905 9.25482 15.906 9.23054 16.0228 9.22953C16.1397 9.22851 16.2555 9.25078 16.3637 9.29502C16.4718 9.33927 16.5701 9.40461 16.6527 9.48724C16.7353 9.56986 16.8007 9.66812 16.8449 9.77627C16.8892 9.88442 16.9115 10.0003 16.9104 10.1171C16.9094 10.234 16.8851 10.3495 16.839 10.4568C16.7929 10.5642 16.7259 10.6613 16.6418 10.7425L12.2418 15.1425C12.0768 15.3074 11.853 15.4001 11.6197 15.4001C11.3863 15.4001 11.1625 15.3074 10.9975 15.1425L6.5975 10.7425C6.43252 10.5774 6.33984 10.3537 6.33984 10.1203C6.33984 9.88696 6.43252 9.66317 6.5975 9.49815Z"
-                        fill="#0F61FF"
-                      />
-                      <path
-                        fill-rule="evenodd"
-                        clip-rule="evenodd"
-                        d="M11.6183 3.08008C11.8517 3.08008 12.0755 3.17279 12.2405 3.33782C12.4056 3.50286 12.4983 3.72669 12.4983 3.96008V14.5201C12.4983 14.7535 12.4056 14.9773 12.2405 15.1423C12.0755 15.3074 11.8517 15.4001 11.6183 15.4001C11.3849 15.4001 11.1611 15.3074 10.996 15.1423C10.831 14.9773 10.7383 14.7535 10.7383 14.5201V3.96008C10.7383 3.72669 10.831 3.50286 10.996 3.33782C11.1611 3.17279 11.3849 3.08008 11.6183 3.08008Z"
-                        fill="#0F61FF"
+                        d="M4.78125 12.7819H19.2188C19.426 12.7819 19.6247 12.6996 19.7712 12.553C19.9177 12.4065 20 12.2078 20 12.0006C20 11.7934 19.9177 11.5947 19.7712 11.4482C19.6247 11.3017 19.426 11.2194 19.2188 11.2194H4.78125C4.57405 11.2194 4.37534 11.3017 4.22882 11.4482C4.08231 11.5947 4 11.7934 4 12.0006C4 12.2078 4.08231 12.4065 4.22882 12.553C4.37534 12.6996 4.57405 12.7819 4.78125 12.7819Z"
+                        fill="#1E1E1E"
                       />
                     </svg>
-                  </div>
-                </div>
-                <div class="faq__action-item">
-                  <div class="faq__action-body">
-                    <h3 class="faq__action-title">Quick Start Guide</h3>
-                    <span class="faq__action-data-flow">15 MB</span>
-                  </div>
-                  <div class="faq__action-append">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="23"
-                      height="22"
-                      viewBox="0 0 23 22"
-                      fill="none"
-                    >
-                      <path
-                        fill-rule="evenodd"
-                        clip-rule="evenodd"
-                        d="M4.57922 14.52C4.81261 14.52 5.03644 14.6127 5.20147 14.7778C5.3665 14.9428 5.45922 15.1666 5.45922 15.4V17.16C5.45922 17.3934 5.55193 17.6172 5.71696 17.7823C5.882 17.9473 6.10583 18.04 6.33922 18.04H16.8992C17.1326 18.04 17.3564 17.9473 17.5215 17.7823C17.6865 17.6172 17.7792 17.3934 17.7792 17.16V15.4C17.7792 15.1666 17.8719 14.9428 18.037 14.7778C18.202 14.6127 18.4258 14.52 18.6592 14.52C18.8926 14.52 19.1164 14.6127 19.2815 14.7778C19.4465 14.9428 19.5392 15.1666 19.5392 15.4V17.16C19.5392 17.8602 19.2611 18.5317 18.766 19.0268C18.2709 19.5219 17.5994 19.8 16.8992 19.8H6.33922C5.63905 19.8 4.96755 19.5219 4.47246 19.0268C3.97736 18.5317 3.69922 17.8602 3.69922 17.16V15.4C3.69922 15.1666 3.79193 14.9428 3.95696 14.7778C4.122 14.6127 4.34583 14.52 4.57922 14.52Z"
-                        fill="#0F61FF"
-                      />
-                      <path
-                        fill-rule="evenodd"
-                        clip-rule="evenodd"
-                        d="M6.5975 9.49815C6.76252 9.33317 6.98631 9.24049 7.21966 9.24049C7.453 9.24049 7.67679 9.33317 7.84182 9.49815L11.6197 13.276L15.3975 9.49815C15.4787 9.4141 15.5758 9.34706 15.6831 9.30094C15.7905 9.25482 15.906 9.23054 16.0228 9.22953C16.1397 9.22851 16.2555 9.25078 16.3637 9.29502C16.4718 9.33927 16.5701 9.40461 16.6527 9.48724C16.7353 9.56986 16.8007 9.66812 16.8449 9.77627C16.8892 9.88442 16.9115 10.0003 16.9104 10.1171C16.9094 10.234 16.8851 10.3495 16.839 10.4568C16.7929 10.5642 16.7259 10.6613 16.6418 10.7425L12.2418 15.1425C12.0768 15.3074 11.853 15.4001 11.6197 15.4001C11.3863 15.4001 11.1625 15.3074 10.9975 15.1425L6.5975 10.7425C6.43252 10.5774 6.33984 10.3537 6.33984 10.1203C6.33984 9.88696 6.43252 9.66317 6.5975 9.49815Z"
-                        fill="#0F61FF"
-                      />
-                      <path
-                        fill-rule="evenodd"
-                        clip-rule="evenodd"
-                        d="M11.6183 3.08008C11.8517 3.08008 12.0755 3.17279 12.2405 3.33782C12.4056 3.50286 12.4983 3.72669 12.4983 3.96008V14.5201C12.4983 14.7535 12.4056 14.9773 12.2405 15.1423C12.0755 15.3074 11.8517 15.4001 11.6183 15.4001C11.3849 15.4001 11.1611 15.3074 10.996 15.1423C10.831 14.9773 10.7383 14.7535 10.7383 14.5201V3.96008C10.7383 3.72669 10.831 3.50286 10.996 3.33782C11.1611 3.17279 11.3849 3.08008 11.6183 3.08008Z"
-                        fill="#0F61FF"
-                      />
-                    </svg>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section class="page-section">
-        <div class="container-xxl">
-          <div class="recommend">
-            <div class="recommend__header">
-              <h2 class="recommend__title">You may also like</h2>
-              <div class="recommend__btn">
-                <div class="btn-sa--relative">
-                  <a href="#">Shop All</a>
-                </div>
-              </div>
-            </div>
-            <div class="recommend__product">
-              <div class="row">
-                <div class="col" style="--col-lg: 3; --col-md: 6">
-                  <div class="product-card">
-                    <div class="product-card__img">
-                      <a href="productdetail.html"
-                        ><img
-                          src="public/assets/products/product1.png"
-                          alt="" /><img
-                          src="public/assets/products/product2.png"
-                          alt=""
-                      /></a>
-                    </div>
-                    <div class="product-info">
-                      <div class="product-info__name">
-                        <h3>Hills</h3>
-                      </div>
-                      <div class="product-info__price">$76</div>
-                      <div class="product-option">
-                        <div
-                          class="product-option__item"
-                          style="--color: #c9bfae"
-                        ></div>
-                        <div
-                          class="product-option__item"
-                          style="--color: #a393b5"
-                        ></div>
-                        <div
-                          class="product-option__item"
-                          style="--color: #ec978c"
-                        ></div>
-                        <div
-                          class="product-option__item"
-                          style="--color: #ec978c"
-                        ></div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="col" style="--col-lg: 3; --col-md: 6">
-                  <div class="product-card">
-                    <div class="product-card__img">
-                      <a href="productdetail.html"
-                        ><img
-                          src="public/assets/products/product1.png"
-                          alt="" /><img
-                          src="public/assets/products/product2.png"
-                          alt=""
-                      /></a>
-                    </div>
-                    <div class="product-info">
-                      <div class="product-info__name">
-                        <h3>Hills</h3>
-                      </div>
-                      <div class="product-info__price"><h3>$76</h3></div>
-                      <div class="product-option">
-                        <div
-                          class="product-option__item"
-                          style="--color: #c9bfae"
-                        ></div>
-                        <div
-                          class="product-option__item"
-                          style="--color: #a393b5"
-                        ></div>
-                        <div
-                          class="product-option__item"
-                          style="--color: #ec978c"
-                        ></div>
-                        <div
-                          class="product-option__item"
-                          style="--color: #ec978c"
-                        ></div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="col" style="--col-lg: 3; --col-md: 6">
-                  <div class="product-card">
-                    <div class="product-card__img">
-                      <a href="productdetail.html"
-                        ><img
-                          src="public/assets/products/product1.png"
-                          alt="" /><img
-                          src="public/assets/products/product2.png"
-                          alt=""
-                      /></a>
-                    </div>
-                    <div class="product-info">
-                      <div class="product-info__name">
-                        <h3>Hills</h3>
-                      </div>
-                      <div class="product-info__price"><h3>$76</h3></div>
-                      <div class="product-option">
-                        <div
-                          class="product-option__item"
-                          style="--color: #c9bfae"
-                        ></div>
-                        <div
-                          class="product-option__item"
-                          style="--color: #a393b5"
-                        ></div>
-                        <div
-                          class="product-option__item"
-                          style="--color: #ec978c"
-                        ></div>
-                        <div
-                          class="product-option__item"
-                          style="--color: #ec978c"
-                        ></div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="col" style="--col-lg: 3; --col-md: 6">
-                  <div class="product-card">
-                    <div class="product-card__img">
-                      <a href="productdetail.html"
-                        ><img
-                          src="public/assets/products/product1.png"
-                          alt="" /><img
-                          src="public/assets/products/product2.png"
-                          alt=""
-                      /></a>
-                    </div>
-                    <div class="product-info">
-                      <div class="product-info__name">
-                        <h3>Hills</h3>
-                      </div>
-                      <div class="product-info__price"><h3>$76</h3></div>
-                      <div class="product-option">
-                        <div
-                          class="product-option__item"
-                          style="--color: #c9bfae"
-                        ></div>
-                        <div
-                          class="product-option__item"
-                          style="--color: #a393b5"
-                        ></div>
-                        <div
-                          class="product-option__item"
-                          style="--color: #ec978c"
-                        ></div>
-                        <div
-                          class="product-option__item"
-                          style="--color: #ec978c"
-                        ></div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="recommend__paginations">
-                <div class="recommend__pagination-list">
-                  <div
-                    class="recommend__pagination-item recommend__pagination-item--active"
-                  ></div>
-                  <div
-                    class="recommend__pagination-item recommend__pagination-item--disable"
-                  ></div>
-                  <div
-                    class="recommend__pagination-item recommend__pagination-item--disable"
-                  ></div>
-                  <div
-                    class="recommend__pagination-item recommend__pagination-item--disable"
-                  ></div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <footer>
-        <div class="">
-          <div class="footer-main">
-            <div class="container-f">
-              <div class="footer-main__info">
-                <div class="footer-main-logo">
-                  <img src="./public/assets/footer/Logo.png" alt="" />
-                  <p>
-                    This means that once you use different template designs for
-                    actual testimonial website widgets, you can make images from
-                    them and post
+                  </span>
+                </button>
+                <div
+                  class="accordion__content accordion__content--max-width-484px"
+                >
+                  <p class="accordion__text">
+                    We are committed to sustainability and use certified wood in
+                    our furniture. We strive to minimize our environmental
+                    impact and create pieces that reflect our respect for the
+                    natural world.
                   </p>
-                  <ul class="footer-main-logo__social">
-                    <li>
-                      <a href=""
-                        ><img src="./public/assets/footer/Facebook.png" alt=""
-                      /></a>
+                </div>
+              </div>
+              <div class="accordion__item accordion__item--color-begie">
+                <button class="accordion__header accordion__header--p-26-31">
+                  <h3 class="accordion__title">Do you ship internationally?</h3>
+                  <span class="accordion__icon">
+                    <svg
+                      class="icon-plus"
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                    >
+                      <path
+                        d="M11.4482 19.7712C11.5947 19.9177 11.7934 20 12.0006 20C12.2078 20 12.4065 19.9177 12.553 19.7712C12.6996 19.6247 12.7819 19.426 12.7819 19.2188V12.7819H19.2188C19.426 12.7819 19.6247 12.6996 19.7712 12.5531C19.9177 12.4066 20 12.2078 20 12.0006C20 11.7934 19.9177 11.5947 19.7712 11.4482C19.6247 11.3017 19.426 11.2194 19.2188 11.2194H12.7819V4.78125C12.7819 4.57405 12.6996 4.37534 12.553 4.22882C12.4065 4.08231 12.2078 4 12.0006 4C11.7934 4 11.5947 4.08231 11.4482 4.22882C11.3017 4.37534 11.2194 4.57405 11.2194 4.78125V11.2194H4.78125C4.57405 11.2194 4.37534 11.3017 4.22882 11.4482C4.08231 11.5947 4 11.7934 4 12.0006C4 12.2078 4.08231 12.4066 4.22882 12.5531C4.37534 12.6996 4.57405 12.7819 4.78125 12.7819H11.2194V19.2188C11.2194 19.426 11.3017 19.6247 11.4482 19.7712Z"
+                        fill="#1E1E1E"
+                      />
+                    </svg>
+                    <svg
+                      class="icon-minus"
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      style="display: none"
+                    >
+                      <path
+                        d="M4.78125 12.7819H19.2188C19.426 12.7819 19.6247 12.6996 19.7712 12.553C19.9177 12.4065 20 12.2078 20 12.0006C20 11.7934 19.9177 11.5947 19.7712 11.4482C19.6247 11.3017 19.426 11.2194 19.2188 11.2194H4.78125C4.57405 11.2194 4.37534 11.3017 4.22882 11.4482C4.08231 11.5947 4 11.7934 4 12.0006C4 12.2078 4.08231 12.4065 4.22882 12.553C4.37534 12.6996 4.57405 12.7819 4.78125 12.7819Z"
+                        fill="#1E1E1E"
+                      />
+                    </svg>
+                  </span>
+                </button>
+                <div
+                  class="accordion__content accordion__content--max-width-484px"
+                >
+                  <p class="accordion__text">
+                    We are committed to sustainability and use certified wood in
+                    our furniture. We strive to minimize our environmental
+                    impact and create pieces that reflect our respect for the
+                    natural world.
+                  </p>
+                </div>
+              </div>
+              <div class="accordion__item accordion__item--color-begie">
+                <button class="accordion__header accordion__header--p-26-31">
+                  <h3 class="accordion__title">
+                    What is the Wolfwood philosophy?
+                  </h3>
+                  <span class="accordion__icon">
+                    <svg
+                      class="icon-plus"
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                    >
+                      <path
+                        d="M11.4482 19.7712C11.5947 19.9177 11.7934 20 12.0006 20C12.2078 20 12.4065 19.9177 12.553 19.7712C12.6996 19.6247 12.7819 19.426 12.7819 19.2188V12.7819H19.2188C19.426 12.7819 19.6247 12.6996 19.7712 12.5531C19.9177 12.4066 20 12.2078 20 12.0006C20 11.7934 19.9177 11.5947 19.7712 11.4482C19.6247 11.3017 19.426 11.2194 19.2188 11.2194H12.7819V4.78125C12.7819 4.57405 12.6996 4.37534 12.553 4.22882C12.4065 4.08231 12.2078 4 12.0006 4C11.7934 4 11.5947 4.08231 11.4482 4.22882C11.3017 4.37534 11.2194 4.57405 11.2194 4.78125V11.2194H4.78125C4.57405 11.2194 4.37534 11.3017 4.22882 11.4482C4.08231 11.5947 4 11.7934 4 12.0006C4 12.2078 4.08231 12.4066 4.22882 12.5531C4.37534 12.6996 4.57405 12.7819 4.78125 12.7819H11.2194V19.2188C11.2194 19.426 11.3017 19.6247 11.4482 19.7712Z"
+                        fill="#1E1E1E"
+                      />
+                    </svg>
+                    <svg
+                      class="icon-minus"
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      style="display: none"
+                    >
+                      <path
+                        d="M4.78125 12.7819H19.2188C19.426 12.7819 19.6247 12.6996 19.7712 12.553C19.9177 12.4065 20 12.2078 20 12.0006C20 11.7934 19.9177 11.5947 19.7712 11.4482C19.6247 11.3017 19.426 11.2194 19.2188 11.2194H4.78125C4.57405 11.2194 4.37534 11.3017 4.22882 11.4482C4.08231 11.5947 4 11.7934 4 12.0006C4 12.2078 4.08231 12.4065 4.22882 12.553C4.37534 12.6996 4.57405 12.7819 4.78125 12.7819Z"
+                        fill="#1E1E1E"
+                      />
+                    </svg>
+                  </span>
+                </button>
+                <div
+                  class="accordion__content accordion__content--max-width-484px"
+                >
+                  <p class="accordion__text">
+                    We are committed to sustainability and use certified wood in
+                    our furniture. We strive to minimize our environmental
+                    impact and create pieces that reflect our respect for the
+                    natural world.
+                  </p>
+                </div>
+              </div>
+              <div class="accordion__item accordion__item--color-begie">
+                <button class="accordion__header accordion__header--p-26-31">
+                  <h3 class="accordion__title">What is your return policy?</h3>
+                  <span class="accordion__icon">
+                    <svg
+                      class="icon-plus"
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                    >
+                      <path
+                        d="M11.4482 19.7712C11.5947 19.9177 11.7934 20 12.0006 20C12.2078 20 12.4065 19.9177 12.553 19.7712C12.6996 19.6247 12.7819 19.426 12.7819 19.2188V12.7819H19.2188C19.426 12.7819 19.6247 12.6996 19.7712 12.5531C19.9177 12.4066 20 12.2078 20 12.0006C20 11.7934 19.9177 11.5947 19.7712 11.4482C19.6247 11.3017 19.426 11.2194 19.2188 11.2194H12.7819V4.78125C12.7819 4.57405 12.6996 4.37534 12.553 4.22882C12.4065 4.08231 12.2078 4 12.0006 4C11.7934 4 11.5947 4.08231 11.4482 4.22882C11.3017 4.37534 11.2194 4.57405 11.2194 4.78125V11.2194H4.78125C4.57405 11.2194 4.37534 11.3017 4.22882 11.4482C4.08231 11.5947 4 11.7934 4 12.0006C4 12.2078 4.08231 12.4066 4.22882 12.5531C4.37534 12.6996 4.57405 12.7819 4.78125 12.7819H11.2194V19.2188C11.2194 19.426 11.3017 19.6247 11.4482 19.7712Z"
+                        fill="#1E1E1E"
+                      />
+                    </svg>
+                    <svg
+                      class="icon-minus"
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      style="display: none"
+                    >
+                      <path
+                        d="M4.78125 12.7819H19.2188C19.426 12.7819 19.6247 12.6996 19.7712 12.553C19.9177 12.4065 20 12.2078 20 12.0006C20 11.7934 19.9177 11.5947 19.7712 11.4482C19.6247 11.3017 19.426 11.2194 19.2188 11.2194H4.78125C4.57405 11.2194 4.37534 11.3017 4.22882 11.4482C4.08231 11.5947 4 11.7934 4 12.0006C4 12.2078 4.08231 12.4065 4.22882 12.553C4.37534 12.6996 4.57405 12.7819 4.78125 12.7819Z"
+                        fill="#1E1E1E"
+                      />
+                    </svg>
+                  </span>
+                </button>
+                <div
+                  class="accordion__content accordion__content--max-width-484px"
+                >
+                  <p class="accordion__text">
+                    We are committed to sustainability and use certified wood in
+                    our furniture. We strive to minimize our environmental
+                    impact and create pieces that reflect our respect for the
+                    natural world.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="faq__footer">
+            <div class="faq__actions">
+              <div class="faq__action-item">
+                <div class="faq__action-body">
+                  <h3 class="faq__action-title">Product sheet</h3>
+                  <span class="faq__action-data-flow">15 MB</span>
+                </div>
+                <div class="faq__action-append">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="23"
+                    height="22"
+                    viewBox="0 0 23 22"
+                    fill="none"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M4.57922 14.52C4.81261 14.52 5.03644 14.6127 5.20147 14.7778C5.3665 14.9428 5.45922 15.1666 5.45922 15.4V17.16C5.45922 17.3934 5.55193 17.6172 5.71696 17.7823C5.882 17.9473 6.10583 18.04 6.33922 18.04H16.8992C17.1326 18.04 17.3564 17.9473 17.5215 17.7823C17.6865 17.6172 17.7792 17.3934 17.7792 17.16V15.4C17.7792 15.1666 17.8719 14.9428 18.037 14.7778C18.202 14.6127 18.4258 14.52 18.6592 14.52C18.8926 14.52 19.1164 14.6127 19.2815 14.7778C19.4465 14.9428 19.5392 15.1666 19.5392 15.4V17.16C19.5392 17.8602 19.2611 18.5317 18.766 19.0268C18.2709 19.5219 17.5994 19.8 16.8992 19.8H6.33922C5.63905 19.8 4.96755 19.5219 4.47246 19.0268C3.97736 18.5317 3.69922 17.8602 3.69922 17.16V15.4C3.69922 15.1666 3.79193 14.9428 3.95696 14.7778C4.122 14.6127 4.34583 14.52 4.57922 14.52Z"
+                      fill="#0F61FF"
+                    />
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M6.5975 9.49815C6.76252 9.33317 6.98631 9.24049 7.21966 9.24049C7.453 9.24049 7.67679 9.33317 7.84182 9.49815L11.6197 13.276L15.3975 9.49815C15.4787 9.4141 15.5758 9.34706 15.6831 9.30094C15.7905 9.25482 15.906 9.23054 16.0228 9.22953C16.1397 9.22851 16.2555 9.25078 16.3637 9.29502C16.4718 9.33927 16.5701 9.40461 16.6527 9.48724C16.7353 9.56986 16.8007 9.66812 16.8449 9.77627C16.8892 9.88442 16.9115 10.0003 16.9104 10.1171C16.9094 10.234 16.8851 10.3495 16.839 10.4568C16.7929 10.5642 16.7259 10.6613 16.6418 10.7425L12.2418 15.1425C12.0768 15.3074 11.853 15.4001 11.6197 15.4001C11.3863 15.4001 11.1625 15.3074 10.9975 15.1425L6.5975 10.7425C6.43252 10.5774 6.33984 10.3537 6.33984 10.1203C6.33984 9.88696 6.43252 9.66317 6.5975 9.49815Z"
+                      fill="#0F61FF"
+                    />
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M11.6183 3.08008C11.8517 3.08008 12.0755 3.17279 12.2405 3.33782C12.4056 3.50286 12.4983 3.72669 12.4983 3.96008V14.5201C12.4983 14.7535 12.4056 14.9773 12.2405 15.1423C12.0755 15.3074 11.8517 15.4001 11.6183 15.4001C11.3849 15.4001 11.1611 15.3074 10.996 15.1423C10.831 14.9773 10.7383 14.7535 10.7383 14.5201V3.96008C10.7383 3.72669 10.831 3.50286 10.996 3.33782C11.1611 3.17279 11.3849 3.08008 11.6183 3.08008Z"
+                      fill="#0F61FF"
+                    />
+                  </svg>
+                </div>
+              </div>
+              <div class="faq__action-item">
+                <div class="faq__action-body">
+                  <h3 class="faq__action-title">User Guide</h3>
+                  <span class="faq__action-data-flow">15 MB</span>
+                </div>
+                <div class="faq__action-append">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="23"
+                    height="22"
+                    viewBox="0 0 23 22"
+                    fill="none"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M4.57922 14.52C4.81261 14.52 5.03644 14.6127 5.20147 14.7778C5.3665 14.9428 5.45922 15.1666 5.45922 15.4V17.16C5.45922 17.3934 5.55193 17.6172 5.71696 17.7823C5.882 17.9473 6.10583 18.04 6.33922 18.04H16.8992C17.1326 18.04 17.3564 17.9473 17.5215 17.7823C17.6865 17.6172 17.7792 17.3934 17.7792 17.16V15.4C17.7792 15.1666 17.8719 14.9428 18.037 14.7778C18.202 14.6127 18.4258 14.52 18.6592 14.52C18.8926 14.52 19.1164 14.6127 19.2815 14.7778C19.4465 14.9428 19.5392 15.1666 19.5392 15.4V17.16C19.5392 17.8602 19.2611 18.5317 18.766 19.0268C18.2709 19.5219 17.5994 19.8 16.8992 19.8H6.33922C5.63905 19.8 4.96755 19.5219 4.47246 19.0268C3.97736 18.5317 3.69922 17.8602 3.69922 17.16V15.4C3.69922 15.1666 3.79193 14.9428 3.95696 14.7778C4.122 14.6127 4.34583 14.52 4.57922 14.52Z"
+                      fill="#0F61FF"
+                    />
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M6.5975 9.49815C6.76252 9.33317 6.98631 9.24049 7.21966 9.24049C7.453 9.24049 7.67679 9.33317 7.84182 9.49815L11.6197 13.276L15.3975 9.49815C15.4787 9.4141 15.5758 9.34706 15.6831 9.30094C15.7905 9.25482 15.906 9.23054 16.0228 9.22953C16.1397 9.22851 16.2555 9.25078 16.3637 9.29502C16.4718 9.33927 16.5701 9.40461 16.6527 9.48724C16.7353 9.56986 16.8007 9.66812 16.8449 9.77627C16.8892 9.88442 16.9115 10.0003 16.9104 10.1171C16.9094 10.234 16.8851 10.3495 16.839 10.4568C16.7929 10.5642 16.7259 10.6613 16.6418 10.7425L12.2418 15.1425C12.0768 15.3074 11.853 15.4001 11.6197 15.4001C11.3863 15.4001 11.1625 15.3074 10.9975 15.1425L6.5975 10.7425C6.43252 10.5774 6.33984 10.3537 6.33984 10.1203C6.33984 9.88696 6.43252 9.66317 6.5975 9.49815Z"
+                      fill="#0F61FF"
+                    />
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M11.6183 3.08008C11.8517 3.08008 12.0755 3.17279 12.2405 3.33782C12.4056 3.50286 12.4983 3.72669 12.4983 3.96008V14.5201C12.4983 14.7535 12.4056 14.9773 12.2405 15.1423C12.0755 15.3074 11.8517 15.4001 11.6183 15.4001C11.3849 15.4001 11.1611 15.3074 10.996 15.1423C10.831 14.9773 10.7383 14.7535 10.7383 14.5201V3.96008C10.7383 3.72669 10.831 3.50286 10.996 3.33782C11.1611 3.17279 11.3849 3.08008 11.6183 3.08008Z"
+                      fill="#0F61FF"
+                    />
+                  </svg>
+                </div>
+              </div>
+              <div class="faq__action-item">
+                <div class="faq__action-body">
+                  <h3 class="faq__action-title">Quick Start Guide</h3>
+                  <span class="faq__action-data-flow">15 MB</span>
+                </div>
+                <div class="faq__action-append">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="23"
+                    height="22"
+                    viewBox="0 0 23 22"
+                    fill="none"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M4.57922 14.52C4.81261 14.52 5.03644 14.6127 5.20147 14.7778C5.3665 14.9428 5.45922 15.1666 5.45922 15.4V17.16C5.45922 17.3934 5.55193 17.6172 5.71696 17.7823C5.882 17.9473 6.10583 18.04 6.33922 18.04H16.8992C17.1326 18.04 17.3564 17.9473 17.5215 17.7823C17.6865 17.6172 17.7792 17.3934 17.7792 17.16V15.4C17.7792 15.1666 17.8719 14.9428 18.037 14.7778C18.202 14.6127 18.4258 14.52 18.6592 14.52C18.8926 14.52 19.1164 14.6127 19.2815 14.7778C19.4465 14.9428 19.5392 15.1666 19.5392 15.4V17.16C19.5392 17.8602 19.2611 18.5317 18.766 19.0268C18.2709 19.5219 17.5994 19.8 16.8992 19.8H6.33922C5.63905 19.8 4.96755 19.5219 4.47246 19.0268C3.97736 18.5317 3.69922 17.8602 3.69922 17.16V15.4C3.69922 15.1666 3.79193 14.9428 3.95696 14.7778C4.122 14.6127 4.34583 14.52 4.57922 14.52Z"
+                      fill="#0F61FF"
+                    />
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M6.5975 9.49815C6.76252 9.33317 6.98631 9.24049 7.21966 9.24049C7.453 9.24049 7.67679 9.33317 7.84182 9.49815L11.6197 13.276L15.3975 9.49815C15.4787 9.4141 15.5758 9.34706 15.6831 9.30094C15.7905 9.25482 15.906 9.23054 16.0228 9.22953C16.1397 9.22851 16.2555 9.25078 16.3637 9.29502C16.4718 9.33927 16.5701 9.40461 16.6527 9.48724C16.7353 9.56986 16.8007 9.66812 16.8449 9.77627C16.8892 9.88442 16.9115 10.0003 16.9104 10.1171C16.9094 10.234 16.8851 10.3495 16.839 10.4568C16.7929 10.5642 16.7259 10.6613 16.6418 10.7425L12.2418 15.1425C12.0768 15.3074 11.853 15.4001 11.6197 15.4001C11.3863 15.4001 11.1625 15.3074 10.9975 15.1425L6.5975 10.7425C6.43252 10.5774 6.33984 10.3537 6.33984 10.1203C6.33984 9.88696 6.43252 9.66317 6.5975 9.49815Z"
+                      fill="#0F61FF"
+                    />
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M11.6183 3.08008C11.8517 3.08008 12.0755 3.17279 12.2405 3.33782C12.4056 3.50286 12.4983 3.72669 12.4983 3.96008V14.5201C12.4983 14.7535 12.4056 14.9773 12.2405 15.1423C12.0755 15.3074 11.8517 15.4001 11.6183 15.4001C11.3849 15.4001 11.1611 15.3074 10.996 15.1423C10.831 14.9773 10.7383 14.7535 10.7383 14.5201V3.96008C10.7383 3.72669 10.831 3.50286 10.996 3.33782C11.1611 3.17279 11.3849 3.08008 11.6183 3.08008Z"
+                      fill="#0F61FF"
+                    />
+                  </svg>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="page-section">
+      <div class="container-xxl">
+        <div class="recommend">
+          <div class="recommend__header">
+            <h2 class="recommend__title">You may also like</h2>
+            <div class="recommend__btn">
+              <div class="btn-sa--relative">
+                <a href="#">Shop All</a>
+              </div>
+            </div>
+          </div>
+          <div class="recommend__product">
+            <div class="row">
+              <div class="col" style="--col-lg: 3; --col-md: 6">
+                <div class="product-card">
+                  <div class="product-card__img">
+                    <a href="productdetail.html"
+                      ><img
+                        src="public/assets/products/product1.png"
+                        alt="" /><img
+                        src="public/assets/products/product2.png"
+                        alt=""
+                    /></a>
+                  </div>
+                  <div class="product-info">
+                    <div class="product-info__name">
+                      <h3>Hills</h3>
+                    </div>
+                    <div class="product-info__price">$76</div>
+                    <div class="product-option">
+                      <div
+                        class="product-option__item"
+                        style="--color: #c9bfae"
+                      ></div>
+                      <div
+                        class="product-option__item"
+                        style="--color: #a393b5"
+                      ></div>
+                      <div
+                        class="product-option__item"
+                        style="--color: #ec978c"
+                      ></div>
+                      <div
+                        class="product-option__item"
+                        style="--color: #ec978c"
+                      ></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col" style="--col-lg: 3; --col-md: 6">
+                <div class="product-card">
+                  <div class="product-card__img">
+                    <a href="productdetail.html"
+                      ><img
+                        src="public/assets/products/product1.png"
+                        alt="" /><img
+                        src="public/assets/products/product2.png"
+                        alt=""
+                    /></a>
+                  </div>
+                  <div class="product-info">
+                    <div class="product-info__name">
+                      <h3>Hills</h3>
+                    </div>
+                    <div class="product-info__price"><h3>$76</h3></div>
+                    <div class="product-option">
+                      <div
+                        class="product-option__item"
+                        style="--color: #c9bfae"
+                      ></div>
+                      <div
+                        class="product-option__item"
+                        style="--color: #a393b5"
+                      ></div>
+                      <div
+                        class="product-option__item"
+                        style="--color: #ec978c"
+                      ></div>
+                      <div
+                        class="product-option__item"
+                        style="--color: #ec978c"
+                      ></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col" style="--col-lg: 3; --col-md: 6">
+                <div class="product-card">
+                  <div class="product-card__img">
+                    <a href="productdetail.html"
+                      ><img
+                        src="public/assets/products/product1.png"
+                        alt="" /><img
+                        src="public/assets/products/product2.png"
+                        alt=""
+                    /></a>
+                  </div>
+                  <div class="product-info">
+                    <div class="product-info__name">
+                      <h3>Hills</h3>
+                    </div>
+                    <div class="product-info__price"><h3>$76</h3></div>
+                    <div class="product-option">
+                      <div
+                        class="product-option__item"
+                        style="--color: #c9bfae"
+                      ></div>
+                      <div
+                        class="product-option__item"
+                        style="--color: #a393b5"
+                      ></div>
+                      <div
+                        class="product-option__item"
+                        style="--color: #ec978c"
+                      ></div>
+                      <div
+                        class="product-option__item"
+                        style="--color: #ec978c"
+                      ></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col" style="--col-lg: 3; --col-md: 6">
+                <div class="product-card">
+                  <div class="product-card__img">
+                    <a href="productdetail.html"
+                      ><img
+                        src="public/assets/products/product1.png"
+                        alt="" /><img
+                        src="public/assets/products/product2.png"
+                        alt=""
+                    /></a>
+                  </div>
+                  <div class="product-info">
+                    <div class="product-info__name">
+                      <h3>Hills</h3>
+                    </div>
+                    <div class="product-info__price"><h3>$76</h3></div>
+                    <div class="product-option">
+                      <div
+                        class="product-option__item"
+                        style="--color: #c9bfae"
+                      ></div>
+                      <div
+                        class="product-option__item"
+                        style="--color: #a393b5"
+                      ></div>
+                      <div
+                        class="product-option__item"
+                        style="--color: #ec978c"
+                      ></div>
+                      <div
+                        class="product-option__item"
+                        style="--color: #ec978c"
+                      ></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="recommend__paginations">
+              <div class="recommend__pagination-list">
+                <div
+                  class="recommend__pagination-item recommend__pagination-item--active"
+                ></div>
+                <div
+                  class="recommend__pagination-item recommend__pagination-item--disable"
+                ></div>
+                <div
+                  class="recommend__pagination-item recommend__pagination-item--disable"
+                ></div>
+                <div
+                  class="recommend__pagination-item recommend__pagination-item--disable"
+                ></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="">
+        <div class="footer-main">
+          <div class="container-f">
+            <div class="footer-main__info">
+              <div class="footer-main-logo">
+                <img src="./public/assets/footer/Logo.png" alt="" />
+                <p>
+                  This means that once you use different template designs for
+                  actual testimonial website widgets, you can make images from
+                  them and post
+                </p>
+                <ul class="footer-main-logo__social">
+                  <li>
+                    <a href=""
+                      ><img src="./public/assets/footer/Facebook.png" alt=""
+                    /></a>
+                  </li>
+                  <li>
+                    <a href=""
+                      ><img src="./public/assets/footer/Pinterest.png" alt=""
+                    /></a>
+                  </li>
+                  <li>
+                    <a href=""
+                      ><img src="./public/assets/footer/Group.png" alt=""
+                    /></a>
+                  </li>
+                  <li>
+                    <a href=""
+                      ><img src="./public/assets/footer/Instagram.png" alt=""
+                    /></a>
+                  </li>
+                </ul>
+              </div>
+              <div class="footer-main-link">
+                <div class="footer-main-link__item">
+                  <p>HOME</p>
+                  <ul class="footer-main-link-list">
+                    <li class="footer-main-link-list__item">
+                      <a href="">Shop</a>
                     </li>
-                    <li>
-                      <a href=""
-                        ><img src="./public/assets/footer/Pinterest.png" alt=""
-                      /></a>
+                    <li class="footer-main-link-list__item">
+                      <a href="">Collection</a>
                     </li>
-                    <li>
-                      <a href=""
-                        ><img src="./public/assets/footer/Group.png" alt=""
-                      /></a>
+                    <li class="footer-main-link-list__item">
+                      <a href="">About us</a>
                     </li>
-                    <li>
-                      <a href=""
-                        ><img src="./public/assets/footer/Instagram.png" alt=""
-                      /></a>
+                    <li class="footer-main-link-list__item">
+                      <a href="">Blogs</a>
+                    </li>
+                    <li class="footer-main-link-list__item">
+                      <a href="">Contact</a>
                     </li>
                   </ul>
                 </div>
-                <div class="footer-main-link">
-                  <div class="footer-main-link__item">
-                    <p>HOME</p>
-                    <ul class="footer-main-link-list">
-                      <li class="footer-main-link-list__item">
-                        <a href="">Shop</a>
-                      </li>
-                      <li class="footer-main-link-list__item">
-                        <a href="">Collection</a>
-                      </li>
-                      <li class="footer-main-link-list__item">
-                        <a href="">About us</a>
-                      </li>
-                      <li class="footer-main-link-list__item">
-                        <a href="">Blogs</a>
-                      </li>
-                      <li class="footer-main-link-list__item">
-                        <a href="">Contact</a>
-                      </li>
-                    </ul>
-                  </div>
-                  <div class="footer-main-link__item">
-                    <p>COLLECTION</p>
-                    <ul class="footer-main-link-list">
-                      <li class="footer-main-link-list__item">
-                        <a href="">Sprring Summer</a>
-                      </li>
-                      <li class="footer-main-link-list__item">
-                        <a href="">Summer Nautica</a>
-                      </li>
-                      <li class="footer-main-link-list__item">
-                        <a href="">Ocean Ocean 2023</a>
-                      </li>
-                      <li class="footer-main-link-list__item">
-                        <a href="">Blogs</a>
-                      </li>
-                      <li class="footer-main-link-list__item">
-                        <a href="">Contact</a>
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="footer-newsletter">
-            <form action="" class="footer-newsletter__form">
-              <input type="text" placeholder="Enter your email..." />
-              <button type="submit">
-                <img src="./public/assets/footer/Arrow-down.png" alt="" />
-              </button>
-            </form>
-          </div>
-
-          <div class="footer-bottom">
-            <div class="footer-bottom__content">
-              <div class="footer-bottom-link">
-                <ul class="footer-bottom-link__item">
-                  <li><a href="">Term</a></li>
-                  <li><a href="">Policy Privicy</a></li>
-                </ul>
-              </div>
-              <div class="footer-bottom-payment">
-                <div class="footer-bottom-payment__img">
-                  <img src="./public/assets/footer/shop pay.png" alt="" />
-                  <img src="./public/assets/footer/visa.png" alt="" />
-                  <img src="./public/assets/footer/mastercard.png" alt="" />
-                  <img src="./public/assets/footer/Vector.png" alt="" />
-                  <img src="./public/assets/footer/google pay.png" alt="" />
-                  <img src="./public/assets/footer/amex.png" alt="" />
-                </div>
-                <div class="footer-bottom-payment__convert">
-                  <p>
-                    United States (USD$)
-                    <img src="./public/assets/footer/Frame.png" alt="" />
-                  </p>
-                  <div
-                    class="footer-bottom-payment-main footer-bottom-payment-main--list"
-                  >
-                    <span>VietNamese (VND)</span>
-                    <span>VietNamese (VND)</span>
-                  </div>
+                <div class="footer-main-link__item">
+                  <p>COLLECTION</p>
+                  <ul class="footer-main-link-list">
+                    <li class="footer-main-link-list__item">
+                      <a href="">Sprring Summer</a>
+                    </li>
+                    <li class="footer-main-link-list__item">
+                      <a href="">Summer Nautica</a>
+                    </li>
+                    <li class="footer-main-link-list__item">
+                      <a href="">Ocean Ocean 2023</a>
+                    </li>
+                    <li class="footer-main-link-list__item">
+                      <a href="">Blogs</a>
+                    </li>
+                    <li class="footer-main-link-list__item">
+                      <a href="">Contact</a>
+                    </li>
+                  </ul>
                 </div>
               </div>
             </div>
           </div>
         </div>
-      </footer>
-    </div>
+
+        <div class="footer-newsletter">
+          <form action="" class="footer-newsletter__form">
+            <input type="text" placeholder="Enter your email..." />
+            <button type="submit">
+              <img src="./public/assets/footer/Arrow-down.png" alt="" />
+            </button>
+          </form>
+        </div>
+
+        <div class="footer-bottom">
+          <div class="footer-bottom__content">
+            <div class="footer-bottom-link">
+              <ul class="footer-bottom-link__item">
+                <li><a href="">Term</a></li>
+                <li><a href="">Policy Privicy</a></li>
+              </ul>
+            </div>
+            <div class="footer-bottom-payment">
+              <div class="footer-bottom-payment__img">
+                <img src="./public/assets/footer/shop pay.png" alt="" />
+                <img src="./public/assets/footer/visa.png" alt="" />
+                <img src="./public/assets/footer/mastercard.png" alt="" />
+                <img src="./public/assets/footer/Vector.png" alt="" />
+                <img src="./public/assets/footer/google pay.png" alt="" />
+                <img src="./public/assets/footer/amex.png" alt="" />
+              </div>
+              <div class="footer-bottom-payment__convert">
+                <p>
+                  United States (USD$)
+                  <img src="./public/assets/footer/Frame.png" alt="" />
+                </p>
+                <div
+                  class="footer-bottom-payment-main footer-bottom-payment-main--list"
+                >
+                  <span>VietNamese (VND)</span>
+                  <span>VietNamese (VND)</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
 
     <script src="./src/scss/xo-webcomponents.js"></script>
 
@@ -1719,24 +1627,6 @@
             content.style.height = "0px"
           }
         })
-      })
-
-      const zoomArea = document.querySelector(".pi__zoom")
-      const imgContainer = document.querySelector(".pi__gallery-main")
-
-      imgContainer.addEventListener("mousemove", (e) => {
-        const {left, top, width, height} = imgContainer.getBoundingClientRect()
-        const x = ((e.clientX - left) / width) * 100
-        const y = ((e.clientY - top) / height) * 100
-        zoomArea.style.backgroundPosition = `${x}% ${y}%`
-      })
-
-      imgContainer.addEventListener("mouseleave", () => {
-        zoomArea.style.display = "none"
-      })
-
-      imgContainer.addEventListener("mouseenter", () => {
-        zoomArea.style.display = "block"
       })
     </script>
   </body>

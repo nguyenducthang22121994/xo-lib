@@ -2,9 +2,6 @@
 *:before,
 *:after {
   box-sizing: border-box;
-  overflow-x: hidden;
-  margin: 0;
-  padding: 0;
 }
 
 :root {
@@ -15,6 +12,7 @@
 }
 
 body {
+  margin: 0;
   background-color: #fff;
   color: #000;
   font-family: "Be Vietnam Pro", sans-serif;
@@ -31,13 +29,11 @@ h6 {
   font-family: "Be Vietnam Pro", sans-serif;
   color: #111;
   font-weight: 400;
-  overflow: hidden;
 }
 
 a {
   text-decoration: none;
   display: inline-block;
-  overflow: hidden;
 }
 
 a:hover {

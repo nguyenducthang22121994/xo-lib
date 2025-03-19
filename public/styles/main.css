@@ -3,9 +3,6 @@
 *:before,
 *:after {
   box-sizing: border-box;
-  overflow-x: hidden;
-  margin: 0;
-  padding: 0;
 }
 
 :root {
@@ -16,6 +13,7 @@
 }
 
 body {
+  margin: 0;
   background-color: #fff;
   color: #000;
   font-family: "Be Vietnam Pro", sans-serif;
@@ -31,13 +29,11 @@ h6 {
   font-family: "Be Vietnam Pro", sans-serif;
   color: #111;
   font-weight: 400;
-  overflow: hidden;
 }
 
 a {
   text-decoration: none;
   display: inline-block;
-  overflow: hidden;
 }
 
 a:hover {
@@ -54,7 +50,7 @@ a:hover {
 }
 
 .page-header {
-  width: 100vw;
+  width: 100%;
   background-color: transparent;
   position: absolute;
   z-index: 9;
@@ -165,7 +161,7 @@ a:hover {
   }
 }
 .page-section {
-  width: 100vw;
+  width: 100%;
   height: 100%;
 }
 
@@ -173,7 +169,7 @@ a:hover {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  width: 100vw;
+  width: 100%;
   aspect-ratio: 16/9;
   flex-shrink: 0;
   position: relative;
@@ -423,12 +419,6 @@ a:hover {
 }
 
 @media (max-width: 572px) {
-  .seller-container {
-    padding-top: 53px;
-    padding-left: 22px;
-    padding-right: 22px;
-    margin: auto;
-  }
   .seller-page__tittle {
     font-size: 30px;
     font-style: normal;
@@ -440,10 +430,6 @@ a:hover {
     display: none;
   }
 }
-.seller__grid {
-  padding-bottom: 28px;
-}
-
 .multi-container {
   display: flex;
   flex-direction: column;
@@ -565,11 +551,8 @@ a:hover {
 }
 .section {
   position: relative;
-  display: flex;
   align-items: center;
-  justify-content: center;
   width: 100%;
-  height: 100vh;
 }
 
 .bg-parallax {
@@ -591,6 +574,7 @@ a:hover {
   background-size: cover;
   background-position: 50% 188.538px;
   background-repeat: no-repeat;
+  aspect-ratio: 1920px/943px;
 }
 
 .futured {
@@ -600,7 +584,6 @@ a:hover {
   flex-direction: column;
   justify-content: space-between;
   min-height: 100%;
-  width: 1592px;
 }
 
 .featured__title {
@@ -734,6 +717,9 @@ a:hover {
     padding: 42px 0;
     overflow: hidden;
   }
+  .bg-parallax__url {
+    aspect-ratio: 375px/672px;
+  }
   .featured__title {
     width: 100%;
     font-size: 40px;
@@ -813,8 +799,6 @@ a:hover {
 
 @media (max-width: 572px) {
   .collection {
-    max-width: 332px;
-    margin: auto;
     display: block;
   }
   .collection__img img {
@@ -1334,7 +1318,6 @@ footer {
 
 .product-hero__title {
   text-align: start;
-  width: 100%;
   height: 100%;
   position: relative;
 }
@@ -1585,7 +1568,6 @@ footer {
 
 .pagination .divider {
   position: relative;
-  width: 1776px;
   height: 1px;
   margin-left: -92px;
   margin-right: -92px;
@@ -1709,6 +1691,10 @@ footer {
     display: none;
   }
 }
+.frame-container {
+  padding: 24px 0 39px 0;
+}
+
 .frame,
 .frame__content {
   display: flex;
@@ -1857,6 +1843,13 @@ footer {
   gap: 64px;
 }
 
+.pi__gallery-main,
+.pi__gallery-main-img,
+.pi__info {
+  width: 100%;
+  height: 100%;
+}
+
 .pi__gallery-main-img {
   width: 100%;
   height: auto;
@@ -1866,25 +1859,6 @@ footer {
 .pi__gallery-main {
   position: relative;
   overflow: hidden;
-}
-
-.pi__zoom {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-size: 250%;
-  background-position: center;
-  display: none;
-}
-
-.pi__gallery-main:hover .pi__zoom {
-  display: block;
-}
-
-.pi__gallery-main:hover .pi__gallery-main-img {
-  opacity: 0;
 }
 
 .pi__gallery-thumbnails {
@@ -2051,14 +2025,13 @@ select option {
 }
 
 .pi__color {
-  width: 24px;
-  height: 24px;
-  overflow: hidden;
+  width: auto;
+  height: 100%;
 }
 
 .pi__color svg {
-  width: 100%;
-  height: 100%;
+  width: 24px;
+  height: 24px;
   background-color: white;
   transition: all 0.5s ease;
 }
@@ -2337,13 +2310,13 @@ select option {
 }
 
 .ps-container {
+  z-index: 1;
   height: 100%;
 }
 
 .ps {
-  height: 100%;
-  position: relative;
   overflow: hidden;
+  inset: 0;
 }
 
 .ps__content {

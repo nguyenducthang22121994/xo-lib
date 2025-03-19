@@ -26,8 +26,8 @@
 .pi__gallery-main,
 .pi__gallery-main-img,
 .pi__info {
-  // width: 100%;
-  // height: 100%;
+  width: 100%;
+  height: 100%;
 }
 
 .pi__gallery-main-img {
@@ -39,25 +39,6 @@
 .pi__gallery-main {
   position: relative;
   overflow: hidden;
-}
-
-.pi__zoom {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-size: 250%;
-  background-position: center;
-  display: none;
-}
-
-.pi__gallery-main:hover .pi__zoom {
-  display: block;
-}
-
-.pi__gallery-main:hover .pi__gallery-main-img {
-  opacity: 0;
 }
 
 .pi__gallery-thumbnails {
@@ -236,16 +217,17 @@ select option {
 }
 
 .pi__color {
-  width: 24px;
-  height: 24px;
-  overflow: hidden;
+  width: auto;
+  height: 100%;
+  // overflow: hidden;
 }
 
 .pi__color svg {
-  width: 100%;
-  height: 100%;
+  width: 24px;
+  height: 24px;
   background-color: white;
   transition: all 0.5s ease;
+  // aspect-ratio: 1;
 }
 
 .pi__color svg:hover {
@@ -527,13 +509,15 @@ select option {
 }
 
 .ps-container {
+  z-index: 1;
   height: 100%;
 }
 .ps {
-  height: 100%;
-  position: relative;
+  // height: 100%;
+  // position: relative;
   overflow: hidden;
   // padding: 75px 0 80px 0;
+  inset: 0;
 }
 .ps__content {
   width: 509px;
