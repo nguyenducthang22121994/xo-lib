@@ -918,22 +918,90 @@
                       </div>
                     </xo-collapse-trigger>
                     <xo-collapse>
-                      <div class="collapse-checkbox">
+                      <div class="collapse-radio">
                         <!-- option check ratio -->
                         <form action="">
-                          <label class="custom-checkbox">
-                            <input type="checkbox" />
-                            <span class="checkmark"></span>
+                          <label class="custom-radio">
+                            <input type="radio" name="sort" />
+                            <span class="radiomark"></span>
                             <span class="name">Featured</span>
                           </label>
                         </form>
                         <!-- end option check box -->
+
                         <!-- option check ratio -->
                         <form action="">
-                          <label class="custom-checkbox">
-                            <input type="checkbox" />
-                            <span class="checkmark"></span>
+                          <label class="custom-radio">
+                            <input type="radio" name="sort" />
+                            <span class="radiomark"></span>
                             <span class="name">Best Selling</span>
+                            <input type="radio" name="sort" />
+                          </label>
+                        </form>
+                        <!-- end option check box -->
+
+                        <!-- option check ratio -->
+                        <form action="">
+                          <label class="custom-radio">
+                            <input type="radio" name="sort" />
+                            <span class="radiomark"></span>
+                            <span class="name">Alphabetically, A-Z</span>
+                            <input type="radio" name="sort" />
+                          </label>
+                        </form>
+                        <!-- end option check box -->
+
+                        <!-- option check ratio -->
+                        <form action="">
+                          <label class="custom-radio">
+                            <input type="radio" name="sort" />
+                            <span class="radiomark"></span>
+                            <span class="name">Alphabetically, Z-A</span>
+                            <input type="radio" name="sort" />
+                          </label>
+                        </form>
+                        <!-- end option check box -->
+
+                        <!-- option check ratio -->
+                        <form action="">
+                          <label class="custom-radio">
+                            <input type="radio" name="sort" />
+                            <span class="radiomark"></span>
+                            <span class="name">Price, low to high</span>
+                            <input type="radio" name="sort" />
+                          </label>
+                        </form>
+                        <!-- end option check box -->
+
+                        <!-- option check ratio -->
+                        <form action="">
+                          <label class="custom-radio">
+                            <input type="radio" name="sort" />
+                            <span class="radiomark"></span>
+                            <span class="name">Price, high to low</span>
+                            <input type="radio" name="sort" />
+                          </label>
+                        </form>
+                        <!-- end option check box -->
+
+                        <!-- option check ratio -->
+                        <form action="">
+                          <label class="custom-radio">
+                            <input type="radio" name="sort" />
+                            <span class="radiomark"></span>
+                            <span class="name">Date, old to new</span>
+                            <input type="radio" name="sort" />
+                          </label>
+                        </form>
+                        <!-- end option check box -->
+
+                        <!-- option check ratio -->
+                        <form action="">
+                          <label class="custom-radio">
+                            <input type="radio" name="sort" />
+                            <span class="radiomark"></span>
+                            <span class="name">Date, new to old</span>
+                            <input type="radio" name="sort" />
                           </label>
                         </form>
                         <!-- end option check box -->
@@ -943,6 +1011,14 @@
                 </div>
                 <!--end block check box -->
               </div>
+              <div class="nav-pan__footer">
+                <div class="nav-pan__actions">
+                  <button class="nav-pan__action-text">Clear All</button>
+                  <button class="nav-pan__action-button btn-style--01">
+                    Apply filter
+                  </button>
+                </div>
+              </div>
             </div>
           </xo-modal>
         </div>
@@ -951,13 +1027,42 @@
             <h2 class="filter__sort">SORT BY :</h2>
           </xo-animate>
           <xo-animate xo-type="fade-down" xo-duration="1s" xo-delay="0.5s">
-            <div class="filter__options">
+            <!-- <div class="filter__options">
               <select class="filter__select">
                 <option value="recent">Recently Added</option>
                 <option value="price-up">Price Up</option>
                 <option value="price-down">Price Down</option>
               </select>
-            </div>
+            </div> -->
+            <xo-popover-trigger class="pop" xo-name="pop">
+              <span class="pop_text">Recently Added</span>
+              <span class="pop_icon"
+                ><svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="20"
+                  height="20"
+                  viewBox="0 0 20 20"
+                  fill="none"
+                >
+                  <path
+                    opacity="0.8"
+                    d="M4.73054 6.8284C4.51783 6.60507 4.1807 6.61392 3.97916 6.85145C3.7771 7.08839 3.78613 7.46238 3.99938 7.68692L9.05109 13.0045C9.1532 13.112 9.2856 13.1664 9.41694 13.1664C9.54828 13.1664 9.68016 13.112 9.78225 13.0045L14.834 7.68692C15.0472 7.4624 15.0562 7.0884 14.8542 6.85147C14.6521 6.61394 14.3155 6.60449 14.1028 6.82843L9.41694 11.7613L4.73054 6.8284Z"
+                    fill="#1E1E1E"
+                  /></svg
+              ></span>
+            </xo-popover-trigger>
+
+            <xo-popover
+              xo-name="pop"
+              xo-placement="bottom-center"
+              class="pop__body"
+              xo-portal
+              xo-offset="5"
+            >
+              <div class="pop_item">Recently Added</div>
+              <div class="pop_item">Price Up</div>
+              <div class="pop_item">Price Down</div>
+            </xo-popover>
           </xo-animate>
         </div>
       </div>
@@ -1579,6 +1684,17 @@
 
       window.addEventListener("resize", updateText)
       window.addEventListener("DOMContentLoaded", updateText)
+
+      document.querySelectorAll('input[type="radio"]').forEach((radio) => {
+        radio.addEventListener("click", function () {
+          if (this.checked && this.dataset.checked === "true") {
+            this.checked = false
+            this.dataset.checked = "false"
+          } else {
+            this.dataset.checked = "true"
+          }
+        })
+      })
     </script>
   </body>
 </html>

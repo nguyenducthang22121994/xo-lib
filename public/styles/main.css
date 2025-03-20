@@ -604,6 +604,8 @@ a:hover {
   position: relative;
   align-items: center;
   width: 100%;
+  z-index: 9;
+  height: 90vh;
 }
 
 .bg-parallax {
@@ -1496,13 +1498,14 @@ footer {
 .cate__controls {
   position: absolute;
   inset: 0;
+  padding-left: 50px;
   margin-left: auto;
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 14px;
   z-index: 10;
-  width: 339px;
+  width: fit-content;
   height: 108px;
   background: linear-gradient(270deg, #fff 78.28%, rgba(255, 255, 255, 0) 100%);
 }
@@ -1874,12 +1877,19 @@ footer {
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
   }
 }
+@media (max-width: 572px) {
+  .nav-pan {
+    width: 300px;
+  }
+}
 .nav-pan {
   width: 553px;
   height: 97vh;
   overflow-y: auto;
   background-color: #f5f5f5;
   padding: 0 40px;
+  display: flex;
+  flex-direction: column;
 }
 
 .nav-pan__header {
@@ -2000,6 +2010,135 @@ label {
   line-height: 24px;
   opacity: 0.4;
   padding: 2px 0;
+}
+
+.nav-pan__radio {
+  border-top: 1px solid #e5e5e5;
+}
+
+.collapse-radio form:not(:last-child) {
+  padding-bottom: 4px;
+}
+
+.custom-radio {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.custom-radio input {
+  display: none;
+}
+
+.custom-radio .radiomark {
+  width: 20px;
+  height: 20px;
+  background: #ccc;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background 0.3s;
+  position: relative;
+}
+
+.custom-radio input:checked + .radiomark {
+  background: #0f61ff;
+}
+
+.custom-radio input:checked + .radiomark::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 8px;
+  height: 8px;
+  transform: translate(-50%, -50%);
+  background: white;
+  border-radius: 50%;
+}
+
+.nav-pan__body {
+  flex-grow: 1;
+}
+
+.nav-pan__actions {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 24px 0;
+}
+
+.nav-pan__action-text {
+  color: var(--Button-Primary-BG, #0f61ff);
+  text-align: center;
+  font-family: var(--Body-font-family, "Be Vietnam Pro");
+  font-size: 17px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 130%; /* 22.1px */
+  letter-spacing: -0.34px;
+  border: none;
+  background-color: transparent;
+  border-bottom: #0f61ff 1px solid;
+  transition: linear 0.5s ease-in-out;
+}
+
+.nav-pan__action-text:hover {
+  transform: scale(1.1);
+  cursor: pointer;
+}
+
+.nav-pan__action-button {
+  color: var(--Button-Primary-Label, #fff);
+  text-align: center;
+  font-family: var(--Body-font-family, "Be Vietnam Pro");
+  font-size: var(--Body-font-size-body-Md, 16px);
+  font-style: normal;
+  font-weight: 600;
+  line-height: 140%; /* 22.4px */
+  letter-spacing: -0.16px;
+  padding: 17px 32.5px;
+  border-radius: 100px;
+  border: #0f61ff 1px solid;
+  background-color: #0f61ff;
+}
+
+.nav-pan__action-button :hover {
+  cursor: pointer;
+}
+
+.pop {
+  display: flex;
+  justify-content: center;
+  padding: 0 8px;
+}
+
+.pop_text {
+  color: var(--Text, #1e1e1e);
+  text-align: center;
+  font-family: var(--Body-font-family, "Be Vietnam Pro");
+  font-size: var(--Body-font-size-body-Sm, 15px);
+  font-style: normal;
+  font-weight: 500;
+  line-height: 142%; /* 21.3px */
+}
+
+.pop__body {
+  background-color: #e5e5e5;
+  border-radius: 20px;
+  padding: 10px;
+  border: none;
+}
+
+.pop_item {
+  padding: 5px 0;
+  color: var(--Text, #1e1e1e);
+  text-align: center;
+  font-feature-settings: "ss01" on;
+  font-family: var(--Body-font-family, "Be Vietnam Pro");
+  font-size: var(--Body-font-size-body-Sm, 15px);
+  font-style: normal;
+  font-weight: 500;
+  line-height: 142%;
 }
 
 .pi-container {
@@ -2362,7 +2501,7 @@ select option {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 16px 0;
+  padding: 16px 0px;
   cursor: pointer;
   font-size: 16px;
   font-weight: 600;
@@ -2491,29 +2630,25 @@ select option {
     padding: 0;
   }
 }
-.ps-bg {
-  background-image: url("../../public/assets/product-detail/bg-img.png");
-  background-position: top;
-  background-size: cover;
-}
-
 .ps-container {
-  z-index: 1;
+  position: absolute;
+  inset: 0;
   height: 100%;
 }
 
 .ps {
-  min-height: 100%;
-  overflow: hidden;
-  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding-top: 7%;
+  padding-bottom: 8%;
+  height: 100%;
+  width: 100%;
 }
 
 .ps__content {
-  width: 509px;
+  max-width: 509px;
   height: fit-content;
-  position: absolute;
-  inset: 0;
-  top: 75px;
 }
 
 .ps__title {
@@ -2528,11 +2663,9 @@ select option {
 }
 
 .ps-card {
-  position: absolute;
   background-color: #fff;
   width: 100%;
   border-radius: 20px;
-  bottom: 83px;
 }
 
 .ps-card__wrapper {
@@ -2633,12 +2766,10 @@ select option {
 .ps-card__img {
   object-fit: cover;
   border-radius: 20px;
+  width: 100%;
 }
 
 @media (max-width: 578px) {
-  .ps-bg {
-    aspect-ratio: 0.3842213115;
-  }
   .ps-container {
     padding: 0 25px;
   }
@@ -2651,9 +2782,6 @@ select option {
   }
   .ps-card__header {
     gap: 27px;
-  }
-  .ps__content {
-    top: 54px;
   }
   .ps__title {
     width: 320px;
@@ -2769,9 +2897,97 @@ select option {
 }
 
 .custom__footer {
+  justify-items: center;
+  align-items: center;
+  border-radius: 16px;
+  padding-bottom: 65px;
+}
+
+.custom_footer-inner {
   display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #fff;
+  border-radius: 16px;
+  max-width: 782px;
+}
+
+.custom__thumb {
+  padding-bottom: 20px;
+}
+
+.custom__body xo-carousel-slide {
+  justify-items: center;
+}
+
+.carousel-item {
+  max-width: 509px;
+  max-height: 509px;
+}
+
+.carousel-item__img {
+  object-fit: cover;
+  aspect-ratio: 1;
+  height: 100%;
+}
+
+.custom__thumb-list {
+  align-items: center;
+}
+
+.custom_thumb-item {
   width: 100%;
+  height: 100%;
+  border: 1px solid red;
+}
+
+xo-carousel-slide[xo-active] .custom_thumb-item .cus_thumb-img {
+  border: 2px solid #0f61ff;
+  border-radius: 50%;
+}
+
+.cus_thumb-img {
+  padding: 2px;
+  border-radius: 50%;
+}
+
+.custom__select {
+  display: flex;
   justify-content: center;
+  padding: 8px 0;
+}
+
+.custom_select-title {
+  max-width: 117px;
+}
+
+.custom_select-text {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.custom__pagination {
+  padding: 17px 21px;
+}
+
+.custom__pagination xo-carousel-pagination {
+  gap: 7px;
+}
+
+.custom__pagination xo-carousel-pagination xo-carousel-bullet {
+  width: 117px;
+  height: 2px;
+  border-radius: 20px;
+  background: var(--Border, #e5e5e5);
+}
+
+.custom__pagination xo-carousel-pagination xo-carousel-bullet[xo-active] {
+  width: 117px;
+  height: 2px;
+  border-radius: 20px;
+  background: var(--Border, #0f61ff);
 }
 
 .c-action {
@@ -2919,15 +3135,29 @@ select option {
   background: var(--Layer, #f6f6f6);
 }
 
+.accordion__header:last-child {
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.collapse-header--custom {
+  background-color: #f6f6f6;
+  border-radius: 10px;
+}
+
+.accordion__header--p-26-31:last-child {
+  border: none;
+}
+
 .accordion__header {
-  border-top: 1px solid #e5e5e5;
+  border-top: none;
 }
 
 .accordion__header--p-26-31 {
   padding: 16px 32px 16px 32px;
+  border: none;
 }
 
-.accordion__content--max-width-484px {
+.collapse--max-width-484px {
   padding-left: 32px;
   padding-right: 32px;
   padding-bottom: 16px;
@@ -2943,6 +3173,7 @@ select option {
   font-style: normal;
   font-weight: 400;
   line-height: 142%; /* 21.3px */
+  background-color: #f6f6f6;
 }
 
 .faq__actions {
@@ -3161,6 +3392,41 @@ select option {
   .recommend__btn {
     display: none;
   }
+}
+.accordion__header:last-child .accordion__header--border-none {
+  border: none;
+}
+
+xo-collapse-trigger[xo-active] .collapse-header--custom {
+  border-radius: 10px 10px 0 0;
+}
+
+xo-collapse[xo-active] {
+  border-radius: 0 0 10px 10px;
+}
+
+.faq__list {
+  display: flex;
+  flex-direction: column;
+  gap: 9px;
+}
+
+.bg-spec {
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  overflow: hidden;
+}
+
+.bg-spec__item {
+  position: absolute;
+  inset: 0;
+}
+
+.bg-spec__url {
+  position: relative;
+  width: 100%;
+  height: 100%;
 }
 
 /*# sourceMappingURL=main.css.map */

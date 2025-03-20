@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SCSS Example</title>
+    <link rel="stylesheet" href="./src/scss/xo-webcomponents.css" />
+    <link rel="stylesheet" href="public/styles/main.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <section
+      class="page-section test page-section--color"
+      style="--color: #f6f6f6"
+    >
+      <xo-container>
+        <div class="custom">
+          <xo-animate xo-type="fade-up" xo-delay="200">
+            <div class="custom__header">
+              <div class="custom__content">
+                <h3 class="custom__subtitle">CUSTOM PRODUCT</h3>
+                <h2 class="custom__title">Custom design your phone case</h2>
+              </div>
+            </div>
+          </xo-animate>
+          <xo-animate xo-type="fade-up" xo-delay="200">
+            <xo-carousel xo-active-index="0">
+              <div class="custom__body">
+                <xo-carousel-inner xo-per-view="1" xo-per-move="1">
+                  <xo-carousel-list>
+                    <xo-carousel-slide
+                      ><div class="carousel-item">
+                        <img
+                          class="carousel-item__img"
+                          src="./public/assets/product-detail/cutomization.png"
+                          alt=""
+                        /></div
+                    ></xo-carousel-slide>
+                    <xo-carousel-slide
+                      ><div class="carousel-item">
+                        <img
+                          class="carousel-item__img"
+                          src="./public/assets/product-detail/img-prod-2.png"
+                          alt=""
+                        /></div
+                    ></xo-carousel-slide>
+                    <xo-carousel-slide
+                      ><div class="carousel-item">
+                        <img
+                          class="carousel-item__img"
+                          src="./public/assets/product-detail/product_img1.png"
+                          alt=""
+                        /></div
+                    ></xo-carousel-slide>
+                    <xo-carousel-slide
+                      ><div class="carousel-item">
+                        <img
+                          class="carousel-item__img"
+                          src="./public/assets/product-detail/cutomization.png"
+                          alt=""
+                        /></div
+                    ></xo-carousel-slide>
+                    <xo-carousel-slide
+                      ><div class="carousel-item">
+                        <img
+                          class="carousel-item__img"
+                          src="./public/assets/product-detail/img-prod-2.png"
+                          alt=""
+                        /></div
+                    ></xo-carousel-slide>
+                    <xo-carousel-slide
+                      ><div class="carousel-item">
+                        <img
+                          class="carousel-item__img"
+                          src="./public/assets/product-detail/product_img1.png"
+                          alt=""
+                        /></div
+                    ></xo-carousel-slide>
+                  </xo-carousel-list>
+                </xo-carousel-inner>
+              </div>
+
+              <div class="custom__footer">
+                <div class="custom_footer-inner">
+                  <div class="custom__pagination">
+                    <xo-carousel-pagination></xo-carousel-pagination>
+                  </div>
+                  <div class="custom__select">
+                    <xo-carousel-prev
+                      ><div class="c-action__btn c-action__btn--prev">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="20"
+                          height="20"
+                          viewBox="0 0 20 20"
+                          fill="none"
+                        >
+                          <path
+                            d="M13.1578 4.40832C13.2359 4.48579 13.2979 4.57796 13.3402 4.67951C13.3825 4.78106 13.4043 4.88998 13.4043 4.99999C13.4043 5.11 13.3825 5.21892 13.3402 5.32047C13.2979 5.42202 13.2359 5.51419 13.1578 5.59166L9.34114 9.40832C9.26303 9.48579 9.20104 9.57796 9.15873 9.67951C9.11642 9.78106 9.09464 9.88998 9.09464 9.99999C9.09464 10.11 9.11642 10.2189 9.15873 10.3205C9.20104 10.422 9.26303 10.5142 9.34114 10.5917L13.1578 14.4083C13.2359 14.4858 13.2979 14.578 13.3402 14.6795C13.3825 14.7811 13.4043 14.89 13.4043 15C13.4043 15.11 13.3825 15.2189 13.3402 15.3205C13.2979 15.422 13.2359 15.5142 13.1578 15.5917C13.0017 15.7469 12.7905 15.834 12.5703 15.834C12.3501 15.834 12.1389 15.7469 11.9828 15.5917L8.15781 11.7667C7.68964 11.2979 7.42668 10.6625 7.42668 9.99999C7.42668 9.33749 7.68964 8.70207 8.15781 8.23332L11.9828 4.40832C12.1389 4.25311 12.3501 4.166 12.5703 4.166C12.7905 4.166 13.0017 4.25311 13.1578 4.40832Z"
+                            fill="#1E232B"
+                          />
+                        </svg></div
+                    ></xo-carousel-prev>
+                    <div class="custom_select-title">
+                      <xo-carousel-inner xo-per-view="1" xo-per-move="1">
+                        <xo-carousel-list>
+                          <xo-carousel-slide
+                            ><div class="custom_select-text">
+                              <span>MATERIAL</span>
+                            </div></xo-carousel-slide
+                          >
+                          <xo-carousel-slide
+                            ><div class="custom_select-text">
+                              <span>MATERIAL 1 </span>
+                            </div></xo-carousel-slide
+                          >
+                          <xo-carousel-slide
+                            ><div class="custom_select-text">
+                              <span>MATERIAL 2</span>
+                            </div></xo-carousel-slide
+                          >
+                          <xo-carousel-slide
+                            ><div class="custom_select-text">
+                              <span>MATERIAL</span>
+                            </div></xo-carousel-slide
+                          >
+                          <xo-carousel-slide
+                            ><div class="custom_select-text">
+                              <span>MATERIAL 1 </span>
+                            </div></xo-carousel-slide
+                          >
+                          <xo-carousel-slide
+                            ><div class="custom_select-text">
+                              <span>MATERIAL 2</span>
+                            </div></xo-carousel-slide
+                          >
+                        </xo-carousel-list>
+                      </xo-carousel-inner>
+                    </div>
+
+                    <xo-carousel-next
+                      ><div class="c-action__btn c-action__btn--next">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="20"
+                          height="20"
+                          viewBox="0 0 20 20"
+                          fill="none"
+                        >
+                          <path
+                            d="M6.8422 4.40832C6.76409 4.48579 6.7021 4.57796 6.65979 4.67951C6.61748 4.78106 6.5957 4.88998 6.5957 4.99999C6.5957 5.11 6.61748 5.21892 6.65979 5.32047C6.7021 5.42202 6.76409 5.51419 6.8422 5.59166L10.6589 9.40832C10.737 9.48579 10.799 9.57796 10.8413 9.67951C10.8836 9.78106 10.9054 9.88998 10.9054 9.99999C10.9054 10.11 10.8836 10.2189 10.8413 10.3205C10.799 10.422 10.737 10.5142 10.6589 10.5917L6.8422 14.4083C6.76409 14.4858 6.7021 14.578 6.65979 14.6795C6.61748 14.7811 6.5957 14.89 6.5957 15C6.5957 15.11 6.61748 15.2189 6.65979 15.3205C6.7021 15.422 6.76409 15.5142 6.8422 15.5917C6.99834 15.7469 7.20955 15.834 7.4297 15.834C7.64985 15.834 7.86106 15.7469 8.0172 15.5917L11.8422 11.7667C12.3104 11.2979 12.5733 10.6625 12.5733 9.99999C12.5733 9.33749 12.3104 8.70207 11.8422 8.23332L8.0172 4.40832C7.86106 4.25311 7.64985 4.166 7.4297 4.166C7.20955 4.166 6.99834 4.25311 6.8422 4.40832Z"
+                            fill="#1E232B"
+                          />
+                        </svg></div
+                    ></xo-carousel-next>
+                  </div>
+                  <div class="custom__thumb">
+                    <xo-carousel-thumbnail
+                      xo-per-move="1"
+                      xo-per-view="6"
+                      style="margin-top: 20px"
+                    >
+                      <xo-carousel-inner>
+                        <xo-carousel-list class="custom__thumb-list">
+                          <xo-carousel-slide
+                            ><div class="custom__thumb-item">
+                              <img
+                                class="cus_thumb-img"
+                                src="./public/assets/product-detail/silicon.png"
+                                alt=""
+                              /></div
+                          ></xo-carousel-slide>
+                          <xo-carousel-slide
+                            ><div class="custom__thumb-item">
+                              <img
+                                class="cus_thumb-img"
+                                src="./public/assets/product-detail/silicon.png"
+                                alt=""
+                              /></div
+                          ></xo-carousel-slide>
+                          <xo-carousel-slide
+                            ><div class="custom__thumb-item">
+                              <img
+                                class="cus_thumb-img"
+                                src="./public/assets/product-detail/silicon.png"
+                                alt=""
+                              /></div
+                          ></xo-carousel-slide>
+                          <xo-carousel-slide
+                            ><div class="custom__thumb-item">
+                              <img
+                                class="cus_thumb-img"
+                                src="./public/assets/product-detail/silicon.png"
+                                alt=""
+                              /></div
+                          ></xo-carousel-slide>
+                          <xo-carousel-slide
+                            ><div class="custom__thumb-item">
+                              <img
+                                class="cus_thumb-img"
+                                src="./public/assets/product-detail/silicon.png"
+                                alt=""
+                              /></div
+                          ></xo-carousel-slide>
+                          <xo-carousel-slide
+                            ><div class="custom__thumb-item">
+                              <img
+                                class="cus_thumb-img"
+                                src="./public/assets/product-detail/silicon.png"
+                                alt=""
+                              /></div
+                          ></xo-carousel-slide>
+                        </xo-carousel-list>
+                      </xo-carousel-inner>
+                    </xo-carousel-thumbnail>
+                  </div>
+                </div>
+              </div>
+            </xo-carousel>
+          </xo-animate>
+        </div>
+      </xo-container>
+    </section>
+
+    <script src="./src/scss/xo-webcomponents.js"></script>
+  </body>
+</html>

@@ -15,10 +15,10 @@
   </head>
   <body>
     <header class="page-header">
-      <xo-sticky xo-direction="down" style="--top: 0px">
+      <xo-sticky xo-direction="up" style="--top: 0px">
         <div class="header-container">
           <div class="header-logo">
-            <img src="./public/assets/logo/Logo.svg" alt="Logo Image" />
+            <img src="./public/assets/logo/Logo-dark.svg" alt="Logo Image" />
           </div>
           <div class="nav">
             <ul class="nav-list nav-list--text">
@@ -306,27 +306,65 @@
                   <div class="pi__option pi__option--device">
                     <label class="pi__option-label">SELECT DEVICE</label>
                     <div class="pi__option-wrapper">
-                      <div class="pi__option-container">
-                        <select class="pi__option-dropdown">
-                          <option>Apple</option>
-                          <option>Samsung</option>
-                          <option>Google</option>
-                          <option>iPhone 14</option>
-                          <option>iPhone 15</option>
-                          <option>Galaxy S23</option>
-                        </select>
-                      </div>
+                      <xo-popover-trigger class="pop" xo-name="select-device-1">
+                        <span class="pop_text">Select device</span>
+                        <span class="pop_icon"
+                          ><svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="20"
+                            height="20"
+                            viewBox="0 0 20 20"
+                            fill="none"
+                          >
+                            <path
+                              opacity="0.8"
+                              d="M4.73054 6.8284C4.51783 6.60507 4.1807 6.61392 3.97916 6.85145C3.7771 7.08839 3.78613 7.46238 3.99938 7.68692L9.05109 13.0045C9.1532 13.112 9.2856 13.1664 9.41694 13.1664C9.54828 13.1664 9.68016 13.112 9.78225 13.0045L14.834 7.68692C15.0472 7.4624 15.0562 7.0884 14.8542 6.85147C14.6521 6.61394 14.3155 6.60449 14.1028 6.82843L9.41694 11.7613L4.73054 6.8284Z"
+                              fill="#1E1E1E"
+                            /></svg
+                        ></span>
+                      </xo-popover-trigger>
 
-                      <div class="pi__option-container">
-                        <select class="pi__option-dropdown">
-                          <option>iPhone 14</option>
-                          <option>iPhone 15</option>
-                          <option>Galaxy S23</option>
-                          <option>Apple</option>
-                          <option>Samsung</option>
-                          <option>Google</option>
-                        </select>
-                      </div>
+                      <xo-popover
+                        xo-name="select-device-1"
+                        xo-placement="bottom-center"
+                        class="pop__body"
+                        xo-portal
+                        xo-offset="5"
+                      >
+                        <div class="pop_item">Recently Added</div>
+                        <div class="pop_item">Price Up</div>
+                        <div class="pop_item">Price Down</div>
+                      </xo-popover>
+
+                      <xo-popover-trigger class="pop" xo-name="select-device-2">
+                        <span class="pop_text">Select device</span>
+                        <span class="pop_icon"
+                          ><svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="20"
+                            height="20"
+                            viewBox="0 0 20 20"
+                            fill="none"
+                          >
+                            <path
+                              opacity="0.8"
+                              d="M4.73054 6.8284C4.51783 6.60507 4.1807 6.61392 3.97916 6.85145C3.7771 7.08839 3.78613 7.46238 3.99938 7.68692L9.05109 13.0045C9.1532 13.112 9.2856 13.1664 9.41694 13.1664C9.54828 13.1664 9.68016 13.112 9.78225 13.0045L14.834 7.68692C15.0472 7.4624 15.0562 7.0884 14.8542 6.85147C14.6521 6.61394 14.3155 6.60449 14.1028 6.82843L9.41694 11.7613L4.73054 6.8284Z"
+                              fill="#1E1E1E"
+                            /></svg
+                        ></span>
+                      </xo-popover-trigger>
+
+                      <xo-popover
+                        xo-name="select-device-2"
+                        xo-placement="bottom-center"
+                        class="pop__body"
+                        xo-portal
+                        xo-offset="5"
+                      >
+                        <div class="pop_item">LG</div>
+                        <div class="pop_item">Samsung</div>
+                        <div class="pop_item">DCom</div>
+                      </xo-popover>
                     </div>
                   </div>
 
@@ -719,11 +757,18 @@
                   <xo-carousel-slide>
                     <div class="carousel-item">
                       <div class="multi-card">
-                        <img
-                          class="multi-card__img"
-                          src="public/assets/multi/image67.png"
-                          alt=""
-                        />
+                        <div class="multi-card__inner">
+                          <img
+                            class="multi-card__img multi-card__img--front"
+                            src="public/assets/multi/image67.png"
+                            alt=""
+                          />
+                          <img
+                            class="multi-card__img multi-card__img--back"
+                            src="public/assets/multi/img2.png"
+                            alt=""
+                          />
+                        </div>
                         <div class="multi-card__text">
                           <div class="multi-card__num">01</div>
                           <h3 class="multi-card__desc">
@@ -736,11 +781,18 @@
                   <xo-carousel-slide>
                     <div class="carousel-item">
                       <div class="multi-card">
-                        <img
-                          class="multi-card__img"
-                          src="public/assets/multi/img2.png"
-                          alt=""
-                        />
+                        <div class="multi-card__inner">
+                          <img
+                            class="multi-card__img multi-card__img--front"
+                            src="public/assets/multi/img2.png"
+                            alt=""
+                          />
+                          <img
+                            class="multi-card__img multi-card__img--back"
+                            src="public/assets/multi/image67.png"
+                            alt=""
+                          />
+                        </div>
                         <div class="multi-card__text">
                           <h3 class="multi-card__num multi-card__num--02">
                             02
@@ -755,11 +807,19 @@
                   <xo-carousel-slide>
                     <div class="carousel-item">
                       <div class="multi-card">
-                        <img
-                          class="multi-card__img"
-                          src="public/assets/multi/image68.png"
-                          alt=""
-                        />
+                        <div class="multi-card__inner">
+                          <img
+                            class="multi-card__img multi-card__img--front"
+                            src="public/assets/multi/image68.png"
+                            alt=""
+                          />
+                          <img
+                            class="multi-card__img multi-card__img--back"
+                            src="public/assets/multi/img2.png"
+                            alt=""
+                          />
+                        </div>
+
                         <div class="multi-card__text">
                           <div class="multi-card__num">03</div>
                           <h3 class="multi-card__desc">
@@ -771,44 +831,9 @@
                   </xo-carousel-slide>
                 </xo-carousel-list>
               </xo-carousel-inner>
-              <!-- <xo-carousel-prev><button>Prev</button></xo-carousel-prev>
-                <xo-carousel-next><button>Next</button></xo-carousel-next> -->
-              <xo-carousel-pagination>
-                <xo-carousel-bullet
-                  xo-index="0"
-                  xo-page="1"
-                  role="button"
-                  tabindex="0"
-                >
-                  <span class="carousel-bullet"></span> </xo-carousel-bullet
-                ><xo-carousel-bullet
-                  xo-index="1"
-                  xo-page="2"
-                  role="button"
-                  tabindex="0"
-                  xo-active=""
-                >
-                  <span class="carousel-bullet"></span>
-                </xo-carousel-bullet>
-
-                <xo-carousel-bullet
-                  xo-index="2"
-                  xo-page="3"
-                  role="button"
-                  tabindex="0"
-                >
-                  <span class="carousel-bullet"></span>
-                </xo-carousel-bullet>
-
-                <xo-carousel-bullet
-                  xo-index="3"
-                  xo-page="4"
-                  role="button"
-                  tabindex="0"
-                >
-                  <span class="carousel-bullet"></span>
-                </xo-carousel-bullet>
-              </xo-carousel-pagination>
+              <div class="dots">
+                <xo-carousel-pagination> </xo-carousel-pagination>
+              </div>
             </xo-carousel>
           </div>
         </div>
@@ -816,14 +841,14 @@
     </section>
 
     <section class="section">
-      <div class="bg-parallax">
-        <xo-parallax xo-lerp-ease="0.1" class="bg-parallax__item">
+      <div class="bg-spec">
+        <xo-parallax xo-lerp-ease="0.1" class="bg-spec__item">
           <xo-parallax-scroll
             xo-keyframes="{
                 '0%': { backgroundPositionY: '200px' },
                 '100%': { backgroundPositionY: '-200px' },
               }"
-            class="bg-parallax__url"
+            class="bg-spec__url"
             style="
               background-image: url('./public/assets/product-detail/bg-img.png');
             "
@@ -831,199 +856,280 @@
           </xo-parallax-scroll>
         </xo-parallax>
       </div>
-      <xo-container>
-        <div class="ps">
-          <div class="ps__content">
-            <h2 class="ps__title">
-              Introducing the Plasma XTE Case, blend of cutting-edge design and
-              unwavering protection
-            </h2>
-          </div>
-          <div class="ps-card">
-            <div class="ps-card__wrapper">
-              <div class="ps-card__header">
-                <div class="ps-card__content">
-                  <h3 class="ps-card__subtitle">IP Protech Up To</h3>
-                  <h2 class="ps-card__title">IP68</h2>
-                </div>
-                <div class="ps-card__content">
-                  <h3 class="ps-card__subtitle">Drop Protechtion</h3>
-                  <h2 class="ps-card__title">Air Tech</h2>
-                </div>
-              </div>
-              <div class="ps-card__body">
-                <div class="ps-card__parameter-list">
-                  <div class="ps-card__parameter-item">
-                    <h4 class="ps-card__parameter-name">Height</h4>
-                    <div class="ps-card__parameter-datum">9.5 in (241 mm)</div>
+      <xo-animate xo-type="fade-up" xo-delay="200">
+        <xo-container class="ps-container">
+          <div class="ps">
+            <div class="ps__content">
+              <h2 class="ps__title">
+                Introducing the Plasma XTE Case, blend of cutting-edge design
+                and unwavering protection
+              </h2>
+            </div>
+            <div class="ps-card">
+              <div class="ps-card__wrapper">
+                <div class="ps-card__header">
+                  <div class="ps-card__content">
+                    <h3 class="ps-card__subtitle">IP Protech Up To</h3>
+                    <h2 class="ps-card__title">IP68</h2>
                   </div>
-                  <div class="ps-card__parameter-item">
-                    <h4 class="ps-card__parameter-name">Width</h4>
-                    <div class="ps-card__parameter-datum">6.5 in (160 mm)</div>
-                  </div>
-                  <div class="ps-card__parameter-item">
-                    <h4 class="ps-card__parameter-name">Dept</h4>
-                    <div class="ps-card__parameter-datum">0.5 in (241 mm)</div>
-                  </div>
-                  <div class="ps-card__parameter-item">
-                    <h4 class="ps-card__parameter-name">Weight</h4>
-                    <div class="ps-card__parameter-datum">0.008 kg</div>
+                  <div class="ps-card__content">
+                    <h3 class="ps-card__subtitle">Drop Protechtion</h3>
+                    <h2 class="ps-card__title">Air Tech</h2>
                   </div>
                 </div>
-              </div>
-              <div class="ps-card__append">
-                <img
-                  class="ps-card__img"
-                  src="./public/assets/product-detail/ps-prod1.png"
-                  alt=""
-                />
+                <div class="ps-card__body">
+                  <div class="ps-card__parameter-list">
+                    <div class="ps-card__parameter-item">
+                      <h4 class="ps-card__parameter-name">Height</h4>
+                      <div class="ps-card__parameter-datum">
+                        9.5 in (241 mm)
+                      </div>
+                    </div>
+                    <div class="ps-card__parameter-item">
+                      <h4 class="ps-card__parameter-name">Width</h4>
+                      <div class="ps-card__parameter-datum">
+                        6.5 in (160 mm)
+                      </div>
+                    </div>
+                    <div class="ps-card__parameter-item">
+                      <h4 class="ps-card__parameter-name">Dept</h4>
+                      <div class="ps-card__parameter-datum">
+                        0.5 in (241 mm)
+                      </div>
+                    </div>
+                    <div class="ps-card__parameter-item">
+                      <h4 class="ps-card__parameter-name">Weight</h4>
+                      <div class="ps-card__parameter-datum">0.008 kg</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="ps-card__append">
+                  <img
+                    class="ps-card__img"
+                    src="./public/assets/product-detail/ps-prod1.png"
+                    alt=""
+                  />
+                </div>
               </div>
             </div>
           </div>
-        </div>
-      </xo-container>
+        </xo-container>
+      </xo-animate>
     </section>
 
-    <!-- <section
+    <section
       class="page-section test page-section--color"
       style="--color: #f6f6f6"
     >
-      <div class="container-xxl custom-container">
+      <xo-container>
         <div class="custom">
-          <div class="custom__header">
-            <div class="custom__content">
-              <h3 class="custom__subtitle">CUSTOM PRODUCT</h3>
-              <h2 class="custom__title">Custom design your phone case</h2>
-            </div>
-          </div>
-          <div class="custom__body">
-            <a href="#">
-              <img
-                src="./public/assets/product-detail/cutomization.png"
-                alt=""
-              />
-            </a>
-          </div>
-          <div class="custom__footer">
-            <div class="c-action">
-              <div class="c-action__pagination-list">
-                <div
-                  class="c-action__pagination-item c-action__pagination-item--active"
-                ></div>
-                <div
-                  class="c-action__pagination-item c-action__pagination-item--active"
-                ></div>
-                <div
-                  class="c-action__pagination-item c-action__pagination-item--active"
-                ></div>
-                <div
-                  class="c-action__pagination-item c-action__pagination-item--disable"
-                ></div>
-                <div
-                  class="c-action__pagination-item c-action__pagination-item--disable"
-                ></div>
-                <div
-                  class="c-action__pagination-item c-action__pagination-item--disable"
-                ></div>
+          <xo-animate xo-type="fade-up" xo-delay="200">
+            <div class="custom__header">
+              <div class="custom__content">
+                <h3 class="custom__subtitle">CUSTOM PRODUCT</h3>
+                <h2 class="custom__title">Custom design your phone case</h2>
               </div>
-              <div class="c-action__category">
-                <div class="c-action__carousel">
-                  <div class="c-action__btn c-action__btn--prev">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="20"
-                      height="20"
-                      viewBox="0 0 20 20"
-                      fill="none"
-                    >
-                      <path
-                        d="M13.1578 4.40832C13.2359 4.48579 13.2979 4.57796 13.3402 4.67951C13.3825 4.78106 13.4043 4.88998 13.4043 4.99999C13.4043 5.11 13.3825 5.21892 13.3402 5.32047C13.2979 5.42202 13.2359 5.51419 13.1578 5.59166L9.34114 9.40832C9.26303 9.48579 9.20104 9.57796 9.15873 9.67951C9.11642 9.78106 9.09464 9.88998 9.09464 9.99999C9.09464 10.11 9.11642 10.2189 9.15873 10.3205C9.20104 10.422 9.26303 10.5142 9.34114 10.5917L13.1578 14.4083C13.2359 14.4858 13.2979 14.578 13.3402 14.6795C13.3825 14.7811 13.4043 14.89 13.4043 15C13.4043 15.11 13.3825 15.2189 13.3402 15.3205C13.2979 15.422 13.2359 15.5142 13.1578 15.5917C13.0017 15.7469 12.7905 15.834 12.5703 15.834C12.3501 15.834 12.1389 15.7469 11.9828 15.5917L8.15781 11.7667C7.68964 11.2979 7.42668 10.6625 7.42668 9.99999C7.42668 9.33749 7.68964 8.70207 8.15781 8.23332L11.9828 4.40832C12.1389 4.25311 12.3501 4.166 12.5703 4.166C12.7905 4.166 13.0017 4.25311 13.1578 4.40832Z"
-                        fill="#1E232B"
-                      />
-                    </svg>
+            </div>
+          </xo-animate>
+          <xo-animate xo-type="fade-up" xo-delay="200">
+            <xo-carousel xo-active-index="0">
+              <div class="custom__body">
+                <xo-carousel-inner xo-per-view="1" xo-per-move="1">
+                  <xo-carousel-list>
+                    <xo-carousel-slide
+                      ><div class="carousel-item">
+                        <img
+                          class="carousel-item__img"
+                          src="./public/assets/product-detail/cutomization.png"
+                          alt=""
+                        /></div
+                    ></xo-carousel-slide>
+                    <xo-carousel-slide
+                      ><div class="carousel-item">
+                        <img
+                          class="carousel-item__img"
+                          src="./public/assets/product-detail/img-prod-2.png"
+                          alt=""
+                        /></div
+                    ></xo-carousel-slide>
+                    <xo-carousel-slide
+                      ><div class="carousel-item">
+                        <img
+                          class="carousel-item__img"
+                          src="./public/assets/product-detail/product_img1.png"
+                          alt=""
+                        /></div
+                    ></xo-carousel-slide>
+                    <xo-carousel-slide
+                      ><div class="carousel-item">
+                        <img
+                          class="carousel-item__img"
+                          src="./public/assets/product-detail/cutomization.png"
+                          alt=""
+                        /></div
+                    ></xo-carousel-slide>
+                    <xo-carousel-slide
+                      ><div class="carousel-item">
+                        <img
+                          class="carousel-item__img"
+                          src="./public/assets/product-detail/img-prod-2.png"
+                          alt=""
+                        /></div
+                    ></xo-carousel-slide>
+                    <xo-carousel-slide
+                      ><div class="carousel-item">
+                        <img
+                          class="carousel-item__img"
+                          src="./public/assets/product-detail/product_img1.png"
+                          alt=""
+                        /></div
+                    ></xo-carousel-slide>
+                  </xo-carousel-list>
+                </xo-carousel-inner>
+              </div>
+
+              <div class="custom__footer">
+                <div class="custom_footer-inner">
+                  <div class="custom__pagination">
+                    <xo-carousel-pagination></xo-carousel-pagination>
                   </div>
-                  <p class="c-action__select">MATERIAL</p>
-                  <div class="c-action__btn c-action__btn--next">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="20"
-                      height="20"
-                      viewBox="0 0 20 20"
-                      fill="none"
+                  <div class="custom__select">
+                    <xo-carousel-prev
+                      ><div class="c-action__btn c-action__btn--prev">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="20"
+                          height="20"
+                          viewBox="0 0 20 20"
+                          fill="none"
+                        >
+                          <path
+                            d="M13.1578 4.40832C13.2359 4.48579 13.2979 4.57796 13.3402 4.67951C13.3825 4.78106 13.4043 4.88998 13.4043 4.99999C13.4043 5.11 13.3825 5.21892 13.3402 5.32047C13.2979 5.42202 13.2359 5.51419 13.1578 5.59166L9.34114 9.40832C9.26303 9.48579 9.20104 9.57796 9.15873 9.67951C9.11642 9.78106 9.09464 9.88998 9.09464 9.99999C9.09464 10.11 9.11642 10.2189 9.15873 10.3205C9.20104 10.422 9.26303 10.5142 9.34114 10.5917L13.1578 14.4083C13.2359 14.4858 13.2979 14.578 13.3402 14.6795C13.3825 14.7811 13.4043 14.89 13.4043 15C13.4043 15.11 13.3825 15.2189 13.3402 15.3205C13.2979 15.422 13.2359 15.5142 13.1578 15.5917C13.0017 15.7469 12.7905 15.834 12.5703 15.834C12.3501 15.834 12.1389 15.7469 11.9828 15.5917L8.15781 11.7667C7.68964 11.2979 7.42668 10.6625 7.42668 9.99999C7.42668 9.33749 7.68964 8.70207 8.15781 8.23332L11.9828 4.40832C12.1389 4.25311 12.3501 4.166 12.5703 4.166C12.7905 4.166 13.0017 4.25311 13.1578 4.40832Z"
+                            fill="#1E232B"
+                          />
+                        </svg></div
+                    ></xo-carousel-prev>
+                    <div class="custom_select-title">
+                      <xo-carousel-inner xo-per-view="1" xo-per-move="1">
+                        <xo-carousel-list>
+                          <xo-carousel-slide
+                            ><div class="custom_select-text">
+                              <span>MATERIAL</span>
+                            </div></xo-carousel-slide
+                          >
+                          <xo-carousel-slide
+                            ><div class="custom_select-text">
+                              <span>MATERIAL 1 </span>
+                            </div></xo-carousel-slide
+                          >
+                          <xo-carousel-slide
+                            ><div class="custom_select-text">
+                              <span>MATERIAL 2</span>
+                            </div></xo-carousel-slide
+                          >
+                          <xo-carousel-slide
+                            ><div class="custom_select-text">
+                              <span>MATERIAL</span>
+                            </div></xo-carousel-slide
+                          >
+                          <xo-carousel-slide
+                            ><div class="custom_select-text">
+                              <span>MATERIAL 1 </span>
+                            </div></xo-carousel-slide
+                          >
+                          <xo-carousel-slide
+                            ><div class="custom_select-text">
+                              <span>MATERIAL 2</span>
+                            </div></xo-carousel-slide
+                          >
+                        </xo-carousel-list>
+                      </xo-carousel-inner>
+                    </div>
+
+                    <xo-carousel-next
+                      ><div class="c-action__btn c-action__btn--next">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="20"
+                          height="20"
+                          viewBox="0 0 20 20"
+                          fill="none"
+                        >
+                          <path
+                            d="M6.8422 4.40832C6.76409 4.48579 6.7021 4.57796 6.65979 4.67951C6.61748 4.78106 6.5957 4.88998 6.5957 4.99999C6.5957 5.11 6.61748 5.21892 6.65979 5.32047C6.7021 5.42202 6.76409 5.51419 6.8422 5.59166L10.6589 9.40832C10.737 9.48579 10.799 9.57796 10.8413 9.67951C10.8836 9.78106 10.9054 9.88998 10.9054 9.99999C10.9054 10.11 10.8836 10.2189 10.8413 10.3205C10.799 10.422 10.737 10.5142 10.6589 10.5917L6.8422 14.4083C6.76409 14.4858 6.7021 14.578 6.65979 14.6795C6.61748 14.7811 6.5957 14.89 6.5957 15C6.5957 15.11 6.61748 15.2189 6.65979 15.3205C6.7021 15.422 6.76409 15.5142 6.8422 15.5917C6.99834 15.7469 7.20955 15.834 7.4297 15.834C7.64985 15.834 7.86106 15.7469 8.0172 15.5917L11.8422 11.7667C12.3104 11.2979 12.5733 10.6625 12.5733 9.99999C12.5733 9.33749 12.3104 8.70207 11.8422 8.23332L8.0172 4.40832C7.86106 4.25311 7.64985 4.166 7.4297 4.166C7.20955 4.166 6.99834 4.25311 6.8422 4.40832Z"
+                            fill="#1E232B"
+                          />
+                        </svg></div
+                    ></xo-carousel-next>
+                  </div>
+                  <div class="custom__thumb">
+                    <xo-carousel-thumbnail
+                      xo-per-move="1"
+                      xo-per-view="6"
+                      style="margin-top: 20px"
                     >
-                      <path
-                        d="M6.8422 4.40832C6.76409 4.48579 6.7021 4.57796 6.65979 4.67951C6.61748 4.78106 6.5957 4.88998 6.5957 4.99999C6.5957 5.11 6.61748 5.21892 6.65979 5.32047C6.7021 5.42202 6.76409 5.51419 6.8422 5.59166L10.6589 9.40832C10.737 9.48579 10.799 9.57796 10.8413 9.67951C10.8836 9.78106 10.9054 9.88998 10.9054 9.99999C10.9054 10.11 10.8836 10.2189 10.8413 10.3205C10.799 10.422 10.737 10.5142 10.6589 10.5917L6.8422 14.4083C6.76409 14.4858 6.7021 14.578 6.65979 14.6795C6.61748 14.7811 6.5957 14.89 6.5957 15C6.5957 15.11 6.61748 15.2189 6.65979 15.3205C6.7021 15.422 6.76409 15.5142 6.8422 15.5917C6.99834 15.7469 7.20955 15.834 7.4297 15.834C7.64985 15.834 7.86106 15.7469 8.0172 15.5917L11.8422 11.7667C12.3104 11.2979 12.5733 10.6625 12.5733 9.99999C12.5733 9.33749 12.3104 8.70207 11.8422 8.23332L8.0172 4.40832C7.86106 4.25311 7.64985 4.166 7.4297 4.166C7.20955 4.166 6.99834 4.25311 6.8422 4.40832Z"
-                        fill="#1E232B"
-                      />
-                    </svg>
+                      <xo-carousel-inner>
+                        <xo-carousel-list class="custom__thumb-list">
+                          <xo-carousel-slide
+                            ><div class="custom__thumb-item">
+                              <img
+                                class="cus_thumb-img"
+                                src="./public/assets/product-detail/silicon.png"
+                                alt=""
+                              /></div
+                          ></xo-carousel-slide>
+                          <xo-carousel-slide
+                            ><div class="custom__thumb-item">
+                              <img
+                                class="cus_thumb-img"
+                                src="./public/assets/product-detail/silicon.png"
+                                alt=""
+                              /></div
+                          ></xo-carousel-slide>
+                          <xo-carousel-slide
+                            ><div class="custom__thumb-item">
+                              <img
+                                class="cus_thumb-img"
+                                src="./public/assets/product-detail/silicon.png"
+                                alt=""
+                              /></div
+                          ></xo-carousel-slide>
+                          <xo-carousel-slide
+                            ><div class="custom__thumb-item">
+                              <img
+                                class="cus_thumb-img"
+                                src="./public/assets/product-detail/silicon.png"
+                                alt=""
+                              /></div
+                          ></xo-carousel-slide>
+                          <xo-carousel-slide
+                            ><div class="custom__thumb-item">
+                              <img
+                                class="cus_thumb-img"
+                                src="./public/assets/product-detail/silicon.png"
+                                alt=""
+                              /></div
+                          ></xo-carousel-slide>
+                          <xo-carousel-slide
+                            ><div class="custom__thumb-item">
+                              <img
+                                class="cus_thumb-img"
+                                src="./public/assets/product-detail/silicon.png"
+                                alt=""
+                              /></div
+                          ></xo-carousel-slide>
+                        </xo-carousel-list>
+                      </xo-carousel-inner>
+                    </xo-carousel-thumbnail>
                   </div>
                 </div>
               </div>
-              <div class="c-action__options">
-                <div class="c-action__options-list">
-                  <div
-                    class="c-action__option-item c-action__option-item--selected"
-                  >
-                    <div class="c-action__option-img">
-                      <img
-                        src="./public/assets/product-detail/silicon.png"
-                        alt=""
-                      />
-                    </div>
-                    <div class="c-action__option-name"><h3>Silicon</h3></div>
-                  </div>
-                  <div class="c-action__option-item">
-                    <div class="c-action__option-img">
-                      <img
-                        src="./public/assets/product-detail/silicon.png"
-                        alt=""
-                      />
-                    </div>
-                    <div class="c-action__option-name"><h3>Silicon</h3></div>
-                  </div>
-                  <div class="c-action__option-item">
-                    <div class="c-action__option-img">
-                      <img
-                        src="./public/assets/product-detail/silicon.png"
-                        alt=""
-                      />
-                    </div>
-                    <div class="c-action__option-name"><h3>Silicon</h3></div>
-                  </div>
-                  <div class="c-action__option-item">
-                    <div class="c-action__option-img">
-                      <img
-                        src="./public/assets/product-detail/silicon.png"
-                        alt=""
-                      />
-                    </div>
-                    <div class="c-action__option-name"><h3>Silicon</h3></div>
-                  </div>
-                  <div class="c-action__option-item">
-                    <div class="c-action__option-img">
-                      <img
-                        src="./public/assets/product-detail/silicon.png"
-                        alt=""
-                      />
-                    </div>
-                    <div class="c-action__option-name"><h3>Silicon</h3></div>
-                  </div>
-                  <div class="c-action__option-item">
-                    <div class="c-action__option-img">
-                      <img
-                        src="./public/assets/product-detail/silicon.png"
-                        alt=""
-                      />
-                    </div>
-                    <div class="c-action__option-name"><h3>Silicon</h3></div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
+            </xo-carousel>
+          </xo-animate>
         </div>
-      </div>
-    </section> -->
+      </xo-container>
+    </section>
+    02
 
     <section class="page-section page-section--color" style="--color: #fff">
       <div class="faq-container">
@@ -1033,188 +1139,226 @@
             Questions
           </h2>
           <div class="faq__body">
-            <div class="accordion accordion--border-none">
-              <div class="accordion__item accordion__item--color-begie">
-                <button class="accordion__header accordion__header--p-26-31">
-                  <h3 class="accordion__title">
-                    Is Wolfwood furniture environmentally friendly?
-                  </h3>
-                  <span class="accordion__icon">
-                    <svg
-                      class="icon-plus"
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="24"
-                      height="24"
-                      viewBox="0 0 24 24"
-                      fill="none"
-                    >
-                      <path
-                        d="M11.4482 19.7712C11.5947 19.9177 11.7934 20 12.0006 20C12.2078 20 12.4065 19.9177 12.553 19.7712C12.6996 19.6247 12.7819 19.426 12.7819 19.2188V12.7819H19.2188C19.426 12.7819 19.6247 12.6996 19.7712 12.5531C19.9177 12.4066 20 12.2078 20 12.0006C20 11.7934 19.9177 11.5947 19.7712 11.4482C19.6247 11.3017 19.426 11.2194 19.2188 11.2194H12.7819V4.78125C12.7819 4.57405 12.6996 4.37534 12.553 4.22882C12.4065 4.08231 12.2078 4 12.0006 4C11.7934 4 11.5947 4.08231 11.4482 4.22882C11.3017 4.37534 11.2194 4.57405 11.2194 4.78125V11.2194H4.78125C4.57405 11.2194 4.37534 11.3017 4.22882 11.4482C4.08231 11.5947 4 11.7934 4 12.0006C4 12.2078 4.08231 12.4066 4.22882 12.5531C4.37534 12.6996 4.57405 12.7819 4.78125 12.7819H11.2194V19.2188C11.2194 19.426 11.3017 19.6247 11.4482 19.7712Z"
-                        fill="#1E1E1E"
-                      />
-                    </svg>
-                    <svg
-                      class="icon-minus"
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="24"
-                      height="24"
-                      viewBox="0 0 24 24"
-                      fill="none"
-                      style="display: none"
-                    >
-                      <path
-                        d="M4.78125 12.7819H19.2188C19.426 12.7819 19.6247 12.6996 19.7712 12.553C19.9177 12.4065 20 12.2078 20 12.0006C20 11.7934 19.9177 11.5947 19.7712 11.4482C19.6247 11.3017 19.426 11.2194 19.2188 11.2194H4.78125C4.57405 11.2194 4.37534 11.3017 4.22882 11.4482C4.08231 11.5947 4 11.7934 4 12.0006C4 12.2078 4.08231 12.4065 4.22882 12.553C4.37534 12.6996 4.57405 12.7819 4.78125 12.7819Z"
-                        fill="#1E1E1E"
-                      />
-                    </svg>
-                  </span>
-                </button>
-                <div
-                  class="accordion__content accordion__content--max-width-484px"
-                >
-                  <p class="accordion__text">
-                    We are committed to sustainability and use certified wood in
-                    our furniture. We strive to minimize our environmental
-                    impact and create pieces that reflect our respect for the
-                    natural world.
-                  </p>
+            <xo-animate xo-type="fade-up" xo-delay="0.2s">
+              <xo-collapse-provider xo-duration="300" class="faq__list">
+                <div class="faq__item">
+                  <!-- block -->
+                  <xo-collapse-trigger>
+                    <div class="collapse-header collapse-header--custom">
+                      <button
+                        class="accordion__header accordion__header--p-26-31"
+                      >
+                        <h3 class="accordion__title">
+                          What is the Wolfwood philosophy?
+                        </h3>
+                        <span class="accordion__icon">
+                          <svg
+                            class="icon-plus"
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="24"
+                            height="24"
+                            viewBox="0 0 24 24"
+                            fill="none"
+                          >
+                            <path
+                              d="M11.4482 19.7712C11.5947 19.9177 11.7934 20 12.0006 20C12.2078 20 12.4065 19.9177 12.553 19.7712C12.6996 19.6247 12.7819 19.426 12.7819 19.2188V12.7819H19.2188C19.426 12.7819 19.6247 12.6996 19.7712 12.5531C19.9177 12.4066 20 12.2078 20 12.0006C20 11.7934 19.9177 11.5947 19.7712 11.4482C19.6247 11.3017 19.426 11.2194 19.2188 11.2194H12.7819V4.78125C12.7819 4.57405 12.6996 4.37534 12.553 4.22882C12.4065 4.08231 12.2078 4 12.0006 4C11.7934 4 11.5947 4.08231 11.4482 4.22882C11.3017 4.37534 11.2194 4.57405 11.2194 4.78125V11.2194H4.78125C4.57405 11.2194 4.37534 11.3017 4.22882 11.4482C4.08231 11.5947 4 11.7934 4 12.0006C4 12.2078 4.08231 12.4066 4.22882 12.5531C4.37534 12.6996 4.57405 12.7819 4.78125 12.7819H11.2194V19.2188C11.2194 19.426 11.3017 19.6247 11.4482 19.7712Z"
+                              fill="#1E1E1E"
+                            />
+                          </svg>
+                          <svg
+                            class="icon-minus"
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="24"
+                            height="24"
+                            viewBox="0 0 24 24"
+                            fill="none"
+                            style="display: none"
+                          >
+                            <path
+                              d="M4.78125 12.7819H19.2188C19.426 12.7819 19.6247 12.6996 19.7712 12.553C19.9177 12.4065 20 12.2078 20 12.0006C20 11.7934 19.9177 11.5947 19.7712 11.4482C19.6247 11.3017 19.426 11.2194 19.2188 11.2194H4.78125C4.57405 11.2194 4.37534 11.3017 4.22882 11.4482C4.08231 11.5947 4 11.7934 4 12.0006C4 12.2078 4.08231 12.4065 4.22882 12.553C4.37534 12.6996 4.57405 12.7819 4.78125 12.7819Z"
+                              fill="#1E1E1E"
+                            />
+                          </svg>
+                        </span>
+                      </button>
+                    </div>
+                  </xo-collapse-trigger>
+                  <xo-collapse style="background: #f6f6f6">
+                    <div class="collapse-content collapse--max-width-484px">
+                      <p class="accordion__text accordion__text-bg-img">
+                        We are committed to sustainability and use certified
+                        wood in our furniture. We strive to minimize our
+                        environmental impact and create pieces that reflect our
+                        respect for the natural world.
+                      </p>
+                    </div>
+                  </xo-collapse>
+                  <!--end block -->
                 </div>
-              </div>
-              <div class="accordion__item accordion__item--color-begie">
-                <button class="accordion__header accordion__header--p-26-31">
-                  <h3 class="accordion__title">Do you ship internationally?</h3>
-                  <span class="accordion__icon">
-                    <svg
-                      class="icon-plus"
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="24"
-                      height="24"
-                      viewBox="0 0 24 24"
-                      fill="none"
-                    >
-                      <path
-                        d="M11.4482 19.7712C11.5947 19.9177 11.7934 20 12.0006 20C12.2078 20 12.4065 19.9177 12.553 19.7712C12.6996 19.6247 12.7819 19.426 12.7819 19.2188V12.7819H19.2188C19.426 12.7819 19.6247 12.6996 19.7712 12.5531C19.9177 12.4066 20 12.2078 20 12.0006C20 11.7934 19.9177 11.5947 19.7712 11.4482C19.6247 11.3017 19.426 11.2194 19.2188 11.2194H12.7819V4.78125C12.7819 4.57405 12.6996 4.37534 12.553 4.22882C12.4065 4.08231 12.2078 4 12.0006 4C11.7934 4 11.5947 4.08231 11.4482 4.22882C11.3017 4.37534 11.2194 4.57405 11.2194 4.78125V11.2194H4.78125C4.57405 11.2194 4.37534 11.3017 4.22882 11.4482C4.08231 11.5947 4 11.7934 4 12.0006C4 12.2078 4.08231 12.4066 4.22882 12.5531C4.37534 12.6996 4.57405 12.7819 4.78125 12.7819H11.2194V19.2188C11.2194 19.426 11.3017 19.6247 11.4482 19.7712Z"
-                        fill="#1E1E1E"
-                      />
-                    </svg>
-                    <svg
-                      class="icon-minus"
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="24"
-                      height="24"
-                      viewBox="0 0 24 24"
-                      fill="none"
-                      style="display: none"
-                    >
-                      <path
-                        d="M4.78125 12.7819H19.2188C19.426 12.7819 19.6247 12.6996 19.7712 12.553C19.9177 12.4065 20 12.2078 20 12.0006C20 11.7934 19.9177 11.5947 19.7712 11.4482C19.6247 11.3017 19.426 11.2194 19.2188 11.2194H4.78125C4.57405 11.2194 4.37534 11.3017 4.22882 11.4482C4.08231 11.5947 4 11.7934 4 12.0006C4 12.2078 4.08231 12.4065 4.22882 12.553C4.37534 12.6996 4.57405 12.7819 4.78125 12.7819Z"
-                        fill="#1E1E1E"
-                      />
-                    </svg>
-                  </span>
-                </button>
-                <div
-                  class="accordion__content accordion__content--max-width-484px"
-                >
-                  <p class="accordion__text">
-                    We are committed to sustainability and use certified wood in
-                    our furniture. We strive to minimize our environmental
-                    impact and create pieces that reflect our respect for the
-                    natural world.
-                  </p>
+                <div class="faq__item">
+                  <!-- block -->
+                  <xo-collapse-trigger>
+                    <div class="collapse-header collapse-header--custom">
+                      <button
+                        class="accordion__header accordion__header--p-26-31"
+                      >
+                        <h3 class="accordion__title">
+                          What is the Wolfwood philosophy?
+                        </h3>
+                        <span class="accordion__icon">
+                          <svg
+                            class="icon-plus"
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="24"
+                            height="24"
+                            viewBox="0 0 24 24"
+                            fill="none"
+                          >
+                            <path
+                              d="M11.4482 19.7712C11.5947 19.9177 11.7934 20 12.0006 20C12.2078 20 12.4065 19.9177 12.553 19.7712C12.6996 19.6247 12.7819 19.426 12.7819 19.2188V12.7819H19.2188C19.426 12.7819 19.6247 12.6996 19.7712 12.5531C19.9177 12.4066 20 12.2078 20 12.0006C20 11.7934 19.9177 11.5947 19.7712 11.4482C19.6247 11.3017 19.426 11.2194 19.2188 11.2194H12.7819V4.78125C12.7819 4.57405 12.6996 4.37534 12.553 4.22882C12.4065 4.08231 12.2078 4 12.0006 4C11.7934 4 11.5947 4.08231 11.4482 4.22882C11.3017 4.37534 11.2194 4.57405 11.2194 4.78125V11.2194H4.78125C4.57405 11.2194 4.37534 11.3017 4.22882 11.4482C4.08231 11.5947 4 11.7934 4 12.0006C4 12.2078 4.08231 12.4066 4.22882 12.5531C4.37534 12.6996 4.57405 12.7819 4.78125 12.7819H11.2194V19.2188C11.2194 19.426 11.3017 19.6247 11.4482 19.7712Z"
+                              fill="#1E1E1E"
+                            />
+                          </svg>
+                          <svg
+                            class="icon-minus"
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="24"
+                            height="24"
+                            viewBox="0 0 24 24"
+                            fill="none"
+                            style="display: none"
+                          >
+                            <path
+                              d="M4.78125 12.7819H19.2188C19.426 12.7819 19.6247 12.6996 19.7712 12.553C19.9177 12.4065 20 12.2078 20 12.0006C20 11.7934 19.9177 11.5947 19.7712 11.4482C19.6247 11.3017 19.426 11.2194 19.2188 11.2194H4.78125C4.57405 11.2194 4.37534 11.3017 4.22882 11.4482C4.08231 11.5947 4 11.7934 4 12.0006C4 12.2078 4.08231 12.4065 4.22882 12.553C4.37534 12.6996 4.57405 12.7819 4.78125 12.7819Z"
+                              fill="#1E1E1E"
+                            />
+                          </svg>
+                        </span>
+                      </button>
+                    </div>
+                  </xo-collapse-trigger>
+                  <xo-collapse style="background: #f6f6f6">
+                    <div class="collapse-content collapse--max-width-484px">
+                      <p class="accordion__text accordion__text-bg-img">
+                        We are committed to sustainability and use certified
+                        wood in our furniture. We strive to minimize our
+                        environmental impact and create pieces that reflect our
+                        respect for the natural world.
+                      </p>
+                    </div>
+                  </xo-collapse>
+                  <!--end block -->
                 </div>
-              </div>
-              <div class="accordion__item accordion__item--color-begie">
-                <button class="accordion__header accordion__header--p-26-31">
-                  <h3 class="accordion__title">
-                    What is the Wolfwood philosophy?
-                  </h3>
-                  <span class="accordion__icon">
-                    <svg
-                      class="icon-plus"
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="24"
-                      height="24"
-                      viewBox="0 0 24 24"
-                      fill="none"
-                    >
-                      <path
-                        d="M11.4482 19.7712C11.5947 19.9177 11.7934 20 12.0006 20C12.2078 20 12.4065 19.9177 12.553 19.7712C12.6996 19.6247 12.7819 19.426 12.7819 19.2188V12.7819H19.2188C19.426 12.7819 19.6247 12.6996 19.7712 12.5531C19.9177 12.4066 20 12.2078 20 12.0006C20 11.7934 19.9177 11.5947 19.7712 11.4482C19.6247 11.3017 19.426 11.2194 19.2188 11.2194H12.7819V4.78125C12.7819 4.57405 12.6996 4.37534 12.553 4.22882C12.4065 4.08231 12.2078 4 12.0006 4C11.7934 4 11.5947 4.08231 11.4482 4.22882C11.3017 4.37534 11.2194 4.57405 11.2194 4.78125V11.2194H4.78125C4.57405 11.2194 4.37534 11.3017 4.22882 11.4482C4.08231 11.5947 4 11.7934 4 12.0006C4 12.2078 4.08231 12.4066 4.22882 12.5531C4.37534 12.6996 4.57405 12.7819 4.78125 12.7819H11.2194V19.2188C11.2194 19.426 11.3017 19.6247 11.4482 19.7712Z"
-                        fill="#1E1E1E"
-                      />
-                    </svg>
-                    <svg
-                      class="icon-minus"
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="24"
-                      height="24"
-                      viewBox="0 0 24 24"
-                      fill="none"
-                      style="display: none"
-                    >
-                      <path
-                        d="M4.78125 12.7819H19.2188C19.426 12.7819 19.6247 12.6996 19.7712 12.553C19.9177 12.4065 20 12.2078 20 12.0006C20 11.7934 19.9177 11.5947 19.7712 11.4482C19.6247 11.3017 19.426 11.2194 19.2188 11.2194H4.78125C4.57405 11.2194 4.37534 11.3017 4.22882 11.4482C4.08231 11.5947 4 11.7934 4 12.0006C4 12.2078 4.08231 12.4065 4.22882 12.553C4.37534 12.6996 4.57405 12.7819 4.78125 12.7819Z"
-                        fill="#1E1E1E"
-                      />
-                    </svg>
-                  </span>
-                </button>
-                <div
-                  class="accordion__content accordion__content--max-width-484px"
-                >
-                  <p class="accordion__text">
-                    We are committed to sustainability and use certified wood in
-                    our furniture. We strive to minimize our environmental
-                    impact and create pieces that reflect our respect for the
-                    natural world.
-                  </p>
+                <div class="faq__item">
+                  <!-- block -->
+                  <xo-collapse-trigger>
+                    <div class="collapse-header collapse-header--custom">
+                      <button
+                        class="accordion__header accordion__header--p-26-31"
+                      >
+                        <h3 class="accordion__title">
+                          What is the Wolfwood philosophy?
+                        </h3>
+                        <span class="accordion__icon">
+                          <svg
+                            class="icon-plus"
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="24"
+                            height="24"
+                            viewBox="0 0 24 24"
+                            fill="none"
+                          >
+                            <path
+                              d="M11.4482 19.7712C11.5947 19.9177 11.7934 20 12.0006 20C12.2078 20 12.4065 19.9177 12.553 19.7712C12.6996 19.6247 12.7819 19.426 12.7819 19.2188V12.7819H19.2188C19.426 12.7819 19.6247 12.6996 19.7712 12.5531C19.9177 12.4066 20 12.2078 20 12.0006C20 11.7934 19.9177 11.5947 19.7712 11.4482C19.6247 11.3017 19.426 11.2194 19.2188 11.2194H12.7819V4.78125C12.7819 4.57405 12.6996 4.37534 12.553 4.22882C12.4065 4.08231 12.2078 4 12.0006 4C11.7934 4 11.5947 4.08231 11.4482 4.22882C11.3017 4.37534 11.2194 4.57405 11.2194 4.78125V11.2194H4.78125C4.57405 11.2194 4.37534 11.3017 4.22882 11.4482C4.08231 11.5947 4 11.7934 4 12.0006C4 12.2078 4.08231 12.4066 4.22882 12.5531C4.37534 12.6996 4.57405 12.7819 4.78125 12.7819H11.2194V19.2188C11.2194 19.426 11.3017 19.6247 11.4482 19.7712Z"
+                              fill="#1E1E1E"
+                            />
+                          </svg>
+                          <svg
+                            class="icon-minus"
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="24"
+                            height="24"
+                            viewBox="0 0 24 24"
+                            fill="none"
+                            style="display: none"
+                          >
+                            <path
+                              d="M4.78125 12.7819H19.2188C19.426 12.7819 19.6247 12.6996 19.7712 12.553C19.9177 12.4065 20 12.2078 20 12.0006C20 11.7934 19.9177 11.5947 19.7712 11.4482C19.6247 11.3017 19.426 11.2194 19.2188 11.2194H4.78125C4.57405 11.2194 4.37534 11.3017 4.22882 11.4482C4.08231 11.5947 4 11.7934 4 12.0006C4 12.2078 4.08231 12.4065 4.22882 12.553C4.37534 12.6996 4.57405 12.7819 4.78125 12.7819Z"
+                              fill="#1E1E1E"
+                            />
+                          </svg>
+                        </span>
+                      </button>
+                    </div>
+                  </xo-collapse-trigger>
+                  <xo-collapse style="background: #f6f6f6">
+                    <div class="collapse-content collapse--max-width-484px">
+                      <p class="accordion__text accordion__text-bg-img">
+                        We are committed to sustainability and use certified
+                        wood in our furniture. We strive to minimize our
+                        environmental impact and create pieces that reflect our
+                        respect for the natural world.
+                      </p>
+                    </div>
+                  </xo-collapse>
+                  <!--end block -->
                 </div>
-              </div>
-              <div class="accordion__item accordion__item--color-begie">
-                <button class="accordion__header accordion__header--p-26-31">
-                  <h3 class="accordion__title">What is your return policy?</h3>
-                  <span class="accordion__icon">
-                    <svg
-                      class="icon-plus"
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="24"
-                      height="24"
-                      viewBox="0 0 24 24"
-                      fill="none"
-                    >
-                      <path
-                        d="M11.4482 19.7712C11.5947 19.9177 11.7934 20 12.0006 20C12.2078 20 12.4065 19.9177 12.553 19.7712C12.6996 19.6247 12.7819 19.426 12.7819 19.2188V12.7819H19.2188C19.426 12.7819 19.6247 12.6996 19.7712 12.5531C19.9177 12.4066 20 12.2078 20 12.0006C20 11.7934 19.9177 11.5947 19.7712 11.4482C19.6247 11.3017 19.426 11.2194 19.2188 11.2194H12.7819V4.78125C12.7819 4.57405 12.6996 4.37534 12.553 4.22882C12.4065 4.08231 12.2078 4 12.0006 4C11.7934 4 11.5947 4.08231 11.4482 4.22882C11.3017 4.37534 11.2194 4.57405 11.2194 4.78125V11.2194H4.78125C4.57405 11.2194 4.37534 11.3017 4.22882 11.4482C4.08231 11.5947 4 11.7934 4 12.0006C4 12.2078 4.08231 12.4066 4.22882 12.5531C4.37534 12.6996 4.57405 12.7819 4.78125 12.7819H11.2194V19.2188C11.2194 19.426 11.3017 19.6247 11.4482 19.7712Z"
-                        fill="#1E1E1E"
-                      />
-                    </svg>
-                    <svg
-                      class="icon-minus"
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="24"
-                      height="24"
-                      viewBox="0 0 24 24"
-                      fill="none"
-                      style="display: none"
-                    >
-                      <path
-                        d="M4.78125 12.7819H19.2188C19.426 12.7819 19.6247 12.6996 19.7712 12.553C19.9177 12.4065 20 12.2078 20 12.0006C20 11.7934 19.9177 11.5947 19.7712 11.4482C19.6247 11.3017 19.426 11.2194 19.2188 11.2194H4.78125C4.57405 11.2194 4.37534 11.3017 4.22882 11.4482C4.08231 11.5947 4 11.7934 4 12.0006C4 12.2078 4.08231 12.4065 4.22882 12.553C4.37534 12.6996 4.57405 12.7819 4.78125 12.7819Z"
-                        fill="#1E1E1E"
-                      />
-                    </svg>
-                  </span>
-                </button>
-                <div
-                  class="accordion__content accordion__content--max-width-484px"
-                >
-                  <p class="accordion__text">
-                    We are committed to sustainability and use certified wood in
-                    our furniture. We strive to minimize our environmental
-                    impact and create pieces that reflect our respect for the
-                    natural world.
-                  </p>
+                <div class="faq__item">
+                  <!-- block -->
+                  <xo-collapse-trigger>
+                    <div class="collapse-header collapse-header--custom">
+                      <button
+                        class="accordion__header accordion__header--p-26-31"
+                      >
+                        <h3 class="accordion__title">
+                          What is the Wolfwood philosophy?
+                        </h3>
+                        <span class="accordion__icon">
+                          <svg
+                            class="icon-plus"
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="24"
+                            height="24"
+                            viewBox="0 0 24 24"
+                            fill="none"
+                          >
+                            <path
+                              d="M11.4482 19.7712C11.5947 19.9177 11.7934 20 12.0006 20C12.2078 20 12.4065 19.9177 12.553 19.7712C12.6996 19.6247 12.7819 19.426 12.7819 19.2188V12.7819H19.2188C19.426 12.7819 19.6247 12.6996 19.7712 12.5531C19.9177 12.4066 20 12.2078 20 12.0006C20 11.7934 19.9177 11.5947 19.7712 11.4482C19.6247 11.3017 19.426 11.2194 19.2188 11.2194H12.7819V4.78125C12.7819 4.57405 12.6996 4.37534 12.553 4.22882C12.4065 4.08231 12.2078 4 12.0006 4C11.7934 4 11.5947 4.08231 11.4482 4.22882C11.3017 4.37534 11.2194 4.57405 11.2194 4.78125V11.2194H4.78125C4.57405 11.2194 4.37534 11.3017 4.22882 11.4482C4.08231 11.5947 4 11.7934 4 12.0006C4 12.2078 4.08231 12.4066 4.22882 12.5531C4.37534 12.6996 4.57405 12.7819 4.78125 12.7819H11.2194V19.2188C11.2194 19.426 11.3017 19.6247 11.4482 19.7712Z"
+                              fill="#1E1E1E"
+                            />
+                          </svg>
+                          <svg
+                            class="icon-minus"
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="24"
+                            height="24"
+                            viewBox="0 0 24 24"
+                            fill="none"
+                            style="display: none"
+                          >
+                            <path
+                              d="M4.78125 12.7819H19.2188C19.426 12.7819 19.6247 12.6996 19.7712 12.553C19.9177 12.4065 20 12.2078 20 12.0006C20 11.7934 19.9177 11.5947 19.7712 11.4482C19.6247 11.3017 19.426 11.2194 19.2188 11.2194H4.78125C4.57405 11.2194 4.37534 11.3017 4.22882 11.4482C4.08231 11.5947 4 11.7934 4 12.0006C4 12.2078 4.08231 12.4065 4.22882 12.553C4.37534 12.6996 4.57405 12.7819 4.78125 12.7819Z"
+                              fill="#1E1E1E"
+                            />
+                          </svg>
+                        </span>
+                      </button>
+                    </div>
+                  </xo-collapse-trigger>
+                  <xo-collapse style="background: #f6f6f6">
+                    <div class="collapse-content collapse--max-width-484px">
+                      <p class="accordion__text accordion__text-bg-img">
+                        We are committed to sustainability and use certified
+                        wood in our furniture. We strive to minimize our
+                        environmental impact and create pieces that reflect our
+                        respect for the natural world.
+                      </p>
+                    </div>
+                  </xo-collapse>
+                  <!--end block -->
                 </div>
-              </div>
-            </div>
+              </xo-collapse-provider>
+            </xo-animate>
           </div>
           <div class="faq__footer">
             <div class="faq__actions">
