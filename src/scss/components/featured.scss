@@ -63,6 +63,7 @@
 .f-card__image-wrapper {
   overflow: hidden;
   padding: 0 16px;
+  justify-self: center;
 }
 
 .f-card__image img {
@@ -158,6 +159,9 @@
 .f-card__button:hover svg {
   transform: rotate(90deg);
 }
+.f-card__button--mobile {
+  display: none;
+}
 
 @media (max-width: 992px) {
   .featured-container {
@@ -189,6 +193,11 @@
     align-self: self-end;
     max-width: 100%;
   }
+
+  .f-card__price {
+    font-size: 15px;
+  }
+
   .f-card__inner {
     display: block;
     max-width: 245px;
@@ -207,5 +216,19 @@
   .f-card__button a > svg {
     overflow: hidden;
     float: right;
+  }
+
+  .f-card__prices {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .f-card__button--mobile {
+    display: block;
+  }
+
+  .f-card__button--desk {
+    display: none;
   }
 }

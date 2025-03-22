@@ -156,6 +156,19 @@
   position: absolute;
 }
 
+.cl-card .btn-sa--home {
+  display: none;
+}
+
+.cl-card {
+  transition: 0.3s ease;
+}
+
+.cl-card:hover .btn-sa--home {
+  display: block;
+  transition: 0.5s ease;
+}
+
 .btn-style--01 {
   $white-color: #fff;
   background: rgba(15, 97, 255, 1);
@@ -192,5 +205,8 @@
   }
   .product-option {
     display: none;
+  }
+  .seller__banner {
+    padding-bottom: 41px;
   }
 }

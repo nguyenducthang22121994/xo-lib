@@ -62,7 +62,7 @@ a:hover {
   width: 100%;
   background-color: transparent;
   position: absolute;
-  z-index: 9;
+  z-index: 100;
   top: 0;
 }
 
@@ -104,17 +104,16 @@ a:hover {
   overflow: hidden;
   max-width: 100%;
   white-space: nowrap;
+  padding: 25px 0;
 }
 
 .nav-list a {
-  width: 100%;
   height: 100%;
   font-family: "Be Vietnam Pro";
   font-size: 15px;
   font-style: normal;
   font-weight: 400;
   line-height: 20px;
-  padding: 25px 0;
   overflow: hidden;
   color: #000;
   font-family: "Be Vietnam Pro";
@@ -123,6 +122,7 @@ a:hover {
   font-weight: 400;
   line-height: 20px;
   position: relative;
+  height: 16px;
 }
 
 .nav-list a:hover {
@@ -143,6 +143,10 @@ a:hover {
 }
 
 @media (max-width: 1024px) {
+  xo-grid {
+    --xo-grid-col-gap: 15px;
+    --xo-grid-row-gap: 15px;
+  }
   .header-logo {
     padding: 0;
   }
@@ -169,6 +173,10 @@ a:hover {
     display: block;
   }
 }
+xo-sticky[xo-is-sticky] .header-container {
+  background-color: white;
+}
+
 .page-section {
   width: 100%;
   height: 100%;
@@ -408,6 +416,19 @@ a:hover {
   position: absolute;
 }
 
+.cl-card .btn-sa--home {
+  display: none;
+}
+
+.cl-card {
+  transition: 0.3s ease;
+}
+
+.cl-card:hover .btn-sa--home {
+  display: block;
+  transition: 0.5s ease;
+}
+
 .btn-style--01 {
   background: rgb(15, 97, 255);
   border-radius: 56px;
@@ -445,6 +466,9 @@ a:hover {
   }
   .product-option {
     display: none;
+  }
+  .seller__banner {
+    padding-bottom: 41px;
   }
 }
 .multi-container {
@@ -548,13 +572,31 @@ a:hover {
   max-width: 306px;
 }
 
+.multi-card__num--02,
 .multi-card__desc--02 {
   color: #fff;
-  opacity: 0.99;
+  opacity: 0.5;
+}
+
+.multi-card:hover .multi-card__desc {
+  color: #fff;
+}
+
+.multi-card:hover .multi-card__num {
+  color: #fff;
+}
+
+.multi-card:hover .multi-card__desc--02 {
+  color: #000;
+}
+
+.multi-card:hover .multi-card__num--02 {
+  color: #000;
 }
 
 .carousel-item {
   height: 100%;
+  justify-items: center;
 }
 
 .dots {
@@ -666,6 +708,7 @@ a:hover {
 .f-card__image-wrapper {
   overflow: hidden;
   padding: 0 16px;
+  justify-self: center;
 }
 
 .f-card__image img {
@@ -763,6 +806,10 @@ a:hover {
   transform: rotate(90deg);
 }
 
+.f-card__button--mobile {
+  display: none;
+}
+
 @media (max-width: 992px) {
   .featured-container {
     display: block;
@@ -790,6 +837,9 @@ a:hover {
     align-self: self-end;
     max-width: 100%;
   }
+  .f-card__price {
+    font-size: 15px;
+  }
   .f-card__inner {
     display: block;
     max-width: 245px;
@@ -808,6 +858,17 @@ a:hover {
   .f-card__button a > svg {
     overflow: hidden;
     float: right;
+  }
+  .f-card__prices {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .f-card__button--mobile {
+    display: block;
+  }
+  .f-card__button--desk {
+    display: none;
   }
 }
 .collection {
@@ -1370,16 +1431,14 @@ footer {
 }
 
 .product-hero__title {
-  text-align: start;
-  height: 100%;
   position: relative;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: end;
 }
 
 .product-hero__title h1 {
-  position: absolute;
-  inset: 0;
-  width: 100%;
-  bottom: 0;
   color: #fff;
   font-family: "be vietnam pro";
   font-size: clamp(5px, 9.5vw, 100px);
@@ -1399,7 +1458,7 @@ footer {
   .product-hero__title {
     text-align: left;
     width: 100%;
-    height: auto;
+    height: 100%;
   }
   .product-hero__title h1 {
     font-size: 50px;
@@ -1473,6 +1532,10 @@ footer {
   transition: transform 0.3s ease-in-out;
 }
 
+.cate__image {
+  transition: transform 0.3s ease-in-out;
+}
+
 .cate__item:hover .cate__image {
   transform: scale(1.2);
 }
@@ -1518,6 +1581,10 @@ footer {
   border: none;
   cursor: pointer;
   border-radius: 50%;
+}
+
+.carousel-item {
+  cursor: pointer;
 }
 
 @keyframes moveArrow {
@@ -1879,12 +1946,12 @@ footer {
 }
 @media (max-width: 572px) {
   .nav-pan {
-    width: 300px;
+    width: 100vw;
   }
 }
 .nav-pan {
   width: 553px;
-  height: 97vh;
+  height: 100vh;
   overflow-y: auto;
   background-color: #f5f5f5;
   padding: 0 40px;
@@ -2174,8 +2241,9 @@ label {
 
 .pi__gallery-main-img {
   width: 100%;
-  height: auto;
+  height: 100%;
   aspect-ratio: 1;
+  object-fit: contain;
 }
 
 .pi__gallery-main {
@@ -2585,6 +2653,9 @@ select option {
   .pi {
     flex-direction: column;
   }
+  .pi__details {
+    padding-top: 45px;
+  }
   .pi__title {
     color: var(--Primary-Accent-1, #1e232b);
     font-feature-settings: "ss01" on;
@@ -2921,7 +2992,6 @@ select option {
 }
 
 .carousel-item {
-  max-width: 509px;
   max-height: 509px;
 }
 
@@ -3136,7 +3206,7 @@ xo-carousel-slide[xo-active] .custom_thumb-item .cus_thumb-img {
 }
 
 .accordion__header:last-child {
-  border-bottom: 1px solid #e5e5e5;
+  border-top: 1px solid #e5e5e5;
 }
 
 .collapse-header--custom {
@@ -3427,6 +3497,15 @@ xo-collapse[xo-active] {
   position: relative;
   width: 100%;
   height: 100%;
+}
+
+.pop {
+  padding: 16px 14px;
+  border-radius: 12px;
+  border: 1px solid var(--Others-Line-1, #e3e5e8);
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
 }
 
 /*# sourceMappingURL=main.css.map */

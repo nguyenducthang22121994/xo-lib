@@ -128,7 +128,7 @@
 
     <section class="page-section page-section--img hero">
       <div class="hero-title">
-        <xo-animate xo-type="fade-up" xo-delay="200">
+        <xo-animate xo-cascade xo-type="fade-up" xo-delay="200">
           <h1>Protection with style</h1>
         </xo-animate>
       </div>
@@ -137,11 +137,11 @@
     <section class="page-section">
       <xo-container>
         <div class="seller">
-          <xo-animate xo-type="fade-up" xo-delay="100">
+          <xo-animate xo-cascade xo-type="fade-up" xo-delay="100">
             <h2 class="seller__tittle">Best Sellers</h2>
           </xo-animate>
           <xo-grid class="seller__grid" style="--xs: 2; --sm: 2; --xl: 4"
-            ><xo-animate xo-type="fade-up" xo-delay="200">
+            ><xo-animate xo-cascade xo-type="fade-up" xo-delay="200">
               <div class="product-card">
                 <div class="product-card__img">
                   <a href="productdetail.html"
@@ -178,7 +178,7 @@
                 </div>
               </div>
             </xo-animate>
-            <xo-animate xo-type="fade-up" xo-delay="200">
+            <xo-animate xo-cascade xo-type="fade-up" xo-delay="200">
               <div class="product-card">
                 <div class="product-card__img">
                   <a href="productdetail.html"
@@ -216,7 +216,7 @@
               </div>
             </xo-animate>
 
-            <xo-animate xo-type="fade-up" xo-delay="200">
+            <xo-animate xo-cascade xo-type="fade-up" xo-delay="200">
               <div class="product-card">
                 <div class="product-card__img">
                   <a href="productdetail.html"
@@ -253,7 +253,7 @@
                 </div>
               </div>
             </xo-animate>
-            <xo-animate xo-type="fade-up" xo-delay="200">
+            <xo-animate xo-cascade xo-type="fade-up" xo-delay="200">
               <div class="product-card">
                 <div class="product-card__img">
                   <a href="productdetail.html"
@@ -293,7 +293,7 @@
           </xo-grid>
 
           <div class="seller__banner">
-            <xo-animate xo-type="fade-up" xo-delay="200">
+            <xo-animate xo-cascade xo-type="fade-up" xo-delay="200">
               <img src="./public/assets/products/Change Img.png" alt="" />
             </xo-animate>
             <div class="btn-sa btn-sa--large">
@@ -455,10 +455,27 @@
               <div class="f-card__prices">
                 <h3 class="f-card__price f-card__price--new">$20.00</h3>
                 <h3 class="f-card__price f-card__price--old">$58.00</h3>
+
+                <div class="f-card__button f-card__button--mobile">
+                  <a href="#"
+                    ><svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="20"
+                      height="20"
+                      viewBox="0 0 20 20"
+                      fill="none"
+                    >
+                      <path
+                        d="M9.53983 16.4761C9.66192 16.5982 9.82752 16.6668 10.0002 16.6668C10.1728 16.6668 10.3384 16.5982 10.4605 16.4761C10.5826 16.354 10.6512 16.1885 10.6512 16.0158V10.6517H16.0153C16.188 10.6517 16.3536 10.5831 16.4757 10.4611C16.5977 10.339 16.6663 10.1734 16.6663 10.0007C16.6663 9.82803 16.5977 9.66243 16.4757 9.54034C16.3536 9.41825 16.188 9.34966 16.0153 9.34966H10.6512V3.98454C10.6512 3.81187 10.5826 3.64628 10.4605 3.52418C10.3384 3.40209 10.1728 3.3335 10.0002 3.3335C9.82752 3.3335 9.66192 3.40209 9.53983 3.52418C9.41773 3.64628 9.34914 3.81187 9.34914 3.98454V9.34966H3.98405C3.81138 9.34966 3.64579 9.41825 3.52369 9.54034C3.4016 9.66243 3.33301 9.82803 3.33301 10.0007C3.33301 10.1734 3.4016 10.339 3.52369 10.4611C3.64579 10.5831 3.81138 10.6517 3.98405 10.6517H9.34914V16.0158C9.34914 16.1885 9.41773 16.354 9.53983 16.4761Z"
+                        fill="white"
+                      />
+                    </svg>
+                  </a>
+                </div>
               </div>
             </div>
 
-            <div class="f-card__button">
+            <div class="f-card__button f-card__button--desk">
               <a href="#"
                 ><svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -484,7 +501,12 @@
         <div class="collection">
           <xo-grid>
             <div style="--md: 12; --lg: 6" class="collection__img">
-              <xo-animate xo-type="fade-up" xo-delay="200" style="height: 100%">
+              <xo-animate
+                xo-cascade
+                xo-type="fade-up"
+                xo-delay="200"
+                style="height: 100%"
+              >
                 <img
                   src="./public/assets/products/collect img.png"
                   alt=""
@@ -498,7 +520,7 @@
                 style="--xs: 1; --sm: 1; --md: 2; --xl: 2"
                 class="grid-fix"
               >
-                <xo-animate xo-type="fade-up" xo-delay="200">
+                <xo-animate xo-cascade xo-type="fade-up" xo-delay="200">
                   <div class="product-card">
                     <div class="product-card__img">
                       <a href="productdetail.html"
@@ -535,7 +557,7 @@
                     </div>
                   </div>
                 </xo-animate>
-                <xo-animate xo-type="fade-up" xo-delay="200">
+                <xo-animate xo-cascade xo-type="fade-up" xo-delay="200">
                   <div class="product-card">
                     <div class="product-card__img">
                       <a href="productdetail.html"
@@ -572,7 +594,7 @@
                     </div>
                   </div>
                 </xo-animate>
-                <xo-animate xo-type="fade-up" xo-delay="200">
+                <xo-animate xo-cascade xo-type="fade-up" xo-delay="200">
                   <div class="product-card">
                     <div class="product-card__img">
                       <a href="productdetail.html"
@@ -609,7 +631,7 @@
                     </div>
                   </div>
                 </xo-animate>
-                <xo-animate xo-type="fade-up" xo-delay="200">
+                <xo-animate xo-cascade xo-type="fade-up" xo-delay="200">
                   <div class="product-card">
                     <div class="product-card__img">
                       <a href="productdetail.html"
@@ -728,6 +750,7 @@
       <xo-container class="cl">
         <xo-grid>
           <xo-animate
+            xo-cascade
             xo-type="fade-up"
             xo-delay="200"
             style="--md: 12; --lg: 4; --xl: 4"
@@ -735,7 +758,7 @@
             <div class="cl-card">
               <div class="cl-card__title">
                 <h2>Super Protect</h2>
-                <div class="btn-sa btn-sa--large">
+                <div class="btn-sa btn-sa--large btn-sa--home">
                   <a class="btn btn-style--01 btn--style4" href="showall.html"
                     >Shop all</a
                   >
@@ -747,6 +770,7 @@
             </div>
           </xo-animate>
           <xo-animate
+            xo-cascade
             xo-type="fade-up"
             xo-delay="200"
             style="--md: 12; --lg: 4; --xl: 4"
@@ -759,6 +783,7 @@
             </div>
           </xo-animate>
           <xo-animate
+            xo-cascade
             xo-type="fade-up"
             xo-delay="200"
             style="--md: 12; --lg: 4; --xl: 4"
