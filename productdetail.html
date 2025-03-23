@@ -12,6 +12,7 @@
       href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
       rel="stylesheet"
     />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
   </head>
   <body>
     <header class="page-header">
@@ -329,11 +330,27 @@
                         xo-placement="bottom-center"
                         class="pop__body"
                         xo-portal
-                        xo-offset="5"
+                        
                       >
-                        <div class="pop_item">Recently Added</div>
-                        <div class="pop_item">Price Up</div>
-                        <div class="pop_item">Price Down</div>
+                      <!-- option check ratio -->
+                      <form action="">
+                        <label class="custom-radio">
+                          <input type="radio" name="sort" />
+                          <span class="radiomark radiomark--none"></span>
+                          <span class="name">Iphone</span>
+                        </label><label class="custom-radio">
+                          <input type="radio" name="sort" />
+                          <span class="radiomark radiomark--none"></span>
+                          <span class="name">Samsung</span>
+                        </label>
+                        <label class="custom-radio">
+                          <input type="radio" name="sort" />
+                          <span class="radiomark radiomark--none"></span>
+                          <span class="name">Xiaomi</span>
+                        </label>
+                      </form>
+                      <!-- end option check box -->
+                  
                       </xo-popover>
 
                       <xo-popover-trigger class="pop" xo-name="select-device-2">
@@ -360,10 +377,27 @@
                         class="pop__body"
                         xo-portal
                         xo-offset="5"
+                        
                       >
-                        <div class="pop_item">LG</div>
-                        <div class="pop_item">Samsung</div>
-                        <div class="pop_item">DCom</div>
+                         <!-- option check ratio -->
+                      <form action="">
+                        <label class="custom-radio">
+                          <input type="radio" name="sort" />
+                          <span class="radiomark radiomark--none"></span>
+                          <span class="name">Iphone</span>
+                        </label><label class="custom-radio">
+                          <input type="radio" name="sort" />
+                          <span class="radiomark radiomark--none"></span>
+                          <span class="name">Samsung</span>
+                        </label>
+                        <label class="custom-radio">
+                          <input type="radio" name="sort" />
+                          <span class="radiomark radiomark--none"></span>
+                          <span class="name">Xiaomi</span>
+                        </label>
+                      </form>
+                      <!-- end option check box -->
+
                       </xo-popover>
                     </div>
                   </div>
@@ -457,7 +491,7 @@
             </div>
             <xo-animate xo-type="fade-up" xo-delay="0.2s">
               <xo-collapse-provider xo-duration="300">
-                <xo-collapse-trigger xo-active>
+                <xo-collapse-trigger >
                   <div class="collapse-header">
                     <button class="accordion__header">
                       <h3 class="accordion__title">Main Featured</h3>
@@ -493,7 +527,7 @@
                     </button>
                   </div>
                 </xo-collapse-trigger>
-                <xo-collapse xo-active>
+                <xo-collapse >
                   <div class="collapse-content">
                     <p class="accordion__text">
                       * The Bundle includes 1 box, 1 phone case, and 4 screen
@@ -1480,174 +1514,7 @@
               </div>
             </div>
           </div>
-          <!-- <div class="recommend__product">
-            <div class="row">
-              <div class="col" style="--col-lg: 3; --col-md: 6">
-                <div class="product-card">
-                  <div class="product-card__img">
-                    <a href="productdetail.html"
-                      ><img
-                        src="public/assets/products/product1.png"
-                        alt="" /><img
-                        src="public/assets/products/product2.png"
-                        alt=""
-                    /></a>
-                  </div>
-                  <div class="product-info">
-                    <div class="product-info__name">
-                      <h3>Hills</h3>
-                    </div>
-                    <div class="product-info__price">$76</div>
-                    <div class="product-option">
-                      <div
-                        class="product-option__item"
-                        style="--color: #c9bfae"
-                      ></div>
-                      <div
-                        class="product-option__item"
-                        style="--color: #a393b5"
-                      ></div>
-                      <div
-                        class="product-option__item"
-                        style="--color: #ec978c"
-                      ></div>
-                      <div
-                        class="product-option__item"
-                        style="--color: #ec978c"
-                      ></div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="col" style="--col-lg: 3; --col-md: 6">
-                <div class="product-card">
-                  <div class="product-card__img">
-                    <a href="productdetail.html"
-                      ><img
-                        src="public/assets/products/product1.png"
-                        alt="" /><img
-                        src="public/assets/products/product2.png"
-                        alt=""
-                    /></a>
-                  </div>
-                  <div class="product-info">
-                    <div class="product-info__name">
-                      <h3>Hills</h3>
-                    </div>
-                    <div class="product-info__price"><h3>$76</h3></div>
-                    <div class="product-option">
-                      <div
-                        class="product-option__item"
-                        style="--color: #c9bfae"
-                      ></div>
-                      <div
-                        class="product-option__item"
-                        style="--color: #a393b5"
-                      ></div>
-                      <div
-                        class="product-option__item"
-                        style="--color: #ec978c"
-                      ></div>
-                      <div
-                        class="product-option__item"
-                        style="--color: #ec978c"
-                      ></div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="col" style="--col-lg: 3; --col-md: 6">
-                <div class="product-card">
-                  <div class="product-card__img">
-                    <a href="productdetail.html"
-                      ><img
-                        src="public/assets/products/product1.png"
-                        alt="" /><img
-                        src="public/assets/products/product2.png"
-                        alt=""
-                    /></a>
-                  </div>
-                  <div class="product-info">
-                    <div class="product-info__name">
-                      <h3>Hills</h3>
-                    </div>
-                    <div class="product-info__price"><h3>$76</h3></div>
-                    <div class="product-option">
-                      <div
-                        class="product-option__item"
-                        style="--color: #c9bfae"
-                      ></div>
-                      <div
-                        class="product-option__item"
-                        style="--color: #a393b5"
-                      ></div>
-                      <div
-                        class="product-option__item"
-                        style="--color: #ec978c"
-                      ></div>
-                      <div
-                        class="product-option__item"
-                        style="--color: #ec978c"
-                      ></div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="col" style="--col-lg: 3; --col-md: 6">
-                <div class="product-card">
-                  <div class="product-card__img">
-                    <a href="productdetail.html"
-                      ><img
-                        src="public/assets/products/product1.png"
-                        alt="" /><img
-                        src="public/assets/products/product2.png"
-                        alt=""
-                    /></a>
-                  </div>
-                  <div class="product-info">
-                    <div class="product-info__name">
-                      <h3>Hills</h3>
-                    </div>
-                    <div class="product-info__price"><h3>$76</h3></div>
-                    <div class="product-option">
-                      <div
-                        class="product-option__item"
-                        style="--color: #c9bfae"
-                      ></div>
-                      <div
-                        class="product-option__item"
-                        style="--color: #a393b5"
-                      ></div>
-                      <div
-                        class="product-option__item"
-                        style="--color: #ec978c"
-                      ></div>
-                      <div
-                        class="product-option__item"
-                        style="--color: #ec978c"
-                      ></div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="recommend__paginations">
-              <div class="recommend__pagination-list">
-                <div
-                  class="recommend__pagination-item recommend__pagination-item--active"
-                ></div>
-                <div
-                  class="recommend__pagination-item recommend__pagination-item--disable"
-                ></div>
-                <div
-                  class="recommend__pagination-item recommend__pagination-item--disable"
-                ></div>
-                <div
-                  class="recommend__pagination-item recommend__pagination-item--disable"
-                ></div>
-              </div>
-            </div>
-          </div> -->
+
           <xo-grid class="seller__grid" style="--xs: 2; --sm: 2; --xl: 4"
             ><xo-animate xo-type="fade-up" xo-delay="200">
               <div class="product-card">
@@ -1945,6 +1812,63 @@
         }
       })
 
+      document.querySelectorAll(".pi__option-wrapper").forEach((wrapper) => {
+        wrapper.addEventListener("click", (event) => {
+          if (event.target.closest("input[type='radio']")) {
+            const radio = event.target.closest("input[type='radio']");
+            const selectedText = radio.nextElementSibling.nextElementSibling.textContent; // Lấy tên thiết bị
+      
+           
+            const popover = radio.closest("xo-popover");
+            const popoverName = popover.getAttribute("xo-name"); 
+      
+           
+            const popoverTrigger = document.querySelector(
+              `xo-popover-trigger[xo-name="${popoverName}"] .pop_text`
+            );
+      
+            if (popoverTrigger) {
+              popoverTrigger.textContent = selectedText; 
+            }
+          }
+        });
+      });
+      
+
+      document.querySelectorAll("xo-collapse-trigger").forEach((trigger) => {
+        trigger.addEventListener("click", () => {
+          const iconPlus = trigger.querySelector(".icon-plus");
+          const iconMinus = trigger.querySelector(".icon-minus");
+      
+         
+          if (trigger.hasAttribute("xo-active")) {
+           
+            iconPlus.style.transition = "transform 0.3s ease-in-out";
+            iconPlus.style.transform = "rotate(180deg)";
+      
+            
+            setTimeout(() => {
+              iconPlus.style.display = "none";
+              iconMinus.style.display = "inline-block";
+            }, 300);
+          } else {
+            iconMinus.style.transition = "transform 0.3s ease-in-out";
+            iconMinus.style.transform = "rotate(-180deg)";
+      
+            
+      
+            setTimeout(() => {
+              iconMinus.style.display = "none";
+              iconPlus.style.display = "inline-block";
+              iconPlus.style.transform = "rotate(0deg)";
+            },300);
+          }
+        });
+      });
+      
+
+
+      
       document.querySelectorAll(".accordion__header").forEach((header) => {
         header.addEventListener("click", function () {
           const item = this.parentElement
@@ -1967,6 +1891,19 @@
           }
         })
       })
+
+      document.querySelectorAll('input[type="radio"]').forEach((radio) => {
+        radio.addEventListener("click", function () {
+          if (this.checked && this.dataset.checked === "true") {
+            this.checked = false
+            this.dataset.checked = "false"
+          } else {
+            this.dataset.checked = "true"
+          }
+        })
+      })
+
+      
     </script>
   </body>
 </html>

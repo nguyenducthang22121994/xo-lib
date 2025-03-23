@@ -410,8 +410,6 @@ select option {
 .accordion__title {
   color: var(--Text, #1e1e1e);
   font-feature-settings: "ss01" on;
-
-  /* Body/Strong/M */
   font-family: Poppins;
   font-size: 16px;
   font-style: normal;
@@ -452,6 +450,9 @@ select option {
   font-weight: 400;
   line-height: 142%;
 }
+
+
+
 
 @media (max-width: 768px) {
   .pi-container {
@@ -787,8 +788,9 @@ select option {
 
 .custom__body {
   display: flex;
-  width: 100%;
+  max-width: 510px;
   justify-content: center;
+  margin: auto  ;
 }
 
 .custom__body a {
@@ -881,10 +883,21 @@ xo-carousel-slide[xo-active] .custom_thumb-item .cus_thumb-img {
 }
 
 .custom__pagination xo-carousel-pagination xo-carousel-bullet[xo-active] {
-  width: 117px;
+
   height: 2px;
   border-radius: 20px;
   background: var(--Border, #0f61ff);
+}
+
+@media (max-width:992px) {
+  .custom__pagination xo-carousel-pagination xo-carousel-bullet {
+    width: 44px;
+  }
+  
+}
+
+xo-popover {
+  width: var( --xo-popover-trigger-width);
 }
 
 // ========================ksdajsdhaksdhskdj
